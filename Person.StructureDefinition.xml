@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Person" />
+  <name value="Person" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Person" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="Person">
+      <path value="Person" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="Person.Name">
+      <path value="Person.Name" />
+      <short value="vollständiger Name einer Person" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Name.Vorname">
+      <path value="Person.Name.Vorname" />
+      <short value=" Vollständiger Vorname einer Person" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Name.Nachname">
+      <path value="Person.Name.Nachname" />
+      <short value="Nachname einer Person ohne Vor- und Zusätze. Dient z.B. der alphabetischen Einordnung des Namens." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Name.Familienname">
+      <path value="Person.Name.Familienname" />
+      <short value=" Der vollständige Familienname, einschließlich aller Vorsatz- und Zusatzwörter, mit Leerzeichen getrennt." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Name.Vorsatzwort">
+      <path value="Person.Name.Vorsatzwort" />
+      <short value="Vorsatzwort wie z.B.: von, van, zu Vgl. auch VSDM-Spezifikation der Gematik (Versichertenstammdatenmanagement, &quot;eGK&quot;)" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Name.Namenszusatz">
+      <path value="Person.Name.Namenszusatz" />
+      <short value="Namenszusatz als Bestandteil das Nachnamens, wie in VSDM (Versichertenstammdatenmanagement, &quot;eGK&quot;) definiert. Beispiele: Gräfin, Prinz oder Fürst" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Name.Präfix">
+      <path value="Person.Name.Präfix" />
+      <short value="Namensteile vor dem Vornamen, z.B. akademischer Grad" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Name.ArtdesPräfixes">
+      <path value="Person.Name.ArtdesPräfixes" />
+      <short value="Art des Präfixes, z.B. &quot;AC&quot; für Akademische Titel" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="Person.Name.Geburtsname">
+      <path value="Person.Name.Geburtsname" />
+      <short value="Familienname einer Person zum Zeitpunkt ihrer Geburt. Kann sich danach z.B. durch Heirat und Annahme eines anderen Familiennamens ändern." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Demographie">
+      <path value="Person.Demographie" />
+      <short value="Das Basismodul Demographie enthält demographische Parameter (Alter, Geschlecht etc.)." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Demographie.AdministrativesGeschlecht">
+      <path value="Person.Demographie.AdministrativesGeschlecht" />
+      <short value="Administratives Geschlecht der Person" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Geburtsdatum">
+      <path value="Person.Demographie.Geburtsdatum" />
+      <short value="Geburtsdatum des Patienten" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse">
+      <path value="Person.Demographie.Adresse" />
+      <short value="Eine Adresse gemäß postalischer Konventionen. Bei Stadtstaaten einschließlich Bezirken." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.Land">
+      <path value="Person.Demographie.Adresse.Land" />
+      <short value="Ländercode nach ISO 3166." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.PLZ">
+      <path value="Person.Demographie.Adresse.PLZ" />
+      <short value="Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.Wohnort">
+      <path value="Person.Demographie.Adresse.Wohnort" />
+      <short value="Bei Personen aus Stadtstaaten inklusive des Stadtteils." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.Straße">
+      <path value="Person.Demographie.Adresse.Straße" />
+      <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Vitalstatus">
+      <path value="Person.Demographie.Vitalstatus" />
+      <short value="Gibt an, ob ein Patient verstorben ist. Falls ja, zudem den Zeitpunkt." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Vitalstatus.PatientVerstorben">
+      <path value="Person.Demographie.Vitalstatus.PatientVerstorben" />
+      <short value="Gibt an, ob der Patient am Leben oder verstorben ist." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="boolean" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Vitalstatus.Todeszeitpunkt">
+      <path value="Person.Demographie.Vitalstatus.Todeszeitpunkt" />
+      <short value="Gibt den Todeszeitpunkt des Patienten an, falls dieser im KH verstorben ist. Ansonsten &quot;Null Flavor&quot;. " />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Vitalstatus.Informationsquelle">
+      <path value="Person.Demographie.Vitalstatus.Informationsquelle" />
+      <short value="Quelle des Vitalstatus. " />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Vitalstatus.LetzterLebendzeitpunkt">
+      <path value="Person.Demographie.Vitalstatus.LetzterLebendzeitpunkt" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+    </element>
+    <element id="Person.Patient">
+      <path value="Person.Patient" />
+      <short value="Person, die in einer oder mehreren Gesundheitseinrichtungen behandelt wird" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Patient.Patienten-Identifikator">
+      <path value="Person.Patient.Patienten-Identifikator" />
+      <short value="Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als &quot;Codesystem&quot; gesehen werden, und Patienten-Identifikator als &quot;Code&quot;" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Patient.Patienten-Identifikator.Patienten-Identifikator">
+      <path value="Person.Patient.Patienten-Identifikator.Patienten-Identifikator" />
+      <short value="Gesundheitseinrichtungs-eigene Identifikationsnummer für einen Patienten" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="Person.Patient.Patienten-Identifikator.Patienten-IdentifikatorKontext">
+      <path value="Person.Patient.Patienten-Identifikator.Patienten-IdentifikatorKontext" />
+      <short value="Der Kontext des Patienten-Identifikators um den Patienten-Identifikator zu Beschreiben, da der Patient innerhalb einer Gesundheitseinrichtung möglicherweise pro System eine Nummer (Im Krankenhaus: Labor, Radiologie, Internistische Station etc.) bekommt." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="Person.Patient.Versicherung">
+      <path value="Person.Patient.Versicherung" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Patient.Versicherung.Versicherungsnummer">
+      <path value="Person.Patient.Versicherung.Versicherungsnummer" />
+      <short value="Nummer, die der (Kranken-)Versicherung des Patienten zugewiesen wurde. Diese findet sich z.B. auf der Mitgliedskarte der Krankenkasse." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Patient.Versicherung.InstitutionskennzeichenDerKrankenkasse">
+      <path value="Person.Patient.Versicherung.InstitutionskennzeichenDerKrankenkasse" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+      <maxLength value="9" />
+    </element>
+    <element id="Person.Patient.Versicherung.Versicherungstyp">
+      <path value="Person.Patient.Versicherung.Versicherungstyp" />
+      <short value="Versicherungstyp des Patienten" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="Person.Studienteilnehmer">
+      <path value="Person.Studienteilnehmer" />
+      <short value="Person, die an einer Studie teilnimmt (unter Umständen, während sie Patient in einer Gesundheitseinrichtung ist)" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Studienteilnehmer.SubjektIdentifizierungscode">
+      <path value="Person.Studienteilnehmer.SubjektIdentifizierungscode" />
+      <short value="Eindeutiger Identifikator eines Patienten im Kontext eines Forschungsprojekts (klinische Studie, Use Case)" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Studienteilnehmer.Rechtsgrundlage">
+      <path value="Person.Studienteilnehmer.Rechtsgrundlage" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="Person.Studienteilnehmer.BeginnTeilnahme">
+      <path value="Person.Studienteilnehmer.BeginnTeilnahme" />
+      <short value="Beginn der Teilnahme der Person an der Studie." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="Person.Studienteilnehmer.EndeTeilnahme">
+      <path value="Person.Studienteilnehmer.EndeTeilnahme" />
+      <short value="Ende der Teilnahme der Person an der Studie." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="Person.Studienteilnehmer.StatusDerTeilnahme">
+      <path value="Person.Studienteilnehmer.StatusDerTeilnahme" />
+      <short value="Stand der Teilnahme einer Person an der Studie, z.B. eingeschlossen, widerrufen, abgeschlossen etc." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
