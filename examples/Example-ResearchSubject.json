@@ -1,0 +1,36 @@
+{
+  "resourceType": "ResearchSubject",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ResearchSubject"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+          "coding": [
+                    {
+                        "system":"???",
+                        "code":"???"
+                    }
+          ]
+      },
+      "system": "https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/SubjectIdentificationCode",
+      "value": "12345"
+    }
+  ],
+  "status": "candidate",
+  "period":{
+      "start": "2019-09-06"
+  },
+  "study": {
+    "reference": "ResearchStudy/MII-Beispielstudie"
+  },
+  "individual": {
+    "reference": "Patient/MII-Patient"
+  },
+  "consent": {
+    "reference": "Consent/MII-Consent"
+  }
+}
