@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ResearchSubject" />
+  <version value="0.1" />
+  <name value="ProbantIn" />
+  <title value="ResearchSubject - ProbantIn" />
+  <status value="draft" />
+  <description value="Dieses Profil beschreibt eine ProbantIn in der Medizininformatik-Initiative." />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ResearchSubject" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ResearchSubject" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ResearchSubject.id">
+      <path value="ResearchSubject.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.meta">
+      <path value="ResearchSubject.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.meta.source">
+      <path value="ResearchSubject.meta.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.meta.profile">
+      <path value="ResearchSubject.meta.profile" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.identifier">
+      <path value="ResearchSubject.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode">
+      <path value="ResearchSubject.identifier" />
+      <sliceName value="subjectIdentificationCode" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode.system">
+      <path value="ResearchSubject.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/SubjectIdentificationCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode.value">
+      <path value="ResearchSubject.identifier.value" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.status">
+      <path value="ResearchSubject.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.period">
+      <path value="ResearchSubject.period" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.period.start">
+      <path value="ResearchSubject.period.start" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.period.end">
+      <path value="ResearchSubject.period.end" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.study">
+      <path value="ResearchSubject.study" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.study.reference">
+      <path value="ResearchSubject.study.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.individual">
+      <path value="ResearchSubject.individual" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.individual.reference">
+      <path value="ResearchSubject.individual.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.consent">
+      <path value="ResearchSubject.consent" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.consent.reference">
+      <path value="ResearchSubject.consent.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
