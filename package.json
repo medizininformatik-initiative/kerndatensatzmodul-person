@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Put a description here",
   "dependencies": {
-    "basisprofil.de": "0.2.12"
+    "de.basisprofil.r4": "0.9.0"
   },
   "devDependencies": null,
   "canonicals": null
