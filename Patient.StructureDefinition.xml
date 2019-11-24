@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+  <name value="PatientIn" />
+  <title value="Patient - PatientIn" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.id">
+      <path value="Patient.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.meta">
+      <path value="Patient.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.meta.source">
+      <path value="Patient.meta.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.meta.profile">
+      <path value="Patient.meta.profile" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid">
+      <path value="Patient.identifier" />
+      <sliceName value="pid" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/PID" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.assigner">
+      <path value="Patient.identifier.assigner" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.assigner.reference">
+      <path value="Patient.identifier.assigner.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis/0.2" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.deceased[x]">
+      <path value="Patient.deceased[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address">
+      <path value="Patient.address" />
+      <min value="1" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis/0.2" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.line">
+      <path value="Patient.address.line" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.city">
+      <path value="Patient.address.city" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.postalCode">
+      <path value="Patient.address.postalCode" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.country">
+      <path value="Patient.address.country" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.link">
+      <path value="Patient.link" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.link.other">
+      <path value="Patient.link.other" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.link.other.reference">
+      <path value="Patient.link.other.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.link.type">
+      <path value="Patient.link.type" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
