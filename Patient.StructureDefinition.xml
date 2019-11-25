@@ -688,6 +688,10 @@
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <discriminator>
           <type value="pattern" />
           <path value="system" />
         </discriminator>
@@ -8212,6 +8216,10 @@
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
         <discriminator>
           <type value="pattern" />
           <path value="system" />
