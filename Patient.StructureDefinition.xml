@@ -688,7 +688,7 @@
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
-          <type value="value" />
+          <type value="pattern" />
           <path value="system" />
         </discriminator>
         <rules value="open" />
@@ -8213,7 +8213,7 @@
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
-          <type value="value" />
+          <type value="pattern" />
           <path value="system" />
         </discriminator>
         <rules value="open" />
