@@ -44,7 +44,7 @@
   "_gender": {
     "extension": [
       {
-        "url": "http://fhir.de/StructureDefinition/gender-amtlich-de/0.2",
+        "url": "http://fhir.de/StructureDefinition/gender-amtlich-de",
         "valueCoding": {
           "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
           "code": "D",
