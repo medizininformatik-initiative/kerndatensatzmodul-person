@@ -3,6 +3,7 @@
   <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Person" />
   <name value="Person" />
   <status value="draft" />
+  <description value="Logische Repräsentation des Basismoduls Perrson" />
   <fhirVersion value="4.0.0" />
   <kind value="logical" />
   <abstract value="false" />
@@ -29,7 +30,7 @@
     </element>
     <element id="Person.Name.Vorname">
       <path value="Person.Name.Vorname" />
-      <short value=" Vollständiger Vorname einer Person" />
+      <short value="Vollständiger Vorname einer Person" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -49,7 +50,7 @@
     </element>
     <element id="Person.Name.Familienname">
       <path value="Person.Name.Familienname" />
-      <short value=" Der vollständige Familienname, einschließlich aller Vorsatz- und Zusatzwörter, mit Leerzeichen getrennt." />
+      <short value="Der vollständige Familienname, einschließlich aller Vorsatz- und Zusatzwörter, mit Leerzeichen getrennt." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -206,7 +207,7 @@
     </element>
     <element id="Person.Demographie.Vitalstatus.Todeszeitpunkt">
       <path value="Person.Demographie.Vitalstatus.Todeszeitpunkt" />
-      <short value="Gibt den Todeszeitpunkt des Patienten an, falls dieser im KH verstorben ist. Ansonsten &quot;Null Flavor&quot;. " />
+      <short value="Gibt den Todeszeitpunkt des Patienten an, falls dieser im KH verstorben ist. Ansonsten &quot;Null Flavor&quot;." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -216,7 +217,7 @@
     </element>
     <element id="Person.Demographie.Vitalstatus.Informationsquelle">
       <path value="Person.Demographie.Vitalstatus.Informationsquelle" />
-      <short value="Quelle des Vitalstatus. " />
+      <short value="Quelle des Vitalstatus." />
       <min value="0" />
       <max value="*" />
       <type>
