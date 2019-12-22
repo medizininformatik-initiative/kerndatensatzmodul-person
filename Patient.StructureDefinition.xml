@@ -173,38 +173,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Patient.address.extension">
-      <path value="Patient.address.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Patient.address.extension:stadtteil">
-      <path value="Patient.address.extension" />
-      <sliceName value="stadtteil" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.address.extension:stadtteil.value[x]">
-      <path value="Patient.address.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.address.extension:stadtteil.value[x]:valueString">
-      <path value="Patient.address.extension.value[x]" />
-      <sliceName value="valueString" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.address.line">
       <path value="Patient.address.line" />
       <mustSupport value="true" />
