@@ -112,6 +112,7 @@
     </element>
     <element id="Patient.name.family">
       <path value="Patient.name.family" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name.family.extension:nachname">
@@ -136,6 +137,7 @@
     </element>
     <element id="Patient.name.given">
       <path value="Patient.name.given" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name.prefix.extension:prefix-qualifier">
