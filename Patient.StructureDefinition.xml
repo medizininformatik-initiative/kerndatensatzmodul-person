@@ -36,6 +36,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv">
@@ -47,6 +48,34 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Patient.identifier:versicherungsnummer_gkv.assigner">
+      <path value="Patient.identifier.assigner" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier">
+      <path value="Patient.identifier.assigner.identifier" />
+      <min value="1" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-iknr" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.use">
+      <path value="Patient.identifier.assigner.identifier.use" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.type">
+      <path value="Patient.identifier.assigner.identifier.type" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.type.coding">
+      <path value="Patient.identifier.assigner.identifier.type.coding" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.identifier:pid">
       <path value="Patient.identifier" />
       <sliceName value="pid" />
@@ -54,6 +83,7 @@
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-pid" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.use">
       <path value="Patient.identifier.use" />
@@ -78,6 +108,7 @@
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-pkv" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type.coding">
       <path value="Patient.identifier.type.coding" />
@@ -97,13 +128,6 @@
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
-      <constraint>
-        <key value="mii-pat-1" />
-        <severity value="error" />
-        <human value="mii-pat-1: Patient.name.given or Patient.name.family or both SHALL be present" />
-        <expression value="family.exists() or given.exists()" />
-        <source value="Patient" />
-      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Patient.name.use">
