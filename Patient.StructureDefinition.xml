@@ -68,6 +68,23 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.identifier:versicherungsnummer_gkv.type.coding">
+      <path value="Patient.identifier.type.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_gkv.type.coding:GKV-Type">
+      <path value="Patient.identifier.type.coding" />
+      <sliceName value="GKV-Type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_gkv.type.coding:GKV-Type.system">
+      <path value="Patient.identifier.type.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_gkv.type.coding:GKV-Type.code">
+      <path value="Patient.identifier.type.coding.code" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner">
       <path value="Patient.identifier.assigner" />
       <min value="1" />
@@ -83,33 +100,21 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <type>
-        <code value="Identifier" />
-        <profile value="http://fhir.de/StructureDefinition/identifier-iknr" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier:iknr">
       <path value="Patient.identifier.assigner.identifier" />
       <sliceName value="iknr" />
       <min value="1" />
+      <max value="1" />
       <type>
         <code value="Identifier" />
         <profile value="http://fhir.de/StructureDefinition/identifier-iknr" />
       </type>
-      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier:iknr.use">
       <path value="Patient.identifier.assigner.identifier.use" />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier:iknr.type">
-      <path value="Patient.identifier.assigner.identifier.type" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier:iknr.type.coding">
-      <path value="Patient.identifier.assigner.identifier.type.coding" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid">
@@ -159,40 +164,10 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.name.family.extension:nachname">
-      <path value="Patient.name.family.extension" />
-      <sliceName value="nachname" />
-    </element>
-    <element id="Patient.name.family.extension:nachname.value[x]">
-      <path value="Patient.name.family.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Patient.name.family.extension:vorsatzwort">
-      <path value="Patient.name.family.extension" />
-      <sliceName value="vorsatzwort" />
-    </element>
-    <element id="Patient.name.family.extension:vorsatzwort.value[x]">
-      <path value="Patient.name.family.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Patient.name.given">
       <path value="Patient.name.given" />
       <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.name.prefix.extension:prefix-qualifier">
-      <path value="Patient.name.prefix.extension" />
-      <sliceName value="prefix-qualifier" />
-    </element>
-    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]">
-      <path value="Patient.name.prefix.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender" />
