@@ -229,8 +229,12 @@
     </element>
     <element id="Patient.address.country">
       <path value="Patient.address.country" />
+      <definition value="Staat (vorzugsweise als 2-Stelliger ISO-Ländercode)." />
       <min value="1" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+      </binding>
     </element>
     <element id="Patient.photo">
       <path value="Patient.photo" />
