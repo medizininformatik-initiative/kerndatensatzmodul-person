@@ -18,7 +18,6 @@ Führende Demographieparameter sind (Geburtsdatum), Alter, Geschlecht und Vitals
 ### Wichtige Dokumente und Links
 * [Beschreibung des MII-Kerndatensatzes in der Version 1.0 vom 10.3.2017 (PDF)](https://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf)
 * [Datenmodellbeschreibung des MII-Kerndatensatzes in ART-DECOR](https://art-decor.org/art-decor/decor-project--mide-)
-* [GitHub Repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-person)
 
 ### Autoren und Ansprechpartner
 
