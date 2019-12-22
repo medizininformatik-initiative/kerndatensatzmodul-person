@@ -43,32 +43,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:pid">
-      <path value="Patient.identifier" />
-      <sliceName value="pid" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:pid.system">
-      <path value="Patient.identifier.system" />
-      <min value="1" />
-      <patternUri value="https://www.medizininformatik-initiative.de/fhir/[a-z]{4}/NamingSystem/PID/.*" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:pid.value">
-      <path value="Patient.identifier.value" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:pid.assigner">
-      <path value="Patient.identifier.assigner" />
-      <mustSupport value="false" />
-    </element>
-    <element id="Patient.identifier:pid.assigner.reference">
-      <path value="Patient.identifier.assigner.reference" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.identifier:versicherungsnummer_gkv">
       <path value="Patient.identifier" />
       <sliceName value="versicherungsnummer_gkv" />
@@ -87,6 +61,71 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
+    </element>
+    <element id="Patient.identifier:pid">
+      <path value="Patient.identifier" />
+      <sliceName value="pid" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://fhir.de/StructureDefinition/identifier-pid" />
+      </type>
+    </element>
+    <element id="Patient.identifier:pid.use">
+      <path value="Patient.identifier.use" />
+      <min value="1" />
+      <fixedCode value="usual" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type">
+      <path value="Patient.identifier.type" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding">
+      <path value="Patient.identifier.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding:MR-Type">
+      <path value="Patient.identifier.type.coding" />
+      <sliceName value="MR-Type" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding:MR-Type.system">
+      <path value="Patient.identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding:MR-Type.code">
+      <path value="Patient.identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="MR" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <constraint>
+        <key value="mii-patient-1" />
+        <severity value="error" />
+        <human value="Identifier.system für eine PID MUSS aus den Vorgaben zu den offiziellen MII NamingSystems entsprechen" />
+        <expression value="$this.matches('https://www.medizininformatik-initiative.de/fhir/[a-z]{4}/NamingSystem/PID/.*')" />
+      </constraint>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.value">
+      <path value="Patient.identifier.value" />
       <min value="1" />
     </element>
     <element id="Patient.name">
