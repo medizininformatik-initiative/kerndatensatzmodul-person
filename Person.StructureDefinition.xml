@@ -3,7 +3,7 @@
   <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Person" />
   <name value="Person" />
   <status value="draft" />
-  <description value="Logische Repräsentation des Basismoduls Perrson" />
+  <description value="Logische Repräsentation des Basismoduls Person" />
   <fhirVersion value="4.0.0" />
   <kind value="logical" />
   <abstract value="false" />
