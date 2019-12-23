@@ -52,6 +52,16 @@
       ]
     }
   ],
+  "address": [
+    {
+      "line": [
+        "Teststraße 2"
+      ],
+      "city": "Köln",
+      "postalCode": "50823",
+      "country": "DE"
+    }
+  ],
   "gender": "other",
   "_gender": {
     "extension": [
