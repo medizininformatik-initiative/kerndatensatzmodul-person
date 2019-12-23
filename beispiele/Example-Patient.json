@@ -36,6 +36,7 @@
         "value": "1234567890",
         "assigner": {
             "identifier": {
+                "use": "official",
                 "value": "109519005",
                 "system": "http://fhir.de/NamingSystem/arge-ik/iknr"
             }
