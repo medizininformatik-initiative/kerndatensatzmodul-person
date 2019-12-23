@@ -42,7 +42,6 @@
     </element>
     <element id="Patient.identifier.system">
       <path value="Patient.identifier.system" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier.value">
