@@ -159,15 +159,6 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Observation.value[x]:valueCodeableConcept">
-      <path value="Observation.value[x]" />
-      <sliceName value="valueCodeableConcept" />
-      <min value="1" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.value[x]:valueCodeableConcept.coding">
       <path value="Observation.value[x].coding" />
       <slicing>
