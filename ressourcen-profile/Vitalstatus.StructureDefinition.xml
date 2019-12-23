@@ -187,7 +187,7 @@
         <key value="mii-vitalstatus-1" />
         <severity value="error" />
         <human value="Vitalstatus Unbekannt implies Observation.component:GrundVitalStatusUnbekannt exists" />
-        <expression value="$this = 'X' implies %resource.component.code.coding.slice('https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Vitalstatus', 'GrundVitalStatusUnbekannt').exists()" />
+        <expression value="$this = 'X' implies %resource.component.exists()" />
       </constraint>
       <mustSupport value="true" />
     </element>
