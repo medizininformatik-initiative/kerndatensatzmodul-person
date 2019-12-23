@@ -252,10 +252,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:grundUnbekannt.code.coding:GrundVitalStatusUnbekannt.version">
-      <path value="Observation.component.code.coding.version" />
-      <mustSupport value="false" />
-    </element>
     <element id="Observation.component:grundUnbekannt.code.coding:GrundVitalStatusUnbekannt.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
