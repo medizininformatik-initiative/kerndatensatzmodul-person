@@ -33,7 +33,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="type" />
+          <path value="type.coding.code" />
         </discriminator>
         <rules value="open" />
       </slicing>
