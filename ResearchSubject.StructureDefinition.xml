@@ -78,30 +78,27 @@
     </element>
     <element id="ResearchSubject.study">
       <path value="ResearchSubject.study" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ResearchSubject.study.reference">
-      <path value="ResearchSubject.study.reference" />
-      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="ResearchSubject.individual">
       <path value="ResearchSubject.individual" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ResearchSubject.individual.reference">
-      <path value="ResearchSubject.individual.reference" />
-      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="ResearchSubject.consent">
       <path value="ResearchSubject.consent" />
       <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="ResearchSubject.consent.reference">
-      <path value="ResearchSubject.consent.reference" />
-      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
   </differential>

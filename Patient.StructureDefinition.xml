@@ -280,14 +280,13 @@
     </element>
     <element id="Patient.link.other">
       <path value="Patient.link.other" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.link.other.reference">
-      <path value="Patient.link.other.reference" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.link.other.identifier">
-      <path value="Patient.link.other.identifier" />
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
+          <valueBoolean value="false" />
+        </extension>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Patient.link.type">
