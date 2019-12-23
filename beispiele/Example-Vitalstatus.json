@@ -20,9 +20,7 @@
   "subject": {
     "reference": "Patient/example"
   },
-  "effectiveDateTime": {
-    "value": "2019-12-23T09:30:10+01:00"
-  },
+  "effectiveDateTime": "2019-12-23T09:30:10+01:00",
   "valueCodeableConcept": {
     "coding": [
         {
