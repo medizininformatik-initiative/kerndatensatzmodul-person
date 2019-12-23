@@ -32,8 +32,8 @@
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="type.coding.code" />
+          <type value="pattern" />
+          <path value="type" />
         </discriminator>
         <rules value="open" />
       </slicing>
