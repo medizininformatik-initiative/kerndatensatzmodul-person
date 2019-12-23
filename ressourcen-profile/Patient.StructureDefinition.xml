@@ -40,15 +40,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier.system">
-      <path value="Patient.identifier.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier.value">
-      <path value="Patient.identifier.value" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.identifier:versicherungsnummer_gkv">
       <path value="Patient.identifier" />
       <sliceName value="versicherungsnummer_gkv" />
@@ -149,6 +140,20 @@
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.use">
       <path value="Patient.identifier.use" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:@default">
+      <path value="Patient.identifier" />
+      <sliceName value="@default" />
+    </element>
+    <element id="Patient.identifier:@default.system">
+      <path value="Patient.identifier.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:@default.value">
+      <path value="Patient.identifier.value" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
