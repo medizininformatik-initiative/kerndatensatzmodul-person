@@ -148,16 +148,42 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="closed" />
-      </slicing>
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Observation.value[x].coding">
+      <path value="Observation.value[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x].coding:GrundVitalStatusUnbekannt">
+      <path value="Observation.value[x].coding" />
+      <sliceName value="GrundVitalStatusUnbekannt" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/GrundVitalStatusUnbekannt" />
+      </binding>
+    </element>
+    <element id="Observation.value[x].coding:GrundVitalStatusUnbekannt.system">
+      <path value="Observation.value[x].coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x].coding:GrundVitalStatusUnbekannt.code">
+      <path value="Observation.value[x].coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
