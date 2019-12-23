@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://example.org/fhir/StructureDefinition/Vitalstatus" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Vitalstatus" />
   <name value="Vitalstatus" />
   <status value="draft" />
   <description value="Vitalstatus der PatientIn" />
@@ -183,6 +183,12 @@
     <element id="Observation.value[x].coding:GrundVitalStatusUnbekannt.code">
       <path value="Observation.value[x].coding.code" />
       <min value="1" />
+      <constraint>
+        <key value="mii-vitalstatus-1" />
+        <severity value="error" />
+        <human value="Vitalstatus Unbekannt implies Observation.component:GrundVitalStatusUnbekannt exists" />
+        <expression value="$this = 'X' implies %resource.component.code.coding.slice('https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Vitalstatus', 'GrundVitalStatusUnbekannt').exists()" />
+      </constraint>
       <mustSupport value="true" />
     </element>
     <element id="Observation.bodySite">
@@ -207,17 +213,17 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Observation.component:grundUnbekannt">
+    <element id="Observation.component:GrundVitalStatusUnbekannt">
       <path value="Observation.component" />
-      <sliceName value="grundUnbekannt" />
+      <sliceName value="GrundVitalStatusUnbekannt" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:grundUnbekannt.code">
+    <element id="Observation.component:GrundVitalStatusUnbekannt.code">
       <path value="Observation.component.code" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:grundUnbekannt.code.coding">
+    <element id="Observation.component:GrundVitalStatusUnbekannt.code.coding">
       <path value="Observation.component.code.coding" />
       <slicing>
         <discriminator>
@@ -229,7 +235,7 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:grundUnbekannt.code.coding:GrundVitalStatusUnbekannt">
+    <element id="Observation.component:GrundVitalStatusUnbekannt.code.coding:GrundVitalStatusUnbekannt">
       <path value="Observation.component.code.coding" />
       <sliceName value="GrundVitalStatusUnbekannt" />
       <min value="1" />
@@ -240,25 +246,25 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/GrundVitalStatusUnbekannt" />
       </binding>
     </element>
-    <element id="Observation.component:grundUnbekannt.code.coding:GrundVitalStatusUnbekannt.system">
+    <element id="Observation.component:GrundVitalStatusUnbekannt.code.coding:GrundVitalStatusUnbekannt.system">
       <path value="Observation.component.code.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:grundUnbekannt.code.coding:GrundVitalStatusUnbekannt.code">
+    <element id="Observation.component:GrundVitalStatusUnbekannt.code.coding:GrundVitalStatusUnbekannt.code">
       <path value="Observation.component.code.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.component:grundUnbekannt.value[x]">
+    <element id="Observation.component:GrundVitalStatusUnbekannt.value[x]">
       <path value="Observation.component.value[x]" />
       <max value="0" />
     </element>
-    <element id="Observation.component:grundUnbekannt.dataAbsentReason">
+    <element id="Observation.component:GrundVitalStatusUnbekannt.dataAbsentReason">
       <path value="Observation.component.dataAbsentReason" />
       <max value="0" />
     </element>
-    <element id="Observation.component:grundUnbekannt.referenceRange">
+    <element id="Observation.component:GrundVitalStatusUnbekannt.referenceRange">
       <path value="Observation.component.referenceRange" />
       <max value="0" />
     </element>
