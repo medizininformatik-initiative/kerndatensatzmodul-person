@@ -1,5 +1,10 @@
 {
   "resourceType": "Patient",
+  "meta":{
+    "profile": [
+        "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient"
+    ]
+  },
   "identifier": [
     {
       "use": "usual",
