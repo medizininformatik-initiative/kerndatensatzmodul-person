@@ -35,9 +35,10 @@
           <type value="pattern" />
           <path value="type" />
         </discriminator>
-        <rules value="open" />
+        <rules value="closed" />
       </slicing>
       <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier.system">
