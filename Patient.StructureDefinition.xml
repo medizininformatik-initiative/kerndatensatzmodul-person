@@ -167,9 +167,46 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.name.family.extension:namenszusatz">
+      <path value="Patient.name.family.extension" />
+      <sliceName value="namenszusatz" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.family.extension:nachname">
+      <path value="Patient.name.family.extension" />
+      <sliceName value="nachname" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.family.extension:vorsatzwort">
+      <path value="Patient.name.family.extension" />
+      <sliceName value="vorsatzwort" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.name.given">
       <path value="Patient.name.given" />
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.prefix">
+      <path value="Patient.name.prefix" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier">
+      <path value="Patient.name.prefix.extension" />
+      <sliceName value="prefix-qualifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]">
+      <path value="Patient.name.prefix.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:valueCode">
+      <path value="Patient.name.prefix.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.suffix">
+      <path value="Patient.name.suffix" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.gender">
@@ -193,6 +230,21 @@
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.extension:Stadtteil">
+      <path value="Patient.address.extension" />
+      <sliceName value="Stadtteil" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.extension:Stadtteil.value[x]">
+      <path value="Patient.address.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.extension:Stadtteil.value[x]:valueString">
+      <path value="Patient.address.extension.valueString" />
+      <sliceName value="valueString" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address.line">
