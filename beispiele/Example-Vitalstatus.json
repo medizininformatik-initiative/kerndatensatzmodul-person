@@ -33,5 +33,15 @@
           "code": "X"
         }
       ]
+  },
+  "component":{
+    "code": {
+        "coding": [
+          {
+            "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/GrundVitalStatusUnbekannt",
+            "code": "L"
+          }
+        ]
+      }
   }
 }
