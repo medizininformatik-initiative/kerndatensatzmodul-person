@@ -22,7 +22,7 @@
         <key value="mii-reference-1" />
         <severity value="error" />
         <human value="Either reference.reference XOR reference.identifier exists" />
-        <expression value="$this.reference.exists() xor ($this.identifier.value.exists() and $this.identifier.systen.exists())" />
+        <expression value="$this.reference.exists() xor ($this.identifier.value.exists() and $this.identifier.system.exists())" />
       </constraint>
     </element>
     <element id="Reference.reference">
