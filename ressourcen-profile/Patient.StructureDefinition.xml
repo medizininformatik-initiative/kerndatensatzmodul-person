@@ -293,10 +293,6 @@
         <strength value="required" />
       </binding>
     </element>
-    <element id="Patient.photo">
-      <path value="Patient.photo" />
-      <mustSupport value="false" />
-    </element>
     <element id="Patient.link">
       <path value="Patient.link" />
       <mustSupport value="true" />
