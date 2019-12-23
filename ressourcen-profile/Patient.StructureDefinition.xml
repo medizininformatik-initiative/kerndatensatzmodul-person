@@ -160,7 +160,6 @@
     </element>
     <element id="Patient.name.use">
       <path value="Patient.name.use" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name.family">
@@ -178,10 +177,22 @@
       <sliceName value="nachname" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.name.family.extension:nachname.value[x]">
+      <path value="Patient.name.family.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.name.family.extension:vorsatzwort">
       <path value="Patient.name.family.extension" />
       <sliceName value="vorsatzwort" />
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.family.extension:vorsatzwort.value[x]">
+      <path value="Patient.name.family.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.name.given">
       <path value="Patient.name.given" />
@@ -199,10 +210,13 @@
     </element>
     <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]">
       <path value="Patient.name.prefix.extension.value[x]" />
+      <slicing>
+        <rules value="open" />
+      </slicing>
       <mustSupport value="true" />
     </element>
     <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:valueCode">
-      <path value="Patient.name.prefix.extension.valueCode" />
+      <path value="Patient.name.prefix.extension.value[x]" />
       <sliceName value="valueCode" />
       <mustSupport value="true" />
     </element>
@@ -244,7 +258,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.address.extension:Stadtteil.value[x]:valueString">
-      <path value="Patient.address.extension.valueString" />
+      <path value="Patient.address.extension.value[x]" />
       <sliceName value="valueString" />
       <mustSupport value="true" />
     </element>
