@@ -38,7 +38,6 @@
         <rules value="closed" />
       </slicing>
       <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier.system">
