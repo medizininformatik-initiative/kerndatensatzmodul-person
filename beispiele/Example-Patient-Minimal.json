@@ -33,7 +33,14 @@
             ]
         },
         "system": "http://fhir.de/NamingSystem/gkv/kvid-10",
-        "value": "9999999999"
+        "value": "9999999999",
+        "assigner":{
+          "identifier":{
+            "use": "official",
+            "system": "http://fhir.de/NamingSystem/arge-ik/iknr",
+            "value": "260326822"
+          }
+        }
     }
 ],
   "name": [
