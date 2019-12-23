@@ -159,7 +159,7 @@
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding">
+    <element id="Observation.value[x].coding">
       <path value="Observation.value[x].coding" />
       <slicing>
         <discriminator>
@@ -171,9 +171,9 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding:sliceCoding">
+    <element id="Observation.value[x].coding:vitalstatus">
       <path value="Observation.value[x].coding" />
-      <sliceName value="sliceCoding" />
+      <sliceName value="vitalstatus" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
@@ -182,12 +182,12 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/Vitalstatus" />
       </binding>
     </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding:sliceCoding.system">
+    <element id="Observation.value[x].coding:vitalstatus.system">
       <path value="Observation.value[x].coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x]:valueCodeableConcept.coding:sliceCoding.code">
+    <element id="Observation.value[x].coding:vitalstatus.code">
       <path value="Observation.value[x].coding.code" />
       <min value="1" />
       <mustSupport value="true" />
