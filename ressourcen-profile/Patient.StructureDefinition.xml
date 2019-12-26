@@ -237,6 +237,25 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.gender.extension">
+      <path value="Patient.gender.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.gender.extension:other-amtlich">
+      <path value="Patient.gender.extension" />
+      <sliceName value="other-amtlich" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/gender-amtlich-de" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.birthDate">
       <path value="Patient.birthDate" />
       <min value="1" />
