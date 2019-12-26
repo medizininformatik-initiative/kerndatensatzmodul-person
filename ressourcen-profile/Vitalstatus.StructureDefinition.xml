@@ -57,6 +57,10 @@
       <path value="Observation.meta.profile" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+      <fixedCode value="final" />
+    </element>
     <element id="Observation.category">
       <path value="Observation.category" />
       <min value="1" />
