@@ -8,14 +8,6 @@
   "identifier": [
     {
       "use": "usual",
-      "type": {
-          "coding": [
-                    {
-                        "system":"???",
-                        "code":"???"
-                    }
-          ]
-      },
       "system": "https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/SubjectIdentificationCode",
       "value": "12345"
     }
