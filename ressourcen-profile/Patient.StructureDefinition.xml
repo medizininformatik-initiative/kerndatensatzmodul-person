@@ -12,6 +12,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
   <derivation value="constraint" />
   <differential>
+    <element id="Patient">
+      <path value="Patient" />
+      <constraint>
+        <key value="pat-de-1" />
+        <severity value="error" />
+        <human value="Die amtliche Differenzierung der Geschlechtsangabe 'other' darf nur gefüllt sein, wenn das Geschlecht 'other' angegeben ist" />
+        <expression value="gender='other' or gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de/0.2').empty()" />
+      </constraint>
+    </element>
     <element id="Patient.id">
       <path value="Patient.id" />
       <mustSupport value="true" />
@@ -202,6 +211,15 @@
     <element id="Patient.name.prefix.extension:prefix-qualifier">
       <path value="Patient.name.prefix.extension" />
       <sliceName value="prefix-qualifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]">
+      <path value="Patient.name.prefix.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:valueCode">
+      <path value="Patient.name.prefix.extension.value[x]" />
+      <sliceName value="valueCode" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name.suffix">
