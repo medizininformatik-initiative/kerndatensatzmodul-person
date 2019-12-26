@@ -293,6 +293,26 @@
       <path value="Patient.address.line" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.address.line.extension:Strasse">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Strasse" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.line.extension:Hausnummer">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Hausnummer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.line.extension:Adresszusatz">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Adresszusatz" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address.line.extension:Postfach">
+      <path value="Patient.address.line.extension" />
+      <sliceName value="Postfach" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.address.city">
       <path value="Patient.address.city" />
       <min value="1" />
