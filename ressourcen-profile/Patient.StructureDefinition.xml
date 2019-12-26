@@ -226,6 +226,7 @@
     <element id="Patient.gender.extension:other-amtlich">
       <path value="Patient.gender.extension" />
       <sliceName value="other-amtlich" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://fhir.de/StructureDefinition/gender-amtlich-de" />
