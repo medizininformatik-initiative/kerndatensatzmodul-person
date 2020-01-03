@@ -3,9 +3,9 @@
   <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ResearchSubject" />
   <version value="0.1" />
   <name value="ProbantIn" />
-  <title value="ResearchSubject - ProbantIn" />
+  <title value="ResearchSubject - ProbandIn" />
   <status value="draft" />
-  <description value="Dieses Profil beschreibt eine ProbantIn in der Medizininformatik-Initiative." />
+  <description value="Dieses Profil beschreibt eine ProbandIn in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
   <abstract value="false" />
