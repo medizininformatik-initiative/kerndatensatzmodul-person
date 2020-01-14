@@ -19,7 +19,6 @@
         <severity value="error" />
         <human value="Die amtliche Differenzierung der Geschlechtsangabe 'other' darf nur gefüllt sein, wenn das Geschlecht 'other' angegeben ist" />
         <expression value="gender='other' or gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de/0.2').empty()" />
-        <source value="Patient" />
       </constraint>
     </element>
     <element id="Patient.id">
@@ -85,7 +84,6 @@
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.type.coding:GKV-Type.code">
       <path value="Patient.identifier.type.coding.code" />
-      <patternCode value="GKV" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner">
@@ -135,14 +133,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:pid.type.coding:MR-Type">
-      <path value="Patient.identifier.type.coding" />
-      <sliceName value="MR-Type" />
-    </element>
-    <element id="Patient.identifier:pid.type.coding:MR-Type.code">
-      <path value="Patient.identifier.type.coding.code" />
-      <patternCode value="MR" />
-    </element>
     <element id="Patient.identifier:pid.system">
       <path value="Patient.identifier.system" />
       <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/patient-identifier" />
@@ -161,14 +151,6 @@
       <path value="Patient.identifier.use" />
       <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type">
-      <path value="Patient.identifier.type.coding" />
-      <sliceName value="PKV-Type" />
-    </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type.code">
-      <path value="Patient.identifier.type.coding.code" />
-      <patternCode value="PKV" />
     </element>
     <element id="Patient.identifier:@default">
       <path value="Patient.identifier" />
@@ -212,22 +194,10 @@
       <sliceName value="nachname" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.name.family.extension:nachname.value[x]">
-      <path value="Patient.name.family.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Patient.name.family.extension:vorsatzwort">
       <path value="Patient.name.family.extension" />
       <sliceName value="vorsatzwort" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.name.family.extension:vorsatzwort.value[x]">
-      <path value="Patient.name.family.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Patient.name.given">
       <path value="Patient.name.given" />
@@ -245,9 +215,6 @@
     </element>
     <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]">
       <path value="Patient.name.prefix.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
       <mustSupport value="true" />
     </element>
     <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:valueCode">
