@@ -67,6 +67,12 @@
     <element id="Patient.identifier:versicherungsnummer_gkv.type">
       <path value="Patient.identifier.type" />
       <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+          <code value="GKV" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.type.coding">
@@ -133,6 +139,15 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.identifier:pid.type">
+      <path value="Patient.identifier.type" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+          <code value="MR" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
     <element id="Patient.identifier:pid.system">
       <path value="Patient.identifier.system" />
       <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/patient-identifier" />
@@ -151,6 +166,15 @@
       <path value="Patient.identifier.use" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_pkv.type">
+      <path value="Patient.identifier.type" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+          <code value="PKV" />
+        </coding>
+      </patternCodeableConcept>
     </element>
     <element id="Patient.identifier:@default">
       <path value="Patient.identifier" />
