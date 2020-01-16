@@ -19,7 +19,11 @@
       "system": "https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/patient-identifier",
       "value": "42285243",
       "assigner": {
-        "display": "Charité – Universitätsmedizin Berlin"
+        "display": "Charité – Universitätsmedizin Berlin",
+        "identifier": {
+            "system": "http://fhir.de/NamingSystem/arge-ik/iknr",
+            "value": "261101015"
+        }
       }
     },
     {
