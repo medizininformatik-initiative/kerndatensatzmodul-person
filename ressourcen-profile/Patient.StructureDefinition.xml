@@ -44,7 +44,7 @@
           <type value="pattern" />
           <path value="type" />
         </discriminator>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
       <min value="1" />
       <mustSupport value="true" />
@@ -147,10 +147,37 @@
           <code value="MR" />
         </coding>
       </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding">
+      <path value="Patient.identifier.type.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding:MR-Type">
+      <path value="Patient.identifier.type.coding" />
+      <sliceName value="MR-Type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding:MR-Type.system">
+      <path value="Patient.identifier.type.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding:MR-Type.code">
+      <path value="Patient.identifier.type.coding.code" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.system">
       <path value="Patient.identifier.system" />
       <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/patient-identifier" />
+    </element>
+    <element id="Patient.identifier:pid.assigner">
+      <path value="Patient.identifier.assigner" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv">
       <path value="Patient.identifier" />
@@ -175,19 +202,23 @@
           <code value="PKV" />
         </coding>
       </patternCodeableConcept>
-    </element>
-    <element id="Patient.identifier:@default">
-      <path value="Patient.identifier" />
-      <sliceName value="@default" />
-    </element>
-    <element id="Patient.identifier:@default.system">
-      <path value="Patient.identifier.system" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:@default.value">
-      <path value="Patient.identifier.value" />
-      <min value="1" />
+    <element id="Patient.identifier:versicherungsnummer_pkv.type.coding">
+      <path value="Patient.identifier.type.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type">
+      <path value="Patient.identifier.type.coding" />
+      <sliceName value="PKV-Type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type.system">
+      <path value="Patient.identifier.type.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type.code">
+      <path value="Patient.identifier.type.coding.code" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name">
