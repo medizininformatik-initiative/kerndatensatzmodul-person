@@ -168,6 +168,7 @@
     </element>
     <element id="Patient.identifier:pid.system">
       <path value="Patient.identifier.system" />
+      <mustSupport value="true" />
       <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/patient-identifier" />
     </element>
     <element id="Patient.identifier:pid.assigner">
@@ -288,6 +289,7 @@
     </element>
     <element id="Patient.gender.extension">
       <path value="Patient.gender.extension" />
+      <mustSupport value="true" />
       <slicing>
         <discriminator>
           <type value="value" />
