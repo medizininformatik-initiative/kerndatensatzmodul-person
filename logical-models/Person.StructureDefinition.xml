@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Person" />
   <name value="Person" />
@@ -234,8 +233,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/date" />
       </type>
     </element>
-    <element id="Person.Patient">
-      <path value="Person.Patient" />
+    <element id="Person.PatientIn">
+      <path value="Person.PatientIn" />
       <short value="Person, die in einer oder mehreren Gesundheitseinrichtungen behandelt wird" />
       <min value="0" />
       <max value="*" />
@@ -243,8 +242,8 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Person.Patient.Patienten-Identifikator">
-      <path value="Person.Patient.Patienten-Identifikator" />
+    <element id="Person.PatientIn.Patienten-Identifikator">
+      <path value="Person.PatientIn.Patienten-Identifikator" />
       <short value="Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als &quot;Codesystem&quot; gesehen werden, und Patienten-Identifikator als &quot;Code&quot;" />
       <min value="0" />
       <max value="*" />
@@ -252,8 +251,8 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Person.Patient.Patienten-Identifikator.Patienten-Identifikator">
-      <path value="Person.Patient.Patienten-Identifikator.Patienten-Identifikator" />
+    <element id="Person.PatientIn.Patienten-Identifikator.Patienten-Identifikator">
+      <path value="Person.PatientIn.Patienten-Identifikator.Patienten-Identifikator" />
       <short value="Gesundheitseinrichtungs-eigene Identifikationsnummer für einen Patienten" />
       <min value="0" />
       <max value="*" />
@@ -262,8 +261,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </type>
     </element>
-    <element id="Person.Patient.Patienten-Identifikator.Patienten-IdentifikatorKontext">
-      <path value="Person.Patient.Patienten-Identifikator.Patienten-IdentifikatorKontext" />
+    <element id="Person.PatientIn.Patienten-Identifikator.Patienten-IdentifikatorKontext">
+      <path value="Person.PatientIn.Patienten-Identifikator.Patienten-IdentifikatorKontext" />
       <short value="Der Kontext des Patienten-Identifikators um den Patienten-Identifikator zu Beschreiben, da der Patient innerhalb einer Gesundheitseinrichtung möglicherweise pro System eine Nummer (Im Krankenhaus: Labor, Radiologie, Internistische Station etc.) bekommt." />
       <min value="0" />
       <max value="*" />
@@ -272,16 +271,16 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </type>
     </element>
-    <element id="Person.Patient.Versicherung">
-      <path value="Person.Patient.Versicherung" />
+    <element id="Person.PatientIn.Versicherung">
+      <path value="Person.PatientIn.Versicherung" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Person.Patient.Versicherung.Versicherungsnummer">
-      <path value="Person.Patient.Versicherung.Versicherungsnummer" />
+    <element id="Person.PatientIn.Versicherung.Versicherungsnummer">
+      <path value="Person.PatientIn.Versicherung.Versicherungsnummer" />
       <short value="Nummer, die der (Kranken-)Versicherung des Patienten zugewiesen wurde. Diese findet sich z.B. auf der Mitgliedskarte der Krankenkasse." />
       <min value="0" />
       <max value="*" />
@@ -290,8 +289,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Patient.Versicherung.InstitutionskennzeichenDerKrankenkasse">
-      <path value="Person.Patient.Versicherung.InstitutionskennzeichenDerKrankenkasse" />
+    <element id="Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse">
+      <path value="Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -301,8 +300,8 @@
       <fixedString value="Die Institutionskennzeichen (kurz: IK) sind bundesweit eindeutige, neunstellige Zahlen, mit deren Hilfe Abrechnungen und Qualitätssicherungsmaßnahmen im Bereich der deutschen Sozialversicherung einrichtungsübergreifend abgewickelt werden können." />
       <maxLength value="9" />
     </element>
-    <element id="Person.Patient.Versicherung.Versicherungstyp">
-      <path value="Person.Patient.Versicherung.Versicherungstyp" />
+    <element id="Person.PatientIn.Versicherung.Versicherungstyp">
+      <path value="Person.PatientIn.Versicherung.Versicherungstyp" />
       <short value="Versicherungstyp des Patienten" />
       <min value="0" />
       <max value="*" />
@@ -311,8 +310,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
     </element>
-    <element id="Person.Studienteilnehmer">
-      <path value="Person.Studienteilnehmer" />
+    <element id="Person.ProbandIn">
+      <path value="Person.ProbandIn" />
       <short value="Person, die an einer Studie teilnimmt (unter Umständen, während sie Patient in einer Gesundheitseinrichtung ist)" />
       <min value="0" />
       <max value="*" />
@@ -320,8 +319,8 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Person.Studienteilnehmer.SubjektIdentifizierungscode">
-      <path value="Person.Studienteilnehmer.SubjektIdentifizierungscode" />
+    <element id="Person.ProbandIn.SubjektIdentifizierungscode">
+      <path value="Person.ProbandIn.SubjektIdentifizierungscode" />
       <short value="Eindeutiger Identifikator eines Patienten im Kontext eines Forschungsprojekts (klinische Studie, Use Case)" />
       <min value="0" />
       <max value="*" />
@@ -330,9 +329,9 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Studienteilnehmer.Rechtsgrundlage">
-      <path value="Person.Studienteilnehmer.Rechtsgrundlage" />
-      <short value="Einwilligung des Patienten oder gesetzl. Vertreters. z.B. Behandlungsvertrag, Gesetzliche Grundlage, z.B. Infektionsschutzgesetz, Einwilligung" />
+    <element id="Person.ProbandIn.Rechtsgrundlage">
+      <path value="Person.ProbandIn.Rechtsgrundlage" />
+      <short value="Rechtsgrundlage (z.B. Einwilligung) aufgrund die PatientIn in die Studie eingeschlossen werden darf." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -340,8 +339,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
-    <element id="Person.Studienteilnehmer.BeginnTeilnahme">
-      <path value="Person.Studienteilnehmer.BeginnTeilnahme" />
+    <element id="Person.ProbandIn.BeginnTeilnahme">
+      <path value="Person.ProbandIn.BeginnTeilnahme" />
       <short value="Beginn der Teilnahme der Person an der Studie." />
       <min value="0" />
       <max value="*" />
@@ -350,8 +349,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
       </type>
     </element>
-    <element id="Person.Studienteilnehmer.EndeTeilnahme">
-      <path value="Person.Studienteilnehmer.EndeTeilnahme" />
+    <element id="Person.ProbandIn.EndeTeilnahme">
+      <path value="Person.ProbandIn.EndeTeilnahme" />
       <short value="Ende der Teilnahme der Person an der Studie." />
       <min value="0" />
       <max value="*" />
@@ -360,8 +359,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
       </type>
     </element>
-    <element id="Person.Studienteilnehmer.StatusDerTeilnahme">
-      <path value="Person.Studienteilnehmer.StatusDerTeilnahme" />
+    <element id="Person.ProbandIn.StatusDerTeilnahme">
+      <path value="Person.ProbandIn.StatusDerTeilnahme" />
       <short value="Stand der Teilnahme einer Person an der Studie, z.B. eingeschlossen, widerrufen, abgeschlossen etc." />
       <min value="0" />
       <max value="*" />
@@ -370,8 +369,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
     </element>
-    <element id="Person.Studienteilnehmer.BezeichnungDerStudie">
-      <path value="Person.Studienteilnehmer.BezeichnungDerStudie" />
+    <element id="Person.ProbandIn.BezeichnungDerStudie">
+      <path value="Person.ProbandIn.BezeichnungDerStudie" />
       <short value="Identifikator der Studie" />
       <min value="0" />
       <max value="*" />
