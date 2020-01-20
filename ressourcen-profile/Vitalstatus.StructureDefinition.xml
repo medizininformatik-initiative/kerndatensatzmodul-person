@@ -185,6 +185,7 @@
     <element id="Observation.value[x].coding:GrundVitalStatusUnbekannt.system">
       <path value="Observation.value[x].coding.system" />
       <min value="1" />
+      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Vitalstatus" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x].coding:GrundVitalStatusUnbekannt.code">
