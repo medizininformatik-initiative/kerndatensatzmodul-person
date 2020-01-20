@@ -1,6 +1,6 @@
 {
     "resourceType":"CodeSystem",
-    "url":"https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/GrundVitalStatusUnbekannt",
+    "url":"https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Vitalstatus",
     "name":"Vitalstatus",
     "status":"draft",
     "experimental":true,
@@ -8,7 +8,7 @@
     "publisher":"Medizininformatik Initative",
     "description":"Vitalstatus des Patienten",
     "caseSensitive":true,
-    "valueSet":"https://www.medizininformatik-initiative.de/fhir/core/ValueSet/GrundVitalStatusUnbekannt",
+    "valueSet":"https://www.medizininformatik-initiative.de/fhir/core/ValueSet/Vitalstatus",
     "content":"complete",
     "concept": [
         {
