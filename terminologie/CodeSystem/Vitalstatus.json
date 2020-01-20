@@ -1,6 +1,7 @@
 {
     "resourceType":"CodeSystem",
     "url":"https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Vitalstatus",
+    "version": "0.9",
     "name":"Vitalstatus",
     "status":"draft",
     "experimental":true,
