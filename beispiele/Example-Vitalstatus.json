@@ -29,7 +29,7 @@
   "valueCodeableConcept": {
     "coding": [
         {
-          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/GrundVitalStatusUnbekannt",
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Vitalstatus",
           "code": "X"
         }
       ]
