@@ -138,7 +138,6 @@
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
@@ -173,9 +172,9 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x].coding:GrundVitalStatusUnbekannt">
+    <element id="Observation.value[x].coding:Vitalstatus">
       <path value="Observation.value[x].coding" />
-      <sliceName value="GrundVitalStatusUnbekannt" />
+      <sliceName value="Vitalstatus" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
@@ -184,13 +183,13 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/GrundVitalStatusUnbekannt" />
       </binding>
     </element>
-    <element id="Observation.value[x].coding:GrundVitalStatusUnbekannt.system">
+    <element id="Observation.value[x].coding:Vitalstatus.system">
       <path value="Observation.value[x].coding.system" />
       <min value="1" />
       <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Vitalstatus" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x].coding:GrundVitalStatusUnbekannt.code">
+    <element id="Observation.value[x].coding:Vitalstatus.code">
       <path value="Observation.value[x].coding.code" />
       <min value="1" />
       <mustSupport value="true" />
