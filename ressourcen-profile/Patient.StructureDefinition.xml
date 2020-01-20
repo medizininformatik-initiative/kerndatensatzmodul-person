@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+  <version value="0.9" />
   <name value="PatientIn" />
   <title value="Patient - PatientIn" />
   <status value="draft" />
@@ -19,6 +20,7 @@
         <severity value="error" />
         <human value="Die amtliche Differenzierung der Geschlechtsangabe 'other' darf nur gefüllt sein, wenn das Geschlecht 'other' angegeben ist" />
         <expression value="gender='other' or gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de/0.2').empty()" />
+        <source value="Patient" />
       </constraint>
     </element>
     <element id="Patient.id">
