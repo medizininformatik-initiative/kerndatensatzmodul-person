@@ -180,7 +180,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/GrundVitalStatusUnbekannt" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/Vitalstatus" />
       </binding>
     </element>
     <element id="Observation.value[x].coding:Vitalstatus.system">
