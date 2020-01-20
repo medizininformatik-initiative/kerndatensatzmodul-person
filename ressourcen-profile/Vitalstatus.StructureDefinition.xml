@@ -155,9 +155,11 @@
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Observation.value[x].coding">
       <path value="Observation.value[x].coding" />
