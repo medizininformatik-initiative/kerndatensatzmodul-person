@@ -314,16 +314,6 @@
       <path value="Patient.identifier.type.coding.code" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:pid.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Patient.identifier.system" />
-      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/patient-identifier" />
-    </element>
     <element id="Patient.identifier:pid.period">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
