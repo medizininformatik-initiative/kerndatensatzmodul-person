@@ -33,7 +33,7 @@
       <path value="ResearchSubject.identifier" />
       <slicing>
         <discriminator>
-          <type value="value" />
+          <type value="pattern" />
           <path value="system" />
         </discriminator>
         <rules value="open" />
@@ -51,7 +51,7 @@
     <element id="ResearchSubject.identifier:subjectIdentificationCode.system">
       <path value="ResearchSubject.identifier.system" />
       <min value="1" />
-      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/SubjectIdentificationCode" />
+      <patternUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/SubjectIdentificationCode" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchSubject.identifier:subjectIdentificationCode.value">
