@@ -495,41 +495,6 @@
       <path value="Patient.name.prefix" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.name.prefix.extension:prefix-qualifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Patient.name.prefix.extension" />
-      <sliceName value="prefix-qualifier" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Patient.name.prefix.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.name.prefix.extension:prefix-qualifier.value[x]:valueCode">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Patient.name.prefix.extension.value[x]" />
-      <sliceName value="valueCode" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.name.suffix">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
