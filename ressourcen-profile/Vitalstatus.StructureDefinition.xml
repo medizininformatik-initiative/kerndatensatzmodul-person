@@ -73,7 +73,7 @@
       <path value="Observation.category.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
+          <type value="pattern" />
           <path value="system" />
         </discriminator>
         <rules value="open" />
@@ -91,7 +91,7 @@
     <element id="Observation.category.coding:survey.system">
       <path value="Observation.category.coding.system" />
       <min value="1" />
-      <fixedUri value="http://hl7.org/fhir/observation-category" />
+      <patternUri value="http://hl7.org/fhir/observation-category" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:survey.code">
