@@ -147,8 +147,17 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Person.Demographie.Adresse.Land">
-      <path value="Person.Demographie.Adresse.Land" />
+    <element id="Person.Demographie.Adresse.Strassenanschrift">
+      <path value="Person.Demographie.Adresse.Strassenanschrift" />
+      <short value="Eine Adresse für die Strassenanschrift gemäß postalischer Konventionen. Bei Stadtstaaten einschließlich Bezirken." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.Strassenanschrift.Land">
+      <path value="Person.Demographie.Adresse.Strassenanschrift.Land" />
       <short value="Ländercode nach ISO 3166." />
       <min value="0" />
       <max value="*" />
@@ -157,8 +166,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
       </type>
     </element>
-    <element id="Person.Demographie.Adresse.PLZ">
-      <path value="Person.Demographie.Adresse.PLZ" />
+    <element id="Person.Demographie.Adresse.Strassenanschrift.PLZ">
+      <path value="Person.Demographie.Adresse.Strassenanschrift.PLZ" />
       <short value="Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen." />
       <min value="0" />
       <max value="*" />
@@ -167,8 +176,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Demographie.Adresse.Wohnort">
-      <path value="Person.Demographie.Adresse.Wohnort" />
+    <element id="Person.Demographie.Adresse.Strassenanschrift.Wohnort">
+      <path value="Person.Demographie.Adresse.Strassenanschrift.Wohnort" />
       <short value="Bei Personen aus Stadtstaaten inklusive des Stadtteils." />
       <min value="0" />
       <max value="*" />
@@ -177,8 +186,57 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Demographie.Adresse.Straße">
-      <path value="Person.Demographie.Adresse.Straße" />
+    <element id="Person.Demographie.Adresse.Strassenanschrift.Straße">
+      <path value="Person.Demographie.Adresse.Strassenanschrift.Straße" />
+      <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.Postfach">
+      <path value="Person.Demographie.Adresse.Postfach" />
+      <short value="Eine Adresse für ein Postfach gemäß postalischer Konventionen. Bei Stadtstaaten einschließlich Bezirken." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.Postfach.Land">
+      <path value="Person.Demographie.Adresse.Postfach.Land" />
+      <short value="Ländercode nach ISO 3166." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.Postfach.PLZ">
+      <path value="Person.Demographie.Adresse.Postfach.PLZ" />
+      <short value="Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.Postfach.Wohnort">
+      <path value="Person.Demographie.Adresse.Postfach.Wohnort" />
+      <short value="Bei Personen aus Stadtstaaten inklusive des Stadtteils." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.Demographie.Adresse.Postfach.Straße">
+      <path value="Person.Demographie.Adresse.Postfach.Straße" />
       <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung." />
       <min value="0" />
       <max value="*" />
