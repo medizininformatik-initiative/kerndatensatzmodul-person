@@ -592,6 +592,7 @@
       <path value="Patient.address" />
       <sliceName value="Strassenanschrift" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.address:Strassenanschrift.extension">
       <path value="Patient.address.extension" />
@@ -734,6 +735,7 @@
       <path value="Patient.address" />
       <sliceName value="Postfach" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.address:Postfach.extension">
       <path value="Patient.address.extension" />
