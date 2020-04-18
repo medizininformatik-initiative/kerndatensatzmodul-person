@@ -66,6 +66,15 @@
     {
       "use": "official",
       "family": "Van-der-Dussen",
+      "_family": [{
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Van-der-Dussen"
+          }
+        ]
+      }
+      ],
       "given": [
         "Maja",
         "Julia"
