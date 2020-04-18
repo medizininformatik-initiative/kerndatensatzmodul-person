@@ -272,6 +272,11 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Patient.name:name.family.extension:namenszusatz.value[x]">
+      <path value="Patient.name.family.extension.value[x]" />
+      <maxLength value="20" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.name:name.family.extension:nachname">
       <path value="Patient.name.family.extension" />
       <sliceName value="nachname" />
