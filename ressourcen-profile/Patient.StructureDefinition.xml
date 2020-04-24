@@ -474,6 +474,7 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Patient.deceased[x]">
       <path value="Patient.deceased[x]" />
