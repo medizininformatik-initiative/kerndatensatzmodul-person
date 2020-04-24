@@ -5,7 +5,7 @@
   <name value="Person" />
   <status value="draft" />
   <description value="Logische Repräsentation des Basismoduls Person" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="logical" />
   <abstract value="false" />
   <type value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Person" />
