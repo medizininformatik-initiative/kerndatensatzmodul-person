@@ -4,7 +4,7 @@
   <version value="0.9" />
   <name value="ProbantIn" />
   <title value="ResearchSubject - ProbandIn" />
-  <status value="draft" />
+  <status value="active" />
   <description value="Dieses Profil beschreibt eine ProbandIn in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

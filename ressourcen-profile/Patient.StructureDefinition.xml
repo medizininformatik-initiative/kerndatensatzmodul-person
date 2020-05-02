@@ -4,7 +4,7 @@
   <version value="0.9" />
   <name value="PatientIn" />
   <title value="Patient - PatientIn" />
-  <status value="draft" />
+  <status value="active" />
   <description value="Dieses Profil beschreibt eine PatientIn in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
