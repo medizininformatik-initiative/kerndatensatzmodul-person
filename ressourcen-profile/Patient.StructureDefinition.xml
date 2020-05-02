@@ -280,6 +280,7 @@
     <element id="Patient.name:name.prefix.extension:prefix-qualifier">
       <path value="Patient.name.prefix.extension" />
       <sliceName value="prefix-qualifier" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:geburtsname">
