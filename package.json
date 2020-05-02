@@ -1,12 +1,15 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.person",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Medizininformatik Initiative - Modul Person",
   "devDependencies": null,
   "canonicals": null,
   "author": "alexanderzautke",
+  "fhirVersions": [
+    "4.0.1"
+  ],
   "dependencies": {
-    "de.basisprofil.r4": "0.9.1-alpha2",
-    "de.medizininformatikinitiative.kerndatensatz": "0.0.1"
+    "de.basisprofil.r4": "0.9.5",
+    "de.medizininformatikinitiative.kerndatensatz": "0.0.2"
   }
 }
