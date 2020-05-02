@@ -362,14 +362,16 @@
     </element>
     <element id="Person.PatientIn.Versicherung.Versichertennummer">
       <path value="Person.PatientIn.Versicherung.Versichertennummer" />
+      <short value="Angaben zur Identifikation der versicherten Person" />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Person.PatientIn.Versicherung.Versichertennummer.Versichertennummer-GKV">
-      <path value="Person.PatientIn.Versicherung.Versichertennummer.Versichertennummer-GKV" />
+    <element id="Person.PatientIn.Versicherung.Versichertennummer.VersichertenID-GKV">
+      <path value="Person.PatientIn.Versicherung.Versichertennummer.VersichertenID-GKV" />
+      <short value="Unveränderlicher Teil der Krankenversichertennummer (VersichertenID) bei GKV Patienten. Diese findet sich z.B. auf der Mitgliedskarte der Krankenkasse." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -379,6 +381,7 @@
     </element>
     <element id="Person.PatientIn.Versicherung.Versichertennummer.Versichertennummer-PKV">
       <path value="Person.PatientIn.Versicherung.Versichertennummer.Versichertennummer-PKV" />
+      <short value="Versichertennummer bei PKV Patienten. Vergabe erfolgt durch die jeweilige Private Krankenversicherung." />
       <min value="0" />
       <max value="*" />
       <type>
