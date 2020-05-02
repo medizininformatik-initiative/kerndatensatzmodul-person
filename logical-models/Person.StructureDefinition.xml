@@ -339,16 +339,6 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="Person.PatientIn.Versicherung.Versicherungsnummer">
-      <path value="Person.PatientIn.Versicherung.Versicherungsnummer" />
-      <short value="Nummer, die der (Kranken-)Versicherung des Patienten zugewiesen wurde. Diese findet sich z.B. auf der Mitgliedskarte der Krankenkasse." />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
-      </type>
-    </element>
     <element id="Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse">
       <path value="Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse" />
       <min value="0" />
@@ -368,6 +358,32 @@
       <type>
         <code value="code" />
         <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="Person.PatientIn.Versicherung.Versichertennummer">
+      <path value="Person.PatientIn.Versicherung.Versichertennummer" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.PatientIn.Versicherung.Versichertennummer.Versichertennummer-GKV">
+      <path value="Person.PatientIn.Versicherung.Versichertennummer.Versichertennummer-GKV" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.PatientIn.Versicherung.Versichertennummer.Versichertennummer-PKV">
+      <path value="Person.PatientIn.Versicherung.Versichertennummer.Versichertennummer-PKV" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.ProbandIn">
