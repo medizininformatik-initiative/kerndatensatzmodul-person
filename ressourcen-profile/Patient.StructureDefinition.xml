@@ -236,6 +236,10 @@
       <sliceName value="name" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:name.use">
@@ -249,56 +253,19 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.name:name.family.extension">
-      <path value="Patient.name.family.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Patient.name:name.family.extension:namenszusatz">
       <path value="Patient.name.family.extension" />
       <sliceName value="namenszusatz" />
-      <definition value="Namenszusatz als Bestandteil das Nachnamens, wie in VSDM (Versichertenstammdatenmanagement, &quot;eGK&quot;) definiert. Beispiele: Gräfin, Prinz oder Fürst" />
-      <comment value="Die Extension wurde erstellt aufgrund der Anforderung, die auf der eGK vorhandenen Patientenstammdaten in FHIR abbilden zu können. Auf der eGK werden die Namensbestandteile &quot;Namenszusatz&quot; und &quot;Vorsatzwort&quot; getrennt vom Nachnamen gespeichert. Anhand der Liste der zulässigen Namenszusätze ist deutlich erkennbar, dass es sich hierbei sinngemäß um Adelstitel handelt. Das Vorsatzwort kann durch die Core-Extension http://build.fhir.org/extension-humanname-own-name.html abgebildet werden, für den Namenszusatz ergibt sich jedoch die Notwendikeit einer nationalen Extension, da in andern Ländern Adelstitel entweder gar nicht oder als reguläres Namenspräfix erfasst werden." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://fhir.de/StructureDefinition/humanname-namenszusatz" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.name:name.family.extension:namenszusatz.value[x]">
-      <path value="Patient.name.family.extension.value[x]" />
-      <maxLength value="20" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:name.family.extension:nachname">
       <path value="Patient.name.family.extension" />
       <sliceName value="nachname" />
-      <definition value="Nachname ohne Vor- und Zusätze. Dient z.B. der alphabetischen Einordnung des Namens." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:name.family.extension:vorsatzwort">
       <path value="Patient.name.family.extension" />
       <sliceName value="vorsatzwort" />
-      <definition value="Vorsatzwort wie z.B.: von, van, zu Vgl. auch VSDM-Spezifikation der Gematik (Versichertenstammdatenmanagement, &quot;eGK&quot;)" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:name.given">
@@ -310,26 +277,9 @@
       <path value="Patient.name.prefix" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.name:name.prefix.extension">
-      <path value="Patient.name.prefix.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
     <element id="Patient.name:name.prefix.extension:prefix-qualifier">
       <path value="Patient.name.prefix.extension" />
       <sliceName value="prefix-qualifier" />
-      <definition value="Spezialisierung der Art des Präfixes, z.B. &quot;AC&quot; für Akademische Titel" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:geburtsname">
@@ -364,7 +314,6 @@
       <sliceName value="namenszusatz" />
       <definition value="Namenszusatz als Bestandteil das Nachnamens, wie in VSDM (Versichertenstammdatenmanagement, &quot;eGK&quot;) definiert. Beispiele: Gräfin, Prinz oder Fürst" />
       <comment value="Die Extension wurde erstellt aufgrund der Anforderung, die auf der eGK vorhandenen Patientenstammdaten in FHIR abbilden zu können. Auf der eGK werden die Namensbestandteile &quot;Namenszusatz&quot; und &quot;Vorsatzwort&quot; getrennt vom Nachnamen gespeichert. Anhand der Liste der zulässigen Namenszusätze ist deutlich erkennbar, dass es sich hierbei sinngemäß um Adelstitel handelt. Das Vorsatzwort kann durch die Core-Extension http://build.fhir.org/extension-humanname-own-name.html abgebildet werden, für den Namenszusatz ergibt sich jedoch die Notwendikeit einer nationalen Extension, da in andern Ländern Adelstitel entweder gar nicht oder als reguläres Namenspräfix erfasst werden." />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -375,8 +324,6 @@
     <element id="Patient.name:geburtsname.family.extension:nachname">
       <path value="Patient.name.family.extension" />
       <sliceName value="nachname" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-name" />
@@ -386,8 +333,6 @@
     <element id="Patient.name:geburtsname.family.extension:vorsatzwort">
       <path value="Patient.name.family.extension" />
       <sliceName value="vorsatzwort" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix" />
@@ -417,7 +362,6 @@
       <path value="Patient.name.prefix.extension" />
       <sliceName value="prefix-qualifier" />
       <definition value="Spezialisierung der Art des Präfixes, z.B. &quot;AC&quot; für Akademische Titel" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -468,8 +412,6 @@
     <element id="Patient.birthDate.extension:data-absent-reason">
       <path value="Patient.birthDate.extension" />
       <sliceName value="data-absent-reason" />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
