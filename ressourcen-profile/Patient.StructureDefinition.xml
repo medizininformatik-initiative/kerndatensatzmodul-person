@@ -404,26 +404,16 @@
       <path value="Patient.address" />
       <sliceName value="Strassenanschrift" />
       <max value="1" />
+      <type>
+        <code value="Address" />
+        <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
+      </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.address:Strassenanschrift.extension">
-      <path value="Patient.address.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="Patient.address:Strassenanschrift.extension:Stadtteil">
       <path value="Patient.address.extension" />
       <sliceName value="Stadtteil" />
       <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="Patient.address:Strassenanschrift.type">
@@ -438,51 +428,25 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.address:Strassenanschrift.line.extension">
+    <element id="Patient.address:Strassenanschrift.line.extension:Strasse">
       <path value="Patient.address.line.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Patient.address:Strassenanschrift.line.extension:Adresszusatz">
-      <path value="Patient.address.line.extension" />
-      <sliceName value="Adresszusatz" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator" />
-      </type>
+      <sliceName value="Strasse" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address:Strassenanschrift.line.extension:Hausnummer">
       <path value="Patient.address.line.extension" />
       <sliceName value="Hausnummer" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" />
-      </type>
       <mustSupport value="true" />
     </element>
-    <element id="Patient.address:Strassenanschrift.line.extension:Strasse">
+    <element id="Patient.address:Strassenanschrift.line.extension:Adresszusatz">
       <path value="Patient.address.line.extension" />
-      <sliceName value="Strasse" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" />
-      </type>
+      <sliceName value="Adresszusatz" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address:Strassenanschrift.line.extension:Postfach">
       <path value="Patient.address.line.extension" />
       <sliceName value="Postfach" />
       <max value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox" />
-      </type>
     </element>
     <element id="Patient.address:Strassenanschrift.city">
       <path value="Patient.address.city" />
@@ -502,7 +466,6 @@
         <severity value="warning" />
         <human value="The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2." />
         <expression value="country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" />
-        <source value="Patient" />
       </constraint>
       <mustSupport value="true" />
     </element>
