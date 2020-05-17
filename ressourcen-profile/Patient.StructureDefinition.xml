@@ -453,6 +453,27 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.address:Strassenanschrift.city.extension">
+      <path value="Patient.address.city.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.address:Strassenanschrift.city.extension:gemeindeschluessel">
+      <path value="Patient.address.city.extension" />
+      <sliceName value="gemeindeschluessel" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/destatis/ags" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.address:Strassenanschrift.postalCode">
       <path value="Patient.address.postalCode" />
       <min value="1" />
@@ -466,6 +487,7 @@
         <severity value="warning" />
         <human value="The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2." />
         <expression value="country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -522,6 +544,27 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.address:Postfach.city.extension">
+      <path value="Patient.address.city.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Patient.address:Postfach.city.extension:gemeindeschluessel">
+      <path value="Patient.address.city.extension" />
+      <sliceName value="gemeindeschluessel" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/destatis/ags" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.address:Postfach.postalCode">
       <path value="Patient.address.postalCode" />
       <min value="1" />
@@ -535,8 +578,15 @@
         <severity value="warning" />
         <human value="The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2." />
         <expression value="country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
       </constraint>
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.contact">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Contact" />
+      </extension>
+      <path value="Patient.contact" />
     </element>
     <element id="Patient.link">
       <path value="Patient.link" />

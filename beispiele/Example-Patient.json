@@ -123,6 +123,17 @@
         "Anna-Louisa-Karsch Str. 2"
       ],
       "city": "Berlin",
+      "_city":{
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/destatis/ags",
+            "valueCoding": {
+              "system": "http://fhir.de/NamingSystem/destatis/ags",
+              "code": "11000000"
+            }
+          }
+        ]
+      },
       "state": "Berlin",
       "postalCode": "10178",
       "country": "DE"
