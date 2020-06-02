@@ -135,7 +135,7 @@
     <element id="Observation.code.coding:loinc.code">
       <path value="Observation.code.coding.code" />
       <min value="1" />
-      <fixedCode value="75186-7" />
+      <fixedCode value="67162-8" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.subject">
