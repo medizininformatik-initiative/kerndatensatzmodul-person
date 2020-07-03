@@ -229,7 +229,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="use" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -250,7 +250,7 @@
     <element id="Patient.name:name.use">
       <path value="Patient.name.use" />
       <min value="1" />
-      <patternCode value="official" />
+      <fixedCode value="official" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:name.family">
@@ -301,7 +301,7 @@
     <element id="Patient.name:geburtsname.use">
       <path value="Patient.name.use" />
       <min value="1" />
-      <patternCode value="maiden" />
+      <fixedCode value="maiden" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:geburtsname.family">
