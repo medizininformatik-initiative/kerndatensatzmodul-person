@@ -251,6 +251,9 @@
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
+      <patternHumanName>
+        <use value="official" />
+      </patternHumanName>
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:name.use">
@@ -302,6 +305,9 @@
         <code value="HumanName" />
         <profile value="http://fhir.de/StructureDefinition/humanname-de-basis" />
       </type>
+      <patternHumanName>
+        <use value="maiden" />
+      </patternHumanName>
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:geburtsname.use">
