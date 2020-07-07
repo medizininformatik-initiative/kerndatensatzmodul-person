@@ -21,8 +21,8 @@
       "assigner": {
         "display": "Charité – Universitätsmedizin Berlin",
         "identifier": {
-          "system": "http://fhir.de/NamingSystem/arge-ik/iknr",
-          "value": "261101015"
+          "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+          "value": "Charité"
         }
       }
     },
