@@ -145,6 +145,16 @@
       </patternIdentifier>
       <mustSupport value="true" />
     </element>
+    <element id="Patient.identifier:pid.type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Patient.identifier.type" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.identifier:pid.type.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
@@ -161,6 +171,58 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding:MR-Type">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Patient.identifier.type.coding" />
+      <sliceName value="MR-Type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding:MR-Type.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Patient.identifier.type.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.type.coding:MR-Type.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Patient.identifier.type.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Patient.identifier.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid.value">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Patient.identifier.value" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.assigner">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -174,6 +236,7 @@
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.assigner.identifier.type.coding">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -191,6 +254,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.assigner.identifier.type.coding:XX-Type">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
