@@ -154,7 +154,7 @@
         <key value="mii-pat-de-1" />
         <severity value="error" />
         <human value="Entweder IKNR oder MII Core Location Identifier soll verwendet werden" />
-        <xpath value="$this = 'http://fhir.de/NamingSystem/arge-ik/iknr' or $this = 'https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier'" />
+        <expression value="$this = 'http://fhir.de/NamingSystem/arge-ik/iknr' or $this = 'https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier'" />
       </constraint>
     </element>
     <element id="Patient.identifier:pid">
