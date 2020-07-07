@@ -151,10 +151,10 @@
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.system">
       <path value="Patient.identifier.assigner.identifier.system" />
       <constraint>
-        <key value="mii-pat-de-2" />
+        <key value="mii-pat-de-1" />
         <severity value="error" />
         <human value="Entweder IKNR oder MII Core Location Identifier soll verwendet werden" />
-        <xpath value="$this = 'http://fhir.de/StructureDefinition/identifier-iknr' or $this = 'https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier'" />
+        <xpath value="$this = 'http://fhir.de/NamingSystem/arge-ik/iknr' or $this = 'https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier'" />
       </constraint>
     </element>
     <element id="Patient.identifier:pid">
