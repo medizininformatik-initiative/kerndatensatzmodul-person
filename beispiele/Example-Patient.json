@@ -119,6 +119,7 @@
   "deceasedBoolean": false,
   "address": [
     {
+      "type": "physical",
       "line": [
         "Anna-Louisa-Karsch Str. 2"
       ],
