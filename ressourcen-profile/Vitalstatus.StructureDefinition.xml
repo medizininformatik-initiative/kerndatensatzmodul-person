@@ -144,7 +144,6 @@
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -184,13 +183,13 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/Vitalstatus" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus" />
       </binding>
     </element>
     <element id="Observation.value[x].coding:Vitalstatus.system">
       <path value="Observation.value[x].coding.system" />
       <min value="1" />
-      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Vitalstatus" />
+      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.value[x].coding:Vitalstatus.code">
