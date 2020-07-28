@@ -1,6 +1,6 @@
 {
     "resourceType":"CodeSystem",
-    "url":"https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Vitalstatus",
+    "url":"https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus",
     "version": "1.0",
     "name":"Vitalstatus",
     "status":"active",
@@ -9,7 +9,7 @@
     "publisher":"Medizininformatik Initative",
     "description":"Vitalstatus des Patienten",
     "caseSensitive":true,
-    "valueSet":"https://www.medizininformatik-initiative.de/fhir/core/ValueSet/Vitalstatus",
+    "valueSet":"https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus",
     "content":"complete",
     "concept": [
         {
