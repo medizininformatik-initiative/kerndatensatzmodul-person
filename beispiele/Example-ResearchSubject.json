@@ -2,7 +2,7 @@
   "resourceType": "ResearchSubject",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/ResearchSubject"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject"
     ]
   },
   "identifier": [

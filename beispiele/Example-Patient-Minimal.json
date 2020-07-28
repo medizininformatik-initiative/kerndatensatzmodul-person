@@ -2,7 +2,7 @@
   "resourceType": "Patient",
   "meta":{
     "profile": [
-        "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient"
+        "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
     ]
   },
   "identifier": [
