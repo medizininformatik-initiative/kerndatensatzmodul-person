@@ -70,22 +70,10 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding" />
       <slicing>
         <discriminator>
@@ -98,74 +86,32 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.type.coding:GKV-Type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding" />
       <sliceName value="GKV-Type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.type.coding:GKV-Type.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding.system" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.type.coding:GKV-Type.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding.code" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.system" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.value" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier" />
       <min value="1" />
       <type>
@@ -175,22 +121,10 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.type.coding" />
       <slicing>
         <discriminator>
