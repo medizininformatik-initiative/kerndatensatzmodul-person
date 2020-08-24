@@ -94,7 +94,7 @@
     <element id="Observation.category.coding:survey.system">
       <path value="Observation.category.coding.system" />
       <min value="1" />
-      <patternUri value="http://hl7.org/fhir/observation-category" />
+      <patternUri value="http://hl7.org/fhir/CodeSystem/observation-category" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.category.coding:survey.code">
