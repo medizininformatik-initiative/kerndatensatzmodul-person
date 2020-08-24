@@ -6,14 +6,14 @@
     ]
   },
   "status": "final",
-  "category": {
+  "category": [{
     "coding": [
       {
-        "system": "http://hl7.org/fhir/observation-category",
+        "system": "http://hl7.org/fhir/CodeSystem/observation-category",
         "code": "survey"
       }
     ]
-  },
+  }],
   "code": {
     "coding": [
       {
