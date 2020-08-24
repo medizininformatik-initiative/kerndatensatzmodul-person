@@ -50,7 +50,7 @@
   "name": [
     {
       "use": "official",
-      "family": "Van-der-Dussen",
+      "family": ["Van-der-Dussen"],
       "given": [
         "Maja",
         "Julia"

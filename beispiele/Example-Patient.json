@@ -95,7 +95,7 @@
     },
     {
         "use": "maiden",
-        "family": "Haffer",
+        "family": ["Haffer"],
         "given": [
             "Maja",
             "Julia"
