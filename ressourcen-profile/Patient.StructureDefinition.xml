@@ -137,53 +137,23 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.type.coding:XX-Type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.type.coding" />
       <sliceName value="XX-Type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.type.coding:XX-Type.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.type.coding.system" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.type.coding:XX-Type.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.type.coding.code" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.system" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_gkv.assigner.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.value" />
       <mustSupport value="true" />
     </element>
@@ -205,22 +175,10 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding" />
       <slicing>
         <discriminator>
@@ -233,63 +191,27 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.type.coding:MR-Type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding" />
       <sliceName value="MR-Type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.type.coding:MR-Type.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding.system" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.type.coding:MR-Type.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding.code" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.system" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.value" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.assigner">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner" />
       <type>
         <code value="Reference" />
@@ -298,12 +220,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.assigner.identifier.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.type.coding" />
       <slicing>
         <discriminator>
@@ -316,12 +232,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.assigner.identifier.type.coding:XX-Type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.type.coding" />
       <sliceName value="XX-Type" />
       <min value="1" />
@@ -368,32 +278,14 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.use">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.use" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding" />
       <slicing>
         <discriminator>
@@ -406,85 +298,37 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding" />
       <sliceName value="PKV-Type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding.system" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.type.coding.code" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.value" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.assigner">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.system" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.value">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Patient.identifier.assigner.identifier.value" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.assigner.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
       </extension>
       <path value="Patient.identifier.assigner.display" />
       <mustSupport value="true" />
