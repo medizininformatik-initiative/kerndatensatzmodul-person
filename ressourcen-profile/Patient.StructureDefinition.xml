@@ -441,12 +441,11 @@
     </element>
     <element id="Patient.name:geburtsname.given">
       <path value="Patient.name.given" />
-      <min value="1" />
-      <mustSupport value="true" />
+      <min value="0" />
     </element>
     <element id="Patient.name:geburtsname.prefix">
       <path value="Patient.name.prefix" />
-      <mustSupport value="true" />
+      <max value="0" />
     </element>
     <element id="Patient.name:geburtsname.prefix.extension:prefix-qualifier">
       <path value="Patient.name.prefix.extension" />
