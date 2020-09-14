@@ -59,7 +59,7 @@
   ],
   "address": [
     {
-      "type": "physical",
+      "type": "both",
       "line": [
         "Teststraße 2"
       ],
