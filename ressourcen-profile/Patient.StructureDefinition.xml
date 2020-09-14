@@ -528,7 +528,7 @@
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
       </type>
       <patternAddress>
-        <type value="physical" />
+        <type value="both" />
       </patternAddress>
       <mustSupport value="true" />
     </element>
@@ -540,7 +540,7 @@
     <element id="Patient.address:Strassenanschrift.type">
       <path value="Patient.address.type" />
       <min value="1" />
-      <fixedCode value="physical" />
+      <fixedCode value="both" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address:Strassenanschrift.line">
