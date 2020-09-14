@@ -1,6 +1,6 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.person",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "Medizininformatik Initiative - Modul Person",
   "devDependencies": null,
   "canonicals": null,
@@ -9,7 +9,7 @@
     "4.0.1"
   ],
   "dependencies": {
-    "de.basisprofil.r4": "0.9.6",
+    "de.basisprofil.r4": "0.9.11",
     "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.0"
   }
 }
