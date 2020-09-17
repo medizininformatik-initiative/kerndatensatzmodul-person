@@ -105,6 +105,12 @@
     <element id="Patient.identifier:versichertenId_GKV.value">
       <path value="Patient.identifier.value" />
       <mustSupport value="true" />
+      <constraint>
+        <key value="kvid-1" />
+        <severity value="warning" />
+        <human value="Der unveränderliche Teil der KVID muss 10-stellig sein und mit einem Großbuchstaben anfangen" />
+        <expression value="matches('^[A-Z][0-9]{9}$')" />
+      </constraint>
     </element>
     <element id="Patient.identifier:versichertenId_GKV.assigner">
       <path value="Patient.identifier.assigner" />
