@@ -37,7 +37,7 @@
             ]
         },
         "system": "http://fhir.de/NamingSystem/gkv/kvid-10",
-        "value": "9999999999",
+        "value": "A999999999",
         "assigner":{
           "identifier":{
             "use": "official",
