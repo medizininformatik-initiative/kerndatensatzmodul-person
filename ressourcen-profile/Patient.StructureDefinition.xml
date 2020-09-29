@@ -441,7 +441,7 @@
     </element>
     <element id="Patient.name:geburtsname.given">
       <path value="Patient.name.given" />
-      <min value="0" />
+      <max value="0" />
     </element>
     <element id="Patient.name:geburtsname.prefix">
       <path value="Patient.name.prefix" />
