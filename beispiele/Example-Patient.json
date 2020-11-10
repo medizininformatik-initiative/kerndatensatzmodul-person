@@ -66,15 +66,14 @@
     {
       "use": "official",
       "family": "Van-der-Dussen",
-      "_family": [{
+      "_family": {
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
             "valueString": "Van-der-Dussen"
           }
         ]
-      }
-      ],
+      },
       "given": [
         "Maja",
         "Julia"
@@ -95,7 +94,7 @@
     },
     {
         "use": "maiden",
-        "family": ["Haffer"]
+        "family": "Haffer"
     }
   ],
   "gender": "other",
