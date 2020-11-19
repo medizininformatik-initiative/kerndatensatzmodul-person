@@ -4,7 +4,7 @@
   <version value="1.0" />
   <name value="Observation - Vitalstatus" />
   <status value="active" />
-  <description value="Vitalstatus der PatientIn" />
+  <description value="Dieses Profil beschreibt den Vitalstatus der PatientIn in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
