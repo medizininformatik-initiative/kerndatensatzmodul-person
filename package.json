@@ -9,7 +9,7 @@
     "4.0.1"
   ],
   "dependencies": {
-    "de.basisprofil.r4": "0.9.11",
-    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.0"
+    "de.basisprofil.r4": "0.9.12",
+    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.2"
   }
 }
