@@ -516,13 +516,13 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address:Strassenanschrift">
       <path value="Patient.address" />
       <sliceName value="Strassenanschrift" />
-      <max value="1" />
+      <max value="*" />
       <type>
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
