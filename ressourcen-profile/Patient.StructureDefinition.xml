@@ -76,14 +76,6 @@
     </element>
     <element id="Patient.identifier:versichertenId_GKV.type.coding">
       <path value="Patient.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versichertenId_GKV.type.coding:GKV-Type">
@@ -127,14 +119,6 @@
     </element>
     <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.type.coding">
       <path value="Patient.identifier.assigner.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.type.coding:XX-Type">
@@ -181,14 +165,6 @@
     </element>
     <element id="Patient.identifier:pid.type.coding">
       <path value="Patient.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.type.coding:MR-Type">
@@ -258,6 +234,7 @@
         <severity value="error" />
         <human value="Entweder IKNR oder MII Core Location Identifier soll verwendet werden" />
         <expression value="$this = 'http://fhir.de/NamingSystem/arge-ik/iknr' or $this = 'https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier'" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
       </constraint>
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv">
@@ -288,14 +265,6 @@
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type.coding">
       <path value="Patient.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type">
@@ -319,6 +288,17 @@
       <path value="Patient.identifier.assigner" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.type.coding">
+      <path value="Patient.identifier.assigner.identifier.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.system">
       <path value="Patient.identifier.assigner.identifier.system" />
       <mustSupport value="true" />
@@ -328,9 +308,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Patient.identifier.assigner.display" />
       <mustSupport value="true" />
     </element>
@@ -371,6 +348,16 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.name:name.family.extension">
+      <path value="Patient.name.family.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.name:name.family.extension:namenszusatz">
       <path value="Patient.name.family.extension" />
       <sliceName value="namenszusatz" />
@@ -394,6 +381,16 @@
     <element id="Patient.name:name.prefix">
       <path value="Patient.name.prefix" />
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.name:name.prefix.extension">
+      <path value="Patient.name.prefix.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.name:name.prefix.extension:prefix-qualifier">
       <path value="Patient.name.prefix.extension" />
@@ -425,6 +422,16 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.name:geburtsname.family.extension">
+      <path value="Patient.name.family.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.name:geburtsname.family.extension:namenszusatz">
       <path value="Patient.name.family.extension" />
       <sliceName value="namenszusatz" />
@@ -447,6 +454,16 @@
     <element id="Patient.name:geburtsname.prefix">
       <path value="Patient.name.prefix" />
       <max value="0" />
+    </element>
+    <element id="Patient.name:geburtsname.prefix.extension">
+      <path value="Patient.name.prefix.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.name:geburtsname.prefix.extension:prefix-qualifier">
       <path value="Patient.name.prefix.extension" />
@@ -517,13 +534,11 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
-      <max value="*" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address:Strassenanschrift">
       <path value="Patient.address" />
       <sliceName value="Strassenanschrift" />
-      <max value="*" />
       <type>
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
@@ -532,6 +547,16 @@
         <type value="both" />
       </patternAddress>
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.address:Strassenanschrift.extension">
+      <path value="Patient.address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.address:Strassenanschrift.extension:Stadtteil">
       <path value="Patient.address.extension" />
@@ -549,6 +574,16 @@
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.address:Strassenanschrift.line.extension">
+      <path value="Patient.address.line.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.address:Strassenanschrift.line.extension:Strasse">
       <path value="Patient.address.line.extension" />
@@ -625,6 +660,16 @@
       </patternAddress>
       <mustSupport value="true" />
     </element>
+    <element id="Patient.address:Postfach.extension">
+      <path value="Patient.address.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="Patient.address:Postfach.extension:Stadtteil">
       <path value="Patient.address.extension" />
       <sliceName value="Stadtteil" />
@@ -641,6 +686,16 @@
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Patient.address:Postfach.line.extension">
+      <path value="Patient.address.line.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
     <element id="Patient.address:Postfach.line.extension:Strasse">
       <path value="Patient.address.line.extension" />
@@ -711,9 +766,6 @@
     <element id="Patient.link.other">
       <path value="Patient.link.other" />
       <type>
-        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy">
-          <valueBoolean value="false" />
-        </extension>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
       </type>
