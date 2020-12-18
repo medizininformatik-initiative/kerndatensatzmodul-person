@@ -340,7 +340,6 @@
     <element id="Patient.name:name.use">
       <path value="Patient.name.use" />
       <min value="1" />
-      <fixedCode value="official" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:name.family">
@@ -414,7 +413,6 @@
     <element id="Patient.name:geburtsname.use">
       <path value="Patient.name.use" />
       <min value="1" />
-      <fixedCode value="maiden" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.name:geburtsname.family">
