@@ -34,7 +34,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -46,12 +46,14 @@
       <sliceName value="subjectIdentificationCode" />
       <min value="1" />
       <max value="1" />
+      <patternIdentifier>
+        <system value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/SubjectIdentificationCode" />
+      </patternIdentifier>
       <mustSupport value="true" />
     </element>
     <element id="ResearchSubject.identifier:subjectIdentificationCode.system">
       <path value="ResearchSubject.identifier.system" />
       <min value="1" />
-      <patternUri value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/SubjectIdentificationCode" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchSubject.identifier:subjectIdentificationCode.value">
@@ -87,7 +89,6 @@
     <element id="ResearchSubject.individual">
       <path value="ResearchSubject.individual" />
       <min value="1" />
-      <max value="1" />
       <type>
         <code value="Reference" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
