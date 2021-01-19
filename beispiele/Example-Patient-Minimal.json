@@ -1,5 +1,6 @@
 {
   "resourceType": "Patient",
+  "id": "ExamplePatientPatientMinimal",
   "meta":{
     "profile": [
         "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"

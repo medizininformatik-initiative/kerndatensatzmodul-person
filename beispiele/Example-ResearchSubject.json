@@ -1,5 +1,6 @@
 {
   "resourceType": "ResearchSubject",
+  "id": "ExampleResearchSubjectStudienteilnehmer",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject"
