@@ -569,7 +569,7 @@
     <element id="Patient.address:Strassenanschrift.line">
       <path value="Patient.address.line" />
       <min value="1" />
-      <max value="1" />
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address:Strassenanschrift.line.extension">
@@ -680,7 +680,7 @@
     <element id="Patient.address:Postfach.line">
       <path value="Patient.address.line" />
       <min value="1" />
-      <max value="1" />
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.address:Postfach.line.extension">
