@@ -49,11 +49,15 @@ jobs:
       # Add resources for validation to the stack
       - name: Add resources to the Firely Terminal stack
         env:
-          folders: ressourcen-profile terminologie beispiele logical-models
+          path_to_resource: ressourcen-profile terminologie/CodeSystem beispiele logical-models
         run: |
-          for folder in $folders; 
+          for p in $path_to_resource; 
           do 
-            echo Pushing "$folder" folder to the stack;
-            cd $GITHUB_WORKSPACE/$folder
-            fhir push .
+            echo Accessing "$p" and pushing resources to the stack...
+            if [ -d "$GITHUB_WORKSPACE/$p" ]; then
+              cd $GITHUB_WORKSPACE/$p
+              fhir push .
+            else
+              echo Cannot access "$p" as the path does not exist
+            fi
           done
