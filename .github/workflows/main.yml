@@ -47,9 +47,10 @@ jobs:
           fhir -v
           
       # Add resources for validation to the stack
+      # Examples need to go last otherwise we can't find the profiles used in the examples anymore on the stack when validating (the stack is FIFO)
       - name: Add resources to the Firely Terminal stack
         env:
-          path_to_resource: ressourcen-profile terminologie/CodeSystem beispiele logical-models
+          path_to_resource: terminologie/CodeSystem ressourcen-profile logical-models beispiele
         run: |
           for p in $path_to_resource; 
           do 
@@ -67,6 +68,7 @@ jobs:
         run: |
           fhir restore
     
+      # Validate all resources on the stack
       - name: Validate FHIR resources
         run: | 
           while true; do
