@@ -67,8 +67,9 @@ jobs:
           while true; do
             isEmpty=$(fhir peek)
             if [[ "$isEmpty" == *"The stack is empty."* ]]; then
-              echo "The stack is empty."
+              echo "Validation was executed for all resources on the stack"
               break
             fi
-            fhir pop
+            fhir validate
+            fhir pop > /dev/null
           done
