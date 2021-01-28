@@ -80,6 +80,7 @@ jobs:
             echo Validating $currentResource ...
             
             result=$(fhir validate)
+            echo $result
             if [[ "$result" == *"INVALID"* ]]; then
               exit 1
             fi
