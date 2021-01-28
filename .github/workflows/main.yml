@@ -113,5 +113,5 @@ jobs:
         run: |
           for p in $path_to_resources; 
           do  
-            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0 -ig de.basisprofil.r4
+            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0 -ig de.basisprofil.r4 -ig de.medizininformatikinitiative.kerndatensatz.meta
           done
