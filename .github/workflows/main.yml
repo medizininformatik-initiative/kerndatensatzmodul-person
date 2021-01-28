@@ -61,3 +61,14 @@ jobs:
               echo Cannot access "$p" as the path does not exist
             fi
           done
+    
+      - name: Validate FHIR resources
+        run: | 
+          while true; do
+            isEmpty=$(fhir peek)
+            if [[ "$isEmpty" == *"The stack is empty."* ]]; then
+              echo "The stack is empty."
+              break
+            fi
+            fhir pop
+          done
