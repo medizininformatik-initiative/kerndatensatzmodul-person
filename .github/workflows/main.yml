@@ -78,6 +78,11 @@ jobs:
               break
             fi
             echo Validating $currentResource ...
-            fhir validate
+            
+            result=$(fhir validate)
+            if [[ "$result" == *"INVALID"* ]]; then
+              exit 1
+            fi
+            
             fhir pop > /dev/null
           done
