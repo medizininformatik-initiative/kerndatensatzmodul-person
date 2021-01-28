@@ -37,11 +37,18 @@ jobs:
           dotnet --version
           
       # Install Firely Terminal
-      - name: Check .NET SDK Version
+      - name: Install Firely Terminal
         run: |
           dotnet tool install -g firely.terminal
       
       # Test Firely Terminal install
-      - name: Check .NET SDK Version
+      - name: Check Firely Terminal Version
         run: |
           fhir -v
+          
+      # Add resources for validation to the stack
+      - name: Add resources to the Firely Terminal stack
+        env:
+          folders: ressourcen-profile terminologie beispiele logical-models
+        run: |
+          for folder in $folders; do echo $folder; done
