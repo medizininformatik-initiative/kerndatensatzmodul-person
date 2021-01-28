@@ -50,9 +50,9 @@ jobs:
       # Examples need to go last otherwise we can't find the profiles used in the examples anymore on the stack when validating (the stack is FIFO)
       - name: Add resources to the Firely Terminal stack
         env:
-          path_to_resource: terminologie/CodeSystem ressourcen-profile logical-models # beispiele # Examples are currently commented out as Firely Terminal can't validate against profiles on the stack right now
+          path_to_resources: terminologie/CodeSystem ressourcen-profile logical-models # beispiele # Examples are currently commented out as Firely Terminal can't validate against profiles on the stack right now
         run: |
-          for p in $path_to_resource; 
+          for p in $path_to_resources; 
           do 
             echo Accessing "$p" and pushing resources to the stack...
             if [ -d "$GITHUB_WORKSPACE/$p" ]; then
@@ -98,7 +98,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - name: Validate FHIR resources
+      - name: Download Java Validator
         run: | 
           wget https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar
       
@@ -106,3 +106,12 @@ jobs:
         uses: actions/setup-java@v1.4.3
         with:
           java-version: 1.8
+
+      - name: Validate all resources in scope of the repository
+        env:
+          path_to_resources: terminologie/CodeSystem ressourcen-profile logical-models # beispiele
+        run: |
+          for p in $path_to_resources; 
+          do  
+            java -jar org.hl7.fhir.publisher.jar $GITHUB_WORKSPACE/$p -version 4.0
+          done
