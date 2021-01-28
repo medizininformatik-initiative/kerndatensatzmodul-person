@@ -72,11 +72,12 @@ jobs:
       - name: Validate FHIR resources
         run: | 
           while true; do
-            isEmpty=$(fhir peek)
-            if [[ "$isEmpty" == *"The stack is empty."* ]]; then
+            currentResource=$(fhir peek)
+            if [[ "$currentResource" == *"The stack is empty."* ]]; then
               echo "Validation was executed for all resources on the stack"
               break
             fi
+            echo Validating $currentResource ...
             fhir validate
             fhir pop > /dev/null
           done
