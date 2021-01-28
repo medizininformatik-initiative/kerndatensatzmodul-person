@@ -51,4 +51,9 @@ jobs:
         env:
           folders: ressourcen-profile terminologie beispiele logical-models
         run: |
-          for folder in $folders; do echo $folder; done
+          for folder in $folders; 
+          do 
+            echo Pushing "$folder" folder to the stack;
+            cd $GITHUB_WORKSPACE/$folder
+            fhir push .
+          done
