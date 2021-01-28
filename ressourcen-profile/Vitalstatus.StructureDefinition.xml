@@ -67,12 +67,6 @@
     </element>
     <element id="Observation.category">
       <path value="Observation.category" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category.coding">
-      <path value="Observation.category.coding" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -83,25 +77,17 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category.coding:survey">
-      <path value="Observation.category.coding" />
+    <element id="Observation.category:survey">
+      <path value="Observation.category" />
       <sliceName value="survey" />
       <min value="1" />
       <max value="1" />
-      <patternCoding>
-        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
-        <code value="survey" />
-      </patternCoding>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category.coding:survey.system">
-      <path value="Observation.category.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.category.coding:survey.code">
-      <path value="Observation.category.coding.code" />
-      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+          <code value="survey" />
+        </coding>
+      </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Observation.code">
