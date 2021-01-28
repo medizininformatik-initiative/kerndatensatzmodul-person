@@ -100,7 +100,7 @@ jobs:
       
       - name: Download Java Validator
         run: | 
-          wget https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar
+          wget https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
       
       - name: Setup Java JDK
         uses: actions/setup-java@v1.4.3
@@ -113,5 +113,5 @@ jobs:
         run: |
           for p in $path_to_resources; 
           do  
-            java -jar org.hl7.fhir.publisher.jar $GITHUB_WORKSPACE/$p -version 4.0
+            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0
           done
