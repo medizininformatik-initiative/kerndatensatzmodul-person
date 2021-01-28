@@ -15,7 +15,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "validation"
+  # First validate all resources using Firely Terminal 
   Validation_Firely_Terminal:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -87,3 +87,22 @@ jobs:
             
             fhir pop > /dev/null
           done
+          
+  # Addionally validate all resources using the Java validator
+  Validation_Java_Validator:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      
+      - name: Validate FHIR resources
+        run: | 
+          wget https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar
+      
+      - name: Setup Java JDK
+        uses: actions/setup-java@v1.4.3
+        with:
+          java-version: 1.8
