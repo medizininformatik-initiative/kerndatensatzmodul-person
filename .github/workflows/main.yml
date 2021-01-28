@@ -61,6 +61,11 @@ jobs:
               echo Cannot access "$p" as the path does not exist
             fi
           done
+      
+      # Restore all dependencies listed in the package.json file (need to be on the root level)
+      - name: FHIR Dependency restore
+        run: |
+          fhir restore
     
       - name: Validate FHIR resources
         run: | 
