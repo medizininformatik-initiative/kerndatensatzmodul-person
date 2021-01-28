@@ -113,5 +113,5 @@ jobs:
         run: |
           for p in $path_to_resources; 
           do  
-            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0
+            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0 -level warnings
           done
