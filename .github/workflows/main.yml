@@ -119,5 +119,6 @@ jobs:
         run: |
           for p in $path_to_resources; 
           do  
-            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0 ${{ steps.ig.outputs.value }}
+            unescapedIG=$(echo ${{ steps.ig.outputs.value }} | tr -d '"')
+            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0 $unescapedIG
           done
