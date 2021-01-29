@@ -111,7 +111,7 @@ jobs:
         uses: sergeysova/jq-action@v2
         id: ig
         with:
-          cmd: jq '.dependencies | to_entries | map("--ig " + .key + "#" + .value) | join(" ")' package.json
+          cmd: jq '.dependencies | to_entries | map("-ig " + .key + "#" + .value) | join(" ")' package.json
 
       - name: Validate all resources in scope of the repository
         env:
