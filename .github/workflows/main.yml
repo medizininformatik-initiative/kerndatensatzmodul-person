@@ -106,6 +106,12 @@ jobs:
         uses: actions/setup-java@v1.4.3
         with:
           java-version: 1.8
+        
+      - name: Get IG Parameter
+        uses: sergeysova/jq-action@v2
+        id: ig
+        with:
+          cmd: jq '.dependencies | to_entries | map("--ig " + .key + "#" + .value) | join(" ")' package.json
 
       - name: Validate all resources in scope of the repository
         env:
@@ -113,5 +119,5 @@ jobs:
         run: |
           for p in $path_to_resources; 
           do  
-            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0 -ig de.basisprofil.r4#0.9.12 -ig de.medizininformatikinitiative.kerndatensatz.meta#1.0.2
+            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0 ${{ steps.ig.outputs.value }}
           done
