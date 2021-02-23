@@ -10,7 +10,7 @@
   "category": [{
     "coding": [
       {
-        "system": "http://hl7.org/fhir/CodeSystem/observation-category",
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
         "code": "survey"
       }
     ]
