@@ -48,8 +48,17 @@
       <min value="1" />
       <max value="1" />
       <patternIdentifier>
-        <system value="https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/SubjectIdentificationCode" />
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <code value="ANON" />
+          </coding>
+        </type>
       </patternIdentifier>
+      <mustSupport value="true" />
+    </element>
+    <element id="ResearchSubject.identifier:subjectIdentificationCode.type">
+      <path value="ResearchSubject.identifier.type" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchSubject.identifier:subjectIdentificationCode.system">
@@ -59,6 +68,7 @@
     </element>
     <element id="ResearchSubject.identifier:subjectIdentificationCode.value">
       <path value="ResearchSubject.identifier.value" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="ResearchSubject.status">
