@@ -8,14 +8,21 @@
   },
   "identifier": [
     {
-      "use": "usual",
-      "system": "https://www.medizininformatik-initiative.de/fhir/core/NamingSystem/SubjectIdentificationCode",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "ANON"
+          }
+        ]
+      },
+      "system": "https://www.example.org/fhir/core/sid/SubjectIdentificationCode",
       "value": "12345"
     }
   ],
   "status": "candidate",
-  "period":{
-      "start": "2019-09-06"
+  "period": {
+    "start": "2019-09-06"
   },
   "study": {
     "reference": "ResearchStudy/MII-Beispielstudie"
