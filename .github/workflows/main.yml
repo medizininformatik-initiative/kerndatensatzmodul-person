@@ -39,7 +39,7 @@ jobs:
       # Install Firely Terminal
       - name: Install Firely Terminal
         run: |
-          dotnet tool install --global Firely.Terminal --version 2.1.0-beta9
+          dotnet tool install --global Firely.Terminal
       
       # Test Firely Terminal install
       - name: Check Firely Terminal Version
