@@ -21,7 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FIRELY_TERMINAL_VERSION: 2.1.0
-      DOTNET_RUNTIME_VERSION: 3.1.x
       
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -32,7 +31,7 @@ jobs:
       - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v1.7.2
         with:
-          dotnet-version: $DOTNET_RUNTIME_VERSION
+          dotnet-version: 3.1.x
 
       # Test SDK version
       - name: Check .NET SDK Version
