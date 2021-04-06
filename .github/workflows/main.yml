@@ -53,10 +53,8 @@ jobs:
       # Add resources for validation to the stack
       # Examples need to go last otherwise we can't find the profiles used in the examples anymore on the stack when validating (the stack is FIFO)
       - name: Add resources to the Firely Terminal stack
-        env:
-          path_to_resources: terminologie/CodeSystem ressourcen-profile logical-models
         run: |
-          for p in $path_to_resources; 
+          for p in $PATH_TO_CONFORMANCE_RESOURCES; 
           do 
             echo Accessing "$p" and pushing resources to the stack...
             if [ -d "$GITHUB_WORKSPACE/$p" ]; then
