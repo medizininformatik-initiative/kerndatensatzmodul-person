@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FIRELY_TERMINAL_VERSION: 2.0.0
+      PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem ressourcen-profile logical-models
+      PATH_TO_EXAMPLES: beispiele #Examples are currently not used as Firely Terminal can't validate against profiles on the stack right now
       
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -52,7 +54,7 @@ jobs:
       # Examples need to go last otherwise we can't find the profiles used in the examples anymore on the stack when validating (the stack is FIFO)
       - name: Add resources to the Firely Terminal stack
         env:
-          path_to_resources: terminologie/CodeSystem ressourcen-profile logical-models # beispiele # Examples are currently commented out as Firely Terminal can't validate against profiles on the stack right now
+          path_to_resources: terminologie/CodeSystem ressourcen-profile logical-models
         run: |
           for p in $path_to_resources; 
           do 
