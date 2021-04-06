@@ -20,7 +20,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
-      FIRELY_TERMINAL_VERSION: 2.1.0
+      FIRELY_TERMINAL_VERSION: 2.0.0
       
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
