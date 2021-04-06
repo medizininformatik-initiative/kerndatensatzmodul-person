@@ -130,8 +130,6 @@ jobs:
       
       - name: Validate all example resources in scope of the repository
         run: |
-        
-          COMBINED_PATH_CONFORMANCE_RESOURCES
           for p in $PATH_TO_CONFORMANCE_RESOURCES; # Get combined path to conformance resources, we want to validate against the current version of the conformance resources
           do
             $COMBINED_PATH_CONFORMANCE_RESOURCES+=p
