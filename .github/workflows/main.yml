@@ -134,5 +134,5 @@ jobs:
           do  
             unescapedIG=$(echo ${{ steps.ig.outputs.value }} | tr -d '"')
             echo $unescapedIG
-            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0 $unescapedIG
+            java -jar validator_cli.jar $GITHUB_WORKSPACE/$p -version 4.0 $unescapedIG -ig $GITHUB_WORKSPACE/
           done
