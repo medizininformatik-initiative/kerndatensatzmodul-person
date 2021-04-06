@@ -32,6 +32,6 @@ jobs:
           dotnet-version: 3.1.x
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@0.0.3
+        uses: FirelyTeam/firely-terminal-pipeline@0.0.4
         with:
           PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem ressourcen-profile logical-models 
