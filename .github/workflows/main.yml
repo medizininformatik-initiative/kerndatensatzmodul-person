@@ -98,7 +98,7 @@ jobs:
       JAVA_VALIDATOR_VERSION: 5.3.8
       PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem ressourcen-profile logical-models
       PATH_TO_EXAMPLES: beispiele
-      FHIR_VERSION: 4.0
+      FHIR_VERSION: "4.0"
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
