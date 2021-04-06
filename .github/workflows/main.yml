@@ -25,7 +25,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         
+      # Install .NET runtime
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: 3.1.x
+        
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@0.0.2
+        uses: FirelyTeam/firely-terminal-pipeline@0.0.3
         with:
           PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem ressourcen-profile logical-models 
