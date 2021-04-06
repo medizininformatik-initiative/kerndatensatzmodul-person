@@ -22,7 +22,10 @@ jobs:
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@0.0.1
+        uses: FirelyTeam/firely-terminal-pipeline@0.0.2
         with:
           PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem ressourcen-profile logical-models 
