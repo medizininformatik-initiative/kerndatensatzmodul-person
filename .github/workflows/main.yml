@@ -41,4 +41,4 @@ jobs:
       - name: Firely.Terminal (GitHub Actions)
         uses: FirelyTeam/firely-terminal-pipeline@v0.0.25
         with:
-          PATH_TO_CONFORMANCE_RESOURCES: terminologie ressourcen-profile logical-models 
+          PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem terminologie/ValueSet ressourcen-profile logical-models 
