@@ -80,7 +80,6 @@
     </element>
     <element id="Patient.identifier:versichertenId_GKV.type.coding:GKV-Type">
       <path value="Patient.identifier.type.coding" />
-      <sliceName value="GKV-Type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versichertenId_GKV.type.coding:GKV-Type.system">
@@ -123,7 +122,6 @@
     </element>
     <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.type.coding:XX-Type">
       <path value="Patient.identifier.assigner.identifier.type.coding" />
-      <sliceName value="XX-Type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.type.coding:XX-Type.system">
@@ -169,7 +167,6 @@
     </element>
     <element id="Patient.identifier:pid.type.coding:MR-Type">
       <path value="Patient.identifier.type.coding" />
-      <sliceName value="MR-Type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.type.coding:MR-Type.system">
