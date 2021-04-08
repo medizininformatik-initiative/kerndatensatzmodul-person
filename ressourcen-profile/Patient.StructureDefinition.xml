@@ -207,7 +207,6 @@
     </element>
     <element id="Patient.identifier:pid.assigner.identifier.type.coding:XX-Type">
       <path value="Patient.identifier.assigner.identifier.type.coding" />
-      <sliceName value="XX-Type" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
@@ -236,7 +235,6 @@
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv">
       <path value="Patient.identifier" />
-      <sliceName value="versicherungsnummer_pkv" />
       <max value="1" />
       <type>
         <code value="Identifier" />
@@ -266,7 +264,6 @@
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type">
       <path value="Patient.identifier.type.coding" />
-      <sliceName value="PKV-Type" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.type.coding:PKV-Type.system">
