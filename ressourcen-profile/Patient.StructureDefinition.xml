@@ -647,7 +647,6 @@
     <element id="Patient.address:Postfach">
       <path value="Patient.address" />
       <sliceName value="Postfach" />
-      <max value="1" />
       <type>
         <code value="Address" />
         <profile value="http://fhir.de/StructureDefinition/address-de-basis" />
