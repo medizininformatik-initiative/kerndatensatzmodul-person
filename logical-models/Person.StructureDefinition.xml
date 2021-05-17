@@ -188,8 +188,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Demographie.Adresse.Strassenanschrift.Straße">
-      <path value="Person.Demographie.Adresse.Strassenanschrift.Straße" />
+    <element id="Person.Demographie.Adresse.Strassenanschrift.Strasse">
+      <path value="Person.Demographie.Adresse.Strassenanschrift.Strasse" />
       <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung." />
       <min value="0" />
       <max value="*" />
@@ -237,8 +237,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Demographie.Adresse.Postfach.Straße">
-      <path value="Person.Demographie.Adresse.Postfach.Straße" />
+    <element id="Person.Demographie.Adresse.Postfach.Strasse">
+      <path value="Person.Demographie.Adresse.Postfach.Strasse" />
       <short value="Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung." />
       <min value="0" />
       <max value="*" />
