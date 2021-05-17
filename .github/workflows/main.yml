@@ -41,7 +41,7 @@ jobs:
       - name: Firely.Terminal (GitHub Actions)
         uses: FirelyTeam/firely-terminal-pipeline@v0.2.0-alpha2
         with:
-          PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem terminologie/ValueSet ressourcen-profile logical-models
+          PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem terminologie/ValueSet ressourcen-profile #logical-models # Validation of Logical Models currently throws an exception. See https://chat.fhir.org/#narrow/stream/179177-conformance/topic/Type.20on.20First.20Element.20in.20Differential.20for.20Logical.20Models 
           PATH_TO_EXAMPLES: beispiele
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
