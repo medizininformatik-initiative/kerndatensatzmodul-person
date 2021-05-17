@@ -91,8 +91,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Name.ArtdesPräfixes">
-      <path value="Person.Name.ArtdesPräfixes" />
+    <element id="Person.Name.ArtdesPraefixes">
+      <path value="Person.Name.ArtdesPraefixes" />
       <short value="Art des Präfixes, z.B. &quot;AC&quot; für Akademische Titel" />
       <min value="0" />
       <max value="*" />
