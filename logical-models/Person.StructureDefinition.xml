@@ -81,8 +81,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Name.Präfix">
-      <path value="Person.Name.Präfix" />
+    <element id="Person.Name.Praefix">
+      <path value="Person.Name.Praefix" />
       <short value="Namensteile vor dem Vornamen, z.B. akademischer Grad" />
       <min value="0" />
       <max value="*" />
