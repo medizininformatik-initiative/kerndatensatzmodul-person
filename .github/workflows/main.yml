@@ -46,4 +46,4 @@ jobs:
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA # Error generating Snapshot: Differential in profile [...] does not have a slice at Patient.identifier.type.coding
-          OUTPUT_FORMAT: SUMMARY
+          OUTPUT_FORMAT: RAW
