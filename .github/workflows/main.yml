@@ -39,11 +39,10 @@ jobs:
           java-version: 1.8
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.2.0-alpha13
+        uses: FirelyTeam/firely-terminal-pipeline@v0.2.0-alpha14
         with:
           PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem terminologie/ValueSet ressourcen-profile logical-models
           PATH_TO_EXAMPLES: beispiele
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA # Error generating Snapshot: Differential in profile [...] does not have a slice at Patient.identifier.type.coding
-          OUTPUT_FORMAT: SUMMARY
