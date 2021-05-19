@@ -45,7 +45,7 @@ jobs:
           PATH_TO_EXAMPLES: beispiele
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
-          OUTPUT_FORMAT: SUMMARY
+          OUTPUT_FORMAT: RAW
           
           # Error @ Patient.address[0] (line 117, col6) : Expected 0 but found 1 line elements
           EXPECTED_FAILS: VALIDATION_EXAMPLES_JAVA
