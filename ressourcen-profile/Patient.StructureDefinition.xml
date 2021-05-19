@@ -220,6 +220,10 @@
       <path value="Patient.identifier.assigner" />
       <mustSupport value="true" />
     </element>
+    <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.type">
+      <path value="Patient.identifier.assigner.identifier.type" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.system">
       <path value="Patient.identifier.assigner.identifier.system" />
       <mustSupport value="true" />
