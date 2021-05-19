@@ -100,23 +100,6 @@
       <path value="Patient.identifier.assigner.identifier.type" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.type.coding">
-      <path value="Patient.identifier.assigner.identifier.type.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.type.coding:XX-Type">
-      <path value="Patient.identifier.assigner.identifier.type.coding" />
-      <sliceName value="XX-Type" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.type.coding:XX-Type.system">
-      <path value="Patient.identifier.assigner.identifier.type.coding.system" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.type.coding:XX-Type.code">
-      <path value="Patient.identifier.assigner.identifier.type.coding.code" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.system">
       <path value="Patient.identifier.assigner.identifier.system" />
       <mustSupport value="true" />
@@ -236,17 +219,6 @@
     <element id="Patient.identifier:versicherungsnummer_pkv.assigner">
       <path value="Patient.identifier.assigner" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.type.coding">
-      <path value="Patient.identifier.assigner.identifier.type.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="1" />
     </element>
     <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.system">
       <path value="Patient.identifier.assigner.identifier.system" />
