@@ -45,5 +45,5 @@ jobs:
           PATH_TO_EXAMPLES: beispiele
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
-          EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA # Error generating Snapshot: Differential in profile [...] does not have a slice at Patient.identifier.type.coding
-          OUTPUT_FORMAT: RAW
+          EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA # Error @ Patient.address[0] (line 117, col6) : Expected 0 but found 1 line elements
+          OUTPUT_FORMAT: SUMMARY
