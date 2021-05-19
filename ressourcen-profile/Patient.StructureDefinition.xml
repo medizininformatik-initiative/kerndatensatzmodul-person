@@ -186,9 +186,9 @@
         <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
       </constraint>
     </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv">
+    <element id="Patient.identifier:versichertennummer_pkv">
       <path value="Patient.identifier" />
-      <sliceName value="versicherungsnummer_pkv" />
+      <sliceName value="versichertennummer_pkv" />
       <max value="1" />
       <type>
         <code value="Identifier" />
@@ -204,35 +204,35 @@
       </patternIdentifier>
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.use">
+    <element id="Patient.identifier:versichertennummer_pkv.use">
       <path value="Patient.identifier.use" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.type">
+    <element id="Patient.identifier:versichertennummer_pkv.type">
       <path value="Patient.identifier.type" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.value">
+    <element id="Patient.identifier:versichertennummer_pkv.value">
       <path value="Patient.identifier.value" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.assigner">
+    <element id="Patient.identifier:versichertennummer_pkv.assigner">
       <path value="Patient.identifier.assigner" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.type">
+    <element id="Patient.identifier:versichertennummer_pkv.assigner.identifier.type">
       <path value="Patient.identifier.assigner.identifier.type" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.system">
+    <element id="Patient.identifier:versichertennummer_pkv.assigner.identifier.system">
       <path value="Patient.identifier.assigner.identifier.system" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.assigner.identifier.value">
+    <element id="Patient.identifier:versichertennummer_pkv.assigner.identifier.value">
       <path value="Patient.identifier.assigner.identifier.value" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.identifier:versicherungsnummer_pkv.assigner.display">
+    <element id="Patient.identifier:versichertennummer_pkv.assigner.display">
       <path value="Patient.identifier.assigner.display" />
       <mustSupport value="true" />
     </element>
