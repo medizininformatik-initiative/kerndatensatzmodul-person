@@ -18,9 +18,6 @@
       <path value="Person" />
       <min value="0" />
       <max value="*" />
-      <type>
-        <code value="Element" />
-      </type>
     </element>
     <element id="Person.Name">
       <path value="Person.Name" />
