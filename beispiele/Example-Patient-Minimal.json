@@ -42,7 +42,7 @@
         "assigner":{
           "identifier":{
             "use": "official",
-            "system": "http://fhir.de/NamingSystem/arge-ik/iknr",
+            "system": "http://fhir.de/sid/arge-ik/iknr",
             "value": "260326822"
           }
         }
