@@ -39,7 +39,7 @@ jobs:
           java-version: 1.8
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.2.0-alpha6
+        uses: FirelyTeam/firely-terminal-pipeline@v0.2.0-alpha7
         with:
           PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem terminologie/ValueSet ressourcen-profile logical-models
           PATH_TO_EXAMPLES: beispiele
@@ -47,3 +47,5 @@ jobs:
           JAVA_VALIDATION_ENABLED: true
           OUTPUT_FORMAT: RAW
           JAVA_VALIDATION_OPTIONS: -allow-example-urls true
+          SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
+          SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
