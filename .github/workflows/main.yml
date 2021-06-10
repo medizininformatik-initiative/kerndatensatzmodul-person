@@ -46,7 +46,7 @@ jobs:
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
           OUTPUT_FORMAT: RAW
-          JAVA_VALIDATION_OPTIONS: -allow-example-urls
+          JAVA_VALIDATION_OPTIONS: -allow-example-urls true
           
           # Error @ Patient.address[0] (line 117, col6) : Expected 0 but found 1 line elements
           EXPECTED_FAILS: VALIDATION_EXAMPLES_JAVA
