@@ -37,13 +37,13 @@
               }
             ]
         },
-        "system": "http://fhir.de/NamingSystem/gkv/kvid-10",
+        "system": "http://fhir.de/sid/gkv/kvid-10",
         "value": "Z234567890",
         "assigner": {
             "identifier": {
                 "use": "official",
                 "value": "109519005",
-                "system": "http://fhir.de/NamingSystem/arge-ik/iknr"
+                "system": "http://fhir.de/sid/arge-ik/iknr"
             }
         }
     },
@@ -125,7 +125,7 @@
           {
             "url": "http://fhir.de/StructureDefinition/destatis/ags",
             "valueCoding": {
-              "system": "http://fhir.de/NamingSystem/destatis/ags",
+              "system": "http://fhir.de/sid/destatis/ags",
               "code": "11000000"
             }
           }
