@@ -98,6 +98,7 @@
     </element>
     <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.type">
       <path value="Patient.identifier.assigner.identifier.type" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versichertenId_GKV.assigner.identifier.system">
@@ -127,6 +128,7 @@
     </element>
     <element id="Patient.identifier:pid.type">
       <path value="Patient.identifier.type" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:pid.system">
@@ -189,6 +191,7 @@
     </element>
     <element id="Patient.identifier:versichertennummer_pkv.type">
       <path value="Patient.identifier.type" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:versichertennummer_pkv.value">
