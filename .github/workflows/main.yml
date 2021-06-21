@@ -26,7 +26,7 @@ jobs:
       - name: Test GitHub Secrets
         env:
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
-          SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
+          SIMPLIFIER_PASSWORD: test
         run: |
           echo "SIMPLIFIER_USERNAME: $SIMPLIFIER_USERNAME"
           echo "SIMPLIFIER_PASSWORD: $SIMPLIFIER_PASSWORD"
