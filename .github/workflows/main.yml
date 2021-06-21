@@ -26,11 +26,9 @@ jobs:
       - name: Test GitHub Secrets
         shell: bash
         env:
-          USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
-          PASSWORD: ${{ secrets.TEST }}
+          TEST: ${{ secrets.REPO_TEST }}
         run: |
-          echo $USERNAME
-          echo $PASSWORD
+          echo $TEST
         
       - name: Checkout code
         uses: actions/checkout@v2
