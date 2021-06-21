@@ -28,8 +28,8 @@ jobs:
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
         run: |
-          echo "SIMPLIFIER_USERNAME: $INPUT_SIMPLIFIER_USERNAME"
-          echo "SIMPLIFIER_PASSWORD: $INPUT_SIMPLIFIER_PASSWORD"
+          echo "SIMPLIFIER_USERNAME: $SIMPLIFIER_USERNAME"
+          echo "SIMPLIFIER_PASSWORD: $SIMPLIFIER_PASSWORD"
         
       - name: Checkout code
         uses: actions/checkout@v2
