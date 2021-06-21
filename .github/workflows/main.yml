@@ -24,12 +24,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Test GitHub Secrets
+        shell: bash
         env:
-          SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
-          SIMPLIFIER_PASSWORD: ${{ secrets.TEST }}
+          USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
+          PASSWORD: ${{ secrets.TEST }}
         run: |
-          echo $SIMPLIFIER_USERNAME | sed -e 's/\(.\)/\1 /g'
-          echo $SIMPLIFIER_PASSWORD | sed -e 's/\(.\)/\1 /g'
+          echo $USERNAME | sed -e 's/\(.\)/\1 /g'
+          echo $PASSWORD | sed -e 's/\(.\)/\1 /g'
         
       - name: Checkout code
         uses: actions/checkout@v2
