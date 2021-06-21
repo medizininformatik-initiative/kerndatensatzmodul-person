@@ -29,8 +29,8 @@ jobs:
           USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           PASSWORD: ${{ secrets.TEST }}
         run: |
-          echo $USERNAME | sed -e 's/\(.\)/\1 /g'
-          echo $PASSWORD | sed -e 's/\(.\)/\1 /g'
+          echo $USERNAME
+          echo $PASSWORD
         
       - name: Checkout code
         uses: actions/checkout@v2
