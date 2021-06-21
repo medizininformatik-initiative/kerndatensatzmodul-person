@@ -40,9 +40,6 @@ jobs:
         
       - name: Firely.Terminal (GitHub Actions)
         uses: FirelyTeam/firely-terminal-pipeline@v0.2.0-alpha10
-        env:
-          INPUT_SIMPLIFIER_USERNAME: alexander@fire.ly
-          INPUT_SIMPLIFIER_PASSWORD: test
         with:
           PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem terminologie/ValueSet ressourcen-profile logical-models
           PATH_TO_EXAMPLES: beispiele
@@ -51,3 +48,5 @@ jobs:
           OUTPUT_FORMAT: RAW
           JAVA_VALIDATION_OPTIONS: -allow-example-urls true
           DEBUG_MODE: true
+          SIMPLIFIER_USERNAME: alexander@fire.ly
+          SIMPLIFIER_PASSWORD: test
