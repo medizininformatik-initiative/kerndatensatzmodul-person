@@ -23,12 +23,6 @@ jobs:
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Test GitHub Secrets
-        shell: bash
-        env:
-          TEST: ${{ secrets.SIMPLIFIER_USERNAME }}
-        run: |
-          echo $TEST
         
       - name: Checkout code
         uses: actions/checkout@v2
