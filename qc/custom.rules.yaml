@@ -1,0 +1,3 @@
+- include: qc/minimal
+- include: qc/recommended
+- include: qc/ids
