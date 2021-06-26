@@ -28,10 +28,10 @@ jobs:
         uses: actions/checkout@v2
         
       # Install .NET runtime
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v1.7.2
-        with:
-          dotnet-version: 3.1.x
+      #- name: Setup .NET Core SDK
+      #  uses: actions/setup-dotnet@v1.7.2
+      #  with:
+      #    dotnet-version: 3.1.x
       
       # Install Java runtime (only needed if you want to run the offical HL7 Java validator)
       - name: Setup Java JDK
@@ -40,7 +40,7 @@ jobs:
           java-version: 1.8
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.2.0
+        uses: FirelyTeam/firely-terminal-pipeline@v0.3.0-alpha1
         with:
           PATH_TO_CONFORMANCE_RESOURCES: terminologie/CodeSystem terminologie/ValueSet ressourcen-profile logical-models
           PATH_TO_EXAMPLES: beispiele
