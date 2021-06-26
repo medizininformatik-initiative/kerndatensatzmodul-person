@@ -28,10 +28,10 @@ jobs:
         uses: actions/checkout@v2
         
       # Install .NET runtime
-      #- name: Setup .NET Core SDK
-      #  uses: actions/setup-dotnet@v1.7.2
-      #  with:
-      #    dotnet-version: 3.1.x
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+          dotnet-version: 3.1.x
       
       # Install Java runtime (only needed if you want to run the offical HL7 Java validator)
       - name: Setup Java JDK
