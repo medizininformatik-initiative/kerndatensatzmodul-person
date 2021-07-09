@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ProfileConditionTodesgrund" />
-  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesgrund" />
-  <name value="ProfileConditionTodesgrund" />
-  <title value="Profile - Condition - Todesgrund" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache" />
+  <name value="ProfileConditionTodesursache" />
+  <title value="Profile - Condition - Todesursache" />
   <status value="active" />
-  <description value="Dieses Profil beschreibt den Todesgrund der PatientIn als Element des Kerndatensatzes Medizininformatik-Initiative" />
+  <description value="Dieses Profil beschreibt den Todesursache der PatientIn als Element des Kerndatensatzes Medizininformatik-Initiative" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
