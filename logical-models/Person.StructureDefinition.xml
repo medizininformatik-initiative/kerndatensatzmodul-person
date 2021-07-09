@@ -292,6 +292,15 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/date" />
       </type>
     </element>
+    <element id="Person.Demographie.Vitalstatus.Todesgrund">
+      <path value="Person.Demographie.Vitalstatus.Todesgrund" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
     <element id="Person.PatientIn">
       <path value="Person.PatientIn" />
       <short value="Person, die in einer oder mehreren Gesundheitseinrichtungen behandelt wird" />
