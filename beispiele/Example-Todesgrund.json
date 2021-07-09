@@ -24,7 +24,8 @@
         "coding": [
             {
                 "code": "R96.1",
-                "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+                "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+                "version": "2021"
             }
         ]
     },
