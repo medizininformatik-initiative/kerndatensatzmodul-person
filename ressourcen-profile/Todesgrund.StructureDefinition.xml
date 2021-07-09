@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesgrund" />
-  <name value="Todesgrund" />
-  <status value="draft" />
+  <name value="ProfileConditionTodesgrund" />
+  <title value="Profile - Condition - Todesgrund" />
+  <status value="active" />
+  <description value="Dieses Profil beschreibt den Todesgrund der PatientIn als Element des Kerndatensatzes Medizininformatik-Initiative" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />
@@ -126,7 +128,24 @@
     </element>
     <element id="Condition.code.coding">
       <path value="Condition.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:icd10-gm">
+      <path value="Condition.code.coding" />
+      <sliceName value="icd10-gm" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Condition.code.text">
