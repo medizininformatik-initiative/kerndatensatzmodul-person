@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesgrund" />
+  <name value="Todesgrund" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition.id">
+      <path value="Condition.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.meta">
+      <path value="Condition.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.meta.source">
+      <path value="Condition.meta.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.meta.profile">
+      <path value="Condition.meta.profile" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category:todesDiagnose">
+      <path value="Condition.category" />
+      <sliceName value="todesDiagnose" />
+      <min value="1" />
+      <max value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="16100001" />
+        </coding>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="79378-6" />
+        </coding>
+      </patternCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category:todesDiagnose.coding">
+      <path value="Condition.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category:todesDiagnose.coding:snomed">
+      <path value="Condition.category.coding" />
+      <sliceName value="snomed" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+        <code value="16100001" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.category:todesDiagnose.coding:loinc">
+      <path value="Condition.category.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+      <patternCoding>
+        <system value="http://loinc.org" />
+        <code value="79378-6" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.text">
+      <path value="Condition.code.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
