@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProfileConditionTodesgrund" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesgrund" />
   <name value="ProfileConditionTodesgrund" />
   <title value="Profile - Condition - Todesgrund" />
