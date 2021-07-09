@@ -143,6 +143,10 @@
       <sliceName value="icd10-gm" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://fhir.de/StructureDefinition/CodingICD10GM" />
+      </type>
       <patternCoding>
         <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm" />
       </patternCoding>

@@ -1,0 +1,34 @@
+{
+    "resourceType": "Condition",
+    "id": "ExampleConditionTodesgrund",
+    "meta": {
+        "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesgrund"
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://snomed.info/sct",
+                    "code": "16100001"
+                },
+                {
+                    "system": "http://loinc.org",
+                    "code": "79378-6"
+                }
+            ]
+        }
+    ],
+    "code": {
+        "coding": [
+            {
+                "code": "R96.1",
+                "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/example"
+    }
+}
