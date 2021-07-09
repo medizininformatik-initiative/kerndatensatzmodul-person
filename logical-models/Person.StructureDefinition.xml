@@ -294,6 +294,7 @@
     </element>
     <element id="Person.Demographie.Vitalstatus.Todesgrund">
       <path value="Person.Demographie.Vitalstatus.Todesgrund" />
+      <short value="Grund für den Tod der PatientIn. Kodiert per ICD-10 GM." />
       <min value="0" />
       <max value="*" />
       <type>
