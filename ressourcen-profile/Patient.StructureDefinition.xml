@@ -17,10 +17,10 @@
     <element id="Patient">
       <path value="Patient" />
       <constraint>
-        <key value="pat-de-1" />
+        <key value="mii-pat-1" />
         <severity value="error" />
-        <human value="Die amtliche Differenzierung der Geschlechtsangabe 'other' darf nur gefüllt sein, wenn das Geschlecht 'other' angegeben ist" />
-        <expression value="gender='other' or gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').empty()" />
+        <human value="Falls die Geschlechtsangabe 'other' gewählt wird, muss die amtliche Differenzierung per Extension angegeben werden" />
+        <expression value="gender.exists() and gender='other' implies gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').exists()" />
         <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
       </constraint>
     </element>
