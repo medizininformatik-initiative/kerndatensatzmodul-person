@@ -3,7 +3,7 @@
   <id value="ProfileConditionTodesursache" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache" />
   <name value="ProfileConditionTodesursache" />
-  <title value="Profile - Condition - Todesursache" />
+  <title value="Profile - MI-I - Condition - Todesursache" />
   <status value="active" />
   <description value="Dieses Profil beschreibt den Todesursache der PatientIn als Element des Kerndatensatzes Medizininformatik-Initiative" />
   <fhirVersion value="4.0.1" />

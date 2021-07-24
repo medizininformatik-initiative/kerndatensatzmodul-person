@@ -4,7 +4,7 @@
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus" />
   <version value="2.0.0" />
   <name value="ProfileObservationVitalstatus" />
-  <title value="Profile - Observation - Vitalstatus" />
+  <title value="Profile - MI-I - Observation - Vitalstatus" />
   <status value="active" />
   <description value="Dieses Profil beschreibt den Vitalstatus der PatientIn in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />

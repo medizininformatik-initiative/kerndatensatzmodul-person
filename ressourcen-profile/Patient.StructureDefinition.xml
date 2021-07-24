@@ -4,7 +4,7 @@
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
   <version value="2.0.0" />
   <name value="ProfilePatientPatientIn" />
-  <title value="Profile - Patient - PatientIn" />
+  <title value="Profile - MI-I - Patient - PatientIn" />
   <status value="active" />
   <description value="Dieses Profil beschreibt eine PatientIn in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
