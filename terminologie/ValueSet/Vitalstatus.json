@@ -3,7 +3,7 @@
   "id": "ValueSetVitalstatus",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus",
   "version": "2.0.0",
-  "title": "ValueSet - Vitalstatus",
+  "title": "ValueSet - MI-I - Vitalstatus",
   "name": "ValueSetVitalstatus",
   "status": "active",
   "compose": {
