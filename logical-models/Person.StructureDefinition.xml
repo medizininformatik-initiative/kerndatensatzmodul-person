@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="LogicalModelPerson" />
+  <id value="LogicalModel-MII-Person" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/LogicalModel/Person" />
   <version value="2.0.0" />
-  <name value="LogicalModelPerson" />
+  <name value="LogicalModel_MII_Person" />
   <title value="LogicalModel - MI-I - Person" />
   <status value="active" />
   <description value="Logische Repräsentation des Basismoduls Person" />
