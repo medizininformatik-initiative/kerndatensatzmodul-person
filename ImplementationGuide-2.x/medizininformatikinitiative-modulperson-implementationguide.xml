@@ -2,7 +2,7 @@
   <url value="https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide" />
   <version value="2.0.0" />
   <name value="[DE] Medizininformatik Initiative - Modul Person - Implementierungsleitfaden" />
-  <status value="draft" />
+  <status value="active" />
   <description value="[DE] Medizininformatik Initiative - Modul Person - Implementierungsleitfaden" />
   <fhirVersion value="4.0.0" />
   <definition>
