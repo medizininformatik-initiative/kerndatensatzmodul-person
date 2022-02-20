@@ -1,0 +1,85 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <url value="https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide" />
+  <version value="1.0.14" />
+  <name value="[DE] Medizininformatik Initiative - Modul Person - Implementierungsleitfaden" />
+  <status value="active" />
+  <description value="[DE] Modul Person - Major Version 1.x - IG" />
+  <fhirVersion value="4.0.0" />
+  <definition>
+    <page>
+      <nameUrl value="ImplementationGuide-1.x/IGMIIKDSModulPerson.md" />
+      <title value="IG MII KDS Modul Person" />
+      <generation value="markdown" />
+      <page>
+        <nameUrl value="ImplementationGuide-1.x/BeschreibungModul.md" />
+        <title value="Beschreibung Modul" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="ImplementationGuide-1.x/KontextimGesamtprojektBezgezuanderenModulen.md" />
+        <title value="Kontext im Gesamtprojekt / Bezüge zu anderen Modulen" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="ImplementationGuide-1.x/Referenzen.md" />
+        <title value="Referenzen" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="ImplementationGuide-1.x/AnwendungsflleInformationsmodell.md" />
+        <title value="Anwendungsfälle / Informationsmodell" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="ImplementationGuide-1.x/BeschreibungvonSzenarienfrdieAnwendungderModule.md" />
+          <title value="Beschreibung von Szenarien für die Anwendung der Module" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="ImplementationGuide-1.x/Datenstzeinkl.Beschreibungen.md" />
+          <title value="Datensätze inkl. Beschreibungen" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="ImplementationGuide-1.x/UML.md" />
+          <title value="UML" />
+          <generation value="markdown" />
+        </page>
+      </page>
+      <page>
+        <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/TechnischeImplementierung.md" />
+        <title value="Technische Implementierung" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/FHIR-Profile.md" />
+          <title value="FHIR-Profile" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/PatientInPatient.md" />
+            <title value="PatientIn (Patient)" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/ProbandInResearchSubject.md" />
+            <title value="ProbandIn (ResearchSubject)" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/VitalstatusObservation.md" />
+            <title value="Vitalstatus (Observation)" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/TodesursacheCondition.md" />
+            <title value="Todesursache (Condition)" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/Terminologie.md" />
+          <title value="Terminologien" />
+          <generation value="markdown" />
+        </page>
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>
