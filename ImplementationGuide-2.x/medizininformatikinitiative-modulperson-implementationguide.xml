@@ -46,36 +46,36 @@
         </page>
       </page>
       <page>
-        <nameUrl value="TechnischeImplementierung/TechnischeImplementierung.md" />
+        <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/TechnischeImplementierung.md" />
         <title value="Technische Implementierung" />
         <generation value="markdown" />
         <page>
-          <nameUrl value="TechnischeImplementierung/FHIR-Profile.md" />
+          <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/FHIR-Profile.md" />
           <title value="FHIR-Profile" />
           <generation value="markdown" />
           <page>
-            <nameUrl value="TechnischeImplementierung/PatientInPatient.md" />
+            <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/PatientInPatient.md" />
             <title value="PatientIn (Patient)" />
             <generation value="markdown" />
           </page>
           <page>
-            <nameUrl value="TechnischeImplementierung/ProbandInResearchSubject.md" />
+            <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/ProbandInResearchSubject.md" />
             <title value="ProbandIn (ResearchSubject)" />
             <generation value="markdown" />
           </page>
           <page>
-            <nameUrl value="TechnischeImplementierung/VitalstatusObservation.md" />
+            <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/VitalstatusObservation.md" />
             <title value="Vitalstatus (Observation)" />
             <generation value="markdown" />
           </page>
           <page>
-            <nameUrl value="TechnischeImplementierung/TodesursacheCondition.md" />
+            <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/TodesursacheCondition.md" />
             <title value="Todesursache (Condition)" />
             <generation value="markdown" />
           </page>
         </page>
         <page>
-          <nameUrl value="TechnischeImplementierung/Terminologien.md" />
+          <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/Terminologien.md" />
           <title value="Terminologien" />
           <generation value="markdown" />
         </page>
