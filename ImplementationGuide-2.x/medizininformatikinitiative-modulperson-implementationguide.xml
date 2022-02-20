@@ -1,9 +1,9 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <url value="https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide" />
   <version value="2.0.0" />
-  <name value="Medizininformatik Initiative - Modul Person - ImplementationGuide" />
+  <name value="[DE] Medizininformatik Initiative - Modul Person - ImplementationGuide" />
   <status value="draft" />
-  <description value="Medizininformatik Initiative - Modul Person - ImplementationGuide" />
+  <description value="[DE] Medizininformatik Initiative - Modul Person - ImplementationGuide" />
   <fhirVersion value="4.0.0" />
   <definition>
     <page>
