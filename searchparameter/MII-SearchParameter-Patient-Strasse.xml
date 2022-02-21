@@ -1,0 +1,13 @@
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="MII-SearchParameter-Patient-Strasse"/>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Strasse"/>
+  <version value="2.0.0-alpha3"/>
+  <name value="MII_SearchParameter_Patient_Strasse"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-02-21"/>
+  <code value="strasse"/>
+  <base value="Patient"/>
+  <type value="string"/>
+  <expression value="Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').value"/>
+</SearchParameter>
