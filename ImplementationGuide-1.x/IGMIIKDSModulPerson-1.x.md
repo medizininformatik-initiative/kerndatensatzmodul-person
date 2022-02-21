@@ -79,4 +79,4 @@ Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben un
 
 * Obwohl diese Publikation mit größter Sorgfalt erstellt wurde, können die Autoren keinerlei Haftung für direkten oder indirekten Schaden übernehmen, der durch den Inhalt dieser Spezifikation entstehen könnte.
 
-
+<br><br>
