@@ -1,6 +1,6 @@
 ## Beschreibung Modul Person
 
-{{render:ModulPerson}}
+{{render:ImplementationGuide-Common/images/ModulPerson.jpg}}
 
 Das Modul PERSON spielt sowohl im Informationsmodell jedes einzelnen Krankenhauses und jeder großen Studie als auch in standort- oder projektübergreifenden Informationsmodellen eine zentrale Rolle.
 
@@ -29,7 +29,7 @@ Dass diese Angaben im Modul PERSON des Kerndatensatzes enthalten sind, bedeutet 
 
 **Abbildung der Datensatzgruppe Patient:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/PatPerson}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:ImplementationGuide-Common/images/PatPerson.jpg}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 Innerhalb von Krankenhäusern oder anderen Gesundheitseinrichtungen wird für einmal oder mehrmals zur Versorgung aufgenommene Personen der Begriff *PatientIn* benutzt. Meist erhält eine Person bei der ersten Krankenhausbehandlung einen *„Patienidentifikator“* und eine *„Fallnummer/Aufnahmenummer“*. Bei jeder erneuten, administrativ abgegrenzten Inanspruchnahme erhalten Personen neue Fallnummern; die Patientennummer aber soll möglichst lebenslänglich beibehalten werden.
 Jede Person kann in mehreren verschiedenen Krankenhäusern und anderen Gesundheitseinrichtungen *PatientIn* sein und erhält jeweils für diese eine einrichtungsspezifische Patientenidentifikationsnummer. Näheres zur Entität *PatientIn* findet sich beim Modul FALL.
@@ -43,6 +43,6 @@ Je *ProbandIn* wird insbesondere notiert, an welcher Studie eine Teilnahme statt
 
 **Abbildung Datensatzgruppe ProbandIn:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/ProPerson}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:ImplementationGuide-Common/images/ProPerson.jpg}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 
