@@ -73,6 +73,140 @@ Weitere Vorgaben werden durch die Profile für die Datentypen HumanName und Addr
 
 ---
 
+**Suchparameter**
+
+Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
+
+1. Der Suchparameter "_id" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/Patient?_id=103270```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
+1. _source
+
+1. Der Suchparameter "_profile" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient```
+
+1. Der Suchparameter "identifier" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/Patient?identifier=http://fhir.krankenhaus.example|1032702```
+
+    ```GET [base]/Patient?identifier=1032702```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.identifier" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. Patient.identifier:pid.assigner.identifier
+
+1. Der Suchparameter "given" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?given=Erika```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.name.given" finden sich in der [FHIR-Basisspezifikation - Abschnitt "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. Der Suchparameter "family" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?family=Musterfrau```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.name.family" finden sich in der [FHIR-Basisspezifikation - Abschnitt "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. Der Suchparameter "name" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?name=Erika```
+
+    ```GET [base]/Patient?name=Musterfrau```
+
+1. Patient.name.prefix, Patient.name.prefix.extension:prefix-qualifier
+
+1. Der Suchparameter "gender" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?gender=female```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.gender" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. Patient.gender.extension:other-amtlich
+
+1. Der Suchparameter "birthdate" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?birthdate=1964-12-08```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.birthDate" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+
+1. Der Suchparameter "death-date" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?death-date=2022-01-01```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.deceased" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+
+1. Der Suchparameter "deceased" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?deceased=true```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.deceased" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. Der Suchparameter "address-city" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?address-city=Berlin```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.address.city" finden sich in der [FHIR-Basisspezifikation - Abschnitt "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. Der Suchparameter "address-postalcode" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?address-postalcode=10117```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.address.postalCode" finden sich in der [FHIR-Basisspezifikation - Abschnitt "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. Der Suchparameter "address-country" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?address-country=DE```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.address.country" finden sich in der [FHIR-Basisspezifikation - Abschnitt "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. Extensions auf Address 
+    * Patient.address.city.extension:gemeindeschluessel
+    * Patient.address.line.extension:Strasse
+    * Patient.address.line.extension:Hausnummer
+    * Patient.address.line.extension:Adresszusatz
+    * Patient.address.line.extension:Postfach
+    * Patient.address.extension:Stadtteil
+
+1. Der Suchparameter "link" MUSS unterstützt werden:
+
+    Beispiele
+
+    ```GET [base]/Patient?link=Patient/VerknuepftePatientIn```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.link.other" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+---
+
 **Beispiele**
 
 Beispiel (minimal):
