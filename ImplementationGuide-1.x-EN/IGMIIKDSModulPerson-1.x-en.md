@@ -2,7 +2,7 @@
 
 | Hinweis | Under Construction! |
 |---------|---------------------|
-| {{render:Warning}} | Dieser Implementation Guide stellt die aktuelle Arbeitsversion des Moduls 'Person' dar. Die jeweils für den produktiven Einsatz veröffentlichte Version finden Sie auf [dieser Seite der Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Person/IGMIIKDSModulPerson.html).|
+| {{render:ImplementationGuide-Common/images/Warning.jpg}} | Dieser Implementation Guide stellt die aktuelle Arbeitsversion des Moduls 'Person' dar. Die jeweils für den produktiven Einsatz veröffentlichte Version finden Sie auf [dieser Seite der Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Person/IGMIIKDSModulPerson.html).|
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz Moduls 'Person' der Medizinformatik-Initative.
 Im Folgenden werden die Use-Case des Moduls sowie die dazuhegörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
@@ -79,4 +79,4 @@ Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben un
 
 * Obwohl diese Publikation mit größter Sorgfalt erstellt wurde, können die Autoren keinerlei Haftung für direkten oder indirekten Schaden übernehmen, der durch den Inhalt dieser Spezifikation entstehen könnte.
 
-
+<br><br>
