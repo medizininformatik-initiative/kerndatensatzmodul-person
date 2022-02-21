@@ -75,6 +75,11 @@
           </page>
         </page>
         <page>
+          <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/CapabilityStatement-1.x.md" />
+          <title value="CapabilityStatement" />
+          <generation value="markdown" />
+        </page>
+        <page>
           <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/Terminologie-1.x.md" />
           <title value="Terminologien" />
           <generation value="markdown" />
