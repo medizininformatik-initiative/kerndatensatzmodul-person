@@ -2,7 +2,7 @@
 
 Dieses Profil beschreibt den Todesursache der PatientIn als Element des Kerndatensatzes Medizininformatik-Initiative.
 
-**Name**: "ProfileConditionTodesursache" ([Simplifier Link](https://simplifier.net/medizininformatikinitiative-modulperson/todesursache))
+**Name**: "ProfileConditionTodesursache" ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.14))
 
 **Canonical**: 
 ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache```

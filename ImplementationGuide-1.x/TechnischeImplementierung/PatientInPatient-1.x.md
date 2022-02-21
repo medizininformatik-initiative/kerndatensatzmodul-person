@@ -4,9 +4,9 @@ Dieses Profil beschreibt eine PatientIn in der Medizininformatik-Initiative.
 
 Es ist zu beachten, dass keinerlei Vorgaben zur Abbildung eines pseudonymisierten Patienten gemacht werden. In Zukunft können diesbezüglich durch andere Kerndatensatzmodule Vorgaben entstehen.
 
-**Name**: "ProfilePatientPatientIn" ([Simplifier Link](https://simplifier.net/MedizininformatikInitiative-ModulPerson/PatientIn))
+**Name**: "ProfilePatientPatientIn" ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.14))
 
-**Canonical**: 
+**Canonical**:
 ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient```
 
 **Differential**
