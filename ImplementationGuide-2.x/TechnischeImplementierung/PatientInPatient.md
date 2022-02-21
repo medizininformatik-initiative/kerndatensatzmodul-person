@@ -91,6 +91,8 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
     ```GET [base]/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient```
 
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_profile" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
 1. Der Suchparameter "identifier" MUSS unterstützt werden:
 
     Beispiele:
