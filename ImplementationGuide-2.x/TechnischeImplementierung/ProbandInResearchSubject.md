@@ -12,7 +12,7 @@ Beim Einschluss einer Person in eine Studie (auch in einen MII-Use Case) muss f�
 
 Die Erstellung der Ressource muss zum Zeitpunkt des Abrufens der Daten für die Studie erfolgen. Weitere Pflichten und Anpassungen sind für jeden Use Case zu prüfen.
 
-**Name**: ProfileResearchSubjectProbandIn ([Simplifier Link](https://simplifier.net/medizininformatikinitiative-modulperson/probantin))
+**Name**: ProfileResearchSubjectProbandIn ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@2.0.0-alpha4))
 
 **Canonical**: ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject```
 

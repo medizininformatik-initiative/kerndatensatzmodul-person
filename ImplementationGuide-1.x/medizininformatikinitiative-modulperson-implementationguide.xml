@@ -68,11 +68,6 @@
             <title value="Vitalstatus (Observation)" />
             <generation value="markdown" />
           </page>
-          <page>
-            <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/TodesursacheCondition-1.x.md" />
-            <title value="Todesursache (Condition)" />
-            <generation value="markdown" />
-          </page>
         </page>
         <page>
           <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/CapabilityStatement-1.x.md" />
