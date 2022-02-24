@@ -162,7 +162,7 @@
       <constraint>
         <key value="mii-pat-1" />
         <severity value="error" />
-        <human value="Entweder IKNR oder MII Core Location Identifier soll verwendet werden" />
+        <human value="Entweder IKNR oder MII Core Location Identifier muss verwendet werden" />
         <expression value="$this = 'http://fhir.de/NamingSystem/arge-ik/iknr' or $this = 'https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier'" />
         <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
       </constraint>
