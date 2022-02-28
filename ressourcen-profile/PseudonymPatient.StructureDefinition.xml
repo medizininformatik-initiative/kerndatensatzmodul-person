@@ -128,7 +128,9 @@
     <element id="Patient.deceased[x]:deceasedDateTime">
       <path value="Patient.deceased[x]" />
       <sliceName value="deceasedDateTime" />
-      <type value="dateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
       <constraint>
         <key value="TodesdatumKeineZeitangabe" />
         <severity value="error" />
@@ -220,7 +222,7 @@
         <key value="PostleitzahlEinschraenkung" />
         <severity value="error" />
         <human value="Nur die ersten beiden Stellen der Postleitzahl dürfen angegeben werden." />
-        <expression value="length() <= 2" />
+        <expression value="length() &lt;= 2" />
         <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PseudonymPatient" />
       </constraint>
       <mustSupport value="true" />
@@ -307,7 +309,7 @@
         <key value="PostleitzahlEinschraenkung" />
         <severity value="error" />
         <human value="Nur die ersten beiden Stellen der Postleitzahl dürfen angegeben werden." />
-        <expression value="length() <= 2" />
+        <expression value="length() &lt;= 2" />
         <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PseudonymPatient" />
       </constraint>
       <mustSupport value="true" />
