@@ -326,6 +326,14 @@
       </constraint>
       <mustSupport value="true" />
     </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus" />
+      <max value="0" />
+    </element>
+    <element id="Patient.multipleBirth[x]">
+      <path value="Patient.multipleBirth[x]" />
+      <max value="0" />
+    </element>
     <element id="Patient.photo">
       <path value="Patient.photo" />
       <max value="0" />
