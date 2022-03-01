@@ -1,8 +1,8 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="MII-SearchParameter-ResearchSubject-Consent"/>
+  <id value="sp-mii-person-consent"/>
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/ResearchSubject-Consent"/>
   <version value="2.0.0-alpha3"/>
-  <name value="MII_SearchParameter_ResearchSubject_Consent"/>
+  <name value="SP_MII_Person_Consent"/>
   <status value="active"/>
   <experimental value="false"/>
   <date value="2022-02-21"/>
