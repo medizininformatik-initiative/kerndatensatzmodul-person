@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="sd_mii_person_proband" />
+  <id value="sd-mii-person-proband" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject" />
   <version value="2.0.0-alpha3" />
   <name value="SD_MII_Person_Proband" />

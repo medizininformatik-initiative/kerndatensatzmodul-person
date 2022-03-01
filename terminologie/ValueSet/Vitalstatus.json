@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "vs_mii_person_vitalstatus",
+  "id": "vs-mii-person-vitalstatus",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus",
   "version": "2.0.0-alpha3",
   "title": "VS MII Person Vitalstatus",

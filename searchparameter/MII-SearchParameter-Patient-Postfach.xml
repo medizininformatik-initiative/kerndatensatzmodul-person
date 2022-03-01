@@ -1,5 +1,5 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
-  <id value="sp_mii-person-postfach"/>
+  <id value="sp-mii-person-postfach"/>
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Postfach"/>
   <version value="2.0.0-alpha3"/>
   <name value="SP_MII_Person_Postfach"/>
