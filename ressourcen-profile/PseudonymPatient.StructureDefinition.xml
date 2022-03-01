@@ -21,7 +21,7 @@
         <severity value="error" />
         <human value="Falls die Geschlechtsangabe 'other' gewählt wird, muss die amtliche Differenzierung per Extension angegeben werden" />
         <expression value="gender.exists() and gender='other' implies gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').exists()" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert" />
       </constraint>
     </element>
     <element id="Patient.id">
@@ -117,7 +117,7 @@
         <severity value="error" />
         <human value="Geburtsdatum darf nicht tagesgenau angegben werden. Das Geburtsdatum SOLLTE auf das quartalsweise auf-/abgerundet werden." />
         <expression value="matches('^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1|4|7]|1[0]))?$')" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PseudonymPatient" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -136,7 +136,7 @@
         <severity value="error" />
         <human value="Das Todesdatum darf nur tagesgenau ohne Uhrzeit erfasst werden." />
         <expression value="matches('([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?')" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PseudonymPatient" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -223,7 +223,7 @@
         <severity value="error" />
         <human value="Nur die ersten beiden Stellen der Postleitzahl dürfen angegeben werden." />
         <expression value="length() &lt;= 2" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PseudonymPatient" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -235,7 +235,7 @@
         <severity value="warning" />
         <human value="The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2." />
         <expression value="country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -310,7 +310,7 @@
         <severity value="error" />
         <human value="Nur die ersten beiden Stellen der Postleitzahl dürfen angegeben werden." />
         <expression value="length() &lt;= 2" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PseudonymPatient" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -322,7 +322,7 @@
         <severity value="warning" />
         <human value="The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2." />
         <expression value="country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))" />
-        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert" />
       </constraint>
       <mustSupport value="true" />
     </element>
