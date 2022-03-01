@@ -6,6 +6,7 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2022-02-21"/>
+  <description value="Suchparameter für Patient.address.line.extension:Strasse" />
   <code value="strasse"/>
   <base value="Patient"/>
   <type value="string"/>
