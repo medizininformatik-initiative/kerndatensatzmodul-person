@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-MII-Observation-Vitalstatus" />
+  <id value="sd_mii_person_vitalstatus" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus" />
-  <version value="2.0.0" />
-  <name value="Profile_MII_Observation_Vitalstatus" />
-  <title value="Profile - MI-I - Observation - Vitalstatus" />
+  <version value="2.0.0-alpha3" />
+  <name value="SD_MII_Person_Vitalstatus" />
+  <title value="SD MII Person Vitalstatus" />
   <status value="active" />
-  <description value="Dieses Profil beschreibt den Vitalstatus der PatientIn in der Medizininformatik-Initiative." />
+  <description value="Dieses Profil beschreibt den Vitalstatus der Patient*in in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="workflow" />

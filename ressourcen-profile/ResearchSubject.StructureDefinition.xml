@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-MII-ResearchSubject-ProbandIn" />
+  <id value="sd_mii_person_proband" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject" />
-  <version value="2.0.0" />
-  <name value="Profile_MII_ResearchSubject_ProbandIn" />
-  <title value="Profile - MI-I - ResearchSubject - ProbandIn" />
+  <version value="2.0.0-alpha3" />
+  <name value="SD_MII_Person_Proband" />
+  <title value="SD MII Person Proband" />
   <status value="active" />
-  <description value="Dieses Profil beschreibt eine ProbandIn in der Medizininformatik-Initiative." />
+  <description value="Dieses Profil beschreibt eine Proband*in in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Profile-MII-Patient-PatientIn" />
+  <id value="sd-mii-person-patient" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient" />
-  <version value="2.0.0" />
-  <name value="Profile_MII_Patient_PatientIn" />
-  <title value="Profile - MI-I - Patient - PatientIn" />
+  <version value="2.0.0-alpha3" />
+  <name value="SD_MII_Person_Patient" />
+  <title value="SD MII Person Patient" />
   <status value="active" />
-  <description value="Dieses Profil beschreibt eine PatientIn in der Medizininformatik-Initiative." />
+  <description value="Dieses Profil beschreibt eine Patient*in in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
