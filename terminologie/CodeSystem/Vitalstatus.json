@@ -2,7 +2,7 @@
     "resourceType":"CodeSystem",
     "id": "CodeSystemVitalstatus",
     "url":"https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus",
-    "version": "1.0",
+    "version": "1.0.15",
     "name":"CodeSystemVitalstatus",
     "title": "CodeSystem - Vitalstatus",
     "status":"active",
