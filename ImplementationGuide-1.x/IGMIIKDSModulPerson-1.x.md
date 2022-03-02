@@ -8,11 +8,11 @@ Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatens
 Im Folgenden werden die Use-Case des Moduls sowie die dazuhegörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung   |   |
-|---------|---|
-| Datum   | 27.05.2021  |
-| Version | 1.0.14         |
+|---------|--------------|
+| Datum   | 02.03.2022   |
+| Version | 1.0.15       |
 | Status  | Active       |
-| Realm   | DE          | 
+| Realm   | DE           | 
 
 
 ## Inhaltsverzeichnis
