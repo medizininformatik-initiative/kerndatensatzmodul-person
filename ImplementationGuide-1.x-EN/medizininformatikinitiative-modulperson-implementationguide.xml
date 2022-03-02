@@ -12,12 +12,12 @@
       <generation value="markdown" />
       <page>
         <nameUrl value="ImplementationGuide-1.x-EN/BeschreibungModul-1.x-en.md" />
-        <title value="Beschreibung Modul" />
+        <title value="Description Module Person" />
         <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="ImplementationGuide-1.x-EN/KontextimGesamtprojektBezgezuanderenModulen-1.x-en.md" />
-        <title value="Kontext im Gesamtprojekt / Bezüge zu anderen Modulen" />
+        <title value="Context in the overall project / references to other modules" />
         <generation value="markdown" />
       </page>
       <page>
