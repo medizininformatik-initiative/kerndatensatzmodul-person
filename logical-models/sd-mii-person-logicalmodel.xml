@@ -468,17 +468,7 @@
       </type>
     </element>
     <element id="Person.PatientInPseudonym">
-      <path value="Person.ProbandIn.BezeichnungDerStudie" />
-      <short value="Identifikator der Studie" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="BackboneElement" />
-      </type>
-    </element>
-    <element id="Person.PatientInPseudonym">
-      <path value="Person.ProbandIn.BezeichnungDerStudie" />
-      <short value="Identifikator der Studie" />
+      <path value="Person.PatientInPseudonym" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -487,6 +477,7 @@
     </element>
     <element id="Person.PatientInPseudonym.Pseudonym">
       <path value="Person.PatientInPseudonym.Pseudonym" />
+      <short value="Neu generierte Identifikation der PatientIn mit Bezug zum Original-Identifikator in einer Treuhandstelle." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -506,6 +497,7 @@
     </element>
     <element id="Person.PatientInPseudonym.Todesdatum">
       <path value="Person.PatientInPseudonym.Todesdatum" />
+      <short value="Zeitpunkt des Todes begrenzt auf Jahr, Monat und Tag." />
       <min value="0" />
       <max value="*" />
       <type>
