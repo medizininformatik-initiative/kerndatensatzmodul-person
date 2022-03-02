@@ -1,3 +1,5 @@
+## ResearchSubject (ResearchSubject)
+
 This profile describes a Research Subject in the Medical Informatics Initiative.
 
 When including a person in a study (also in a MII use case), a ResearchSubject resource must be created for this person. There are the following variations:
