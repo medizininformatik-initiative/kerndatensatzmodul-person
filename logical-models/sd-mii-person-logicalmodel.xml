@@ -466,61 +466,62 @@
         <code value="string" />
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
-      <element id="Person.PatientInPseudonym">
-        <path value="Person.ProbandIn.BezeichnungDerStudie" />
-        <short value="Identifikator der Studie" />
-        <min value="0" />
-        <max value="*" />
-        <type>
-          <code value="BackboneElement" />
-        </type>
-      </element>
-      <element id="Person.PatientInPseudonym">
-        <path value="Person.ProbandIn.BezeichnungDerStudie" />
-        <short value="Identifikator der Studie" />
-        <min value="0" />
-        <max value="*" />
-        <type>
-          <code value="BackboneElement" />
-        </type>
-      </element>
-      <element id="Person.PatientInPseudonym.Pseudonym">
-        <path value="Person.PatientInPseudonym.Pseudonym" />
-        <min value="0" />
-        <max value="*" />
-        <type>
-          <code value="string" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/string" />
-        </type>
-      </element>
-      <element id="Person.PatientInPseudonym.GeburtsdatumQuartal">
-        <path value="Person.PatientInPseudonym.GeburtsdatumQuartal" />
-        <short value="Vergröberung auf Quartal und Jahr." />
-        <min value="0" />
-        <max value="*" />
-        <type>
-          <code value="string" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/string" />
-        </type>
-      </element>
-      <element id="Person.PatientInPseudonym.Todesdatum">
-        <path value="Person.PatientInPseudonym.Todesdatum" />
-        <min value="0" />
-        <max value="*" />
-        <type>
-          <code value="string" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/string" />
-        </type>
-      </element>
-      <element id="Person.PatientInPseudonym.VergroebertePLZ">
-        <path value="Person.PatientInPseudonym.VergroebertePLZ" />
-        <short value="Erste zwei Stellen der Postleitzahl" />
-        <min value="0" />
-        <max value="*" />
-        <type>
-          <code value="string" />
-          <profile value="http://hl7.org/fhir/StructureDefinition/string" />
-        </type>
-      </element>
-    </differential>
-  </StructureDefinition>
+    </element>
+    <element id="Person.PatientInPseudonym">
+      <path value="Person.ProbandIn.BezeichnungDerStudie" />
+      <short value="Identifikator der Studie" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym">
+      <path value="Person.ProbandIn.BezeichnungDerStudie" />
+      <short value="Identifikator der Studie" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym.Pseudonym">
+      <path value="Person.PatientInPseudonym.Pseudonym" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym.GeburtsdatumQuartal">
+      <path value="Person.PatientInPseudonym.GeburtsdatumQuartal" />
+      <short value="Vergröberung auf Quartal und Jahr." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym.Todesdatum">
+      <path value="Person.PatientInPseudonym.Todesdatum" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym.VergroebertePLZ">
+      <path value="Person.PatientInPseudonym.VergroebertePLZ" />
+      <short value="Erste zwei Stellen der Postleitzahl" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
