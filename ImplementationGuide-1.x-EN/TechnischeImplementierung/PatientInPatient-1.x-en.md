@@ -77,8 +77,8 @@ Further specifications are made by the profiles for the data types HumanName and
 
 Example (minimal):
 
-{{json:medizininformatikinitiative-modulperson/Patient-example}}
+{{json:beispiele/Example-Patient-Minimal.json}}
 
 Example (complete):
 
-{{json:medizininformatikinitiative-modulperson/Patient-example-2}}
+{{json:beispiele/Example-Patient.json}}
