@@ -1,8 +1,8 @@
 ## CapabilityStatement
 
-Um eine dezentrale Datenauswertung mittel des Deutsche Forschungsdatenportal für Gesundheit der Medizininformatik-Initiative zu ermöglichen MUSS die [capabilities-Interaktion](https://www.hl7.org/fhir/http.html#capabilities) untersützt werden, sodass durch durch den FHIR-Server unter ```[BASE_URL]/metadata``` ein CapabilityStatement exponiert wird. Innerhalb dieses CapabilityStatement MUSS angegeben werden welche Profile inkl. Version, sowie welche Suchparameter unterstüzt werden.
+In order to enable decentralized data evaluation using the German Research Data Portal for Health of the Medical Informatics Initiative, the [capabilities interaction](https://www.hl7.org/fhir/http.html#capabilities) MUST be supported, so that a capability statement is exposed by the FHIR server under ``[BASE_URL]/metadata``. Within this capability statement it MUST be specified which profiles incl. version, as well as which search parameters are supported.
 
-Nachfolgend wird aufgelistet weleche Inhalte verpflichtend im CapabilityStatement angegeben werden MÜSSEN. Darüber hinaus MUSS eine Konformität zu dem nachfolgenden CapabilityStatement in der jeweiligen CapabilityStatement Instanz unter [```CapabilityStatement.instantiates```](https://www.hl7.org/fhir/capabilitystatement-definitions.html#CapabilityStatement.instantiates) angegeben werden.
+The following section displays the elements which MUST be present in the CapabilityStatement. In addition, conformance to the following CapabilityStatement SHALL be specified in the respective CapabilityStatement instance at [``CapabilityStatement.instantiates``](https://www.hl7.org/fhir/capabilitystatement-definitions.html#CapabilityStatement.instantiates).
 
 Canonical: ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata```
 
