@@ -77,8 +77,8 @@ Weitere Vorgaben werden durch die Profile für die Datentypen HumanName und Addr
 
 Beispiel (minimal):
 
-{{json:medizininformatikinitiative-modulperson/Patient-example}}
+{{json:beispiele/Example-Patient-Minimal.json}}
 
 Beispiel (vollständig):
 
-{{json:medizininformatikinitiative-modulperson/Patient-example-2}}
+{{json:beispiele/Example-Patient.json}}
