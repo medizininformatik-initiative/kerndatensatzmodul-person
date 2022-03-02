@@ -1,10 +1,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <url value="https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide" />
-  <version value="1.0.14" />
-  <name value="[EN] MII Core Data Set - Module Person - Implementation Guide" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/ig-version-1.0-en" />
+  <version value="1.0.15" />
+  <name value="[EN] Medical Informatics Initiative - Module Person - ImplementationGuide - Version 1.0" />
   <status value="active" />
-  <description value="[EN] Module Person - Major Version 1.x - IG" />
-  <fhirVersion value="4.0.0" />
+  <description value="[EN] Module Person - Version 1.0 - IG" />
+  <fhirVersion value="4.0.1" />
   <definition>
     <page>
       <nameUrl value="ImplementationGuide-1.x-EN/IGMIIKDSModulPerson-1.x-en.md" />
