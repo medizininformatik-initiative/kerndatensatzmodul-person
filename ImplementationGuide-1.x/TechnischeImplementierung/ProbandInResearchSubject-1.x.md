@@ -56,6 +56,6 @@ Die Erstellung der Ressource muss zum Zeitpunkt des Abrufens der Daten für die 
 
 Beispiel (vollständig):
 
-{{json:medizininformatikinitiative-modulperson/ResearchSubject-example-1}}
+{{json:beispiele/Example-ResearchSubject.json}}
 
 ---

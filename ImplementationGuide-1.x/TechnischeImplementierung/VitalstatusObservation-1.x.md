@@ -42,4 +42,4 @@ Mindestens bei jeder Aufnahme / Entlassung der PatientIn ist ein Vitalstatus ("L
 
 Beispiel (vollständig):
 
-{{json:medizininformatikinitiative-modulperson/Observation-example-1}}
+{{json:beispiele/Example-Vitalstatus.json}}
