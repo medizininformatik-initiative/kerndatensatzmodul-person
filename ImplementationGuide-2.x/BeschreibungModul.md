@@ -8,20 +8,20 @@ In der vorliegenden Spezifikation wird das Modul PERSON explizit für Patient\*i
 
 **Abbildung Modul PERSON in ART-DECOR mit den Komponenten Name, Demographie, Patient und Proband:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/PersonGanz.jpg}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:ImplementationGuide-Common/images/art-decor-person-2x-gesamt.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 
 Das führende identifizierende -- allerdings mit Unsicherheiten behaftete -- Merkmal ist der Name mit seinen verschiedenen Bestandteilen.
 
 **Abbildung des Namens im Modul PERSON:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/NamePerson.jpg}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:ImplementationGuide-Common/images/art-decor-person-2x-name.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 Durch die Ergänzung von demographischen Merkmalen wie Geburtsdatum, Geschlecht und Wohnort wird die Identifizierungsmöglichkeit verbessert. (Als weiteres, in bestimmtem Rahmen gut identifizierendes Merkmal kann für GKV-Patient\*innen ([90 % der Bevölkerung in Deutschland](https://www.gkv-spitzenverband.de/service/zahlen_und_grafiken/zahlen_und_grafiken.jsp)) die Versichertennummer genannt werden.)
 
 **Abbildung der Datensatzgruppe Demographie:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/DemoPerson.jpg}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:ImplementationGuide-Common/images/art-decor-person-2x-demographie.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 Die Einzelangaben zu den Personen im Modul PERSON dienen aber nicht nur zur Identifizierung. Ein Merkmal wie Wohnort wird auch für räumliche Analysen benötigt, Alter und Geschlecht beispielsweise auch zur Risikoadjustierung.
 
@@ -30,7 +30,7 @@ Dass diese Angaben im Modul PERSON des Kerndatensatzes enthalten sind, bedeutet 
 
 **Abbildung der Datensatzgruppe Patient:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/PatPerson.jpg}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:ImplementationGuide-Common/images/art-decor-person-2x-patientin.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 Innerhalb von Krankenhäusern oder anderen Gesundheitseinrichtungen wird für einmal oder mehrmals zur Versorgung aufgenommene Personen der Begriff *PatientIn* benutzt. Meist erhält eine Person bei der ersten Krankenhausbehandlung einen *„Patientenidentifikator“* und eine *„Fallnummer/Aufnahmenummer“*. Bei jeder erneuten, administrativ abgegrenzten Inanspruchnahme erhalten Personen neue Fallnummern; die Patientennummer aber, soll möglichst lebenslänglich beibehalten werden.
 Jede Person kann in mehreren verschiedenen Krankenhäusern und anderen Gesundheitseinrichtungen *PatientIn* sein und erhält jeweils für diese eine einrichtungsspezifische Patientenidentifikationsnummer. Näheres zur Entität *PatientIn* findet sich beim [Modul FALL](https://simplifier.net/medizininformatikinitiative-modulfall).
@@ -42,7 +42,7 @@ Basisvorgaben für die Erstellung pseudonymer Patientenstammdatensätze sind ins
 * Patientenidentifikatoren: Für pseudonyme Daten werden patientenbezogene Identifikatoren aus der Krankenversorgung durch andere Identifikatoren ersetzt.
 * Verwaltende Organisationen und Akteure: Die verwaltende Organisation eines Patientendatensatzes sowie Daten von dort Beschäftigten oder anderen Akteuren sind ebenfalls zu pseudonymisieren bzw. nur unter besonderen Bedingungen bereitzustellen. Die pseudonymisierte Form solcher Angaben ist nicht Bestandteil des Moduls PERSON.
 
-Tab. 1: Übersicht der Stellen und ihrer Zugriffsmöglichkeiten auf Datenkategorien mit den jeweiligen Schutzstufen 
+**Tab. 1:** Übersicht der Stellen und ihrer Zugriffsmöglichkeiten auf Datenkategorien mit den jeweiligen Schutzstufen 
 
 | Datenkategorie                        |  DIZ-Standort   | übergreifende Treuhandstelle | Datenmanagementstelle |     Nutzer      | Forschungsdatenportal |
 | ------------------------------------- | :-------------: | :--------------------------: | :-------------------: | :-------------: | :-------------------: |
@@ -61,11 +61,11 @@ Tab. 1: Übersicht der Stellen und ihrer Zugriffsmöglichkeiten auf Datenkategor
 <sup>6</sup> je Projekt werden nur die für eine wiss. Fragestellung notwendigen Teile der MDAT und ggf. auch nur in der notwendigen Detailliertheit (z. B. beim Geburtsdatum oder der PLZ) herausgegeben <br>
 <sup>7</sup> nur bei Daten-Herausgabe ohne eingebundene Treuhandstelle und ohne Record Linkage <br>
 <sup>8</sup> je nach Architekturmodell <br>
-<sup>9</sup> nur bei der Koordinierung von Widerrufen durch das Forschungsdatenportal <br>
+<sup>9</sup> nur bei der Koordinierung von Widerrufen durch das Forschungsdatenportal <br><br>
 
 **Abbildung Datensatzgruppe Pseudonyme/r PatientIn:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-pseudonym-v1.jpg}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:ImplementationGuide-Common/images/art-decor-person-2x-patient-pseudonym.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 
 In Studien wird für teilnehmende Personen der Begriff *ProbandIn* benutzt. Jede Person kann in verschiedenen Studien *ProbandIn* sein und erhält jeweils eine neue *Probandenidentifikationsnummer*.
