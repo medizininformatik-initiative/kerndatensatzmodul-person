@@ -123,8 +123,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="code" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.Demographie.Geburtsdatum">
@@ -133,8 +133,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="dateTime" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.Demographie.Adresse">
@@ -161,8 +161,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="code" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.Demographie.Adresse.Strassenanschrift.PLZ">
@@ -210,8 +210,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="code" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.Demographie.Adresse.Postfach.PLZ">
@@ -259,8 +259,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="boolean" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.Demographie.Vitalstatus.Todeszeitpunkt">
@@ -269,8 +269,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="dateTime" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.Demographie.Vitalstatus.Informationsquelle">
@@ -279,8 +279,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="code" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.Demographie.Vitalstatus.LetzterLebendzeitpunkt">
@@ -288,8 +288,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="date" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.Demographie.Vitalstatus.Todesursache">
@@ -298,8 +298,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="code" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.PatientIn">
@@ -326,8 +326,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="Identifier" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.PatientIn.Patienten-Identifikator.Patienten-IdentifikatorKontext">
@@ -336,8 +336,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="Identifier" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.PatientIn.Versicherung">
@@ -365,8 +365,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="code" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.PatientIn.Versicherung.Versichertennummer">
@@ -423,8 +423,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.ProbandIn.BeginnTeilnahme">
@@ -433,8 +433,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="dateTime" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.ProbandIn.EndeTeilnahme">
@@ -443,8 +443,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="dateTime" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.ProbandIn.StatusDerTeilnahme">
@@ -453,8 +453,8 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="code" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
     <element id="Person.ProbandIn.BezeichnungDerStudie">
@@ -463,8 +463,56 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="Identifier" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym">
+      <path value="Person.PatientInPseudonym" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym.Pseudonym">
+      <path value="Person.PatientInPseudonym.Pseudonym" />
+      <short value="Neu generierte Identifikation der PatientIn mit Bezug zum Original-Identifikator in einer Treuhandstelle." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym.GeburtsdatumQuartal">
+      <path value="Person.PatientInPseudonym.GeburtsdatumQuartal" />
+      <short value="Vergröberung auf Quartal und Jahr." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym.Todesdatum">
+      <path value="Person.PatientInPseudonym.Todesdatum" />
+      <short value="Zeitpunkt des Todes begrenzt auf Jahr, Monat und Tag." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="Person.PatientInPseudonym.VergroebertePLZ">
+      <path value="Person.PatientInPseudonym.VergroebertePLZ" />
+      <short value="Erste zwei Stellen der Postleitzahl" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
   </differential>

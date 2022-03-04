@@ -1,10 +1,10 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <url value="https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide" />
-  <version value="1.0.14" />
-  <name value="[EN] MII Core Data Set - Module Person - Implementation Guide" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/ig-version-1.0-en" />
+  <version value="1.0.15" />
+  <name value="[EN] Medical Informatics Initiative - Module Person - ImplementationGuide - Version 1.0" />
   <status value="active" />
-  <description value="[EN] Module Person - Major Version 1.x - IG" />
-  <fhirVersion value="4.0.0" />
+  <description value="[EN] Module Person - Version 1.0 - IG" />
+  <fhirVersion value="4.0.1" />
   <definition>
     <page>
       <nameUrl value="ImplementationGuide-1.x-EN/IGMIIKDSModulPerson-1.x-en.md" />
@@ -12,31 +12,31 @@
       <generation value="markdown" />
       <page>
         <nameUrl value="ImplementationGuide-1.x-EN/BeschreibungModul-1.x-en.md" />
-        <title value="Beschreibung Modul" />
+        <title value="Description Module Person" />
         <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="ImplementationGuide-1.x-EN/KontextimGesamtprojektBezgezuanderenModulen-1.x-en.md" />
-        <title value="Kontext im Gesamtprojekt / Bezüge zu anderen Modulen" />
+        <title value="Context in the overall project / references to other modules" />
         <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="ImplementationGuide-1.x-EN/Referenzen-1.x-en.md" />
-        <title value="Referenzen" />
+        <title value="References" />
         <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="ImplementationGuide-1.x-EN/AnwendungsflleInformationsmodell-1.x-en.md" />
-        <title value="Anwendungsfälle / Informationsmodell" />
+        <title value="Use Cases / Informationmodell" />
         <generation value="markdown" />
         <page>
           <nameUrl value="ImplementationGuide-1.x-EN/BeschreibungvonSzenarienfrdieAnwendungderModule-1.x-en.md" />
-          <title value="Beschreibung von Szenarien für die Anwendung der Module" />
+          <title value="Description of scenarios for the usage within the modules" />
           <generation value="markdown" />
         </page>
         <page>
           <nameUrl value="ImplementationGuide-1.x-EN/Datenstzeinkl.Beschreibungen-1.x-en.md" />
-          <title value="Datensätze inkl. Beschreibungen" />
+          <title value="Data Sets incl. descriptions" />
           <generation value="markdown" />
         </page>
         <page>
@@ -47,20 +47,20 @@
       </page>
       <page>
         <nameUrl value="ImplementationGuide-1.x-EN/TechnischeImplementierung/TechnischeImplementierung-1.x-en.md" />
-        <title value="Technische Implementierung" />
+        <title value="Tecnical Implementation" />
         <generation value="markdown" />
         <page>
           <nameUrl value="ImplementationGuide-1.x-EN/TechnischeImplementierung/FHIR-Profile-1.x-en.md" />
-          <title value="FHIR-Profile" />
+          <title value="FHIR Profiles" />
           <generation value="markdown" />
           <page>
             <nameUrl value="ImplementationGuide-1.x-EN/TechnischeImplementierung/PatientInPatient-1.x-en.md" />
-            <title value="PatientIn (Patient)" />
+            <title value="Patient (Patient)" />
             <generation value="markdown" />
           </page>
           <page>
             <nameUrl value="ImplementationGuide-1.x-EN/TechnischeImplementierung/ProbandInResearchSubject-1.x-en.md" />
-            <title value="ProbandIn (ResearchSubject)" />
+            <title value="ResearchSubject (ResearchSubject)" />
             <generation value="markdown" />
           </page>
           <page>
@@ -68,15 +68,15 @@
             <title value="Vitalstatus (Observation)" />
             <generation value="markdown" />
           </page>
-          <page>
-            <nameUrl value="ImplementationGuide-1.x-EN/TechnischeImplementierung/TodesursacheCondition-1.x-en.md" />
-            <title value="Todesursache (Condition)" />
-            <generation value="markdown" />
-          </page>
+        </page>
+        <page>
+          <nameUrl value="ImplementationGuide-1.x/TechnischeImplementierung/CapabilityStatement-1.x-en.md" />
+          <title value="CapabilityStatement" />
+          <generation value="markdown" />
         </page>
         <page>
           <nameUrl value="ImplementationGuide-1.x-EN/TechnischeImplementierung/Terminologie-1.x-en.md" />
-          <title value="Terminologien" />
+          <title value="Terminology" />
           <generation value="markdown" />
         </page>
       </page>

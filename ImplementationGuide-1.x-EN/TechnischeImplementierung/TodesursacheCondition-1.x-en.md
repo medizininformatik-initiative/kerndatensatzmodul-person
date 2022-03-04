@@ -1,1 +1,0 @@
-## Cause of death (Condition)

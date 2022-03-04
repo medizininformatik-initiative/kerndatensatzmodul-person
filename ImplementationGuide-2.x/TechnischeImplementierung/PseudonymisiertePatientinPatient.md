@@ -2,7 +2,7 @@
 
 Dieses Profil beschreibt eine pseudonymisierte Version des Profils für die ```Patient```-Ressource in der Medizininformatik-Initiative.
 
-**Name**: "ProfilePatientseudonymPatientIn" ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@2.0.0-alpha4))
+**Name**: "ProfilePatientPseudonymPatientIn" ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@2.0.0-alpha4))
 
 **Canonical**: 
 ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert```
