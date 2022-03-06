@@ -4,7 +4,7 @@ Vitalstatus der PatientIn. Es ist zu beachten, dass für jede Beobachtung eine n
 
 Mindestens bei jeder Aufnahme / Entlassung der PatientIn ist ein Vitalstatus ("Letzter bekannter Lebenszeitpunkt") als Observation zu erstellen. Es ist zu beachten, dass die administrative Entlassung der PatientIn auch aufgrund des Todes dokuementiert wurde.  
 
-**Name**: ProfileObservationVitalstatus ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus@1.0.15))
+**Name**: ProfileObservationVitalstatus ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.16))
 
 **Canonical**: ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus```
 

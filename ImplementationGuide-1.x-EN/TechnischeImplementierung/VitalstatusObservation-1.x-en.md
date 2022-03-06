@@ -4,7 +4,7 @@ Vital status of the patient. It should be noted that a new observation must be c
 
 A vital status ("Last known time of life") must be created as an observation at least for each admission/discharge of the patient. It should be noted that the administrative discharge of the patient was also documented due to death.  
 
-**Name**: ProfileObservationVitalstatus ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus@1.0.15))
+**Name**: ProfileObservationVitalstatus ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.15))
 
 **Canonical**: ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus```
 

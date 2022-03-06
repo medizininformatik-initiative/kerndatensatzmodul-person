@@ -6,6 +6,6 @@ Nachfolgend wird aufgelistet weleche Inhalte verpflichtend im CapabilityStatemen
 
 Canonical: ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata```
 
-[Link Simplifier Profil Übersicht](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata@1.0.15)
+[Link Simplifier Profil Übersicht](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.16)
 
 {{render:https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata}}
