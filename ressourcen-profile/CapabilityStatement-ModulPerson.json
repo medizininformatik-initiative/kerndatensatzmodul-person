@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "MII-ModulPerson-CapabilityStatement",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "name": "MII_ModulPerson_CapabilityStatement",
   "title": "MII - Modul Person - CapabilityStatement",
   "status": "active",
@@ -50,7 +50,7 @@
           ],
           "type": "Patient",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|1.0.14"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|1.0.16"
           ],
           "interaction": [
             {
@@ -95,7 +95,7 @@
           ],
           "type": "ResearchSubject",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|1.0.14"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|1.0.16"
           ],
           "interaction": [
             {
@@ -140,7 +140,7 @@
           ],
           "type": "Observation",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|1.0.14"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|1.0.16"
           ],
           "interaction": [
             {
