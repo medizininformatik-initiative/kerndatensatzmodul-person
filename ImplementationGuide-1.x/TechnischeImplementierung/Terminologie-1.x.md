@@ -10,6 +10,7 @@
 |--|--|
 |Canonical CodeSystem | https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus  |
 |Canonical ValueSet | https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus  |
+|Simplifier Link| [ValueSet](https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.16) | [CodeSystem](https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.16))|
 | Binding | ([required](http://hl7.org/fhir/terminologies.html#required)) {{pagelink:ImplementationGuide-1.x/TechnischeImplementierung/VitalstatusObservation-1.x.md, text:Observation.code}}|
 
 **VitalStatus**
