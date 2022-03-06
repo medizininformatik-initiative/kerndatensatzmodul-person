@@ -9,8 +9,8 @@ In the following, the use cases of the module as well as the associated FHIR pro
 
 | Release   |   |
 |---------|---|
-| Datum   | 02.03.2022   |
-| Version | 1.0.15       |
+| Datum   | 06.03.2022   |
+| Version | 1.0.16       |
 | Status  | Active       |
 | Realm   | EN           | 
 
