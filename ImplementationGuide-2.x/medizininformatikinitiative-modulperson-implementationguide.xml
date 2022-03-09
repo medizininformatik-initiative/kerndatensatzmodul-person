@@ -1,4 +1,5 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig-mii-person-version-2.0" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/ig-version-2.0" />
   <version value="2.0.0" />
   <name value="[DE] Medizininformatik Initiative - Modul Person - Implementierungsleitfaden - Version 2.0" />
@@ -55,12 +56,12 @@
           <generation value="markdown" />
           <page>
             <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/PatientInPatient.md" />
-            <title value="PatientIn (Patient)" />
+            <title value="Patient:in (Patient)" />
             <generation value="markdown" />
           </page>
           <page>
             <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/ProbandInResearchSubject.md" />
-            <title value="ProbandIn (ResearchSubject)" />
+            <title value="Proband:in (ResearchSubject)" />
             <generation value="markdown" />
           </page>
           <page>

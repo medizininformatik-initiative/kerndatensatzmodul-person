@@ -1,17 +1,22 @@
 ## Todesursache (Condition)
 
+---
+
 Dieses Profil beschreibt den Todesursache der PatientIn als Element des Kerndatensatzes Medizininformatik-Initiative.
 
-**Name**: "ProfileConditionTodesursache" ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache@2.0.0-alpha4))
+@```
+from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject' select Name: name, Canonical: url
+```
 
-**Canonical**: 
-```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache```
+---
 
 **Differential**
 
 {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache, diff}}
 
-<br>
+---
+
+**Hinweise**
 
 | FHIR-Element | Erklärung |
 |--------------|-----------|
@@ -21,7 +26,9 @@ Dieses Profil beschreibt den Todesursache der PatientIn als Element des Kerndate
 | Condition.code       | Kodierung per ICD-10-GM erforderlich, weitere Codings erlaubt       |
 | Condition.subject       | Patientenbezug muss stets gegeben sein.         |
 
-<br>
+---
+
+**Mapping**
 
 | FHIR-Element | Logischer Datensatz |
 |--------------|-----------|
@@ -86,4 +93,4 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 Beispiel (vollständig):
 
-{{json:medizininformatikinitiative-modulperson/exampleconditiontodesgrund}}
+{{json:beispiele/Example-Todesursache.json}}
