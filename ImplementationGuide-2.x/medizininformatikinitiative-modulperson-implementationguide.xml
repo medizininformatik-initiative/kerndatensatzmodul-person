@@ -56,12 +56,12 @@
           <generation value="markdown" />
           <page>
             <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/PatientInPatient.md" />
-            <title value="PatientIn (Patient)" />
+            <title value="Patient:in (Patient)" />
             <generation value="markdown" />
           </page>
           <page>
             <nameUrl value="ImplementationGuide-2.x/TechnischeImplementierung/ProbandInResearchSubject.md" />
-            <title value="ProbandIn (ResearchSubject)" />
+            <title value="Proband:in (ResearchSubject)" />
             <generation value="markdown" />
           </page>
           <page>
