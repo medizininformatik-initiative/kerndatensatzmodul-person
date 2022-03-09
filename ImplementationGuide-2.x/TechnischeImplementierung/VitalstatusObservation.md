@@ -60,6 +60,7 @@ join binding.where(valueSet.exists())
   Strength: strength,
   URL: valueSet
 }
+```
 
 ---
 
@@ -137,4 +138,4 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 Beispiel (vollständig):
 
-{{json:medizininformatikinitiative-modulperson/Observation-example-1}}
+{{json:beispiel/Example-Vitalstatus.json}}
