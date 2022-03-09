@@ -1,4 +1,4 @@
-## ProbandIn (ResearchSubject)
+## Proband:in (ResearchSubject)
 
 ---
 
