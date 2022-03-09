@@ -66,7 +66,7 @@ join binding.where(valueSet.exists())
 
 ---
 
-**Suchparameter**
+**SearchParameter**
 
 The following SearchParameters are relevant for the module Person, also in combination:
 
@@ -129,7 +129,7 @@ The following SearchParameters are relevant for the module Person, also in combi
 1. The SearchParameter "value-concept" MUST be supported:
 
     Example:
-    
+
     ```GET [base]/Observation?value-concept=https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus|T```
 
     Note: Additional information regarding the search using "Observation.value" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
