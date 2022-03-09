@@ -17,7 +17,7 @@ Beim Einschluss einer Person in eine Studie (auch in einen MII-Use Case) muss f�
 Die Erstellung der Ressource muss zum Zeitpunkt des Abrufens der Daten für die Studie erfolgen. Weitere Pflichten und Anpassungen sind für jeden Use Case zu prüfen.
 
 @```
-from StructureDefinition where url = 'ttps://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject' select Name: name, Canonical: url
 ```
 
 ---
