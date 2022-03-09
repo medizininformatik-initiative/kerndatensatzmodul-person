@@ -84,6 +84,208 @@ Further specifications are made by the profiles for the data types HumanName and
 
 ---
 
+**Suchparameter**
+
+The following SearchParameters are relevant for the module Person, also in combination:
+
+1. The SearchParameter "_id" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?_id=103270```
+
+    Note: Additional information regarding the search using "_id" can be found in [FHIR Core Specification - Section "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
+1. The SearchParameter "_profile" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient```
+
+    Note: Additional information regarding the search using "_profile" can be found in [FHIR Core Specification - Section "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
+1. The SearchParameter "identifier" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?identifier=http://fhir.krankenhaus.example|1032702```
+
+    ```GET [base]/Patient?identifier=1032702```
+
+    Note: Additional information regarding the search using "Patient.identifier" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "assigner-pid" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?assigner-pid=http://fhir.de/NamingSystem/arge-ik/iknr|261101015```
+
+    Note: Additional information regarding the search using "Patient.identifier" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "given" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?given=Erika```
+
+    Note: Additional information regarding the search using "Patient.name.given" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "family" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?family=Musterfrau```
+
+    Note: Additional information regarding the search using "Patient.name.family" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "name" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?name=Erika```
+
+    ```GET [base]/Patient?name=Musterfrau```
+
+    Note: Additional information regarding the search using "Patient.name" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "prefix" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?prefix=Dr.```
+
+    Note: Additional information regarding the search using "Patient.name.prefix" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "prefix-qualifier" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?prefix-qualifier=AC```
+
+    Note: Additional information regarding the search using "Patient.name.prefix.extension:prefix-qualifier" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "gender" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?gender=female```
+
+    Note: Additional information regarding the search using "Patient.gender" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "other-amtlich" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?other-amtlich=http://fhir.de/CodeSystem/gender-amtlich-de|D```
+
+    Note: Additional information regarding the search using "Patient.gender.extension:other-amtlich" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "birthdate" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?birthdate=1964-12-08```
+
+    Note: Additional information regarding the search using "Patient.birthDate" can be found in [FHIR Core Specification - Section "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+
+1. The SearchParameter "death-date" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?death-date=2022-01-01```
+
+    Note: Additional information regarding the search using "Patient.deceased" can be found in [FHIR Core Specification - Section "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+
+1. The SearchParameter "deceased" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?deceased=true```
+
+    Note: Additional information regarding the search using "Patient.deceased" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "address-city" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?address-city=Berlin```
+
+    Note: Additional information regarding the search using "Patient.address.city" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "address-postalcode" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?address-postalcode=10117```
+
+    Note: Additional information regarding the search using "Patient.address.postalCode" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "address-country" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?address-country=DE```
+
+    Note: Additional information regarding the search using "Patient.address.postalCode" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "gemeindeschluessel" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?gemeindeschluessel=http://fhir.de/sid/destatis/ags|11000000```
+
+    Note: Additional information regarding the search using "Patient.address.city.extension:gemeindeschluessel" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "strasse" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?strasse=Anna-Louisa-Karsch Str.```
+
+    Note: Additional information regarding the search using "Patient.address.line.extension:Strasse" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "hausnummer" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?hausnummer=2```
+
+    Note: Additional information regarding the search using "Patient.address.line.extension:Hausnummer" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "adresszusatz" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?adresszusatz=c/O Abteilung XYZ```
+
+    Note: Additional information regarding the search using "Patient.address.line.extension:Adresszusatz" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "postfach" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?postfach=12 54 65```
+
+    Note: Additional information regarding the search using "Patient.address.line.extension:Postfach" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "stadtteil" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?stadtteil=Berlin-Mitte```
+
+    Note: Additional information regarding the search using "Patient.address.extension:Stadtteil" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "link" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?link=Patient/VerknuepftePatientIn```
+
+    Note: Additional information regarding the search using "Patient.link.other" can be found in [FHIR Core Specification - Section "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+---
+
 **Examples**
 
 Example (minimal):

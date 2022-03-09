@@ -145,6 +145,8 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
     ```GET [base]/Patient?name=Musterfrau```
 
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.name" finden sich in der [FHIR-Basisspezifikation - Abschnitt "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
 1. Der Suchparameter "prefix" MUSS unterstützt werden:
 
     Beispiele
