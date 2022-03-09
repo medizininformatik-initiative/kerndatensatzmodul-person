@@ -13,31 +13,31 @@
       <generation value="markdown" />
       <page>
         <nameUrl value="ImplementationGuide-2.x-en/BeschreibungModul-en.md" />
-        <title value="Beschreibung Modul" />
+        <title value="Description Module Person" />
         <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="ImplementationGuide-2.x-en/KontextimGesamtprojektBezgezuanderenModulen-en.md" />
-        <title value="Kontext im Gesamtprojekt / Bezüge zu anderen Modulen" />
+        <title value="Context in the overall project / references to other modules" />
         <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="ImplementationGuide-2.x-en/Referenzen-en.md" />
-        <title value="Referenzen" />
+        <title value="References" />
         <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="ImplementationGuide-2.x-en/AnwendungsflleInformationsmodell-en.md" />
-        <title value="Anwendungsfälle / Informationsmodell" />
+        <title value="Use Cases / Informationmodell" />
         <generation value="markdown" />
         <page>
           <nameUrl value="ImplementationGuide-2.x-en/BeschreibungvonSzenarienfrdieAnwendungderModule-en.md" />
-          <title value="Beschreibung von Szenarien für die Anwendung der Module" />
+          <title value="Description of scenarios for the usage within the modules" />
           <generation value="markdown" />
         </page>
         <page>
           <nameUrl value="ImplementationGuide-2.x-en/Datenstzeinkl.Beschreibungen-en.md" />
-          <title value="Datensätze inkl. Beschreibungen" />
+          <title value="Data Sets incl. descriptions" />
           <generation value="markdown" />
         </page>
         <page>
@@ -48,20 +48,20 @@
       </page>
       <page>
         <nameUrl value="ImplementationGuide-2.x-en/TechnischeImplementierung/TechnischeImplementierung-en.md" />
-        <title value="Technische Implementierung" />
+        <title value="Tecnical Implementation" />
         <generation value="markdown" />
         <page>
           <nameUrl value="ImplementationGuide-2.x-en/TechnischeImplementierung/FHIR-Profile-en.md" />
-          <title value="FHIR-Profile" />
+          <title value="FHIR Profiles" />
           <generation value="markdown" />
           <page>
             <nameUrl value="ImplementationGuide-2.x-en/TechnischeImplementierung/PatientInPatient-en.md" />
-            <title value="Patient:in (Patient)" />
+            <title value="Patient (Patient)" />
             <generation value="markdown" />
           </page>
           <page>
             <nameUrl value="ImplementationGuide-2.x-en/TechnischeImplementierung/ProbandInResearchSubject-en.md" />
-            <title value="Proband:in (ResearchSubject)" />
+            <title value="ResearchSubject (ResearchSubject)" />
             <generation value="markdown" />
           </page>
           <page>
@@ -71,7 +71,7 @@
           </page>
           <page>
             <nameUrl value="ImplementationGuide-2.x-en/TechnischeImplementierung/TodesursacheCondition-en.md" />
-            <title value="Todesursache (Condition)" />
+            <title value="Cause of death (Condition)" />
             <generation value="markdown" />
           </page>
         </page>
@@ -82,7 +82,7 @@
         </page>
         <page>
           <nameUrl value="ImplementationGuide-2.x-en/TechnischeImplementierung/Terminologie-en.md" />
-          <title value="Terminologien" />
+          <title value="Terminology" />
           <generation value="markdown" />
         </page>
       </page>
