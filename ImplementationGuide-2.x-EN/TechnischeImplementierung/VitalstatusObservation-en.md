@@ -9,7 +9,7 @@ Vital status of the patient. It should be noted that a new observation must be c
 A vital status ("Last known time of life") must be created as an observation at least for each admission/discharge of the patient. It should be noted that the administrative discharge of the patient was also documented due to death.
 
 @```
-from StructureDefinition where url = 'https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus' select Name: name, Canonical: url
 ```
 
 ---
