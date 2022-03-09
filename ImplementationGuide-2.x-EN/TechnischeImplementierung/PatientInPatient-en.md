@@ -1,19 +1,26 @@
 ## Patient (Patient)
 
+---
+
+**Description**
+
 This profile describes a patient in the medical informatics initiative.
 
 It should be noted that no specifications are made for mapping a pseudonymized patient. In the future, specifications may arise in this regard through other core data set modules.
 
-**Name**: "ProfilePatientPatientIn" ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.15))
+@```
+from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient' select Name: name, Canonical: url
+```
 
-**Canonical**: 
-```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient```
+---
 
 **Differential**
 
 {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient, diff}}
 
-<br>
+---
+
+**Notes**
 
 
 | FHIR-Element | Explanation |
@@ -31,7 +38,9 @@ It should be noted that no specifications are made for mapping a pseudonymized p
 | Patient.address        |  Siehe [Base Profile - Address](https://simplifier.net/guide/basisprofil-de-r4/Ressourcen-Patient#Ressourcen-Patient-Addresse). Multiple addresses are allowed. Systems are required to mark former addresses as such, so that the current address of the patient is recognizable.|
 | Patient.link        |  Necessary for linking multiple patient resources, e.g. in the context of patient matching. The present specification does not contain any requirements in this regard; further design is necessary.        |
 
-<br>
+---
+
+**Mappings**
 
 | FHIR-Element | Logical Data Set |
 |--------------|-----------|
@@ -57,7 +66,9 @@ It should be noted that no specifications are made for mapping a pseudonymized p
 | Patient.address.City + <br> Patient.address.extension.Stadtteil <br> (Bei Stadtstaaten)    |  Person.Demographie.Adresse.Wohnort. <br>Hinweis: Der Stadtteil ist nicht Bestandteil des [VSDM](https://fachportal.gematik.de/spezifikationen/online-produktivbetrieb/konzepte-und-spezifikationen/)-Datensatzes der Gematik. Andere Quellen konform zu §21 KHEntgG müssen eventuell hinzugezogen werden. |
 | Patient.address.line        |  Person.Demographie.Adresse.Staße        |
 
-<br>
+---
+
+**Constraints**
 
 The following invariants must be considered when implementing the profile:
 
