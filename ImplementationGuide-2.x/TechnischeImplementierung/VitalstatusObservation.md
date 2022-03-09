@@ -59,7 +59,7 @@ join binding.where(valueSet.exists())
   Name: valueSet.substring((9 + valueSet.indexOf('ValueSet/'))),
   Strength: strength,
   URL: valueSet
-  }
+}
 
 ---
 
