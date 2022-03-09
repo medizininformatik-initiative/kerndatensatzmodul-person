@@ -22,7 +22,6 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
-
 **Differential**
 
 {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject, diff}}
