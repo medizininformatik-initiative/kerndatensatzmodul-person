@@ -288,8 +288,8 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 Beispiel (minimal):
 
-{{json:medizininformatikinitiative-modulperson/beispiele/Example-Patient-Minimal.json}}
+{{json:beispiele/Example-Patient-Minimal.json}}
 
 Beispiel (vollständig):
 
-{{json:medizininformatikinitiative-modulperson/beispiele/Example-Patient.json}}
+{{json:beispiele/Example-Patient.json}}

@@ -1,5 +1,9 @@
 ## ProbandIn (ResearchSubject)
 
+---
+
+**Beschreibung**
+
 Dieses Profil beschreibt eine ProbandIn in der Medizininformatik-Initiative.
 
 Beim Einschluss einer Person in eine Studie (auch in einen MII-Use Case) muss für diese Person eine ResearchSubject-Ressource erstellt werden. Es sind folgende Varianten zu unterscheiden:
@@ -12,15 +16,20 @@ Beim Einschluss einer Person in eine Studie (auch in einen MII-Use Case) muss f�
 
 Die Erstellung der Ressource muss zum Zeitpunkt des Abrufens der Daten für die Studie erfolgen. Weitere Pflichten und Anpassungen sind für jeden Use Case zu prüfen.
 
-**Name**: ProfileResearchSubjectProbandIn ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@2.0.0-alpha4))
+@```
+from StructureDefinition where url = 'ttps://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject' select Name: name, Canonical: url
+```
 
-**Canonical**: ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject```
+---
+
 
 **Differential**
 
 {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject, diff}}
 
-<br>
+---
+
+**Hinweise**
 
 | FHIR-Element | Erklärung |
 |--------------|-----------|
@@ -33,7 +42,9 @@ Die Erstellung der Ressource muss zum Zeitpunkt des Abrufens der Daten für die 
 | Patient.individual      | Jede ProbandIn muss einer PatientIn zugeordnet werden. |
 | Patient.consent      | Einwilligung in die Studie oder regulatorische Grundlage muss vorliegen. Weitere Vorgaben für die Modellierung des Consents können durch andere Erweiterungsmodule entstehen. |
 
-<br>
+---
+
+**Mapping**
 
 | FHIR-Element | Logischer Datensatz |
 |--------------|-----------|
@@ -127,6 +138,6 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 Beispiel (vollständig):
 
-{{json:medizininformatikinitiative-modulperson/ResearchSubject-example-1}}
+{{json:beispiele/Example-ResearchSubject.json}}
 
 ---
