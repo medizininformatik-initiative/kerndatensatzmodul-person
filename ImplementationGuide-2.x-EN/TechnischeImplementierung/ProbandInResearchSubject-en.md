@@ -62,7 +62,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
-**Suchparameter**
+**SearchParameters**
 
 The following SearchParameters are relevant for the module Person, also in combination:
 
@@ -74,13 +74,13 @@ The following SearchParameters are relevant for the module Person, also in combi
 
     Note: Additional information regarding the search using "_id" can be found in [FHIR Core Specification - Section "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
 
-1. Der Suchparameter "_profile" MUSS unterstützt werden:
+1. The SearchParameter "_profile" MUST be supported:
 
     Example:
 
     ```GET [base]/ResearchSubject?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "_profile" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+    Note: Additional information regarding the search using "_profile" can be found in [FHIR Core Specification - Section "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
 
 
 1. The SearchParameter "identifier" MUST be supported:

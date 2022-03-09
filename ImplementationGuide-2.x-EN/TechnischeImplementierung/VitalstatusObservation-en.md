@@ -66,6 +66,76 @@ join binding.where(valueSet.exists())
 
 ---
 
+**Suchparameter**
+
+The following SearchParameters are relevant for the module Person, also in combination:
+
+1. The SearchParameter "_id" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Observation?_id=103270```
+
+    Note: Additional information regarding the search using "_id" can be found in [FHIR Core Specification - Section "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
+1. The SearchParameter "_profile" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus```
+
+    Note: Additional information regarding the search using "_profile" can be found in [FHIR Core Specification - Section "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
+1. The SearchParameter "status" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Observation?status=final```
+
+    Note: Additional information regarding the search using "Observation.status" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "category" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Observation?category=http://terminology.hl7.org/CodeSystem/observation-category|survey```
+
+    Note: Additional information regarding the search using "Observation.category" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "code" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Observation?code=http://loinc.org|67162-8```
+
+    Note: Additional information regarding the search using "Observation.code" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "subject" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Observation?subject=Patient/test```
+
+    Note: Additional information regarding the search using "Observation.subject" can be found in [FHIR Core Specification - Section "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+1. The SearchParameter "date" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Observation?date=2022-01-01```
+
+    Note: Additional information regarding the search using "Observation.effective" can be found in [FHIR Core Specification - Section "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+
+1. The SearchParameter "value-concept" MUST be supported:
+
+    Example:
+    
+    ```GET [base]/Observation?value-concept=https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus|T```
+
+    Note: Additional information regarding the search using "Observation.value" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+---
+
 **Examples**
 
 Example (complete):

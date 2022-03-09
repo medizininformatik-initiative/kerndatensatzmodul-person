@@ -122,7 +122,7 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
     ```GET [base]/Observation?date=2022-01-01```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Observation.period" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Observation.effective" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
 
 1. Der Suchparameter "value-concept" MUSS unterstützt werden:
 
