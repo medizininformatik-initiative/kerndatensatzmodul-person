@@ -1,5 +1,9 @@
 ## ResearchSubject (ResearchSubject)
 
+---
+
+**Description**
+
 This profile describes a Research Subject in the Medical Informatics Initiative.
 
 When including a person in a study (also in a MII use case), a ResearchSubject resource must be created for this person. There are the following variations:
@@ -12,15 +16,19 @@ When including a person in a study (also in a MII use case), a ResearchSubject r
 
 The creation of the resource must occur at the time the data are retrieved for the study. Additional obligations and adjustments must be considered for each use case.
 
-**Name**: ProfileResearchSubjectProbandIn ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.15))
+@```
+from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject`' select Name: name, Canonical: url
+```
 
-**Canonical**: ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject```
+---
 
 **Differential**
 
 {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject, diff}}
 
-<br>
+---
+
+**Notes**
 
 | FHIR-Element | Explanation |
 |--------------|-----------|
@@ -33,7 +41,9 @@ The creation of the resource must occur at the time the data are retrieved for t
 | Patient.individual      | Each Research Subject must be assigned to a Patient. |
 | Patient.consent      | Consent to the study or regulatory basis must be available. Further specifications for the modeling of consent may arise from other extension modules. |
 
-<br>
+---
+
+**Mappings**
 
 | FHIR-Element | Logical Data Set |
 |--------------|-----------|

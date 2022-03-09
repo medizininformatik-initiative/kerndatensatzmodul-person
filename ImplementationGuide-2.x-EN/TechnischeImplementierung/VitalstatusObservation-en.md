@@ -1,18 +1,26 @@
 ### Vitalstatus (Observation)
 
+---
+
+**Description**
+
 Vital status of the patient. It should be noted that a new observation must be created for each observation. All observations are to be classified as final.
 
-A vital status ("Last known time of life") must be created as an observation at least for each admission/discharge of the patient. It should be noted that the administrative discharge of the patient was also documented due to death.  
+A vital status ("Last known time of life") must be created as an observation at least for each admission/discharge of the patient. It should be noted that the administrative discharge of the patient was also documented due to death.
 
-**Name**: ProfileObservationVitalstatus ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@1.0.15))
+@```
+from StructureDefinition where url = 'https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus`' select Name: name, Canonical: url
+```
 
-**Canonical**: ```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus```
+---
 
 **Differential**
 
 {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, diff}}
 
-<br>
+---
+
+**Notes**
 
 | FHIR-Element | Erklärung |
 |--------------|-----------|
@@ -23,7 +31,9 @@ A vital status ("Last known time of life") must be created as an observation at 
 | Observation.subject       | Patient reference must always be given.         |
 | Observation.effectiveDateTime       | effectiveDateTime allows exact coding of the last time alive, but partial dates are also allowed. Does **not** contain the time of death (see Patient.deceased[x])! |
 
-<br>
+---
+
+**Mappings**
 
 | FHIR-Element | Logical Data Set |
 |--------------|-----------|
@@ -35,6 +45,24 @@ A vital status ("Last known time of life") must be created as an observation at 
 **Snapshot**
 
 {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, snapshot}}
+
+---
+
+**Terminology Bindings**
+
+@```
+from StructureDefinition
+where url in ('https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus' )
+for differential.element
+select
+Path: path,
+join binding.where(valueSet.exists())
+{
+  Name: valueSet.substring((9 + valueSet.indexOf('ValueSet/'))),
+  Strength: strength,
+  URL: valueSet
+}
+```
 
 ---
 
