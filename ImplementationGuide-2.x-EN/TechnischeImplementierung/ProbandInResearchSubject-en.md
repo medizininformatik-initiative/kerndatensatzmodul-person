@@ -62,6 +62,78 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
+**Suchparameter**
+
+The following SearchParameters are relevant for the module Person, also in combination:
+
+1. The SearchParameter "_id" MUST be supported:
+
+    Example:
+
+    ```GET [base]/ResearchSubject?_id=103270```
+
+    Note: Additional information regarding the search using "_id" can be found in [FHIR Core Specification - Section "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
+1. Der Suchparameter "_profile" MUSS unterstützt werden:
+
+    Example:
+
+    ```GET [base]/ResearchSubject?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_profile" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
+
+1. The SearchParameter "identifier" MUST be supported:
+
+    Example:
+
+    ```GET [base]/ResearchSubject?identifier=http://fhir.krankenhaus.example/sid/subjectIdentificationCode|1032702```
+
+    Note: Additional information regarding the search using "ResearchSubject.identifier" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "status" MUST be supported:
+
+    Example:
+
+    ```GET [base]/ResearchSubject?status=candidate```
+
+    Note: Additional information regarding the search using "ResearchSubject.status" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "date" MUST be supported:
+
+    Example:
+
+    ```GET [base]/ResearchSubject?date=2022-01-01```
+
+    Note: Additional information regarding the search using "ResearchSubject.period" can be found in [FHIR Core Specification - Section "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+
+1. The SearchParameter "study" MUST be supported:
+
+    Example:
+
+    ```GET [base]/ResearchSubject?study=ResearchStudy/study```
+
+    Note: Additional information regarding the search using "ResearchStudy.study" can be found in [FHIR Core Specification - Section "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+1. The SearchParameter "individual" MUST be supported:
+
+    Example:
+
+    ```GET [base]/ResearchSubject?individual=Patient/test```
+
+    Note: Additional information regarding the search using "ResearchStudy.individual" can be found in [FHIR Core Specification - Section "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+1. The SearchParameter "consent" MUST be supported:
+
+    Example:
+
+
+    ```GET [base]/ResearchSubject?consent=Consent/test```
+
+    Note: Additional information regarding the search using "ResearchStudy.consent" can be found in [FHIR Core Specification - Section "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+---
+
 **Examples**
 
 Example (complete):
