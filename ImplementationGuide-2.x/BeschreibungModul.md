@@ -53,7 +53,7 @@ Basisvorgaben für die Erstellung pseudonymer Patientenstammdatensätze sind ins
 | Pseudonym<sub>DIZ-Projekt</sub>(B)    |        X        |              X               |    (X)<sup>6</sup>    |                 |                       |
 | Pseudonym<sub>Nutzer-Projekt</sub>(B) | (X)<sup>8</sup> |              X               |           X           |        X        |    (X)<sup>9</sup>    |
 
-<sup>1</sup> nach dem Schutzstufenkonzept der LfD Niedersachsen [13] <br>
+<sup>1</sup> nach dem Schutzstufenkonzept der LfD Niedersachsen <br>
 <sup>2</sup> je nach Zuordnungsmöglichkeit zu den Patientendaten ggf. auch höher <br>
 <sup>3</sup> nur in Einzelfällen, in denen eine Zuordnung der Datensätze anhand IDAT<sub>Kodiert</sub> nicht ausreichend sicher möglich ist <br>
 <sup>4</sup> nur Alters- und Adressangaben (nur PLZ oder Gemeindekennziffer) im jeweils nach wissenschaftlicher Notwendigkeit zu begründenden und zu prüfenden Detailgrad <br>

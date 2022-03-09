@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "cps-mii-person-capabilitystatement",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata",
-  "version": "2.0.0-alpha3",
+  "version": "2.0.0-alpha4",
   "name": "CpS_MII_Person_CapabilityStatement",
   "title": "CpS MII Person CapabilityStatement",
   "status": "active",
@@ -50,7 +50,7 @@
           ],
           "type": "Patient",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2.0.0-alpha1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2.0.0-alpha4"
           ],
           "interaction": [
             {
@@ -95,7 +95,7 @@
           ],
           "type": "ResearchSubject",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2.0.0-alpha1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2.0.0-alpha4"
           ],
           "interaction": [
             {
@@ -140,7 +140,7 @@
           ],
           "type": "Observation",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2.0.0-alpha1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2.0.0-alpha4"
           ],
           "interaction": [
             {
@@ -185,7 +185,7 @@
           ],
           "type": "Condition",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2.0.0-alpha1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2.0.0-alpha4"
           ],
           "interaction": [
             {
