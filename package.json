@@ -1,6 +1,6 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.person",
-  "version": "2.0.0-alpha3",
+  "version": "2.0.0-alpha5",
   "description": "Medizininformatik Initiative - Modul Person",
   "author": "alexanderzautke",
   "fhirVersions": [

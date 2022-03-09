@@ -2,7 +2,7 @@
     "resourceType":"CodeSystem",
     "id": "cs-mii-person-vitalstatus",
     "url":"https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus",
-    "version": "2.0.0-alpha3",
+    "version": "2.0.0-alpha5",
     "name":"CS_MII_Person_Vitalstatus",
     "title": "CS MII Person Vitalstatus",
     "status":"active",

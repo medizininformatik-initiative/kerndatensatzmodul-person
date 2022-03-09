@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-person-patientpseudonymisiert" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert" />
-  <version value="2.0.0-alpha3" />
+  <version value="2.0.0-alpha5" />
   <name value="SD_MII_Person_PatientPseudonymisiert" />
   <title value="SD MII Person Patient (Pseudonymisiert)" />
   <status value="active" />
