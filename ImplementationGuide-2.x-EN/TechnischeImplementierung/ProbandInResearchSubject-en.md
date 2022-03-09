@@ -17,7 +17,7 @@ When including a person in a study (also in a MII use case), a ResearchSubject r
 The creation of the resource must occur at the time the data are retrieved for the study. Additional obligations and adjustments must be considered for each use case.
 
 @```
-from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject`' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject' select Name: name, Canonical: url
 ```
 
 ---
