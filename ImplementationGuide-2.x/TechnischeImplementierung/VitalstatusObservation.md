@@ -50,7 +50,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 @```
 from StructureDefinition
-where url in ('https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject' )
+where url in ('https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus' )
 for differential.element
 select
 Path: path,
@@ -138,4 +138,4 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 Beispiel (vollständig):
 
-{{json:beispiel/Example-Vitalstatus.json}}
+{{json:beispiele/Example-Vitalstatus.json}}
