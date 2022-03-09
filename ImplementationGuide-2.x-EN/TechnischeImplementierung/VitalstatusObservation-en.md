@@ -1,4 +1,4 @@
-### Vitalstatus (Observation)
+## Vitalstatus (Observation)
 
 ---
 
