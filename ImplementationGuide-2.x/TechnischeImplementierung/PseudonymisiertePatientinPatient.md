@@ -1,17 +1,24 @@
-## PatientIn (Patient)
+## Patient - Pseudonymisiert (Patient)
+
+---
+
+**Beschreibung**
 
 Dieses Profil beschreibt eine pseudonymisierte Version des Profils für die ```Patient```-Ressource in der Medizininformatik-Initiative.
 
-**Name**: "ProfilePatientPseudonymPatientIn" ([Simplifier Link](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert&fhirVersion=R4&scope=de.medizininformatikinitiative.kerndatensatz.person@2.0.0-alpha4))
+@```
+from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert' select Name: name, Canonical: url
+```
 
-**Canonical**: 
-```https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert```
+---
 
 **Differential**
 
 {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert, diff}}
 
-<br>
+---
+
+**Hinweise**
 
 
 | FHIR-Element | Erklärung |
@@ -29,7 +36,9 @@ Dieses Profil beschreibt eine pseudonymisierte Version des Profils für die ```P
 | Patient.address        |  Siehe [Basisprofil - Adresse](https://ig.fhir.de/basisprofile-de/1.2.0/Ressourcen-Patient.html#Ressourcen-Patient-Addresse). Mehrfach-Adressen sind erlaubt. Systeme sind angehalten ehemalige Adressen als solche zu kennzeichnen, sodass die aktuelle Adresse der PatientIn erkennbar ist.|
 | Patient.link        |  Notwendig zur Verlinkung mehrer Patient-Ressourcen, z.B. im Kontext eines Patienten-Matching. Die vorliegende Spezifikation enthält keine Vorgaben diesbezüglich, weitere Ausgestaltung notwendig.        |
 
-<br>
+---
+
+**Mapping**
 
 | FHIR Element | Logischer Datensatz |
 |--------------|-----------|
@@ -55,7 +64,9 @@ Dieses Profil beschreibt eine pseudonymisierte Version des Profils für die ```P
 | Patient.address.City + <br> Patient.address.extension.Stadtteil <br> (Bei Stadtstaaten)    |  Person.Demographie.Adresse.Wohnort. <br>Hinweis: Der Stadtteil ist nicht Bestandteil des [VSDM](https://fachportal.gematik.de/spezifikationen/online-produktivbetrieb/konzepte-und-spezifikationen/)-Datensatzes der Gematik. Andere Quellen konform zu §21 KHEntgG müssen eventuell hinzugezogen werden. |
 | Patient.address.line        |  Person.Demographie.Adresse.Staße        |
 
-<br>
+---
+
+**Constraints**
 
 Folgende Invarianten müssen bei der Implementierung des Profils beachtet werden:
 
@@ -178,10 +189,4 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 **Beispiele**
 
-Beispiel (minimal):
-
-{{json:medizininformatikinitiative-modulperson/Patient-example}}
-
-Beispiel (vollständig):
-
-{{json:medizininformatikinitiative-modulperson/Patient-example-2}}
+{{json:beispiele/Example-PatientPseudonymisiert.json}}

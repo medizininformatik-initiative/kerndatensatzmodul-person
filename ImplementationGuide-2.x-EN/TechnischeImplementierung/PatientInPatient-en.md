@@ -6,8 +6,6 @@
 
 This profile describes a patient in the medical informatics initiative.
 
-It should be noted that no specifications are made for mapping a pseudonymized patient. In the future, specifications may arise in this regard through other core data set modules.
-
 @```
 from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient' select Name: name, Canonical: url
 ```
@@ -203,6 +201,14 @@ The following SearchParameters are relevant for the module Person, also in combi
     ```GET [base]/Patient?deceased=true```
 
     Note: Additional information regarding the search using "Patient.deceased" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+
+1. The SearchParameter "address" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Patient?address=Berlin```
+
+    Note: Additional information regarding the search using "Patient.address" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
 
 1. The SearchParameter "address-city" MUST be supported:
 
