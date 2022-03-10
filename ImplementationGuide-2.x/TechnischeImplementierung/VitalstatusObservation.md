@@ -116,6 +116,14 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Observation.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
 
+1. Der Suchparameter "patient" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/Observation?patient=Patient/test```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Observation.subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
 1. Der Suchparameter "date" MUSS unterstützt werden:
 
     Beispiele:

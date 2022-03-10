@@ -118,6 +118,14 @@ The following SearchParameters are relevant for the module Person, also in combi
 
     Note: Additional information regarding the search using "Observation.subject" can be found in [FHIR Core Specification - Section "reference"](http://hl7.org/fhir/R4/search.html#reference).
 
+1. The SearchParameter "patient" MUST be supported:
+
+    Example:
+
+    ```GET [base]/Observation?patient=Patient/test```
+
+    Note: Additional information regarding the search using "Observation.subject" can be found in [FHIR Core Specification - Section "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
 1. The SearchParameter "date" MUST be supported:
 
     Example:
