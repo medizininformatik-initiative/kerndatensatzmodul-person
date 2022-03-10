@@ -234,8 +234,8 @@
                   "valueCode": "SHALL"
                 }
               ],
-              "name": "address-city",
-              "definition": "http://hl7.org/fhir/SearchParameter/individual-address-city",
+              "name": "address",
+              "definition": "http://hl7.org/fhir/SearchParameter/individual-address",
               "type": "string"
             },
             {
