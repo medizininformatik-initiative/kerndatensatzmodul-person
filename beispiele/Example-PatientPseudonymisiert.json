@@ -30,6 +30,18 @@
     }
   ],
   "gender": "other",
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://fhir.de/StructureDefinition/gender-amtlich-de",
+        "valueCoding": {
+          "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+          "code": "D",
+          "display": "divers"
+        }
+      }
+    ]
+  },
   "birthDate": "2022-03",
   "managingOrganization": {
     "reference": "Organization/Charite-Universitaetsmedizin-Berlin"
