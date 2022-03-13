@@ -66,7 +66,7 @@ join binding.where(valueSet.exists())
 
 ---
 
-**SearchParameter**
+**SearchParameters**
 
 The following SearchParameters are relevant for the module Person, also in combination:
 

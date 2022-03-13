@@ -42,7 +42,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
-**SearchParameter**
+**SearchParameters**
 
 The following SearchParameters are relevant for the module Person, also in combination:
 

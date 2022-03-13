@@ -82,7 +82,7 @@ Further specifications are made by the profiles for the data types HumanName and
 
 ---
 
-**Suchparameter**
+**SearchParameter**
 
 The following SearchParameters are relevant for the module Person, also in combination:
 

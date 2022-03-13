@@ -4,7 +4,7 @@
 
 **Beschreibung**
 
-Dieses Profil beschreibt eine pseudonymisierte Version des Profils für die ```Patient```-Ressource in der Medizininformatik-Initiative.
+This profile describes a pseudonymized version of the profile for the ``Patient`` resource in the Medical Informatics Initiative.
 
 @```
 from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert' select Name: name, Canonical: url
@@ -23,16 +23,16 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 | FHIR-Element | Erklärung |
 |--------------|-----------|
-| Patient.id      | Must-support, jedoch optional        |
-| Patient.meta       | Must-support, jedoch optional         |
-| Patient.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. In allen anderen Fällen optional.         |
-| Patient.identifier:PseudonymisierterIdentifier        | Falls der Identifier ein abgeleitetes Pseudonym ist, muss der Identifier entsprechend typisiert werden.|
-| Patient.identifier:AnonymisierterIdentifier        | Ein anonymisierter Identifier ist nur als solcher anzugegben, falls keinerlei Rückschlüsse auf den originalen Datemsatz möglich sind.|
-| Patient.gender        | Ohne Einschränkung verwendbar.|
-| Patient.birthDate        | Muss auf das nächste Quartal auf-/abgerundet werden. |
-| Patient.deceased[x]        |  Muss auf das nächste Quartal auf-/abgerundet werden. |
-| Patient.address        | Nur die ersten beiden Stellen der PLZ inkl. Angabe des Landes ist anzugeben.|
-| Patient.link        | Es muss darauf geachtet werden, dass keine Verlinkung zu einer nicht-pseudonymisierten Version des Patienten existiert.|
+| Patient.id      | Must-support, but optional        |
+| Patient.meta       | Must-support, but optional        |
+| Patient.meta.profile       | Required for querying against the DIZ repository. See {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. Optional in all other cases. |
+| Patient.identifier:PseudonymisierterIdentifier        | If the identifier is a derived pesudonym, it was be marked as such using a corresponding type.|
+| Patient.identifier:AnonymisierterIdentifier        | An anonymized should only be given if no inference can be made regarding the orgiginal dataset.|
+| Patient.gender        | Can be used without restrictions.|
+| Patient.birthDate        | Must be rounded up/down to the next quarter. |
+| Patient.deceased[x]        |  Must be rounded up/down to the next quarter.|
+| Patient.address        | Only the first two digits of the postal code. The country can be included as well.|
+| Patient.link        | Care must be taken to ensure that there is no link to a non-pseudonymized version of the patient.|
 
 ---
 
@@ -49,11 +49,11 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 **Constraints**
 
-Folgende Invarianten müssen bei der Implementierung des Profils beachtet werden:
+The following invariants must be considered when implementing the profile:
 
 **Constraints**: @``` from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert' for differential.element.constraint select key,severity,human, expression```
 
-Weitere Vorgaben werden durch die Profile für die Datentypen HumanName und Address durch die Deutschen Basisprofile gemacht.
+Further specifications are made by the profiles for the data types HumanName and Address by the German base profiles.
 
 ---
 
@@ -63,111 +63,119 @@ Weitere Vorgaben werden durch die Profile für die Datentypen HumanName und Addr
 
 ---
 
-**Suchparameter**
+**SearchParameters**
 
-Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
+The following SearchParameters are relevant for the module Person, also in combination:
 
-1. Der Suchparameter "_id" MUSS unterstützt werden:
+1. The SearchParameter "_id" MUST be supported:
 
-    Beispiele:
+    Example:
 
     ```GET [base]/Patient?_id=103270```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+    Note: Additional information regarding the search using "_id" can be found in [FHIR Core Specification - Section "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
 
-1. Der Suchparameter "_profile" MUSS unterstützt werden:
+1. The SearchParameter "_profile" MUST be supported:
 
-    Beispiele:
+    Example:
 
     ```GET [base]/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "_profile" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+    Note: Additional information regarding the search using "_profile" can be found in [FHIR Core Specification - Section "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
 
-1. Der Suchparameter "identifier" MUSS unterstützt werden:
+1. The SearchParameter "identifier" MUST be supported:
 
-    Beispiele:
+    Example:
 
     ```GET [base]/Patient?identifier=http://example.org/fhir/sid/pseudonym|1032702```
 
     ```GET [base]/Patient?identifier=1032702```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.identifier" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Note: Additional information regarding the search using "Patient.identifier" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 
-1. Der Suchparameter "gender" MUSS unterstützt werden:
+1. The SearchParameter "gender" MUST be supported:
 
-    Beispiele
+    Example:
 
     ```GET [base]/Patient?gender=female```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.gender" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Note: Additional information regarding the search using "Patient.gender" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 
-1. Der Suchparameter "other-amtlich" MUSS unterstützt werden:
+1. The SearchParameter "other-amtlich" MUST be supported:
 
-    Beispiele
+    Example:
 
     ```GET [base]/Patient?other-amtlich=http://fhir.de/CodeSystem/gender-amtlich-de|D```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.gender.extension:other-amtlich" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Note: Additional information regarding the search using "Patient.gender.extension:other-amtlich" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 
-1. Der Suchparameter "birthdate" MUSS unterstützt werden:
+1. The SearchParameter "birthdate" MUST be supported:
 
-    Beispiele
+    Example:
 
     ```GET [base]/Patient?birthdate=1964-12-08```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.birthDate" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+    Note: Additional information regarding the search using "Patient.birthDate" can be found in [FHIR Core Specification - Section "Date Search"](http://hl7.org/fhir/R4/search.html#date).
 
-1. Der Suchparameter "death-date" MUSS unterstützt werden:
+1. The SearchParameter "death-date" MUST be supported:
 
-    Beispiele
+    Example:
 
     ```GET [base]/Patient?death-date=2022-01-01```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.deceased" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Date Search"](http://hl7.org/fhir/R4/search.html#date).
+    Note: Additional information regarding the search using "Patient.deceased" can be found in [FHIR Core Specification - Section "Date Search"](http://hl7.org/fhir/R4/search.html#date).
 
-1. Der Suchparameter "deceased" MUSS unterstützt werden:
+1. The SearchParameter "deceased" MUST be supported:
 
-    Beispiele
+    Example:
 
     ```GET [base]/Patient?deceased=true```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.deceased" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Note: Additional information regarding the search using "Patient.deceased" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 
-1. Der Suchparameter "address-postalcode" MUSS unterstützt werden:
+1. The SearchParameter "address" MUST be supported:
 
-    Beispiele
+    Example:
+
+    ```GET [base]/Patient?address=Berlin```
+
+    Note: Additional information regarding the search using "Patient.address" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
+
+1. The SearchParameter "address-postalcode" MUST be supported:
+
+    Example:
 
     ```GET [base]/Patient?address-postalcode=10117```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.address.postalCode" finden sich in der [FHIR-Basisspezifikation - Abschnitt "String Search"](http://hl7.org/fhir/R4/search.html#string).
+    Note: Additional information regarding the search using "Patient.address.postalCode" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
 
-1. Der Suchparameter "address-country" MUSS unterstützt werden:
+1. The SearchParameter "address-country" MUST be supported:
 
-    Beispiele
+    Example:
 
     ```GET [base]/Patient?address-country=DE```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.address.country" finden sich in der [FHIR-Basisspezifikation - Abschnitt "String Search"](http://hl7.org/fhir/R4/search.html#string).
+    Note: Additional information regarding the search using "Patient.address.postalCode" can be found in [FHIR Core Specification - Section "String Search"](http://hl7.org/fhir/R4/search.html#string).
 
 
-1. Der Suchparameter "gemeindeschluessel" MUSS unterstützt werden:
+1. The SearchParameter "gemeindeschluessel" MUST be supported:
 
-    Beispiele
+    Example:
 
     ```GET [base]/Patient?gemeindeschluessel=http://fhir.de/sid/destatis/ags|11000000```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.address.city.extension:gemeindeschluessel" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
+    Note: Additional information regarding the search using "Patient.address.city.extension:gemeindeschluessel" can be found in [FHIR Core Specification - Section "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 
-1. Der Suchparameter "link" MUSS unterstützt werden:
+1. The SearchParameter "link" MUST be supported:
 
-    Beispiele
+    Example:
 
     ```GET [base]/Patient?link=Patient/VerknuepftePatientIn```
 
-    Anwendungshinweise: Weitere Informationen zur Suche nach "Patient.link.other" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+    Note: Additional information regarding the search using "Patient.link.other" can be found in [FHIR Core Specification - Section "reference"](http://hl7.org/fhir/R4/search.html#reference).
 
 ---
 
-**Beispiele**
+**Examples**
 
 {{json:beispiele/Example-PatientPseudonymisiert.json}}
