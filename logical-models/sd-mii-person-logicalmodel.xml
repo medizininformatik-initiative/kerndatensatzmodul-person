@@ -350,13 +350,13 @@
     </element>
     <element id="Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse">
       <path value="Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse" />
+      <short value="Die Institutionskennzeichen (kurz: IK) sind bundesweit eindeutige, neunstellige Zahlen, mit deren Hilfe Abrechnungen und Qualitätssicherungsmaßnahmen im Bereich der deutschen Sozialversicherung einrichtungsübergreifend abgewickelt werden können." />
       <min value="0" />
       <max value="*" />
       <type>
         <code value="string" />
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
-      <fixedString value="Die Institutionskennzeichen (kurz: IK) sind bundesweit eindeutige, neunstellige Zahlen, mit deren Hilfe Abrechnungen und Qualitätssicherungsmaßnahmen im Bereich der deutschen Sozialversicherung einrichtungsübergreifend abgewickelt werden können." />
       <maxLength value="9" />
     </element>
     <element id="Person.PatientIn.Versicherung.Versicherungstyp">
