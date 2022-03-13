@@ -25,16 +25,14 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | Patient.id      | Must-support, jedoch optional        |
 | Patient.meta       | Must-support, jedoch optional         |
-| Patient.identifier:versichertenId_GKV        |  Siehe [Basisprofil - Gesetzliche Krankenversichertennummer (10-stellige KVID)](https://ig.fhir.de/basisprofile-de/1.2.0/GesetzlicheKrankenversichertennummer10-stelligeKVID-Identifier.html). Es sei darauf hingewiesen, dass im 'Assigner'-Element die IKNR der ausgebenden Instiution eingetragen werden muss. Es handelt sich stets um die aktuelle Versicherungsnummer der PatientIn.       |
-| Patient.identifier:versicherungsnummer_pkv        | Siehe [Basisprofil - Private Krankenversichertennummer](https://ig.fhir.de/basisprofile-de/1.2.0/PrivateKrankenversichertennummer-Identifier.html). Es handelt sich stets um die aktuelle Versicherungsnummer der PatientIn. |
-| Patient.identifier:pid        | Siehe [Basisprofil Organisationsinterner Patienten-Identifier (PID)](https://ig.fhir.de/basisprofile-de/1.2.0/OrganisationsinternerPatienten-Identifier.html). Führende (MPI) ID der PatientIn.  In Patient.identifier:pid.assigner ist eine Referenz auf die ausgebende Organization notwendig. Logische Referenz per IK-Nummer oder IHE Affinity Domain OID ist zulässig. Es kann desweiteren folgendes CodeSystem aller MII Standorte verwendet werden: [Core-Location-Identifier](https://simplifier.net/medizininformatikinitiative-kerndatensatz/core-location-identifier). |
-| Patient.identifier        |  Jegliche weiteren Identifier, falls GKV/PKV/PID nicht zutreffend ist.       |
-| Patient.name        |  Siehe [Basis-Profil für Datentyp HumanName](https://ig.fhir.de/basisprofile-de/1.2.0/Datentypen-HumanName.html). Es sei darauf hingewiesen, dass die Aufteilung des vollständigen Namens in seine Bestandteile (z.B. Vorsatzworte, Namenszusatz, Nachname) nur durchgeführt werden sollte, falls diese Informationen explizit in dieser Granulatität zur Verfügung stehen (z.B. durch einen direkten Import auf Basis eines VSDM-Datensatzes). Es ist zu berücksichtigen, dass der Geburtsname per allgemeiner Konvention nur den Familiennamen enthält.|
-| Patient.gender        | Siehe [Basis-Profil Geschlecht](https://ig.fhir.de/basisprofile-de/1.2.0/Ressourcen-Patient.html#Ressourcen-Patient-Geschlecht)          |
-| Patient.birthDate        |   Siehe [Basisprofil - Geburtsdatum](https://ig.fhir.de/basisprofile-de/1.2.0/Ressourcen-Patient.html#Ressourcen-Patient-Geburtsdatum)        |
-| Patient.deceased[x]        |  deceasedBoolean ist wo möglich durch deceasedDateTime zu ersetzen, wenn PatientIn verstorben ist.         |
-| Patient.address        |  Siehe [Basisprofil - Adresse](https://ig.fhir.de/basisprofile-de/1.2.0/Ressourcen-Patient.html#Ressourcen-Patient-Addresse). Mehrfach-Adressen sind erlaubt. Systeme sind angehalten ehemalige Adressen als solche zu kennzeichnen, sodass die aktuelle Adresse der PatientIn erkennbar ist.|
-| Patient.link        |  Notwendig zur Verlinkung mehrer Patient-Ressourcen, z.B. im Kontext eines Patienten-Matching. Die vorliegende Spezifikation enthält keine Vorgaben diesbezüglich, weitere Ausgestaltung notwendig.        |
+| Patient.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. In allen anderen Fällen optional.         |
+| Patient.identifier:PseudonymisierterIdentifier        | Falls der Identifier ein abgeleitetes Pseudonym ist, muss der Identifier entsprechend typisiert werden.|
+| Patient.identifier:AnonymisierterIdentifier        | Ein anonymisierter Identifier ist nur als solcher anzugegben, falls keinerlei Rückschlüsse auf den originalen Datemsatz möglich sind.|
+| Patient.gender        | Ohne Einschränkung verwendbar.|
+| Patient.birthDate        | Muss auf das nächste Quartal auf-/abgerundet werden. |
+| Patient.deceased[x]        |  Muss auf das nächste Quartal auf-/abgerundet werden. |
+| Patient.address        | Nur die ersten beiden Stellen der PLZ inkl. Angabe des Landes ist anzugeben.|
+| Patient.link        | Es muss darauf geachtet werden, dass keine Verlinkung zu einer nicht-pseudonymisierten Version des Patienten existiert.|
 
 ---
 
@@ -42,27 +40,10 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 | FHIR Element | Logischer Datensatz |
 |--------------|-----------|
-| Patient.identifier:versichertenId_GKV        |  Person.Patient.Versicherung.Versichertennummer.VersichertenID-GKV|
-| Patient.identifier:versicherungsnummer_pkv        | Person.Patient.Versicherung.Versichertennummer.VersichertenID-PKV         |
-| Patient.identifier:default        |  Person.Patient.Versicherung, falls keine Versicherung (GKV / PKV) vorliegt     |
-| Patient.identifier:pid        | Person.Patient.Patienten-Identifikator        |
-| Patient.name        |  Person.Name |
-| Patient.name.given        |  Person.Name.Vorname |
-| Patient.name.family        |  Person.Name.Familienname |
-| Patient.name.family.extension.nachname        |  Person.Name.Nachname |
-| Patient.name.family.extension.vorsatzwort        |  Person.Name.Vorsatzwort |
-| Patient.name.family.extension.namenszusatz        |  Person.Name.Namenszusatz |
-| Patient.name.prefix        |  Person.Name.Präfix |
-| Patient.name.prefix.extension-prefix-qualifier        |  Person.Name.ArtDesPräfix |
-| Patient.name.use        |  Person.Name.Geburtsname |
-| Patient.gender        | Person.Demographie.AdministrativesGeschlecht |
-| Patient.birthDate        | Person.Demographie.Geburtsdatum|
-| Patient.deceased[x]        |   Person.Demographie.VitalStatus.PatientVerstorben / Todeszeitpunkt      |
-| Patient.address        |  Person.Demographie.Adresse        |
-| Patient.address.country        |  Person.Demographie.Adresse.Land        |
-| Patient.address.postalCode        |  Person.Demographie.Adresse.PLZ        |
-| Patient.address.City + <br> Patient.address.extension.Stadtteil <br> (Bei Stadtstaaten)    |  Person.Demographie.Adresse.Wohnort. <br>Hinweis: Der Stadtteil ist nicht Bestandteil des [VSDM](https://fachportal.gematik.de/spezifikationen/online-produktivbetrieb/konzepte-und-spezifikationen/)-Datensatzes der Gematik. Andere Quellen konform zu §21 KHEntgG müssen eventuell hinzugezogen werden. |
-| Patient.address.line        |  Person.Demographie.Adresse.Staße        |
+| Patient.identifier:versichertenId_GKV        |  Person.PatientInPseudonym.Pseudonym|
+| Patient.identifier:versicherungsnummer_pkv        | Person.PatientInPseudonym.GeburtsdatumQuartal        |
+| Patient.identifier:default        |  Person.PatientInPseudonym.Todesdatum     |
+| Patient.identifier:pid        | Person.PatientInPseudonym.VergroebertePLZ        |
 
 ---
 
