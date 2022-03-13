@@ -115,7 +115,7 @@
       <constraint>
         <key value="GeburtsdatumRundenAufQuartal" />
         <severity value="error" />
-        <human value="Geburtsdatum darf nicht tagesgenau angegben werden. Das Geburtsdatum SOLLTE auf das quartalsweise auf-/abgerundet werden." />
+        <human value="Geburtsdatum darf nicht tagesgenau angegben werden. Das Geburtsdatum MUSS quartalsweise auf-/abgerundet werden." />
         <expression value="matches('^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1|4|7]|1[0]))?$')" />
         <source value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert" />
       </constraint>

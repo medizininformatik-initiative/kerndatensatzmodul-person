@@ -25,12 +25,12 @@
   "address": [
     {
       "type": "both",
-      "postalCode": "50823",
+      "postalCode": "50",
       "country": "DE"
     }
   ],
   "gender": "other",
-  "birthDate": "31-03-22",
+  "birthDate": "03-22",
   "managingOrganization": {
     "reference": "Organization/Charite-Universitaetsmedizin-Berlin"
   }
