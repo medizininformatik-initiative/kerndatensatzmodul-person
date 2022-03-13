@@ -16,12 +16,13 @@
   <differential>
     <element id="Person">
       <path value="Person" />
+      <short value="-- Überschrift --" />
       <min value="0" />
       <max value="*" />
     </element>
     <element id="Person.Name">
       <path value="Person.Name" />
-      <short value="vollständiger Name einer Person" />
+      <short value="-- Überschrift --" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -30,7 +31,7 @@
     </element>
     <element id="Person.Name.Vorname">
       <path value="Person.Name.Vorname" />
-      <short value="Vollständiger Vorname einer Person" />
+      <short value="Vollständiger Vorname einer Person." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -129,7 +130,7 @@
     </element>
     <element id="Person.Demographie.Geburtsdatum">
       <path value="Person.Demographie.Geburtsdatum" />
-      <short value="Geburtsdatum des Patienten" />
+      <short value="Geburtsdatum des Person." />
       <min value="0" />
       <max value="*" />
       <type>
@@ -285,6 +286,7 @@
     </element>
     <element id="Person.Demographie.Vitalstatus.LetzterLebendzeitpunkt">
       <path value="Person.Demographie.Vitalstatus.LetzterLebendzeitpunkt" />
+      <short value="Letzter bekannter Zeitpunkt, zu dem die Person noch am Leben war" /> 
       <min value="0" />
       <max value="*" />
       <type>
@@ -342,6 +344,7 @@
     </element>
     <element id="Person.PatientIn.Versicherung">
       <path value="Person.PatientIn.Versicherung" />
+      <short value="-- Überschrift --" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -469,6 +472,7 @@
     </element>
     <element id="Person.PatientInPseudonym">
       <path value="Person.PatientInPseudonym" />
+      <short value="-- Überschrift --" />
       <min value="0" />
       <max value="*" />
       <type>
