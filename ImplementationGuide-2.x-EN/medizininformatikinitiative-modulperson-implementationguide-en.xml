@@ -60,6 +60,11 @@
             <generation value="markdown" />
           </page>
           <page>
+            <nameUrl value="ImplementationGuide-2.x-en/TechnischeImplementierung/PseudonymisiertePatientinPatient-en.md" />
+            <title value="Pseudonymized Patient (Patient)" />
+            <generation value="markdown" />
+          </page>
+          <page>
             <nameUrl value="ImplementationGuide-2.x-en/TechnischeImplementierung/ProbandInResearchSubject-en.md" />
             <title value="ResearchSubject (ResearchSubject)" />
             <generation value="markdown" />
