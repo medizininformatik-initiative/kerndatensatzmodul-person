@@ -31,13 +31,13 @@
     </element>
     <element id="Person.Name">
       <path value="Person.Name" />
-      <short value="-- Überschrift --">
+      <short value="Vollständiger Name einer Person.">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="-- Heading --" />
+            <valueString value="Full name of a person" />
           </extension>
         </extension>
       </short>
@@ -257,13 +257,13 @@
     </element>
     <element id="Person.Demographie.Adresse">
       <path value="Person.Demographie.Adresse" />
-      <short value="-- Überschrift --">
+      <short value="Vollständige Anschrift einer Person für die postlische Kommunikation.">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="-- Heading --" />
+            <valueString value="Full address of a person for postal communication." />
           </extension>
         </extension>
       </short>
@@ -463,13 +463,13 @@
     </element>
     <element id="Person.Demographie.Vitalstatus">
       <path value="Person.Demographie.Vitalstatus" />
-      <short value="-- Überschrift --">
+      <short value="Gibt an, ob ein Patient verstorben ist. Falls ja, zudem den Zeitpunkt.">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="-- Heading --" />
+            <valueString value="Indicates whether a patient has died. If yes, also the time is recorded." />
           </extension>
         </extension>
       </short>
@@ -576,13 +576,13 @@
     </element>
     <element id="Person.PatientIn">
       <path value="Person.PatientIn" />
-      <short value="-- Überschrift --">
+      <short value="Person, die in einer oder mehreren Gesundheitseinrichtungen behandelt wird">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="-- Heading --" />
+            <valueString value="Person receiving treatment in one or more health care facilities" />
           </extension>
         </extension>
       </short>
@@ -641,13 +641,13 @@
     </element>
     <element id="Person.PatientIn.Versicherung">
       <path value="Person.PatientIn.Versicherung" />
-      <short value="-- Überschrift --">
+      <short value="Aktuell gültige Versicherung der Patient:in welcher zur Abrechnung der Behandlungsleistung verwendet wird.">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="--  Heading --." />
+            <valueString value="Patient's current valid insurance which is used to bill the medical healthcare services." />
           </extension>
         </extension>
       </short>
@@ -659,13 +659,13 @@
     </element>
     <element id="Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse">
       <path value="Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse" />
-      <short value="The institutional identifiers (IK for short) are nationwide unique nine-digit numbers that can be used to process billing and quality assurance measures across institutions in the German social insurance sector.">
+      <short value="Die Institutionskennzeichen (kurz: IK) sind bundesweit eindeutige, neunstellige Zahlen, mit deren Hilfe Abrechnungen und Qualitätssicherungsmaßnahmen im Bereich der deutschen Sozialversicherung einrichtungsübergreifend abgewickelt werden können.">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="--  Heading --." />
+            <valueString value="The institutional identifiers (IK for short) are nationwide unique nine-digit numbers that can be used to process billing and quality assurance measures across institutions in the German social insurance sector.." />
           </extension>
         </extension>
       </short>
@@ -704,7 +704,7 @@
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="Insurance number for private health insurance patients. The number is assigned by the respective private health insurance company." />
+            <valueString value="Information for the identification of the insured person" />
           </extension>
         </extension>
       </short>
@@ -754,13 +754,13 @@
     </element>
     <element id="Person.ProbandIn">
       <path value="Person.ProbandIn" />
-      <short value="-- Überschrift --">
+      <short value="Person, die an einer Studie teilnimmt (unter Umständen, während sie Patient:in in einer Gesundheitseinrichtung ist)">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="-- Heading --" />
+            <valueString value="Person participating in a study (in some circumstances, while being a patient in a health care facility)" />
           </extension>
         </extension>
       </short>
@@ -886,13 +886,13 @@
     </element>
     <element id="Person.PatientInPseudonym">
       <path value="Person.PatientInPseudonym" />
-      <short value="-- Überschrift --">
+      <short value="Pseudonymisierte Repräsentation einer dazueghörigen Patient:in">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="-- Heading --" />
+            <valueString value="Pseudonymised representation of a corresponding Patient" />
           </extension>
         </extension>
       </short>
