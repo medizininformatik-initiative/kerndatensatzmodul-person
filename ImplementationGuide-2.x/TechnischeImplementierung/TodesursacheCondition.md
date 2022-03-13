@@ -22,6 +22,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | Condition.id      | Must-support, jedoch optional       |
 | Condition.meta       | Must-support, jedoch optional         |
+| Condition.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. In allen anderen Fällen optional.         |
 | Condition.category       | Fixed LOINC und SNOMED-Code, weitere Codings erlaubt.         |
 | Condition.code       | Kodierung per ICD-10-GM erforderlich, weitere Codings erlaubt       |
 | Condition.subject       | Patientenbezug muss stets gegeben sein.         |

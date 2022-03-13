@@ -24,6 +24,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | Observation.id      | Must-support, jedoch optional       |
 | Observation.meta       | Must-support, jedoch optional         |
+| Observation.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. In allen anderen Fällen optional.         |
 | Observation.category       | Fixed value, weitere Codings erlaubt.         |
 | Observation.code       | Fixed LOINC Code, weitere Codings erlaubt.        |
 | Observation.subject       | Patientenbezug muss stets gegeben sein.         |

@@ -32,14 +32,15 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 | FHIR-Element | Erklärung |
 |--------------|-----------|
-| Patient.id      | Must-support, jedoch optional        |
-| Patient.meta       | Must-support, jedoch optional         |
+| ResearchSubject.id      | Must-support, jedoch optional        |
+| ResearchSubject.meta       | Must-support, jedoch optional         |
+| ResearchSubject.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. In allen anderen Fällen optional.         |
 | Patient.identifier:subjectIdentificationCode      | Fixes NamingSystem zur einheitlichen, standort-übergreifenden Abfrage des Identifiers (bei Auswertungen)         |
-| Patient.period.start      | Startdatum (Einschluss der PatientIn in die Studie)      |
-| Patient.period.end      | Enddatum (Abschluss der Studie oder Ausschluss der PatientIn)       |
-| Patient.study      | Referenz auf die Metadaten der Studie an welcher die PatientIn teilnimmt. Weitere Vorgaben siehe Erweiterungsmodul STUDIENDATEN. |
-| Patient.individual      | Jede ProbandIn muss einer PatientIn zugeordnet werden. |
-| Patient.consent      | Einwilligung in die Studie oder regulatorische Grundlage muss vorliegen. Weitere Vorgaben für die Modellierung des Consents können durch andere Erweiterungsmodule entstehen. |
+| ResearchSubject.period.start      | Startdatum (Einschluss der PatientIn in die Studie)      |
+| ResearchSubject.period.end      | Enddatum (Abschluss der Studie oder Ausschluss der PatientIn)       |
+| ResearchSubject.study      | Referenz auf die Metadaten der Studie an welcher die PatientIn teilnimmt. Weitere Vorgaben siehe Erweiterungsmodul STUDIENDATEN. |
+| ResearchSubject.individual      | Jede ProbandIn muss einer PatientIn zugeordnet werden. |
+| ResearchSubject.consent      | Einwilligung in die Studie oder regulatorische Grundlage muss vorliegen. Weitere Vorgaben für die Modellierung des Consents können durch andere Erweiterungsmodule entstehen. |
 
 ---
 
