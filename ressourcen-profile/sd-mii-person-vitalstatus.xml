@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-person-vitalstatus" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus" />
-  <version value="2.0.0-alpha5" />
+  <version value="2.0.0-ballot2" />
   <name value="SD_MII_Person_Vitalstatus" />
   <title value="SD MII Person Vitalstatus" />
   <status value="active" />

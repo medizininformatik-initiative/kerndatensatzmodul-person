@@ -1,3 +1,0 @@
-- action: Check for valid ids
-  predicate: id.matches('^[A-Za-z0-9\\-\\.]{1,64}$')
-  error: The resource must have a valid id

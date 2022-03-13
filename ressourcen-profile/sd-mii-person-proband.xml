@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="sd-mii-person-proband" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject" />
-  <version value="2.0.0-alpha5" />
+  <version value="2.0.0-ballot2" />
   <name value="SD_MII_Person_Proband" />
   <title value="SD MII Person Proband" />
   <status value="active" />

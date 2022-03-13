@@ -1,3 +1,14 @@
-- include: qc/minimal
-- include: qc/recommended
-- include: qc/ids
+- include: recommended
+  name: include-recommended
+
+- name: version-filled
+  filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or ConceptMap or ImplementationGuide).exists()
+  # Excluding NamingSystem as they have no version
+  status: "Checking if all resources have version filled"
+  predicate: version.exists() and (version in ('2.0.0-ballot2', '1.0.16'))
+  error-message: "version not filled (correctly)"
+
+- action: Check for valid ids
+  # See https://github.com/FirelyTeam/firely-net-sdk/issues/1773
+  predicate: id.matches('^[A-Za-z0-9\\-\\.]{1,64}$')
+  error: The resource must have a valid id
