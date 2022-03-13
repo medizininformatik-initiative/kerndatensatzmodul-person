@@ -181,7 +181,7 @@
               ],
               "name": "gender",
               "definition": "http://hl7.org/fhir/SearchParameter/individual-gender",
-              "type": "string"
+              "type": "token"
             },
             {
               "extension": [
