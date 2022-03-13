@@ -6,8 +6,8 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2022-02-21"/>
-  <code value="stadtteil"/>
   <description value="Suchparameter für Patient.address.extension:Stadtteil" />
+  <code value="stadtteil"/>
   <base value="Patient"/>
   <type value="string"/>
   <expression value="Patient.address.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value"/>
