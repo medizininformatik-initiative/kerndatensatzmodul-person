@@ -15,7 +15,7 @@ In the following, the use cases of the module as well as the associated FHIR pro
 | Realm   | DE           | 
 
 
-## Inhaltsverzeichnis
+## Table of Contents
 
 {{index:root}}
 
@@ -32,7 +32,7 @@ Questions about this publication can be submitted at any time at [chat.fhir.org]
 
 Comments and criticism are always welcome in the form of 'Issues' in the Simplifier project.
 
-## Autoren (in alphabetischer Reihenfolge)
+## Auhtors (in alphabetical order)
 
 * Alexander Zautke (HL7 Deutschland)
 * Andrea Essenwanger (HiGHmed)
