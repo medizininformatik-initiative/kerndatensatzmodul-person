@@ -11,4 +11,5 @@
   <base value="ResearchSubject"/>
   <type value="reference"/>
   <expression value="ResearchSubject.consent"/>
+  <target value="Consent" />
 </SearchParameter>
