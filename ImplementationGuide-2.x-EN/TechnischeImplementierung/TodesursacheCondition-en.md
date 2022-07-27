@@ -5,7 +5,7 @@
 This profile describes the patient's cause of death as an element of the Medical Informatics Initiative Core Data Set.
 
 @```
-from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject' select Name: name, Canonical: url
+from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache' select Name: name, Canonical: url
 ```
 
 ---
