@@ -37,7 +37,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 | FHIR-Element | Logical Data Set |
 |--------------|-----------|
-| Observation.effectiveDateTime      | Person.Demographie.Vitalstatus.LetzterLebendzeitpunkt |
+| Observation.effectiveDateTime      | Person.Demographie.Vitalstatus.Zeitpunkt/-raum der Feststellung des Vitalstatus |
 | MII-Metadaten-Konzept (Provenance) ist zum Stand der Veröffentlichung ungeklärt    | Person.Demographie.Vitalstatus.Informationsquelle |
 
 ---
