@@ -536,15 +536,15 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Demographie.Vitalstatus.LetzterLebendzeitpunkt">
-      <path value="Person.Demographie.Vitalstatus.LetzterLebendzeitpunkt" />
-      <short value="Letzter bekannter Zeitpunkt, zu dem die Person noch am Leben war">
+    <element id="Person.Demographie.Vitalstatus.Zeitpunkt/-raum der Feststellung des Vitalstatus">
+      <path value="Person.Demographie.Vitalstatus.Zeitpunkt/-raum der Feststellung des Vitalstatus" />
+      <short value="Letzter bekannter Zeitpunkt, zudem ein Vitalstatus festgestellt wurde">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
           </extension>
           <extension url="content">
-            <valueString value="Last known time when the person was still alive" />
+            <valueString value="Last known point in time at which a vital status was recorded" />
           </extension>
         </extension>
       </short>
