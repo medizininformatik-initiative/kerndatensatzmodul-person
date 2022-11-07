@@ -536,9 +536,9 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
       </type>
     </element>
-    <element id="Person.Demographie.Vitalstatus.Zeitpunkt/-raum der Feststellung des Vitalstatus">
-      <path value="Person.Demographie.Vitalstatus.Zeitpunkt/-raum der Feststellung des Vitalstatus" />
-      <short value="Letzter bekannter Zeitpunkt, zudem ein Vitalstatus festgestellt wurde">
+    <element id="Person.Demographie.Vitalstatus.ZeitpunktFeststellungDesVitalstatus">
+      <path value="Person.Demographie.Vitalstatus.ZeitpunktDerFeststellungDesVitalstatus" />
+      <short value="Letzter bekannter Zeitpunkt oder Zeitraum, zudem ein Vitalstatus festgestellt wurde">
         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
           <extension url="lang">
             <valueCode value="en" />
