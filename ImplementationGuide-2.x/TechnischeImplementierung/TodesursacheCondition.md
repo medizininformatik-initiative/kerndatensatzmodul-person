@@ -24,7 +24,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 | Condition.meta       | Must-support, jedoch optional         |
 | Condition.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. In allen anderen Fällen optional.         |
 | Condition.category       | Fixed LOINC und SNOMED-Code, weitere Codings erlaubt.         |
-| Condition.code       | Kodierung per ICD-10-GM erforderlich, weitere Codings erlaubt       |
+| Condition.code       | Kodierung per ICD-10-WHO erforderlich, weitere Codings erlaubt. Weitere Infos siehe [BFARM](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-10-WHO/Todesursachenstatistik/_node.html).|
 | Condition.subject       | Patientenbezug muss stets gegeben sein.         |
 
 ---

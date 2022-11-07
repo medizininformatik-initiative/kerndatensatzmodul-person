@@ -140,18 +140,29 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Condition.code.coding:icd10-gm">
+    <element id="Condition.code.coding:icd10-who">
       <path value="Condition.code.coding" />
-      <sliceName value="icd10-gm" />
+      <sliceName value="icd10-who" />
       <min value="1" />
       <max value="1" />
-      <type>
-        <code value="Coding" />
-        <profile value="http://fhir.de/StructureDefinition/CodingICD10GM" />
-      </type>
       <patternCoding>
-        <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm" />
+        <system value="http://hl7.org/fhir/sid/icd-10" />
       </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:icd10-who.system">
+      <path value="Condition.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:icd10-who.version">
+      <path value="Condition.code.coding.version" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:icd10-who.code">
+      <path value="Condition.code.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Condition.code.text">

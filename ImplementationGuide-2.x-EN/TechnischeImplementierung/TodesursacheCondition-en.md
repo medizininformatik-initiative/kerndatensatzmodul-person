@@ -23,7 +23,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 | Condition.id      | Must-support, but optional       |
 | Condition.meta       | Must-support, but optional         |
 | Condition.category       | Fixed LOINC and SNOMED-Code, additional Codings allowed        |
-| Condition.code       | Coding using ICD-10-GM required, but additional Codings allowed       |
+| Condition.code       | Coding using ICD-10-WHO required, but additional Codings allowed. More infos see [BFARM](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-10-WHO/Todesursachenstatistik/_node.html).|
 | Condition.subject       | Patient reference must always be given          |
 
 ---
