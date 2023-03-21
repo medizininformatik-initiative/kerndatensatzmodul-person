@@ -1,8 +1,9 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="ig-mii-person-version-2.0" />
-  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/ig-version-2.0" />
+  <id value="mii-ig-person-de-2" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person-de-2" />
   <version value="2.0.0-ballot2" />
-  <name value="[DE] Medizininformatik Initiative - Modul Person - Implementierungsleitfaden - Version 2.0" />
+  <name value="MII_IG_Person_DE" />
+  <title value="MII IG Person DE" />
   <status value="active" />
   <description value="[DE] Modul Person - Version 2.0 - IG" />
   <fhirVersion value="4.0.1" />
