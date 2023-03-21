@@ -1,6 +1,6 @@
 ## Beschreibung Modul Person
 
-{{render:ImplementationGuide-Common/images/ModulPerson.jpg}}
+{{render:implementation-guides/ImplementationGuide-Common/images/ModulPerson.jpg}}
 
 Das Modul PERSON spielt sowohl im Datenbestand jedes einzelnen Krankenhauses und jeder großen Studie als auch in standort- oder projektübergreifenden Informationsmodellen eine zentrale Rolle.
 
@@ -8,20 +8,20 @@ In der vorliegenden Spezifikation wird das Modul PERSON explizit für Patient\*i
 
 **Abbildung Modul PERSON in ART-DECOR mit den Komponenten Name, Demographie, Patient und Proband:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-gesamt.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-gesamt.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 
 Das führende identifizierende -- allerdings mit Unsicherheiten behaftete -- Merkmal ist der Name mit seinen verschiedenen Bestandteilen.
 
 **Abbildung des Namens im Modul PERSON:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-name.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-name.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 Durch die Ergänzung von demographischen Merkmalen wie Geburtsdatum, Geschlecht und Wohnort wird die Identifizierungsmöglichkeit verbessert. (Als weiteres, in bestimmtem Rahmen gut identifizierendes Merkmal kann für GKV-Patient\*innen ([90 % der Bevölkerung in Deutschland](https://www.gkv-spitzenverband.de/service/zahlen_und_grafiken/zahlen_und_grafiken.jsp)) die Versichertennummer genannt werden.)
 
 **Abbildung der Datensatzgruppe Demographie:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-demographie.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-demographie.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 Die Einzelangaben zu den Personen im Modul PERSON dienen aber nicht nur zur Identifizierung. Ein Merkmal wie Wohnort wird auch für räumliche Analysen benötigt, Alter und Geschlecht beispielsweise auch zur Risikoadjustierung.
 
@@ -30,7 +30,7 @@ Dass diese Angaben im Modul PERSON des Kerndatensatzes enthalten sind, bedeutet 
 
 **Abbildung der Datensatzgruppe Patient:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-patientin.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-patientin.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 Innerhalb von Krankenhäusern oder anderen Gesundheitseinrichtungen wird für einmal oder mehrmals zur Versorgung aufgenommene Personen der Begriff *PatientIn* benutzt. Meist erhält eine Person bei der ersten Krankenhausbehandlung einen *„Patientenidentifikator“* und eine *„Fallnummer/Aufnahmenummer“*. Bei jeder erneuten, administrativ abgegrenzten Inanspruchnahme erhalten Personen neue Fallnummern; die Patientennummer aber, soll möglichst lebenslänglich beibehalten werden.
 Jede Person kann in mehreren verschiedenen Krankenhäusern und anderen Gesundheitseinrichtungen *PatientIn* sein und erhält jeweils für diese eine einrichtungsspezifische Patientenidentifikationsnummer. Näheres zur Entität *PatientIn* findet sich beim [Modul FALL](https://simplifier.net/medizininformatikinitiative-modulfall).
@@ -65,7 +65,7 @@ Basisvorgaben für die Erstellung pseudonymer Patientenstammdatensätze sind ins
 
 **Abbildung Datensatzgruppe Pseudonyme/r PatientIn:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-patient-pseudonym.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-patient-pseudonym.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 
 In Studien wird für teilnehmende Personen der Begriff *ProbandIn* benutzt. Jede Person kann in verschiedenen Studien *ProbandIn* sein und erhält jeweils eine neue *Probandenidentifikationsnummer*.
@@ -76,5 +76,5 @@ Je *ProbandIn* wird insbesondere notiert, an welcher Studie eine Teilnahme statt
 
 **Abbildung Datensatzgruppe ProbandIn:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/ProPerson.jpg}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/ProPerson.jpg}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 

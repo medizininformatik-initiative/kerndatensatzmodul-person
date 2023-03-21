@@ -1,6 +1,6 @@
 ## Description Module Person
 
-{{render:ImplementationGuide-Common/images/ModulPerson.jpg}}
+{{render:implementation-guides/ImplementationGuide-Common/images/ModulPerson.jpg}}
 
 The PERSON module plays a central role in the data repository of each individual hospital and each large study as well as in cross-site or cross-project information models.
 
@@ -8,20 +8,20 @@ In the present specification, the PERSON module is explicitly modeled for PATIEN
 
 **Mapping of the PERSON module in ART-DECOR with the components Name, Demography, Patient and ResearchSubject:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-gesamt.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-gesamt.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 
 The leading identifying -- though fraught with uncertainty -- feature is the name with its various components.
 
 **Mapping of the Name in the PERSON module:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-name.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-name.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 The addition of demographic characteristics such as date of birth, gender, and place of residence improves the possibility of identification. (For SHI patients ([90% of the population in Germany](https://www.gkv-spitzenverband.de/service/zahlen_und_grafiken/zahlen_und_grafiken.jsp))  the insurance number can be mentioned as a further characteristic that can be readily identified within certain limits.)
 
 **Mapping of the Demography dataset group:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-demographie.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-demographie.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 However, the individual data on persons in the PERSON module are not only used for identification purposes. A characteristic such as place of residence is also needed for spatial analyses, and age and gender, for example, are also needed for risk adjustment.
 
@@ -30,7 +30,7 @@ Conversely, the fact that this information is contained in the PERSON module of 
 
 **Mapping of the Patient dataset group:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-patientin.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-patientin.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 Within hospitals or other health care facilities, the term *Patient* is used for persons admitted for care on one or more occasions. Usually, a person is assigned a *"Patient Identifier "* and a *"Case Number/Admission Number "* the first time they are hospitalized. Each time a new, administratively delineated claim is made, individuals are assigned new case numbers; however, the patient number should be retained for life, if possible.
 Each person may be a *Patient* in several different hospitals and other health care facilities and will be assigned a facility-specific patient identification number for each. For more details on the *Patient* entity, see the FALL module.
@@ -60,7 +60,7 @@ For the purpose of using health care data in the context of biomedical research 
 
 **Mapping of the Research Subject dataset group:** <br><br>
 
-[{{render:ImplementationGuide-Common/images/art-decor-person-2x-patient-pseudonym.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
+[{{render:implementation-guides/ImplementationGuide-Common/images/art-decor-person-2x-patient-pseudonym.png}}](https://art-decor.org/art-decor/decor-datasets--mide-?id=&effectiveDate=&conceptId=&conceptEffectiveDate=)
 
 In studies, the term *Research Subject* is used for participating persons. Each person can be a *Research Subject* in different studies and is assigned a new *Research Subject Identification Number* each time.
 

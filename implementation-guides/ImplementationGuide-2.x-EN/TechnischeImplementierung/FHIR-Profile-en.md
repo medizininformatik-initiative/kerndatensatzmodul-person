@@ -7,6 +7,6 @@ All elements of the core data set, adapted to the details and requirements for t
 
 | Note | Mandatory / must-support elements |
 |---------|---------------------|
-| {{render:ImplementationGuide-Common/images/Warning.jpg}} | For mandatory elements or elements marked as must-support, please refer to the corresponding [rules of the IPS](https://build.fhir.org/ig/HL7/fhir-ips/design.html#must-support), which also apply to this Implementation Guide. |
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | For mandatory elements or elements marked as must-support, please refer to the corresponding [rules of the IPS](https://build.fhir.org/ig/HL7/fhir-ips/design.html#must-support), which also apply to this Implementation Guide. |
 
 <br><br>
