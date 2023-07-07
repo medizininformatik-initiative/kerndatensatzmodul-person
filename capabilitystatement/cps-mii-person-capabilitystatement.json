@@ -691,7 +691,7 @@
               "name": "patient",
               "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
               "type": "reference"
-            },
+            }
           ]
         }
       ]
