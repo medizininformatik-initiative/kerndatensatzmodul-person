@@ -15,10 +15,10 @@ Usage: #example
 * identifier[=].assigner.identifier.use = #official
 * identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * identifier[=].assigner.identifier.value = "260326822"
-* name.use = #official
-* name.family = "Van-der-Dussen"
-* name.given[0] = "Maja"
-* name.given[+] = "Julia"
+* name[name].use = #official
+* name[name].family = "Van-der-Dussen"
+* name[name].given[0] = "Maja"
+* name[name].given[+] = "Julia"
 * address.type = #both
 * address.line = "Teststraße 2"
 * address.city = "Köln"

@@ -33,14 +33,14 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * effective[x] only dateTime
 * value[x] 1.. MS
 * value[x] only CodeableConcept
-* value[x].coding MS
-* value[x].coding ^slicing.discriminator.type = #pattern
-* value[x].coding ^slicing.discriminator.path = "$this"
-* value[x].coding ^slicing.rules = #open
-* value[x].coding contains Vitalstatus 1..1 MS
-* value[x].coding[Vitalstatus] from VS_MII_Person_Vitalstatus (required)
-* value[x].coding[Vitalstatus].system 1.. MS
-* value[x].coding[Vitalstatus].code 1.. MS
+* valueCodeableConcept.coding MS
+* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains Vitalstatus 1..1 MS
+* valueCodeableConcept.coding[Vitalstatus] from VS_MII_Person_Vitalstatus (required)
+* valueCodeableConcept.coding[Vitalstatus].system 1.. MS
+* valueCodeableConcept.coding[Vitalstatus].code 1.. MS
 * bodySite ..0
 * specimen ..0
 * referenceRange ..0

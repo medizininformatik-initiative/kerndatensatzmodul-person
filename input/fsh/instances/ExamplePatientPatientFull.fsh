@@ -19,17 +19,17 @@ Usage: #example
 * identifier[=].type = $identifier-type-de-basis#PKV
 * identifier[=].value = "123456"
 * identifier[=].assigner.display = "Signal Iduna"
-* name[0].use = #official
-* name[=].family = "Van-der-Dussen"
-* name[=].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
-* name[=].family.extension.valueString = "Van-der-Dussen"
-* name[=].given[0] = "Maja"
-* name[=].given[+] = "Julia"
-* name[=].prefix = "Prof. Dr. med."
-* name[=].prefix.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
-* name[=].prefix.extension.valueCode = #AC
-* name[+].use = #maiden
-* name[=].family = "Haffer"
+* name[name].use = #official
+* name[name].family = "Van-der-Dussen"
+* name[name].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
+* name[name].family.extension.valueString = "Van-der-Dussen"
+* name[name].given[0] = "Maja"
+* name[name].given[+] = "Julia"
+* name[name].prefix = "Prof. Dr. med."
+* name[name].prefix.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"
+* name[name].prefix.extension.valueCode = #AC
+* name[geburtsname].use = #maiden
+* name[geburtsname].family = "Haffer"
 * gender = #other
 * gender.extension.url = "http://fhir.de/StructureDefinition/gender-amtlich-de"
 * gender.extension.valueCoding = $gender-amtlich-de#D "divers"
