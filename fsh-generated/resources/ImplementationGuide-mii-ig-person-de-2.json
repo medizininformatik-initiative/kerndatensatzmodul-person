@@ -1,0 +1,247 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "mii-ig-person-de-2",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person-de-2",
+  "version": "2.0.0-alpha3",
+  "name": "MII_IG_Person_DE",
+  "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "name": "Medizininformatik Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de/"
+        }
+      ]
+    }
+  ],
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.diagnose",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.basisprofil.r4",
+      "version": "1.4.0",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "id": "de_basisprofil_r4"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "1.0.3",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "CapabilityStatement/cps-mii-person-capabilitystatement"
+        },
+        "name": "cps-mii-person-capabilitystatement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-mii-person-vitalstatus"
+        },
+        "name": "CS MII Person Vitalstatus",
+        "description": "Vitalstatus des Patienten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/ExampleConditionTodesursache"
+        },
+        "name": "ExampleConditionTodesursache",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleObservationVitalstatus"
+        },
+        "name": "ExampleObservationVitalstatus",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"
+      },
+      {
+        "reference": {
+          "reference": "Patient/ExamplePatientPatientFull"
+        },
+        "name": "ExamplePatientPatientFull",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/ExamplePatientPatientMinimal"
+        },
+        "name": "ExamplePatientPatientMinimal",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/ExamplePatientPseudonymisiert"
+        },
+        "name": "ExamplePatientPseudonymisiert",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/ExampleResearchSubjectStudienteilnehmer"
+        },
+        "name": "ExampleResearchSubjectStudienteilnehmer",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-person-logicalmodel"
+        },
+        "name": "SD MII Person Logical Model",
+        "description": "Logische Repräsentation des Basismoduls Person",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-person-patient"
+        },
+        "name": "SD MII Person Patient",
+        "description": "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-Initiative.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-person-patientpseudonymisiert"
+        },
+        "name": "SD MII Person Patient (Pseudonymisiert)",
+        "description": "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der Medizininformatik-Initiative.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-person-proband"
+        },
+        "name": "SD MII Person Proband",
+        "description": "Dieses Profil beschreibt eine Proband*in in der Medizininformatik-Initiative.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-person-todesursache"
+        },
+        "name": "SD MII Person Todesursache",
+        "description": "Dieses Profil beschreibt den Todesursache der Patient*in als Element des Kerndatensatzes Medizininformatik-Initiative",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-person-vitalstatus"
+        },
+        "name": "SD MII Person Vitalstatus",
+        "description": "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Medizininformatik-Initiative.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-adresszusatz"
+        },
+        "name": "sp-mii-person-adresszusatz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-assignerpid"
+        },
+        "name": "sp-mii-person-assignerpid",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-consent"
+        },
+        "name": "sp-mii-person-consent",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-gemeindeschluessel"
+        },
+        "name": "sp-mii-person-gemeindeschluessel",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-hausnummer"
+        },
+        "name": "sp-mii-person-hausnummer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-otheramtlich"
+        },
+        "name": "sp-mii-person-otheramtlich",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-postfach"
+        },
+        "name": "sp-mii-person-postfach",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-prefix"
+        },
+        "name": "sp-mii-person-prefix",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-prefixqualifier"
+        },
+        "name": "sp-mii-person-prefixqualifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-stadtteil"
+        },
+        "name": "sp-mii-person-stadtteil",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-person-strasse"
+        },
+        "name": "sp-mii-person-strasse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-person-vitalstatus"
+        },
+        "name": "VS MII Person Vitalstatus",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": []
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2019+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

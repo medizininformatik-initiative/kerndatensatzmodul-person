@@ -1,3 +1,5 @@
 /fhirpkg.lock.json
 /Ballot Kommentare Modul Person.xlsx
 .history
+fsh-generated/includes
+.DS_Store
