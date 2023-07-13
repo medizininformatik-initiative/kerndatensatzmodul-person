@@ -30,10 +30,10 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 * birthDate MS
 * birthDate obeys GeburtsdatumRundenAufQuartal
 * deceased[x] MS
-* deceased[x] obeys TodesdatumKeineZeitangabe
+//* deceased[x] obeys TodesdatumKeineZeitangabe
 * deceasedDateTime only dateTime
 * deceasedDateTime MS
-//* deceasedDateTime obeys TodesdatumKeineZeitangabe
+* deceasedDateTime obeys TodesdatumKeineZeitangabe
 * address MS
 * address ^slicing.discriminator.type = #pattern
 * address ^slicing.discriminator.path = "$this"
