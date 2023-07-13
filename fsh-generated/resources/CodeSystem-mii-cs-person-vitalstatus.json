@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Person_Vitalstatus",
+  "id": "mii-cs-person-vitalstatus",
+  "title": "MII CS Person Vitalstatus",
+  "description": "Vitalstatus des Patienten",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus",
+  "concept": [
+    {
+      "code": "L",
+      "display": "Patient lebt"
+    },
+    {
+      "code": "T",
+      "display": "Patient verstorben"
+    },
+    {
+      "code": "A",
+      "display": "unbekannt, Patient nicht mehr auffindbar (lost to follow-up)"
+    },
+    {
+      "code": "N",
+      "display": "unbekannt, Betreuung/Nachsorge nicht mehr nötig"
+    },
+    {
+      "code": "B",
+      "display": "unbekannt, Patient ist anderenorts in Betreuung"
+    },
+    {
+      "code": "V",
+      "display": "unbekannt, Patient verweigert weitere Betreuung"
+    },
+    {
+      "code": "X",
+      "display": "unbekannt"
+    }
+  ],
+  "version": "2.0.0-ballot2",
+  "publisher": "Medizininformatik Initative",
+  "caseSensitive": true,
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus",
+  "count": 7
+}

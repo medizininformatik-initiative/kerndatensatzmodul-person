@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Person_Vitalstatus",
+  "id": "mii-vs-person-vitalstatus",
+  "title": "MII VS Person Vitalstatus",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus",
+  "version": "2.0.0-ballot2",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus"
+      }
+    ]
+  }
+}
