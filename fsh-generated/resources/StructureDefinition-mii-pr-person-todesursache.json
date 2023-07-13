@@ -6,6 +6,17 @@
   "name": "MII_PR_Person_Todesursache",
   "title": "MII PR Person Todesursache",
   "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "description": "Dieses Profil beschreibt den Todesursache der Patient*in als Element des Kerndatensatzes Medizininformatik-Initiative",
   "fhirVersion": "4.0.1",
   "mapping": [

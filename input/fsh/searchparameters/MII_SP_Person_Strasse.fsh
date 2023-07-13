@@ -2,7 +2,8 @@ Instance: mii-sp-person-strasse
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Strasse"
-* version = "2.0.0-ballot2"
+* insert Version
+* insert SP_Publisher
 * name = "MII_SP_Person_Strasse"
 * status = #active
 * experimental = false

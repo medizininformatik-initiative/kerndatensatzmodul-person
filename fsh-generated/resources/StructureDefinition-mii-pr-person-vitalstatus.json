@@ -6,6 +6,17 @@
   "name": "MII_PR_Person_Vitalstatus",
   "title": "MII PR Person Vitalstatus",
   "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "description": "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Medizininformatik-Initiative.",
   "fhirVersion": "4.0.1",
   "mapping": [

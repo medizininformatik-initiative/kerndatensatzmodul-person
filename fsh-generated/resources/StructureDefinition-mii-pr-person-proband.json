@@ -6,6 +6,17 @@
   "name": "MII_PR_Person_Proband",
   "title": "MII PR Person Proband",
   "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "description": "Dieses Profil beschreibt eine Proband*in in der Medizininformatik-Initiative.",
   "fhirVersion": "4.0.1",
   "mapping": [

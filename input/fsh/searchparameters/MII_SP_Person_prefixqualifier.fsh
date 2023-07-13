@@ -2,7 +2,8 @@ Instance: mii-sp-person-prefixqualifier
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-PrefixQualifier"
-* version = "2.0.0-ballot2"
+* insert Version
+* insert SP_Publisher
 * name = "MII_SP_Person_PrefixQualifier"
 * status = #active
 * experimental = false

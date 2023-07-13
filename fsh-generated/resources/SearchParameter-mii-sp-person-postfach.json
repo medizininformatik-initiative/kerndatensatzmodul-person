@@ -3,6 +3,17 @@
   "id": "mii-sp-person-postfach",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Postfach",
   "version": "2.0.0-ballot2",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "name": "MII_SP_Person_Postfach",
   "status": "active",
   "experimental": false,

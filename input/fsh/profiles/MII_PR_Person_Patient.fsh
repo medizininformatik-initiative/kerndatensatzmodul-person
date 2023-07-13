@@ -4,7 +4,8 @@ Id: mii-pr-person-patient
 Title: "MII PR Person Patient"
 Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-Initiative."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
-* ^version = "2.0.0-ballot2"
+* insert PR_CS_VS_Version
+* insert Publisher
 * obeys mii-pat-1
 * id MS
 * meta MS

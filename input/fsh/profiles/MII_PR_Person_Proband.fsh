@@ -4,7 +4,8 @@ Id: mii-pr-person-proband
 Title: "MII PR Person Proband"
 Description: "Dieses Profil beschreibt eine Proband*in in der Medizininformatik-Initiative."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject"
-* ^version = "2.0.0-ballot2"
+* insert PR_CS_VS_Version
+* insert Publisher
 * ^status = #active
 * id MS
 * meta MS

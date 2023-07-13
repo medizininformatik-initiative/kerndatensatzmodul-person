@@ -38,7 +38,17 @@
     }
   ],
   "version": "2.0.0-ballot2",
-  "publisher": "Medizininformatik Initative",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus",
   "count": 7

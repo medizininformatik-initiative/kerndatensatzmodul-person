@@ -4,7 +4,8 @@ Id: mii-lm-person-logicalmodel
 Title: "MII LM Person Logical Model"
 Description: "Logische Repräsentation des Basismoduls Person"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/LogicalModel/Person"
-* ^version = "2.0.0-ballot2"
+* insert PR_CS_VS_Version
+* insert Publisher
 * . ^short = "-- Überschrift --"
 * . ^short.extension.extension[0].url = "lang"
 * . ^short.extension.extension[=].valueCode = #en

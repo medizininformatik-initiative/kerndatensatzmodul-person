@@ -4,7 +4,8 @@ Id: mii-pr-person-todesursache
 Title: "MII PR Person Todesursache"
 Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Element des Kerndatensatzes Medizininformatik-Initiative"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache"
-* ^version = "2.0.0-ballot2"
+* insert PR_CS_VS_Version
+* insert Publisher
 * ^status = #active
 * id MS
 * meta MS

@@ -2,7 +2,7 @@ Instance: mii-cps-person-capabilitystatement
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata"
-* version = "2.0.0-ballot2"
+* insert Version
 * name = "MII_CPS_Person_CapabilityStatement"
 * title = "MII CPS Person CapabilityStatement"
 * status = #active

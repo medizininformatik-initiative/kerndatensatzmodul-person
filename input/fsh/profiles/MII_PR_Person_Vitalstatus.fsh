@@ -4,7 +4,8 @@ Id: mii-pr-person-vitalstatus
 Title: "MII PR Person Vitalstatus"
 Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Medizininformatik-Initiative."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"
-* ^version = "2.0.0-ballot2"
+* insert PR_CS_VS_Version
+* insert Publisher
 * id MS
 * meta MS
 * meta.source MS
