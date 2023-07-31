@@ -32,7 +32,7 @@
       "assigner": {
         "display": "Charité – Universitätsmedizin Berlin",
         "identifier": {
-          "system": "http://fhir.de/NamingSystem/arge-ik/iknr",
+          "system": "http://fhir.de/sid/arge-ik/iknr",
           "value": "261101015"
         }
       }

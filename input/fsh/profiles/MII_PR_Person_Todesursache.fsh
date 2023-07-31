@@ -16,8 +16,6 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains todesDiagnose 1..1 MS
-* category[todesDiagnose] = $sct#16100001
-* category[todesDiagnose] ^patternCodeableConcept.coding[1] = $loinc#79378-6
 * category[todesDiagnose].coding MS
 * category[todesDiagnose].coding ^slicing.discriminator.type = #pattern
 * category[todesDiagnose].coding ^slicing.discriminator.path = "$this"

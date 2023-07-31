@@ -6,7 +6,7 @@ Usage: #example
 * identifier[=].system = "https://www.example.org/fhir/sid/patienten"
 * identifier[=].value = "42285243"
 * identifier[=].assigner.display = "Charité – Universitätsmedizin Berlin"
-* identifier[=].assigner.identifier.system = "http://fhir.de/NamingSystem/arge-ik/iknr"
+* identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
 * identifier[=].assigner.identifier.value = "261101015"
 * identifier[+].use = #official
 * identifier[=].type = $identifier-type-de-basis#GKV
