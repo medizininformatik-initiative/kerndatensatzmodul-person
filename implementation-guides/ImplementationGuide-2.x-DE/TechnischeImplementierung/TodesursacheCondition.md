@@ -1,3 +1,8 @@
+---
+topic: PersonTodesursache
+subject: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache
+---
+
 ## Todesursache (Condition)
 
 ---
@@ -10,9 +15,20 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
-**Differential**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache, diff}}
+<tabs>
+    <tab title="snap" active="true">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache, snap}}
+    </tab>
+    <tab title="diff">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache, diff}}
+    </tab>
+    <tab title="hybrid">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache, hybrid}}
+    </tab>
+    <tab title="JSON">
+      {{json:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache}}
+    </tab>
+</tabs>
 
 ---
 
@@ -34,12 +50,6 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 | FHIR-Element | Logischer Datensatz |
 |--------------|-----------|
 | Condition.code      | Person.Demographie.Vitalstatus.Todesgrund |
-
----
-
-**Snapshot**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache, snapshot}}
 
 ---
 

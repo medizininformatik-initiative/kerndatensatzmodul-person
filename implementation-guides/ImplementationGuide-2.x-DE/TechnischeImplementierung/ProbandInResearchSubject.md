@@ -1,3 +1,8 @@
+---
+topic: PersonProbandIn
+subject: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject
+---
+
 ## Proband:in (ResearchSubject)
 
 ---
@@ -22,9 +27,20 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
-**Differential**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject, diff}}
+<tabs>
+    <tab title="snap" active="true">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject, snap}}
+    </tab>
+    <tab title="diff">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject, diff}}
+    </tab>
+    <tab title="hybrid">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject, hybrid}}
+    </tab>
+    <tab title="JSON">
+      {{json:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject}}
+    </tab>
+</tabs>
 
 ---
 
@@ -34,7 +50,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | ResearchSubject.id      | Must-support, jedoch optional        |
 | ResearchSubject.meta       | Must-support, jedoch optional         |
-| ResearchSubject.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. In allen anderen Fällen optional.         |
+| ResearchSubject.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe **CapabilityStatement**. In allen anderen Fällen optional.         |
 | Patient.identifier:subjectIdentificationCode      | Fixes NamingSystem zur einheitlichen, standort-übergreifenden Abfrage des Identifiers (bei Auswertungen)         |
 | ResearchSubject.period.start      | Startdatum (Einschluss der PatientIn in die Studie)      |
 | ResearchSubject.period.end      | Enddatum (Abschluss der Studie oder Ausschluss der PatientIn)       |
@@ -54,12 +70,6 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 | ResearchSubject.period.end       | Person.Studienteilnehmer.EndeTeilnahme         |
 | ResearchSubject.consent       | Person.Studienteilnehmer.Rechtsgrundlage        |
 
-
----
-
-**Snapshot**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject, snapshot}}
 
 ---
 

@@ -9,8 +9,8 @@ Im Folgenden werden die Use-Case des Moduls sowie die dazuhegörigen FHIR-Profil
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 01.06.2022   |
-| Version | 2.0.0-ballot |
+| Datum   | 31.07.2023   |
+| Version | 2.0.0 |
 | Status  | Active       |
 | Realm   | DE           | 
 
@@ -23,14 +23,13 @@ Im Folgenden werden die Use-Case des Moduls sowie die dazuhegörigen FHIR-Profil
 Dieser Leitfaden ist im Rahmen der Medizininformatik-Initative erstellt wurden und unterliegt per Governance-Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V.
 
 ## Ansprechpartner
-* Josef Schepers, Berlin Institute of Health (BIH)
-* Andrea Essenwanger, Berlin Institute of Health (BIH)
-* Karoline Buckow, TMF – Technologie- und Methodenplattform
-für die vernetzte medizinische Forschung e.V.
+* Sylvia Thun, Berlin Institute of Health at Charité (BIH)
+* Julian Saß, Berlin Institute of Health at Charité (BIH)
+* Karoline Buckow, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
 
 Fragen zu der vorliegenden Publikation können jederzeit unter [chat.fhir.org](https://chat.fhir.org/#narrow/stream/179307-german.2Fmi-initiative) im Stream 'german/mi-initiative' gestellt werden.
 
-Anmerkungen und Kritik wird in Form von 'Issues' im Simplifier-Projekt stets gern entgegengenommen.
+Anmerkungen und Kritik werden in Form von 'Issues' im [GitHub Repository](https://github.com/medizininformatik-initiative/kerndatensatzmodul-person) stets gern entgegengenommen.
 
 ## Autoren (in alphabetischer Reihenfolge)
 
@@ -66,7 +65,7 @@ Anmerkungen und Kritik wird in Form von 'Issues' im Simplifier-Projekt stets ger
 * Ulrich Sax (HiGHmed)
 
 ## Copyright-Hinweis, Nutzungshinweise
-Copyright © 2019: TMF e. V., Charlottenstraße 42, 10117 Berlin
+Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
 
 Der Inhalt dieser Spezifikation ist öffentlich. Die Nachnutzungs- bzw. Veröffentlichungsansprüche sind nicht beschränkt.
 
