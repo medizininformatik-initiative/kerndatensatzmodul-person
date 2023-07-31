@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-person-patient-pseudonymisiert",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert",
-  "version": "2.0.0-ballot2",
+  "version": "2.0.0",
   "name": "MII_PR_Person_PatientPseudonymisiert",
   "title": "SD MII Person Patient (Pseudonymisiert)",
   "status": "active",
@@ -153,19 +153,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.gender.extension",
-        "path": "Patient.gender.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
         "id": "Patient.gender.extension:other-amtlich",
         "path": "Patient.gender.extension",
         "sliceName": "other-amtlich",
@@ -291,19 +278,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.address:Strassenanschrift.city.extension",
-        "path": "Patient.address.city.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
         "id": "Patient.address:Strassenanschrift.city.extension:gemeindeschluessel",
         "path": "Patient.address.city.extension",
         "sliceName": "gemeindeschluessel",
@@ -392,19 +366,6 @@
         "path": "Patient.address.city",
         "max": "0",
         "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Postfach.city.extension",
-        "path": "Patient.address.city.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
       },
       {
         "id": "Patient.address:Postfach.city.extension:gemeindeschluessel",
