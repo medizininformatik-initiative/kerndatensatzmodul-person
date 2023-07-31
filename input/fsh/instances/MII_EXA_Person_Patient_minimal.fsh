@@ -3,7 +3,7 @@ InstanceOf: MII_PR_Person_Patient
 Usage: #example
 * identifier[0].use = #usual
 * identifier[=].type = $v2-0203#MR
-* identifier[=].system = "https://www.example.org/fhir/sid/patienten"
+* identifier[=].system = "https://www.charite.de/fhir/sid/patienten"
 * identifier[=].value = "42285243"
 * identifier[=].assigner.display = "Charité – Universitätsmedizin Berlin"
 * identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"

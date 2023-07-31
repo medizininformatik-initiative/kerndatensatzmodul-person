@@ -27,7 +27,7 @@
           }
         ]
       },
-      "system": "https://www.example.org/fhir/sid/patienten",
+      "system": "https://www.charite.de/fhir/sid/patienten",
       "value": "42285243",
       "assigner": {
         "display": "Charité – Universitätsmedizin Berlin",

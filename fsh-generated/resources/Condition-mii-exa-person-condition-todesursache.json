@@ -11,13 +11,11 @@
       "coding": [
         {
           "code": "16100001",
-          "system": "http://snomed.info/sct",
-          "display": "Death diagnosis (contextual qualifier) (qualifier value)"
+          "system": "http://snomed.info/sct"
         },
         {
           "code": "79378-6",
-          "system": "http://loinc.org",
-          "display": "Cause of death"
+          "system": "http://loinc.org"
         }
       ]
     }

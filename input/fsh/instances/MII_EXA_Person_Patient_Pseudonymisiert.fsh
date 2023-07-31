@@ -3,7 +3,7 @@ InstanceOf: MII_PR_Person_PatientPseudonymisiert
 Usage: #example
 * identifier.use = #usual
 * identifier.type = $v3-ObservationValue#PSEUDED
-* identifier.system = "https://www.example.org/fhir/sid/pseudonym"
+* identifier.system = "https://www.medizininformatik-initiative.de/fhir/sid/pseudonym"
 * identifier.value = "1234567890"
 * deceasedBoolean = false
 * address.type = #both
