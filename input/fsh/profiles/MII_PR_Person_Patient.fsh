@@ -39,11 +39,7 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * identifier[pid].assigner MS
 * identifier[pid].assigner.identifier.type = $v2-0203#XX
 * identifier[pid].assigner.identifier.type MS
-* identifier[pid].assigner.identifier.system ^constraint[1].key = "mii-pat-1"
-* identifier[pid].assigner.identifier.system ^constraint[=].severity = #error
-* identifier[pid].assigner.identifier.system ^constraint[=].human = "Entweder IKNR oder MII Core Location Identifier muss verwendet werden"
-* identifier[pid].assigner.identifier.system ^constraint[=].expression = "$this = 'http://fhir.de/NamingSystem/arge-ik/iknr' or $this = 'https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier'"
-* identifier[pid].assigner.identifier.system ^constraint[=].source = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+* identifier[pid].assigner.identifier.system obeys mii-pat-2
 * identifier[versichertennummer_pkv] only IdentifierPkv
 * identifier[versichertennummer_pkv] ^patternIdentifier.type = $identifier-type-de-basis#PKV
 * identifier[versichertennummer_pkv].use MS

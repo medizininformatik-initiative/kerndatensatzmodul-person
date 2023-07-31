@@ -253,10 +253,10 @@
         "path": "Patient.identifier.assigner.identifier.system",
         "constraint": [
           {
-            "key": "mii-pat-1",
+            "key": "mii-pat-2",
             "severity": "error",
             "human": "Entweder IKNR oder MII Core Location Identifier muss verwendet werden",
-            "expression": "$this = 'http://fhir.de/NamingSystem/arge-ik/iknr' or $this = 'https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier'",
+            "expression": "$this = 'http://fhir.de/sid/arge-ik/iknr' or $this = 'https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier'",
             "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
           }
         ]
