@@ -158,4 +158,4 @@ The following SearchParameters are relevant for the module Person, also in combi
 
 Example (complete):
 
-{{json:beispiele/Example-Vitalstatus.json}}
+{{json:fsh-generated/resources/Observation-mii-exa-perspn-observation-vitalstatus.json}}

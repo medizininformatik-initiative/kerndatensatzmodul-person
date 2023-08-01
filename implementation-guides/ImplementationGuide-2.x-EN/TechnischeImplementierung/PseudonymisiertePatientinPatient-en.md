@@ -188,4 +188,4 @@ The following SearchParameters are relevant for the module Person, also in combi
 
 **Examples**
 
-{{json:beispiele/Example-PatientPseudonymisiert.json}}
+{{json:fsh-generated/resources/Patient-mii-exa-person-patient-pseudonymisiert.json}}

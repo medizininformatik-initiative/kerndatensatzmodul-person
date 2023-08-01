@@ -157,4 +157,4 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 Beispiel (vollständig):
 
-{{json:beispiele/Example-Vitalstatus.json}}
+{{json:fsh-generated/resources/Observation-mii-exa-perspn-observation-vitalstatus.json}}

@@ -307,8 +307,8 @@ The following SearchParameters are relevant for the module Person, also in combi
 
 Example (minimal):
 
-{{json:beispiele/Example-Patient-Minimal.json}}
+{{json:fsh-generated/resources/Patient-mii-exa-person-patient-minimal.json}}
 
 Example (complete):
 
-{{json:beispiele/Example-Patient.json}}
+{{json:fsh-generated/resources/Patient-mii-exa-person-patient-full.json}}
