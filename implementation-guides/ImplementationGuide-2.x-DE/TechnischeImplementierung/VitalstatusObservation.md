@@ -1,3 +1,8 @@
+---
+topic: PersonVitalstatus
+subject: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus
+---
+
 ## Vitalstatus (Observation)
 
 ---
@@ -12,9 +17,20 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
-**Differential**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, diff}}
+<tabs>
+    <tab title="snap" active="true">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, snap}}
+    </tab>
+    <tab title="diff">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, diff}}
+    </tab>
+    <tab title="hybrid">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, hybrid}}
+    </tab>
+    <tab title="JSON">
+      {{json:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus}}
+    </tab>
+</tabs>
 
 ---
 
@@ -24,7 +40,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | Observation.id      | Must-support, jedoch optional       |
 | Observation.meta       | Must-support, jedoch optional         |
-| Observation.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. In allen anderen Fällen optional.         |
+| Observation.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe **CapabilityStatement**. In allen anderen Fällen optional.         |
 | Observation.category       | Fixed value, weitere Codings erlaubt.         |
 | Observation.code       | Fixed LOINC Code, weitere Codings erlaubt.        |
 | Observation.subject       | Patientenbezug muss stets gegeben sein.         |
@@ -38,12 +54,6 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | Observation.effectiveDateTime      | Person.Demographie.Vitalstatus.Zeitpunkt/-raum der Feststellung des Vitalstatus |
 | MII-Metadaten-Konzept (Provenance) ist zum Stand der Veröffentlichung ungeklärt    | Person.Demographie.Vitalstatus.Informationsquelle |
-
----
-
-**Snapshot**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, snapshot}}
 
 ---
 

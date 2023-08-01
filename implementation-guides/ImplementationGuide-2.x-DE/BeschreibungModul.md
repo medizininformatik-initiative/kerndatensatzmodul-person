@@ -1,6 +1,6 @@
 ## Beschreibung Modul Person
 
-{{render:implementation-guides/ImplementationGuide-Common/images/ModulPerson.jpg}}
+{{render:implementation-guides/ImplementationGuide-Common/images/11_Abbildung_Person_de.jpg}}
 
 Das Modul PERSON spielt sowohl im Datenbestand jedes einzelnen Krankenhauses und jeder großen Studie als auch in standort- oder projektübergreifenden Informationsmodellen eine zentrale Rolle.
 

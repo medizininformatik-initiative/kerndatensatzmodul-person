@@ -1,3 +1,8 @@
+---
+topic: PersonPatientIn
+subject: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient
+---
+
 ## Patient (Patient)
 
 ---
@@ -12,9 +17,20 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
-**Differential**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient, diff}}
+<tabs>
+    <tab title="snap" active="true">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient, snap}}
+    </tab>
+    <tab title="diff">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient, diff}}
+    </tab>
+    <tab title="hybrid">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient, hybrid}}
+    </tab>
+    <tab title="JSON">
+      {{json:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient}}
+    </tab>
+</tabs>
 
 ---
 
@@ -25,16 +41,16 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | Patient.id      | Must-support, but optional        |
 | Patient.meta       | Must-support, but optional         |
-| Patient.meta.profile       | Mandatory for querying the DIZ repository incl. version number of the profile. See {{pagelink:ImplementationGuide-2.x-en/TechnischeImplementierung/CapabilityStatement-en.md}}. Optional in all other cases.         |
-| Patient.identifier:versichertenId_GKV        |  See [Base Profile - Statutory health insurance number (10-digit KVID)](https://simplifier.net/guide/basisprofil-de-r4/GesetzlicheKrankenversichertennummer10-stelligeKVID-Identifier). It should be noted that the IKNR of the issuing institution must be entered in the 'Assigner' element. This is always the current insurance number of the patient.       |
-| Patient.identifier:versicherungsnummer_pkv        | Siehe [Base Profile - Private health insurance number](https://simplifier.net/guide/basisprofil-de-r4/PrivateKrankenversichertennummer-Identifier). This is always the patient's current insurance number. |
-| Patient.identifier:pid        | See [Base Profile Internal organization patient identifier (PID)](https://simplifier.net/guide/basisprofil-de-r4/OrganisationsinternerPatienten-Identifier). Leading (MPI) ID of the patient.  In Patient.identifier:pid.assigner a reference to the issuing organization is required. Logical reference by IK number or IHE Affinity Domain OID is allowed. Furthermore, the following code system of all MII sites can be used: [Core-Location-Identifier](https://simplifier.net/medizininformatikinitiative-kerndatensatz/core-location-identifier). |
+| Patient.meta.profile       | Mandatory for querying the DIZ repository incl. version number of the profile. See **CapabilityStatement**. Optional in all other cases.         |
+| Patient.identifier:versichertenId_GKV        |  See [Base Profile - Statutory health insurance number (10-digit KVID)](https://ig.fhir.de/basisprofile-de/1.4.0/GesetzlicheKrankenversichertennummer10-stelligeKVID-Identifier.html). It should be noted that the IKNR of the issuing institution must be entered in the 'Assigner' element. This is always the current insurance number of the patient.       |
+| Patient.identifier:versicherungsnummer_pkv        | Siehe [Base Profile - Private health insurance number]((https://ig.fhir.de/basisprofile-de/1.4.0/PrivateKrankenversichertennummer-Identifier.html). This is always the patient's current insurance number. |
+| Patient.identifier:pid        | See [Base Profile Internal organization patient identifier (PID)](https://ig.fhir.de/basisprofile-de/1.4.0/OrganisationsinternerPatienten-Identifier.html). Leading (MPI) ID of the patient.  In Patient.identifier:pid.assigner a reference to the issuing organization is required. Logical reference by IK number or IHE Affinity Domain OID is allowed. Furthermore, the following code system of all MII sites can be used: [Core-Location-Identifier](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.meta/1.0.3/files/319430). |
 | Patient.identifier        |  Any other identifiers if GKV/PKV/PID is not applicable.       |
-| Patient.name        |  See [Base Profile for data type HumanName](https://simplifier.net/guide/basisprofil-de-r4/Datentypen-HumanName). It should be noted that the division of the full name into its components (e.g. prefix words, name suffix, surname) should only be performed if this information is explicitly available in this granularity (e.g. through a direct import based on a VSDM dataset). It should be noted that, by general convention, the birth name contains only the family name.|
-| Patient.gender        | See [Base Profile - Sex](https://simplifier.net/guide/basisprofil-de-r4/Ressourcen-Patient#Ressourcen-Patient-Geschlecht)          |
-| Patient.birthDate        |   See [Base Profile - Date of Birth](https://simplifier.net/guide/basisprofil-de-r4/Ressourcen-Patient#Ressourcen-Patient-Geburtsdatum)        |
+| Patient.name        |  See [Base Profile for data type HumanName](https://ig.fhir.de/basisprofile-de/1.4.0/Datentypen-HumanName.html). It should be noted that the division of the full name into its components (e.g. prefix words, name suffix, surname) should only be performed if this information is explicitly available in this granularity (e.g. through a direct import based on a VSDM dataset). It should be noted that, by general convention, the birth name contains only the family name.|
+| Patient.gender        | See [Base Profile - Gender](https://ig.fhir.de/basisprofile-de/1.4.0/Ressourcen-Patient.html#Ressourcen-Patient-Geschlecht)          |
+| Patient.birthDate        |   See [Base Profile - Date of Birth](https://ig.fhir.de/basisprofile-de/1.4.0/Ressourcen-Patient.html#Ressourcen-Patient-Geburtsdatum)        |
 | Patient.deceased[x]        |  deceasedBoolean is to be replaced by deceasedDateTime where possible if patient is deceased.         |
-| Patient.address        |  Siehe [Base Profile - Address](https://simplifier.net/guide/basisprofil-de-r4/Ressourcen-Patient#Ressourcen-Patient-Addresse). Multiple addresses are allowed. Systems are required to mark former addresses as such, so that the current address of the patient is recognizable.|
+| Patient.address        |  Siehe [Base Profile - Address](https://ig.fhir.de/basisprofile-de/1.4.0/Ressourcen-Patient.html#Ressourcen-Patient-Addresse). Multiple addresses are allowed. Systems are required to mark former addresses as such, so that the current address of the patient is recognizable.|
 | Patient.link        |  Necessary for linking multiple patient resources, e.g. in the context of patient matching. The present specification does not contain any requirements in this regard; further design is necessary.        |
 
 ---
@@ -62,7 +78,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 | Patient.address        |  Person.Demographie.Adresse        |
 | Patient.address.country        |  Person.Demographie.Adresse.Land        |
 | Patient.address.postalCode        |  Person.Demographie.Adresse.PLZ        |
-| Patient.address.City + <br> Patient.address.extension.Stadtteil <br> (Bei Stadtstaaten)    |  Person.Demographie.Adresse.Wohnort. <br>Hinweis: Der Stadtteil ist nicht Bestandteil des [VSDM](https://fachportal.gematik.de/spezifikationen/online-produktivbetrieb/konzepte-und-spezifikationen/)-Datensatzes der Gematik. Andere Quellen konform zu §21 KHEntgG müssen eventuell hinzugezogen werden. |
+| Patient.address.City + <br> Patient.address.extension.Stadtteil <br> (Bei Stadtstaaten)    |  Person.Demographie.Adresse.Wohnort. <br>Hinweis: Der Stadtteil ist nicht Bestandteil des [VSDM-Datensatzes](https://fachportal.gematik.de/fachportal-import/files/gemSpec_FM_VSDM_V2.6.0.pdf) der Gematik. Andere Quellen konform zu §21 KHEntgG müssen eventuell hinzugezogen werden. |
 | Patient.address.line        |  Person.Demographie.Adresse.Staße        |
 
 ---
@@ -74,12 +90,6 @@ The following invariants must be considered when implementing the profile:
 **Constraints**: @``` from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient' for differential.element.constraint select key,severity,human, expression```
 
 Further specifications are made by the profiles for the data types HumanName and Address by the German base profiles.
-
----
-
-**Snapshot**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient, snapshot}}
 
 ---
 

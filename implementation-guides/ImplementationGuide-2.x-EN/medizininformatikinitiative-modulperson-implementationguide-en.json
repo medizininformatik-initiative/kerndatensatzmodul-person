@@ -1,0 +1,108 @@
+{
+	"resourceType": "ImplementationGuide",
+	"id": "mii-ig-person-en-v2",
+	"url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person-en-v2",
+	"version": "2.0.0",
+	"name": "MII_IG_Person_EN_v2",
+	"title": "MII IG Person EN v2",
+	"status": "active",
+	"description": "[EN] Module Person - Version 2.0 - IG",
+	"fhirVersion": [
+		"4.0.1"
+	],
+	"definition": {
+		"page": {
+			"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/MIIIGModulPerson-en.md",
+			"title": "MII IG Modul Person",
+			"generation": "markdown",
+			"page": [
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/BeschreibungModul-en.md",
+					"title": "Description Module Person",
+					"generation": "markdown"
+				},
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/KontextimGesamtprojektBezgezuanderenModulen-en.md",
+					"title": "Context in the overall project / references to other modules",
+					"generation": "markdown"
+				},
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/Referenzen-en.md",
+					"title": "References",
+					"generation": "markdown"
+				},
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/AnwendungsflleInformationsmodell-en.md",
+					"title": "Use Cases / Informationmodell",
+					"generation": "markdown",
+					"page": [
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/BeschreibungvonSzenarienfrdieAnwendungderModule-en.md",
+							"title": "Description of scenarios for the usage within the modules",
+							"generation": "markdown"
+						},
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/Datenstzeinkl.Beschreibungen-en.md",
+							"title": "Data Sets incl. descriptions",
+							"generation": "markdown"
+						},
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/UML-en.md",
+							"title": "UML",
+							"generation": "markdown"
+						}
+					]
+				},
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/TechnischeImplementierung-en.md",
+					"title": "Tecnical Implementation",
+					"generation": "markdown",
+					"page": [
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/FHIR-Profile-en.md",
+							"title": "FHIR Profiles",
+							"generation": "markdown",
+							"page": [
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/PatientInPatient-en.md",
+									"title": "Patient (Patient)",
+									"generation": "markdown"
+								},
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/PseudonymisiertePatientinPatient-en.md",
+									"title": "Pseudonymized Patient (Patient)",
+									"generation": "markdown"
+								},
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/ProbandInResearchSubject-en.md",
+									"title": "ResearchSubject (ResearchSubject)",
+									"generation": "markdown"
+								},
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/VitalstatusObservation-en.md",
+									"title": "Vitalstatus (Observation)",
+									"generation": "markdown"
+								},
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/TodesursacheCondition-en.md",
+									"title": "Cause of death (Condition)",
+									"generation": "markdown"
+								}
+							]
+						},
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/CapabilityStatement-en.md",
+							"title": "CapabilityStatement",
+							"generation": "markdown"
+						},
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/Terminologie-en.md",
+							"title": "Terminology",
+							"generation": "markdown"
+						}
+					]
+				}
+			]
+		}
+	}
+}

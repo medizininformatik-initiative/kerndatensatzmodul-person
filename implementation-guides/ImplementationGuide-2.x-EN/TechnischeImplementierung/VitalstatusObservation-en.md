@@ -1,3 +1,8 @@
+---
+topic: PersonVitalstatus
+subject: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus
+---
+
 ## Vitalstatus (Observation)
 
 ---
@@ -14,9 +19,20 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
-**Differential**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, diff}}
+<tabs>
+    <tab title="snap" active="true">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, snap}}
+    </tab>
+    <tab title="diff">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, diff}}
+    </tab>
+    <tab title="hybrid">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, hybrid}}
+    </tab>
+    <tab title="JSON">
+      {{json:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus}}
+    </tab>
+</tabs>
 
 ---
 
@@ -39,12 +55,6 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | Observation.effectiveDateTime      | Person.Demographie.Vitalstatus.Zeitpunkt/-raum der Feststellung des Vitalstatus |
 | MII-Metadaten-Konzept (Provenance) ist zum Stand der Veröffentlichung ungeklärt    | Person.Demographie.Vitalstatus.Informationsquelle |
-
----
-
-**Snapshot**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus, snapshot}}
 
 ---
 

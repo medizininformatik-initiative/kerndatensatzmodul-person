@@ -1,6 +1,6 @@
 ## Description Module Person
 
-{{render:implementation-guides/ImplementationGuide-Common/images/ModulPerson.jpg}}
+{{render:implementation-guides/ImplementationGuide-Common/images/12_Abbildung_Person_en.jpg}}
 
 The PERSON module plays a central role in the data repository of each individual hospital and each large study as well as in cross-site or cross-project information models.
 
