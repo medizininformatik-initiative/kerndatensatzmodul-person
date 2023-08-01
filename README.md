@@ -23,10 +23,11 @@ Führende Demographieparameter sind (Geburtsdatum), Alter, Geschlecht und Vitals
 
 Leitung des Moduls:
 
-* Josef Schepers
-* Andrea Essenwanger
+* Sylvia Thun, Berlin Institute of Health at Charité (BIH)
+* Julian Saß, Berlin Institute of Health at Charité (BIH)
 
 Technische Umsetzung:
 
 * Alexander Zautke (Technische Umsetzung FHIR Profile und ImplemenationGuides)
+* Julian Saß (Technische Umsetzung FHIR Profile und ImplemenationGuides)
 * Miriam Hübner (Technische Umsetzung Logical Models)
