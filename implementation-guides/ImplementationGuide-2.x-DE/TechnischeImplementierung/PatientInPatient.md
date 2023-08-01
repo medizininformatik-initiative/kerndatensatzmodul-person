@@ -307,8 +307,8 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 Beispiel (minimal):
 
-{{json:beispiele/Example-Patient-Minimal.json}}
+{{json:fsh-generated/resources/Patient-mii-exa-person-patient-minimal.json}}
 
 Beispiel (vollständig):
 
-{{json:beispiele/Example-Patient.json}}
+{{json:fsh-generated/resources/Patient-mii-exa-person-patient-full.json}}

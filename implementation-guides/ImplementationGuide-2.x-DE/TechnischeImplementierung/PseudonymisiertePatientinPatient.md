@@ -180,4 +180,4 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 **Beispiele**
 
-{{json:beispiele/Example-PatientPseudonymisiert.json}}
+{{json:fsh-generated/resources/Patient-mii-exa-person-patient-pseudonymisiert.json}}

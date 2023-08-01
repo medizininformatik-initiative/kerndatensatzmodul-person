@@ -111,4 +111,4 @@ The following SearchParameters are relevant for the module Person, also in combi
 
 Example (complete):
 
-{{json:beispiele/Example-Todesursache.json}}
+{{json:fsh-generated/resources/Condition-mii-exa-person-condition-todesursache.json}}
