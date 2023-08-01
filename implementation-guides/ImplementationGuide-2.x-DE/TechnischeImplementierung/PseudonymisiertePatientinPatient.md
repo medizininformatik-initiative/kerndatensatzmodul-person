@@ -41,7 +41,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | Patient.id      | Must-support, jedoch optional        |
 | Patient.meta       | Must-support, jedoch optional         |
-| Patient.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. In allen anderen Fällen optional.         |
+| Patient.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe **CapabilityStatement**. In allen anderen Fällen optional.         |
 | Patient.identifier:PseudonymisierterIdentifier        | Falls der Identifier ein abgeleitetes Pseudonym ist, muss der Identifier entsprechend typisiert werden.|
 | Patient.identifier:AnonymisierterIdentifier        | Ein anonymisierter Identifier ist nur als solcher anzugegben, falls keinerlei Rückschlüsse auf den originalen Datemsatz möglich sind.|
 | Patient.gender        | Ohne Einschränkung verwendbar.|

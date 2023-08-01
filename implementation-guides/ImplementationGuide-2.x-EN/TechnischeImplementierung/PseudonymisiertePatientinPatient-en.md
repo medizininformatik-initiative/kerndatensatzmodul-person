@@ -1,3 +1,8 @@
+---
+topic: PersonPatientPseudonymisiert
+subject: https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert
+---
+
 ## Patient - Pseudonymisiert (Patient)
 
 ---
@@ -12,9 +17,20 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 
 ---
 
-**Differential**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert, diff}}
+<tabs>
+    <tab title="snap" active="true">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert, snap}}
+    </tab>
+    <tab title="diff">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert, diff}}
+    </tab>
+    <tab title="hybrid">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert, hybrid}}
+    </tab>
+    <tab title="JSON">
+      {{json:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert}}
+    </tab>
+</tabs>
 
 ---
 
@@ -25,7 +41,7 @@ from StructureDefinition where url = 'https://www.medizininformatik-initiative.d
 |--------------|-----------|
 | Patient.id      | Must-support, but optional        |
 | Patient.meta       | Must-support, but optional        |
-| Patient.meta.profile       | Required for querying against the DIZ repository. See {{pagelink:ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement.md}}. Optional in all other cases. |
+| Patient.meta.profile       | Required for querying against the DIZ repository. See **CapabilityStatement**. Optional in all other cases. |
 | Patient.identifier:PseudonymisierterIdentifier        | If the identifier is a derived pesudonym, it was be marked as such using a corresponding type.|
 | Patient.identifier:AnonymisierterIdentifier        | An anonymized should only be given if no inference can be made regarding the orgiginal dataset.|
 | Patient.gender        | Can be used without restrictions.|
@@ -54,12 +70,6 @@ The following invariants must be considered when implementing the profile:
 **Constraints**: @``` from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert' for differential.element.constraint select key,severity,human, expression```
 
 Further specifications are made by the profiles for the data types HumanName and Address by the German base profiles.
-
----
-
-**Snapshot**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert, snapshot}}
 
 ---
 
