@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-person-vitalstatus",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus",
-  "version": "2.0.0",
+  "version": "2024.0.0",
   "name": "MII_PR_Person_Vitalstatus",
   "title": "MII PR Person Vitalstatus",
   "status": "active",
