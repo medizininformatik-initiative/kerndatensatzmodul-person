@@ -12,91 +12,91 @@
 	],
 	"definition": {
 		"page": {
-			"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/MIIIGModulPerson-en.md",
+			"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/MIIIGModulPerson-en.md",
 			"title": "MII IG Modul Person",
 			"generation": "markdown",
 			"page": [
 				{
-					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/BeschreibungModul-en.md",
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/BeschreibungModul-en.md",
 					"title": "Description Module Person",
 					"generation": "markdown"
 				},
 				{
-					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/KontextimGesamtprojektBezgezuanderenModulen-en.md",
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/KontextimGesamtprojektBezgezuanderenModulen-en.md",
 					"title": "Context in the overall project / references to other modules",
 					"generation": "markdown"
 				},
 				{
-					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/Referenzen-en.md",
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/Referenzen-en.md",
 					"title": "References",
 					"generation": "markdown"
 				},
 				{
-					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/AnwendungsflleInformationsmodell-en.md",
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/AnwendungsflleInformationsmodell-en.md",
 					"title": "Use Cases / Informationmodell",
 					"generation": "markdown",
 					"page": [
 						{
-							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/BeschreibungvonSzenarienfrdieAnwendungderModule-en.md",
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/BeschreibungvonSzenarienfrdieAnwendungderModule-en.md",
 							"title": "Description of scenarios for the usage within the modules",
 							"generation": "markdown"
 						},
 						{
-							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/Datenstzeinkl.Beschreibungen-en.md",
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/Datenstzeinkl.Beschreibungen-en.md",
 							"title": "Data Sets incl. descriptions",
 							"generation": "markdown"
 						},
 						{
-							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/UML-en.md",
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/UML-en.md",
 							"title": "UML",
 							"generation": "markdown"
 						}
 					]
 				},
 				{
-					"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/TechnischeImplementierung-en.md",
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/TechnischeImplementierung/TechnischeImplementierung-en.md",
 					"title": "Tecnical Implementation",
 					"generation": "markdown",
 					"page": [
 						{
-							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/FHIR-Profile-en.md",
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/TechnischeImplementierung/FHIR-Profile-en.md",
 							"title": "FHIR Profiles",
 							"generation": "markdown",
 							"page": [
 								{
-									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/PatientInPatient-en.md",
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/TechnischeImplementierung/PatientInPatient-en.md",
 									"title": "Patient (Patient)",
 									"generation": "markdown"
 								},
 								{
-									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/PseudonymisiertePatientinPatient-en.md",
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/TechnischeImplementierung/PseudonymisiertePatientinPatient-en.md",
 									"title": "Pseudonymized Patient (Patient)",
 									"generation": "markdown"
 								},
 								{
-									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/ProbandInResearchSubject-en.md",
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/TechnischeImplementierung/ProbandInResearchSubject-en.md",
 									"title": "ResearchSubject (ResearchSubject)",
 									"generation": "markdown"
 								},
 								{
-									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/VitalstatusObservation-en.md",
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/TechnischeImplementierung/VitalstatusObservation-en.md",
 									"title": "Vitalstatus (Observation)",
 									"generation": "markdown"
 								},
 								{
-									"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/TodesursacheCondition-en.md",
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/TechnischeImplementierung/TodesursacheCondition-en.md",
 									"title": "Cause of death (Condition)",
 									"generation": "markdown"
 								}
 							]
 						},
 						{
-							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/CapabilityStatement-en.md",
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/TechnischeImplementierung/CapabilityStatement-en.md",
 							"title": "CapabilityStatement",
 							"generation": "markdown"
 						},
 						{
-							"nameUrl": "implementation-guides/ImplementationGuide-2.x-EN/TechnischeImplementierung/Terminologie-en.md",
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-EN/TechnischeImplementierung/Terminologie-en.md",
 							"title": "Terminology",
 							"generation": "markdown"
 						}
