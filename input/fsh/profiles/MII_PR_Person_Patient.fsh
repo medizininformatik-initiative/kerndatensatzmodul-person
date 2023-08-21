@@ -11,7 +11,7 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * meta MS
 * meta.source MS
 * meta.profile MS
-* identifier 1.. MS
+* identifier MS
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
@@ -50,12 +50,12 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * identifier[versichertennummer_pkv].assigner.identifier.system MS
 * identifier[versichertennummer_pkv].assigner.identifier.value MS
 * identifier[versichertennummer_pkv].assigner.display MS
-* name MS
+* name 0..* MS
 * name ^slicing.discriminator.type = #pattern
 * name ^slicing.discriminator.path = "$this"
 * name ^slicing.rules = #open
 * name contains
-    name 1..1 MS and
+    name 0..1 MS and
     geburtsname 0..1 MS
 * name[name] only HumannameDeBasis
 * name[name] ^patternHumanName.use = #official
@@ -77,18 +77,18 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * name[geburtsname].given ..0
 * name[geburtsname].prefix ..0
 * name[geburtsname].prefix.extension[prefix-qualifier] MS
-* gender 1.. MS
+* gender MS
 * gender.extension ^slicing.discriminator.type = #value
 * gender.extension ^slicing.discriminator.path = "url"
 * gender.extension ^slicing.rules = #open
 * gender.extension contains GenderOtherDE named other-amtlich 0..1 MS
-* birthDate 1.. MS
+* birthDate MS
 * birthDate.extension ^slicing.discriminator.type = #value
 * birthDate.extension ^slicing.discriminator.path = "url"
 * birthDate.extension ^slicing.rules = #open
 * birthDate.extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * deceased[x] MS
-* address 1.. MS
+* address MS
 * address ^slicing.discriminator.type = #pattern
 * address ^slicing.discriminator.path = "$this"
 * address ^slicing.rules = #open

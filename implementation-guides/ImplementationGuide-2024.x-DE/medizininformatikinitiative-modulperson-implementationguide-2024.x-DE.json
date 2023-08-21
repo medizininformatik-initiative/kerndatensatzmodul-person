@@ -1,0 +1,108 @@
+{
+	"resourceType": "ImplementationGuide",
+	"id": "mii-ig-person-de-v2024",
+	"url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person-de-v2024",
+	"version": "2024.0.0",
+	"name": "MII_IG_Person_DE_v2024",
+	"title": "MII IG Person DE v2024",
+	"status": "active",
+	"description": "[DE] Modul Person - Version 2024 - IG",
+	"fhirVersion": [
+		"4.0.1"
+	],
+	"definition": {
+		"page": {
+			"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/MIIIGModulPerson.md",
+			"title": "MII IG Modul Person",
+			"generation": "markdown",
+			"page": [
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/BeschreibungModul.md",
+					"title": "Beschreibung Modul",
+					"generation": "markdown"
+				},
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/KontextimGesamtprojektBezgezuanderenModulen.md",
+					"title": "Kontext im Gesamtprojekt / Bezüge zu anderen Modulen",
+					"generation": "markdown"
+				},
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/Referenzen.md",
+					"title": "Referenzen",
+					"generation": "markdown"
+				},
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/AnwendungsflleInformationsmodell.md",
+					"title": "Anwendungsfälle / Informationsmodell",
+					"generation": "markdown",
+					"page": [
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/BeschreibungvonSzenarienfrdieAnwendungderModule.md",
+							"title": "Beschreibung von Szenarien für die Anwendung der Module",
+							"generation": "markdown"
+						},
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/Datenstzeinkl.Beschreibungen.md",
+							"title": "Datensätze inkl. Beschreibungen",
+							"generation": "markdown"
+						},
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/UML.md",
+							"title": "UML",
+							"generation": "markdown"
+						}
+					]
+				},
+				{
+					"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/TechnischeImplementierung/TechnischeImplementierung.md",
+					"title": "Technische Implementierung",
+					"generation": "markdown",
+					"page": [
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/TechnischeImplementierung/FHIR-Profile.md",
+							"title": "FHIR-Profile",
+							"generation": "markdown",
+							"page": [
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/TechnischeImplementierung/PatientInPatient.md",
+									"title": "Patient:in (Patient)",
+									"generation": "markdown"
+								},
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/TechnischeImplementierung/PseudonymisiertePatientinPatient.md",
+									"title": "Patient:in - Pseudonymisiert (Patient)",
+									"generation": "markdown"
+								},
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/TechnischeImplementierung/ProbandInResearchSubject.md",
+									"title": "Proband:in (ResearchSubject)",
+									"generation": "markdown"
+								},
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/TechnischeImplementierung/VitalstatusObservation.md",
+									"title": "Vitalstatus (Observation)",
+									"generation": "markdown"
+								},
+								{
+									"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/TechnischeImplementierung/TodesursacheCondition.md",
+									"title": "Todesursache (Condition)",
+									"generation": "markdown"
+								}
+							]
+						},
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/TechnischeImplementierung/CapabilityStatement.md",
+							"title": "CapabilityStatement",
+							"generation": "markdown"
+						},
+						{
+							"nameUrl": "implementation-guides/ImplementationGuide-2024.x-DE/TechnischeImplementierung/Terminologie.md",
+							"title": "Terminologien",
+							"generation": "markdown"
+						}
+					]
+				}
+			]
+		}
+	}
+}

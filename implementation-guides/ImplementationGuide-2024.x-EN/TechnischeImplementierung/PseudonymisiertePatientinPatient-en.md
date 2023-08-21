@@ -7,9 +7,13 @@ subject: https://www.medizininformatik-initiative.de/fhir/core/modul-person/Stru
 
 ---
 
-**Beschreibung**
+**Description**
 
 This profile describes a pseudonymized version of the profile for the ``Patient`` resource in the Medical Informatics Initiative.
+
+| Note |  |
+|---------|---------------------|
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}}  | The exact rules for pseudonymization within the Medical Informatics Initiative are currently being determined. Therefore, changes to this profile are still to be expected. |
 
 @```
 from StructureDefinition where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert' select Name: name, Canonical: url

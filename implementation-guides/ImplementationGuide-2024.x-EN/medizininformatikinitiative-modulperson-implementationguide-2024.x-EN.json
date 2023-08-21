@@ -1,12 +1,12 @@
 {
 	"resourceType": "ImplementationGuide",
-	"id": "mii-ig-person-en-v2",
-	"url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person-en-v2",
-	"version": "2.0.0",
-	"name": "MII_IG_Person_EN_v2",
-	"title": "MII IG Person EN v2",
+	"id": "mii-ig-person-en-v2024",
+	"url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person-en-v2024",
+	"version": "2024.0.0",
+	"name": "MII_IG_Person_EN_v2024",
+	"title": "MII IG Person EN v2024",
 	"status": "active",
-	"description": "[EN] Module Person - Version 2.0 - IG",
+	"description": "[EN] Module Person - Version 2024 - IG",
 	"fhirVersion": [
 		"4.0.1"
 	],
