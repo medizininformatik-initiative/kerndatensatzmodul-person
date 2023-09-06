@@ -4,7 +4,7 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert",
   "version": "2024.0.0",
   "name": "MII_PR_Person_PatientPseudonymisiert",
-  "title": "SD MII Person Patient (Pseudonymisiert)",
+  "title": "MII PR Person Patient (Pseudonymisiert)",
   "status": "active",
   "publisher": "Medizininformatik Initiative",
   "contact": [
