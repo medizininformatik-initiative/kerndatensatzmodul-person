@@ -1,4 +1,4 @@
-Instance: mii-exa-perspn-observation-vitalstatus
+Instance: mii-exa-person-observation-vitalstatus
 InstanceOf: MII_PR_Person_Vitalstatus
 Usage: #example
 * status = #final
