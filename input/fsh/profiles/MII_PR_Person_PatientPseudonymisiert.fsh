@@ -1,7 +1,7 @@
 Profile: MII_PR_Person_PatientPseudonymisiert
 Parent: Patient
 Id: mii-pr-person-patient-pseudonymisiert
-Title: "SD MII Person Patient (Pseudonymisiert)"
+Title: "MII PR Person Patient (Pseudonymisiert)"
 Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der Medizininformatik-Initiative."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
 * insert PR_CS_VS_Version
@@ -30,8 +30,9 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 * birthDate MS
 //* birthDate obeys GeburtsdatumRundenAufQuartal
 * deceased[x] MS
+* deceased[x] only boolean or dateTime
 //* deceased[x] obeys TodesdatumKeineZeitangabe
-* deceasedDateTime only dateTime
+//* deceasedDateTime only dateTime
 * deceasedDateTime MS
 //* deceasedDateTime obeys TodesdatumKeineZeitangabe
 * address MS
