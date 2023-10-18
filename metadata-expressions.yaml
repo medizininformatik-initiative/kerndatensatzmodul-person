@@ -1,0 +1,8 @@
+ValueSet.Title: name
+CodeSystem.Title: name
+StructureDefinition.Title: name
+SearchParameter.Title: name
+Patient.Title: id
+Observation.Title: id
+ResearchSubject.Title: id
+Condition.Title: id
