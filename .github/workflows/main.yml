@@ -49,6 +49,7 @@ jobs:
           OUTPUT_FORMAT: RAW
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
+          JAVA_VALIDATOR_VERSION: 6.1.16
           
           # Error @ Patient.address[0] (line 117, col6) : Expected 0 but found 1 line elements
           EXPECTED_FAILS: VALIDATION_EXAMPLES_JAVA
