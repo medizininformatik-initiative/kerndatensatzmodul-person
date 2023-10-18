@@ -11,9 +11,13 @@
       <reference>
         <reference value="Patient/ProfilePatientPatientIn" />
       </reference>
+    </resource>
+    <resource>
       <reference>
         <reference value="ResearchSubject/ProfileResearchSubjectProbandIn" />
       </reference>
+    </resource>
+    <resource>
       <reference>
         <reference value="ProfileObservationVitalstatus/ProfileObservationVitalstatus" />
       </reference>
