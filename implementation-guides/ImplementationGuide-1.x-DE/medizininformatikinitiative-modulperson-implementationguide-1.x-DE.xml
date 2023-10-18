@@ -3,7 +3,7 @@
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person-de-1" />
   <version value="1.0.16" />
   <name value="MII_IG_Person_DE" />
-  <title value="MII IG Person DE" />
+  <title value="[DE] Modul Person - Version 1.0 - IG" />
   <status value="active" />
   <description value="[DE] Modul Person - Version 1.0 - IG" />
   <fhirVersion value="4.0.1" />
