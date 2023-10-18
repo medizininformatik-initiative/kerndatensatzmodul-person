@@ -1,4 +1,4 @@
-## Medizininformatik-Initiative - Kerndatensatz - Modul Person
+## Medizininformatik-Initiative - Kerndatensatz - Modul Person Release 2024
 
 ### Übersicht
 
