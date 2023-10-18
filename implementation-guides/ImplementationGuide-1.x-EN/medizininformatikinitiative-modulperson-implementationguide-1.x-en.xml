@@ -6,6 +6,21 @@
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <definition>
+    <resource>
+      <reference>
+        <reference value="Patient/ProfilePatientPatientIn" />
+      </reference>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ResearchSubject/ProfileResearchSubjectProbandIn" />
+      </reference>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ProfileObservationVitalstatus/ProfileObservationVitalstatus" />
+      </reference>
+    </resource>
     <page>
       <nameUrl value="implementation-guides/ImplementationGuide-1.x-EN/IGMIIKDSModulPerson-1.x-en.md" />
       <title value="IG MII KDS Modul Person" />
