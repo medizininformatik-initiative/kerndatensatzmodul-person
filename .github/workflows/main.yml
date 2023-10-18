@@ -37,7 +37,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'microsoft'
-          java-version: '17'
+          java-version: '21'
         
       - name: Firely.Terminal (GitHub Actions)
         uses: FirelyTeam/firely-terminal-pipeline@v0.4.0
@@ -52,5 +52,3 @@ jobs:
           JAVA_VALIDATOR_VERSION: 6.1.16
           JAVA_VALIDATION_OPTIONS: -allow-example-urls true
           
-          # Error @ Patient.address[0] (line 117, col6) : Expected 0 but found 1 line elements
-          EXPECTED_FAILS: VALIDATION_EXAMPLES_JAVA
