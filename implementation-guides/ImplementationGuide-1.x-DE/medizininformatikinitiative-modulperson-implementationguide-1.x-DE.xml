@@ -5,7 +5,19 @@
   <name value="[DE] Modul Person - Version 1.0 - IG" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
+  <packageId value="de.medizininformatikinitiative.kerndatensatz.person" />
   <definition>
+    <resource>
+      <reference>
+        <reference value="Patient/ProfilePatientPatientIn" />
+      </reference>
+      <reference>
+        <reference value="ResearchSubject/ProfileResearchSubjectProbandIn" />
+      </reference>
+      <reference>
+        <reference value="ProfileObservationVitalstatus/ProfileObservationVitalstatus" />
+      </reference>
+    </resource>
     <page>
       <nameUrl value="implementation-guides/ImplementationGuide-1.x-DE/IGMIIKDSModulPerson-1.x.md" />
       <title value="IG MII KDS Modul Person" />
