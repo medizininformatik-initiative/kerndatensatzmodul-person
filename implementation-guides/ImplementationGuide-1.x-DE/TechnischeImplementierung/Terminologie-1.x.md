@@ -2,7 +2,7 @@
 
 | Hinweis |  |
 |---------|---------------------|
-| {{render:Warning}} | Zusätzlich zu internationalen Terminologien werden durch das Modul PERSON auch eigene CodeSystems definiert. Es sei drauf hingewiesen, dass CodeSystem ein implizites ValueSet enthalten können, welches der jeweiligen FHIR CodeSystem-Ressource zu entnehmen ist.|
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Zusätzlich zu internationalen Terminologien werden durch das Modul PERSON auch eigene CodeSystems definiert. Es sei drauf hingewiesen, dass CodeSystem ein implizites ValueSet enthalten können, welches der jeweiligen FHIR CodeSystem-Ressource zu entnehmen ist.|
 
 ### CodeSystems
 
