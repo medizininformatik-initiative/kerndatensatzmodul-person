@@ -1,16 +1,12 @@
 # Kerndatensatz Modul Person
 
-| Hinweis | Under Construction! |
-|---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Dieser Implementation Guide stellt die aktuelle Arbeitsversion des Moduls 'Person' dar. Die jeweils für den produktiven Einsatz veröffentlichte Version finden Sie auf [dieser Seite der Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Person/IGMIIKDSModulPerson.html).|
-
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz Moduls 'Person' der Medizinformatik-Initative.
 Im Folgenden werden die Use-Case des Moduls sowie die dazuhegörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung   |   |
 |---------|--------------|
-| Datum   | 06.03.2022   |
-| Version | 1.0.16       |
+| Datum   | 24.10.2023   |
+| Version | 1.0.17       |
 | Status  | Active       |
 | Realm   | DE           | 
 
