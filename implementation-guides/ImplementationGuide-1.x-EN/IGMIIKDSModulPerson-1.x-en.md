@@ -30,7 +30,7 @@ für die vernetzte medizinische Forschung e.V.
 
 Questions about this publication can be submitted at any time at [chat.fhir.org](https://chat.fhir.org/#narrow/stream/179307-german.2Fmi-initiative) in the stream 'german/mi-initiative'.
 
-Comments and criticism are always welcome in the form of 'Issues' in the Simplifier project.
+Comments and criticism are always welcome in the form of 'Issues' in the [GitHub project](https://github.com/medizininformatik-initiative/kerndatensatzmodul-person).
 
 ## Autoren (in alphabetischer Reihenfolge)
 
