@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: FHIR Profiles
+  filename: FHIRprofiles
+- name: CapabilityStatement
+  filename: CapabilityStatement.page.md
+- name: Terminologies
+  filename: Terminologies.page.md
