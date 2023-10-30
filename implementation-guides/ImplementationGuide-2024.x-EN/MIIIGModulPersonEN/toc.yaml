@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Description
+  filename: Description.guide.md
+- name: Context
+  filename: Context.guide.md
+- name: References
+  filename: Referenzen.page.md
+- name: Use Cases
+  filename: UseCases
+- name: Technical Implementation
+  filename: Technicalimplementation 
