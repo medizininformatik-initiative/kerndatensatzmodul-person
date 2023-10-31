@@ -10,7 +10,7 @@ Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Perso
 
 ### Status:
 
-Vorschauversion: 2024.0.0-alpha1<br>
+Vorschauversion: 2024.0.0-ballot<br>
 Aktuelle stabile Version: n/A
 
 Alle veröffentlichen FHIR-Artefakte innerhalb des Projektes verfügen über einen Status durch welchen der jeweilige Reifegrad abgeleitet werden kann.

@@ -12,8 +12,8 @@ Im Folgenden werden die Use-Case des Moduls sowie die dazuhegörigen FHIR-Profil
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 27.10.2023   |
-| Version | 2.0 (2024.0.0) |
+| Datum   | 31.10.2023   |
+| Version | 2.0.0-ballot (2024.0.0-ballot) |
 | Status  | Active       |
 | Realm   | DE           | 
 
