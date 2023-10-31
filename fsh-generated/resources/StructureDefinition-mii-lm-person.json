@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-lm-person",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/LogicalModel/Person",
-  "version": "2024.0.0",
+  "version": "2024.0.0-ballot",
   "name": "MII_LM_Person",
   "title": "MII LM Person",
   "status": "active",

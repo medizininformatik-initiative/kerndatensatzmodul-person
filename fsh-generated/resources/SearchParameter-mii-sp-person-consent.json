@@ -2,7 +2,7 @@
   "resourceType": "SearchParameter",
   "id": "mii-sp-person-consent",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/ResearchSubject-Consent",
-  "version": "2024.0.0",
+  "version": "2024.0.0-ballot",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
