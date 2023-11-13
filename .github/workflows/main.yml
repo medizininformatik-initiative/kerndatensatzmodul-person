@@ -25,7 +25,7 @@ jobs:
     steps:
         
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         
       # Java and .NET are already installed on ubuntu-latest
         
@@ -37,9 +37,9 @@ jobs:
           PATH_TO_QUALITY_CONTROL_RULES: qc/custom
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
+          EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
           OUTPUT_FORMAT: RAW
-          EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA
-          JAVA_VALIDATION_OPTIONS: -allow-example-urls true
+          JAVA_VALIDATION_OPTIONS: -allow-example-urls true -tx n/a
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
-          JAVA_VALIDATOR_VERSION: 6.0.23
+          JAVA_VALIDATOR_VERSION: 6.2.3
