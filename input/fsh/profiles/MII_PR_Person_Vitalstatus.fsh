@@ -29,7 +29,7 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * code.coding[loinc].code 1.. MS
 * subject 1.. MS
 * subject only Reference(Patient or Group)
-* subject ^type.profile = "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
+* subject only $MII-Reference
 * effective[x] 1.. MS
 * effective[x] only dateTime
 * value[x] 1.. MS

@@ -78,14 +78,8 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * name[geburtsname].prefix ..0
 * name[geburtsname].prefix.extension[prefix-qualifier] MS
 * gender MS
-* gender.extension ^slicing.discriminator.type = #value
-* gender.extension ^slicing.discriminator.path = "url"
-* gender.extension ^slicing.rules = #open
 * gender.extension contains GenderOtherDE named other-amtlich 0..1 MS
 * birthDate MS
-* birthDate.extension ^slicing.discriminator.type = #value
-* birthDate.extension ^slicing.discriminator.path = "url"
-* birthDate.extension ^slicing.rules = #open
 * birthDate.extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * deceased[x] MS
 * address MS
@@ -105,18 +99,12 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * address[Strassenanschrift].line.extension[Adresszusatz] MS
 * address[Strassenanschrift].line.extension[Postfach] 0..0 MS
 * address[Strassenanschrift].city 1.. MS
-* address[Strassenanschrift].city.extension ^slicing.discriminator.type = #value
-* address[Strassenanschrift].city.extension ^slicing.discriminator.path = "url"
-* address[Strassenanschrift].city.extension ^slicing.rules = #open
 * address[Strassenanschrift].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Strassenanschrift].postalCode 1.. MS
 * address[Strassenanschrift].country 1.. MS
 * address[Strassenanschrift].country obeys pat-cnt-2or3-char
 * address[Postfach] only AddressDeBasis
 * address[Postfach] ^patternAddress.type = #postal
-* address[Postfach].extension ^slicing.discriminator.type = #value
-* address[Postfach].extension ^slicing.discriminator.path = "url"
-* address[Postfach].extension ^slicing.rules = #open
 * address[Postfach].extension[Stadtteil] MS
 * address[Postfach].type 1.. MS
 * address[Postfach].line 1..3 MS
@@ -125,9 +113,6 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * address[Postfach].line.extension[Adresszusatz] 0..0
 * address[Postfach].line.extension[Postfach] MS
 * address[Postfach].city 1.. MS
-* address[Postfach].city.extension ^slicing.discriminator.type = #value
-* address[Postfach].city.extension ^slicing.discriminator.path = "url"
-* address[Postfach].city.extension ^slicing.rules = #open
 * address[Postfach].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Postfach].postalCode 1.. MS
 * address[Postfach].country 1.. MS
