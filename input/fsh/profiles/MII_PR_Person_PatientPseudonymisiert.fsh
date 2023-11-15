@@ -23,9 +23,6 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 //* name ..0
 //* telecom ..0
 * gender MS
-* gender.extension ^slicing.discriminator.type = #value
-* gender.extension ^slicing.discriminator.path = "url"
-* gender.extension ^slicing.rules = #open
 * gender.extension contains GenderOtherDE named other-amtlich 0..1 MS
 * birthDate MS
 //* birthDate obeys GeburtsdatumRundenAufQuartal
@@ -44,38 +41,26 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
     Postfach 0..* MS
 * address[Strassenanschrift] only AddressDeBasis
 * address[Strassenanschrift] ^patternAddress.type = #both
-* address[Strassenanschrift].extension ^slicing.discriminator.type = #value
-* address[Strassenanschrift].extension ^slicing.discriminator.path = "url"
-* address[Strassenanschrift].extension ^slicing.rules = #open
 //* address[Strassenanschrift].extension[Stadtteil] 0..0 MS
 * address[Strassenanschrift].type 1.. MS
 //* address[Strassenanschrift].line ..0 MS
 //* address[Strassenanschrift].city ..0 MS
-* address[Strassenanschrift].city.extension ^slicing.discriminator.type = #value
-* address[Strassenanschrift].city.extension ^slicing.discriminator.path = "url"
-* address[Strassenanschrift].city.extension ^slicing.rules = #open
 * address[Strassenanschrift].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Strassenanschrift].postalCode 1.. MS
 //* address[Strassenanschrift].postalCode obeys PostleitzahlEinschraenkung
 * address[Strassenanschrift].country 1.. MS
-* address[Strassenanschrift].country obeys pat-cnt-2or3-char
+* address[Strassenanschrift] obeys pat-cnt-2or3-char
 * address[Postfach] only AddressDeBasis
 * address[Postfach] ^patternAddress.type = #postal
-* address[Postfach].extension ^slicing.discriminator.type = #value
-* address[Postfach].extension ^slicing.discriminator.path = "url"
-* address[Postfach].extension ^slicing.rules = #open
 //* address[Postfach].extension[Stadtteil] 0..0 MS
 * address[Postfach].type 1.. MS
 //* address[Postfach].line ..0 MS
 //* address[Postfach].city ..0 MS
-* address[Postfach].city.extension ^slicing.discriminator.type = #value
-* address[Postfach].city.extension ^slicing.discriminator.path = "url"
-* address[Postfach].city.extension ^slicing.rules = #open
 * address[Postfach].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Postfach].postalCode 1.. MS
 //* address[Postfach].postalCode obeys PostleitzahlEinschraenkung
 * address[Postfach].country 1.. MS
-* address[Postfach].country obeys pat-cnt-2or3-char
+* address[Postfach] obeys pat-cnt-2or3-char
 //* maritalStatus ..0
 //* multipleBirth[x] ..0
 //* photo ..0

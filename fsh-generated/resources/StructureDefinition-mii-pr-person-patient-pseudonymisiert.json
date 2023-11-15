@@ -222,6 +222,15 @@
         "patternAddress": {
           "type": "both"
         },
+        "constraint": [
+          {
+            "key": "pat-cnt-2or3-char",
+            "severity": "warning",
+            "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
+            "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
+            "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -256,15 +265,6 @@
         "id": "Patient.address:Strassenanschrift.country",
         "path": "Patient.address.country",
         "min": 1,
-        "constraint": [
-          {
-            "key": "pat-cnt-2or3-char",
-            "severity": "warning",
-            "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
-            "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
-            "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -284,6 +284,15 @@
         "patternAddress": {
           "type": "postal"
         },
+        "constraint": [
+          {
+            "key": "pat-cnt-2or3-char",
+            "severity": "warning",
+            "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
+            "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
+            "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -318,15 +327,6 @@
         "id": "Patient.address:Postfach.country",
         "path": "Patient.address.country",
         "min": 1,
-        "constraint": [
-          {
-            "key": "pat-cnt-2or3-char",
-            "severity": "warning",
-            "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
-            "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
-            "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
-          }
-        ],
         "mustSupport": true
       },
       {
