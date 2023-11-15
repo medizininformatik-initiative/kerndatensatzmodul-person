@@ -49,7 +49,7 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 * address[Strassenanschrift].postalCode 1.. MS
 //* address[Strassenanschrift].postalCode obeys PostleitzahlEinschraenkung
 * address[Strassenanschrift].country 1.. MS
-* address[Strassenanschrift].country obeys pat-cnt-2or3-char
+* address[Strassenanschrift] obeys pat-cnt-2or3-char
 * address[Postfach] only AddressDeBasis
 * address[Postfach] ^patternAddress.type = #postal
 //* address[Postfach].extension[Stadtteil] 0..0 MS
@@ -60,7 +60,7 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 * address[Postfach].postalCode 1.. MS
 //* address[Postfach].postalCode obeys PostleitzahlEinschraenkung
 * address[Postfach].country 1.. MS
-* address[Postfach].country obeys pat-cnt-2or3-char
+* address[Postfach] obeys pat-cnt-2or3-char
 //* maritalStatus ..0
 //* multipleBirth[x] ..0
 //* photo ..0

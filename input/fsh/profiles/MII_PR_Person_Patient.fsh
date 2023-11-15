@@ -102,7 +102,7 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * address[Strassenanschrift].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Strassenanschrift].postalCode 1.. MS
 * address[Strassenanschrift].country 1.. MS
-* address[Strassenanschrift].country obeys pat-cnt-2or3-char
+* address[Strassenanschrift] obeys pat-cnt-2or3-char
 * address[Postfach] only AddressDeBasis
 * address[Postfach] ^patternAddress.type = #postal
 * address[Postfach].extension[Stadtteil] MS
@@ -116,7 +116,7 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * address[Postfach].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Postfach].postalCode 1.. MS
 * address[Postfach].country 1.. MS
-* address[Postfach].country obeys pat-cnt-2or3-char
+* address[Postfach] obeys pat-cnt-2or3-char
 * link MS
 * link.other only $MII-Reference
 * link.other MS
