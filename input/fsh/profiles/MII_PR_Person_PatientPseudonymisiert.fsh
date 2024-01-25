@@ -9,7 +9,7 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 * obeys mii-pat-1
 * id MS
 * meta MS
-* meta.source MS
+//* meta.source MS
 * meta.profile MS
 * identifier 1.. MS
 * identifier ^slicing.discriminator.type = #pattern

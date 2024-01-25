@@ -1,0 +1,210 @@
+[
+  {
+    "outputFile": "CapabilityStatement-mii-cps-person-capabilitystatement.json",
+    "fshName": "mii-cps-person-capabilitystatement",
+    "fshType": "Instance",
+    "fshFile": "capabilitystatements/MII_CPS_Person_CapabilityStatement.fsh",
+    "startLine": 1,
+    "endLine": 295
+  },
+  {
+    "outputFile": "CodeSystem-mii-cs-person-vitalstatus.json",
+    "fshName": "MII_CS_Person_Vitalstatus",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/MII_CS_Person_Vitalstatus.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "Condition-mii-exa-person-condition-todesursache.json",
+    "fshName": "mii-exa-person-condition-todesursache",
+    "fshType": "Instance",
+    "fshFile": "instances/MII_EXA_Person_Condition_Todesursache.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "Observation-mii-exa-person-observation-vitalstatus.json",
+    "fshName": "mii-exa-person-observation-vitalstatus",
+    "fshType": "Instance",
+    "fshFile": "instances/MII_EXA_Person_Observation_Vitalstatus.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "Patient-mii-exa-person-patient-full.json",
+    "fshName": "mii-exa-person-patient-full",
+    "fshType": "Instance",
+    "fshFile": "instances/MII_EXA_Person_Patient_full.fsh",
+    "startLine": 1,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Patient-mii-exa-person-patient-minimal.json",
+    "fshName": "mii-exa-person-patient-minimal",
+    "fshType": "Instance",
+    "fshFile": "instances/MII_EXA_Person_Patient_minimal.fsh",
+    "startLine": 1,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Patient-mii-exa-person-patient-pseudonymisiert.json",
+    "fshName": "mii-exa-person-patient-pseudonymisiert",
+    "fshType": "Instance",
+    "fshFile": "instances/MII_EXA_Person_Patient_Pseudonymisiert.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ResearchSubject-mii-exa-person-researchsubject-studienteilnehmer.json",
+    "fshName": "mii-exa-person-researchsubject-studienteilnehmer",
+    "fshType": "Instance",
+    "fshFile": "instances/MII_EXA_Person.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-adresszusatz.json",
+    "fshName": "mii-sp-person-adresszusatz",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_Adresszusatz.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-assignerpid.json",
+    "fshName": "mii-sp-person-assignerpid",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_AssignerPID.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-consent.json",
+    "fshName": "mii-sp-person-consent",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_Consent.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-gemeindeschluessel.json",
+    "fshName": "mii-sp-person-gemeindeschluessel",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_Gemeindeschluessel.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-hausnummer.json",
+    "fshName": "mii-sp-person-hausnummer",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_Hausnummer.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-otheramtlich.json",
+    "fshName": "mii-sp-person-otheramtlich",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_otheramtlich.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-postfach.json",
+    "fshName": "mii-sp-person-postfach",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_Postfach.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-prefix.json",
+    "fshName": "mii-sp-person-prefix",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_prefix.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-prefixqualifier.json",
+    "fshName": "mii-sp-person-prefixqualifier",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_prefixqualifier.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-stadtteil.json",
+    "fshName": "mii-sp-person-stadtteil",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_Stadtteil.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-person-strasse.json",
+    "fshName": "mii-sp-person-strasse",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/MII_SP_Person_Strasse.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-mii-lm-person.json",
+    "fshName": "MII_LM_Person",
+    "fshType": "Logical",
+    "fshFile": "logicals/MII_LM_Person_LogicalModel.fsh",
+    "startLine": 1,
+    "endLine": 112
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-person-patient-pseudonymisiert.json",
+    "fshName": "MII_PR_Person_PatientPseudonymisiert",
+    "fshType": "Profile",
+    "fshFile": "profiles/MII_PR_Person_PatientPseudonymisiert.fsh",
+    "startLine": 1,
+    "endLine": 73
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-person-patient.json",
+    "fshName": "MII_PR_Person_Patient",
+    "fshType": "Profile",
+    "fshFile": "profiles/MII_PR_Person_Patient.fsh",
+    "startLine": 1,
+    "endLine": 123
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-person-proband.json",
+    "fshName": "MII_PR_Person_Proband",
+    "fshType": "Profile",
+    "fshFile": "profiles/MII_PR_Person_Proband.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-person-todesursache.json",
+    "fshName": "MII_PR_Person_Todesursache",
+    "fshType": "Profile",
+    "fshFile": "profiles/MII_PR_Person_Todesursache.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-person-vitalstatus.json",
+    "fshName": "MII_PR_Person_Vitalstatus",
+    "fshType": "Profile",
+    "fshFile": "profiles/MII_PR_Person_Vitalstatus.fsh",
+    "startLine": 1,
+    "endLine": 48
+  },
+  {
+    "outputFile": "ValueSet-mii-vs-person-vitalstatus.json",
+    "fshName": "MII_VS_Person_Vitalstatus",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets/MII_VS_Person_Vitalstatus.fsh",
+    "startLine": 1,
+    "endLine": 8
+  }
+]

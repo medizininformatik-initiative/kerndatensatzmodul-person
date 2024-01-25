@@ -69,11 +69,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.meta.source",
-        "path": "Observation.meta.source",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "mustSupport": true

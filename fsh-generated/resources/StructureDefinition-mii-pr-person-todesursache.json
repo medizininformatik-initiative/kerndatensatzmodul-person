@@ -69,11 +69,6 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.meta.source",
-        "path": "Condition.meta.source",
-        "mustSupport": true
-      },
-      {
         "id": "Condition.meta.profile",
         "path": "Condition.meta.profile",
         "mustSupport": true

@@ -9,7 +9,7 @@ Description: "Dieses Profil beschreibt eine Proband*in in der Medizininformatik-
 * ^status = #active
 * id MS
 * meta MS
-* meta.source MS
+//* meta.source MS
 * meta.profile MS
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern

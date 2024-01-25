@@ -59,11 +59,6 @@
         "mustSupport": true
       },
       {
-        "id": "ResearchSubject.meta.source",
-        "path": "ResearchSubject.meta.source",
-        "mustSupport": true
-      },
-      {
         "id": "ResearchSubject.meta.profile",
         "path": "ResearchSubject.meta.profile",
         "mustSupport": true

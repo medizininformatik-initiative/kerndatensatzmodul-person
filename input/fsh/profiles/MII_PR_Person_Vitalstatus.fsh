@@ -8,7 +8,7 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * insert Publisher
 * id MS
 * meta MS
-* meta.source MS
+//* meta.source MS
 * meta.profile MS
 * status = #final (exactly)
 * status MS

@@ -9,7 +9,7 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * ^status = #active
 * id MS
 * meta MS
-* meta.source MS
+//* meta.source MS
 * meta.profile MS
 * category MS
 * category ^slicing.discriminator.type = #pattern
