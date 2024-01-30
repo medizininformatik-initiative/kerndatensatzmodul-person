@@ -22,6 +22,6 @@ StructureDefinition-mii-lm-person.json                                 MII_LM_Pe
 StructureDefinition-mii-pr-person-patient-pseudonymisiert.json         MII_PR_Person_PatientPseudonymisiert              Profile     profiles/MII_PR_Person_PatientPseudonymisiert.fsh            1 - 73
 StructureDefinition-mii-pr-person-patient.json                         MII_PR_Person_Patient                             Profile     profiles/MII_PR_Person_Patient.fsh                           1 - 123
 StructureDefinition-mii-pr-person-proband.json                         MII_PR_Person_Proband                             Profile     profiles/MII_PR_Person_Proband.fsh                           1 - 32
-StructureDefinition-mii-pr-person-todesursache.json                    MII_PR_Person_Todesursache                        Profile     profiles/MII_PR_Person_Todesursache.fsh                      1 - 41
+StructureDefinition-mii-pr-person-todesursache.json                    MII_PR_Person_Todesursache                        Profile     profiles/MII_PR_Person_Todesursache.fsh                      1 - 45
 StructureDefinition-mii-pr-person-vitalstatus.json                     MII_PR_Person_Vitalstatus                         Profile     profiles/MII_PR_Person_Vitalstatus.fsh                       1 - 48
 ValueSet-mii-vs-person-vitalstatus.json                                MII_VS_Person_Vitalstatus                         ValueSet    valuesets/MII_VS_Person_Vitalstatus.fsh                      1 - 8

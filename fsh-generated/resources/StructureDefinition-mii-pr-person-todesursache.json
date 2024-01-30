@@ -74,6 +74,16 @@
         "mustSupport": true
       },
       {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.verificationStatus",
+        "path": "Condition.verificationStatus",
+        "mustSupport": true
+      },
+      {
         "id": "Condition.category",
         "path": "Condition.category",
         "slicing": {
@@ -205,6 +215,16 @@
       {
         "id": "Condition.subject",
         "path": "Condition.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note",
         "mustSupport": true
       }
     ]

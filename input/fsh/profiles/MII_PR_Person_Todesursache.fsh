@@ -11,6 +11,8 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * meta MS
 //* meta.source MS
 * meta.profile MS
+* clinicalStatus MS
+* verificationStatus MS
 * category MS
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
@@ -39,3 +41,5 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * code.coding[icd10-who].code 1.. MS
 * code.text MS
 * subject MS
+* recordedDate MS
+* note MS
