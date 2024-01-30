@@ -218,6 +218,11 @@
         "mustSupport": true
       },
       {
+        "id": "Condition.encounter",
+        "path": "Condition.encounter",
+        "mustSupport": true
+      },
+      {
         "id": "Condition.recordedDate",
         "path": "Condition.recordedDate",
         "mustSupport": true

@@ -41,5 +41,6 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * code.coding[icd10-who].code 1.. MS
 * code.text MS
 * subject MS
+* encounter MS
 * recordedDate MS
 * note MS

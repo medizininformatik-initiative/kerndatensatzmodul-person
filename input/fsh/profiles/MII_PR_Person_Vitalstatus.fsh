@@ -30,6 +30,7 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * subject 1.. MS
 * subject only Reference(Patient or Group)
 * subject only $MII-Reference
+* encounter MS
 * effective[x] 1.. MS
 * effective[x] only dateTime
 * value[x] 1.. MS
