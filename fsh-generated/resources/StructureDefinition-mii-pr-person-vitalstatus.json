@@ -234,6 +234,11 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.bodySite",
         "path": "Observation.bodySite",
         "max": "0"

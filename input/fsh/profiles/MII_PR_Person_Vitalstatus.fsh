@@ -42,6 +42,7 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * valueCodeableConcept.coding[Vitalstatus] from MII_VS_Person_Vitalstatus (required)
 * valueCodeableConcept.coding[Vitalstatus].system 1.. MS
 * valueCodeableConcept.coding[Vitalstatus].code 1.. MS
+* note MS
 * bodySite ..0
 * specimen ..0
 * referenceRange ..0

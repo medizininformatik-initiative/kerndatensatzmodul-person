@@ -197,7 +197,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/MII_PR_Person_Vitalstatus.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 49
   },
   {
     "outputFile": "ValueSet-mii-vs-person-vitalstatus.json",
