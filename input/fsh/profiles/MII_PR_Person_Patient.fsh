@@ -9,7 +9,7 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * obeys mii-pat-1
 * id MS
 * meta MS
-* meta.source MS
+//* meta.source MS
 * meta.profile MS
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern

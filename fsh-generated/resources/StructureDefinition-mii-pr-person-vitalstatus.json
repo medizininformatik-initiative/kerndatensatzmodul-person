@@ -69,11 +69,6 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.meta.source",
-        "path": "Observation.meta.source",
-        "mustSupport": true
-      },
-      {
         "id": "Observation.meta.profile",
         "path": "Observation.meta.profile",
         "mustSupport": true
@@ -178,6 +173,11 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "mustSupport": true
+      },
+      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "min": 1,
@@ -236,6 +236,11 @@
         "id": "Observation.value[x].coding:Vitalstatus.code",
         "path": "Observation.value[x].coding.code",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
         "mustSupport": true
       },
       {

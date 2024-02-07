@@ -77,11 +77,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.meta.source",
-        "path": "Patient.meta.source",
-        "mustSupport": true
-      },
-      {
         "id": "Patient.meta.profile",
         "path": "Patient.meta.profile",
         "mustSupport": true
