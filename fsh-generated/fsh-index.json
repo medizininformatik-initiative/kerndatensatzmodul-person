@@ -189,7 +189,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/MII_PR_Person_Todesursache.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 47
   },
   {
     "outputFile": "StructureDefinition-mii-pr-person-vitalstatus.json",
