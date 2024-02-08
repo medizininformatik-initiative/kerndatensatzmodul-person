@@ -2,10 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-person-patient",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient",
-  "version": "2024.0.0-ballot",
+  "version": "2024.0.0",
   "name": "MII_PR_Person_Patient",
   "title": "MII PR Person Patient",
   "status": "active",
+  "date": "2024-02-08",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

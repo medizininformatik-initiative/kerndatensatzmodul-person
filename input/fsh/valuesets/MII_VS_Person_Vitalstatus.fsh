@@ -5,4 +5,5 @@ Title: "MII VS Person Vitalstatus"
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^status = #active
+* ^date = "2024-02-08"
 * include codes from system MII_CS_Person_Vitalstatus

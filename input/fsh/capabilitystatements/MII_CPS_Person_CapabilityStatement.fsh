@@ -7,7 +7,7 @@ Usage: #definition
 * title = "MII CPS Person CapabilityStatement"
 * status = #active
 * experimental = false
-* date = "2022-02-21"
+* date = "2024-02-08"
 * publisher = "Medizininformatik Initiative"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.medizininformatik-initiative.de"

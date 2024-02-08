@@ -6,6 +6,7 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"
 * insert PR_CS_VS_Version
 * insert Publisher
+* ^date = "2024-02-08"
 * id MS
 * meta MS
 //* meta.source MS

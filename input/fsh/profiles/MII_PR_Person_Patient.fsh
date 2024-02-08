@@ -6,6 +6,7 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
 * insert PR_CS_VS_Version
 * insert Publisher
+* ^date = "2024-02-08"
 * obeys mii-pat-1
 * id MS
 * meta MS
