@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Release Notes
+  filename: Release-Notes.page.md
 - name: Beschreibung Modul
   filename: BeschreibungModul.page.md
 - name: Kontext im Gesamtprojekt / Bezüge zu anderen Modulen
