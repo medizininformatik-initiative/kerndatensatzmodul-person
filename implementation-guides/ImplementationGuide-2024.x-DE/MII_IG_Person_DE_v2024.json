@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "mii-ig-person-de-v2024",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person-de-v2024",
-  "version": "2024.0.0-ballot",
+  "version": "2024.0.0",
   "name": "MII_IG_Person_DE_v2024",
   "title": "MII IG Person DE v2024",
   "status": "active",
