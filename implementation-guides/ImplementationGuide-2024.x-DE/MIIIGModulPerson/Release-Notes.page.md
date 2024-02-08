@@ -11,4 +11,4 @@
     - ‘PostleitzahlEinschraenkung’ auf *Patient.address.postalCode*
 - Neu im Vergleich zu Version 1.0 ist das Profil {{pagelink: PersonTodesursache, text: Todesursache (Condition), hint: MII_PR_Person_Todesursache}} zur Abbildung der Todesursache mittels ICD-10-WHO.
 - Im {{pagelink: LogicalModel, text: Logischen Modell, hint: Datensätze inkl. Beschreibungen}} wurden die Datentypen angepasst, um den Datentypen der Elemente im FHIR-Profil zu entsprechen, auf welches gemappt wird.
-
+- Ressourcen verwenden in diesem Release modulübergreifend SNOMED CT in der Version `http://snomed.info/sct/900000000000207008/version/20230731`, um eine stabile [ValueSet-Expansion](http://hl7.org/fhir/R4/valueset.html#expansion) sicherzustellen.
