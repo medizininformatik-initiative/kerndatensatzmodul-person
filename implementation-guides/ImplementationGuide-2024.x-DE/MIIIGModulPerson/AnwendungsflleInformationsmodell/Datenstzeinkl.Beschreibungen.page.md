@@ -1,5 +1,6 @@
 ---
 parent: 
+topic: LogicalModel
 ---
 ## Datensätze inkl. Beschreibungen
 
