@@ -102,7 +102,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Full first name of a person"
+                  "valueString": "Full given name of a person"
                 }
               ]
             }
@@ -140,7 +140,7 @@
         },
         "definition": "Nachname einer Person ohne Vor- und Zusätze. Dient z.B. der alphabetischen Einordnung des Namens.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -170,7 +170,7 @@
         },
         "definition": "Der vollständige Familienname, einschließlich aller Vorsatz- und Zusatzwörter, mit Leerzeichen getrennt.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -200,7 +200,7 @@
         },
         "definition": "Vorsatzwort wie z.B.: von, van, zu Vgl. auch VSDM-Spezifikation der Gematik (Versichertenstammdatenmanagement, \"eGK\")",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -230,7 +230,7 @@
         },
         "definition": "Namenszusatz als Bestandteil das Nachnamens, wie in VSDM (Versichertenstammdatenmanagement, \"eGK\") definiert. Beispiele: Gräfin, Prinz oder Fürst",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -268,8 +268,8 @@
         ]
       },
       {
-        "id": "Person.Name.ArtdesPraefixes",
-        "path": "Person.Name.ArtdesPraefixes",
+        "id": "Person.Name.Praefix.ArtdesPraefixes",
+        "path": "Person.Name.Praefix.ArtdesPraefixes",
         "short": "Art des Präfixes, z.B. \"AC\" für Akademische Titel",
         "_short": {
           "extension": [
@@ -290,7 +290,7 @@
         },
         "definition": "Art des Präfixes, z.B. \"AC\" für Akademische Titel",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "code"
@@ -320,7 +320,7 @@
         },
         "definition": "Familienname einer Person zum Zeitpunkt ihrer Geburt. Kann sich danach z.B. durch Heirat und Annahme eines anderen Familiennamens ändern.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -380,7 +380,7 @@
         },
         "definition": "Administratives Geschlecht der Person",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "code"
@@ -410,7 +410,7 @@
         },
         "definition": "Geburtsdatum des Person.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "date"
@@ -499,8 +499,8 @@
           ]
         },
         "definition": "Ländercode nach ISO 3166.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -529,8 +529,8 @@
           ]
         },
         "definition": "Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -559,8 +559,8 @@
           ]
         },
         "definition": "Bei Personen aus Stadtstaaten inklusive des Stadtteils.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -589,8 +589,8 @@
           ]
         },
         "definition": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -649,8 +649,8 @@
           ]
         },
         "definition": "Ländercode nach ISO 3166.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -679,8 +679,8 @@
           ]
         },
         "definition": "Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -709,8 +709,8 @@
           ]
         },
         "definition": "Bei Personen aus Stadtstaaten inklusive des Stadtteils.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -739,8 +739,8 @@
           ]
         },
         "definition": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -800,7 +800,7 @@
         },
         "definition": "Gibt an, ob der Patient am Leben oder verstorben ist.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "boolean"
@@ -830,7 +830,7 @@
         },
         "definition": "Gibt den Todeszeitpunkt des Patienten an, falls dieser im KH verstorben ist. Ansonsten \"Null Flavor\".",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "dateTime"
@@ -889,8 +889,8 @@
           ]
         },
         "definition": "Letzter bekannter Zeitpunkt oder Zeitraum, zudem ein Vitalstatus festgestellt wurde",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "dateTime"
@@ -900,7 +900,7 @@
       {
         "id": "Person.Demographie.Vitalstatus.Todesursache",
         "path": "Person.Demographie.Vitalstatus.Todesursache",
-        "short": "Reason for patient's death. Coded per ICD-10 GM.",
+        "short": "Todesursache mit ICD-10-WHO kodiert.",
         "_short": {
           "extension": [
             {
@@ -912,18 +912,18 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Last known time when the person was still alive"
+                  "valueString": "Reason for patient's death. Coded per ICD-10-WHO."
                 }
               ]
             }
           ]
         },
-        "definition": "Reason for patient's death. Coded per ICD-10 GM.",
+        "definition": "Todesursache mit ICD-10-WHO kodiert.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -1022,8 +1022,8 @@
           ]
         },
         "definition": "Der Kontext des Patienten-Identifikators um den Patienten-Identifikator zu Beschreiben, da der Patient innerhalb einer Gesundheitseinrichtung möglicherweise pro System eine Nummer (Im Krankenhaus: Labor, Radiologie, Internistische Station etc.) bekommt.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"
@@ -1113,11 +1113,11 @@
           ]
         },
         "definition": "Versicherungstyp des Patienten",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -1144,7 +1144,7 @@
         },
         "definition": "Angaben zur Identifikation der versicherten Person",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "BackboneElement"
@@ -1174,7 +1174,7 @@
         },
         "definition": "Unveränderlicher Teil der Krankenversichertennummer (VersichertenID) bei GKV Patienten. Diese findet sich z.B. auf der Mitgliedskarte der Krankenkasse.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -1204,7 +1204,7 @@
         },
         "definition": "Versichertennummer bei PKV Patienten. Vergabe erfolgt durch die jeweilige Private Krankenversicherung.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "string"
@@ -1326,8 +1326,8 @@
           ]
         },
         "definition": "Beginn der Teilnahme der Person an der Studie.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "dateTime"
@@ -1357,7 +1357,7 @@
         },
         "definition": "Ende der Teilnahme der Person an der Studie.",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "dateTime"
@@ -1386,8 +1386,8 @@
           ]
         },
         "definition": "Stand der Teilnahme einer Person an der Studie, z.B. eingeschlossen, widerrufen, abgeschlossen etc.",
-        "min": 0,
-        "max": "*",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "code"
@@ -1481,96 +1481,6 @@
         "type": [
           {
             "code": "Identifier"
-          }
-        ]
-      },
-      {
-        "id": "Person.PatientInPseudonym.GeburtsdatumQuartal",
-        "path": "Person.PatientInPseudonym.GeburtsdatumQuartal",
-        "short": "Vergröberung auf Quartal und Jahr.",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Rounded up to quarter and year."
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Vergröberung auf Quartal und Jahr.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "date"
-          }
-        ]
-      },
-      {
-        "id": "Person.PatientInPseudonym.Todesdatum",
-        "path": "Person.PatientInPseudonym.Todesdatum",
-        "short": "Zeitpunkt des Todes begrenzt auf Jahr, Monat und Tag.",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Time of death limited to year, month and day."
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Zeitpunkt des Todes begrenzt auf Jahr, Monat und Tag.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
-        "id": "Person.PatientInPseudonym.VergroebertePLZ",
-        "path": "Person.PatientInPseudonym.VergroebertePLZ",
-        "short": "Erste zwei Stellen der Postleitzahl",
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en"
-                },
-                {
-                  "url": "content",
-                  "valueString": "First two digits of the postal code"
-                }
-              ]
-            }
-          ]
-        },
-        "definition": "Erste zwei Stellen der Postleitzahl",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "string"
           }
         ]
       }
