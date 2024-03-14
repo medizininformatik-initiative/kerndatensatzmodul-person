@@ -591,6 +591,17 @@
               "name": "value-concept",
               "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
               "type": "token"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "code-value-concept",
+              "definition": "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept",
+              "type": "composite"
             }
           ]
         },

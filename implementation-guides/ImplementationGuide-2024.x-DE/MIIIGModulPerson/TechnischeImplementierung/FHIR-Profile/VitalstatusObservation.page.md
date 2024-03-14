@@ -177,6 +177,14 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
     Anwendungshinweise: Weitere Informationen zur Suche nach "Observation.value" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Token Search"](http://hl7.org/fhir/R4/search.html#token).
 
+1. Der Suchparameter "code-value-concept" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/Observation?code-value-concept=http://loinc.org|67162-8$https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus|T```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "Observation.value" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Composite Search"](http://hl7.org/fhir/R4/search.html#composite).
+
 ---
 
 **Beispiele**

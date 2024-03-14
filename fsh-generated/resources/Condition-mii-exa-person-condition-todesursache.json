@@ -11,8 +11,7 @@
       "coding": [
         {
           "code": "16100001",
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008/version/20230731"
+          "system": "http://snomed.info/sct"
         },
         {
           "code": "79378-6",

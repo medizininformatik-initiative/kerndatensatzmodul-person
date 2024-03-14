@@ -253,6 +253,11 @@ Usage: #definition
 * rest.resource[=].searchParam[=].name = "value-concept"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Observation-value-concept"
 * rest.resource[=].searchParam[=].type = #token
+* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+* rest.resource[=].searchParam[=].name = "code-value-concept"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept"
+* rest.resource[=].searchParam[=].type = #composite
 * rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].type = #Condition
