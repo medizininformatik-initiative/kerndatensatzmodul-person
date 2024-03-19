@@ -69,6 +69,6 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 //* communication ..0
 //* generalPractitioner ..0
 * link MS
-* link.other only $MII-Reference
+//* link.other only $MII-Reference
 * link.other MS
 * link.type MS

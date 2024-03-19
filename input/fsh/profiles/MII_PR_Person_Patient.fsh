@@ -36,7 +36,7 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * identifier[pid].type 1.. MS
 * identifier[pid].system MS
 * identifier[pid].value MS
-* identifier[pid].assigner only $MII-Reference
+//* identifier[pid].assigner only $MII-Reference
 * identifier[pid].assigner MS
 * identifier[pid].assigner.identifier.type = $v2-0203#XX
 * identifier[pid].assigner.identifier.type MS
@@ -119,6 +119,6 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * address[Postfach].country 1.. MS
 * address[Postfach] obeys pat-cnt-2or3-char
 * link MS
-* link.other only $MII-Reference
+//* link.other only $MII-Reference
 * link.other MS
 * link.type MS

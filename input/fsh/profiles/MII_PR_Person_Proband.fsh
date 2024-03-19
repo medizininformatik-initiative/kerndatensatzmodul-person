@@ -25,9 +25,9 @@ Description: "Dieses Profil beschreibt eine Proband*in in der Medizininformatik-
 * period 1.. MS
 * period.start 1.. MS
 * period.end MS
-* study only $MII-Reference
+//* study only $MII-Reference
 * study MS
 * individual 1.. MS
-* individual only $MII-Reference
+//* individual only $MII-Reference
 * consent 1.. MS
-* consent only $MII-Reference
+//* consent only $MII-Reference

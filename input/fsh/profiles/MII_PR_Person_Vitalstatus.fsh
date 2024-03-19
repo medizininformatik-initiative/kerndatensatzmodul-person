@@ -30,7 +30,7 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * code.coding[loinc].code 1.. MS
 * subject 1.. MS
 * subject only Reference(Patient or Group)
-* subject only $MII-Reference
+//* subject only $MII-Reference
 * encounter MS
 * effective[x] 1.. MS
 * effective[x] only dateTime
