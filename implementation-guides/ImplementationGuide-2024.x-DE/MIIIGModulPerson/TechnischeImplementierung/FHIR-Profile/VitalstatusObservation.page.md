@@ -13,7 +13,7 @@ expand: 1
 
 **Beschreibung**
 
-Vitalstatus der PatientIn. Es ist zu beachten, dass für jede Beobachtung eine neue Observation anzulegen ist. Alle Observations sind als final einzustufen.
+Vitalstatus der PatientIn. Für jede Beobachtung/Angabe des Vitalstatus einer PatientIn MUSS eine neue Observation-Instanz erzeugt werden. Alle Observation-Instanzen sind als final einzustufen.
 
 Mindestens bei jeder Aufnahme / Entlassung der PatientIn ist ein Vitalstatus ("Letzter bekannter Lebenszeitpunkt") als Observation zu erstellen. Es ist zu beachten, dass die administrative Entlassung der PatientIn auch aufgrund des Todes dokuementiert wurde.  
 
@@ -64,13 +64,13 @@ select
 
 | FHIR-Element | Erklärung |
 |--------------|-----------|
-| Observation.id      | Must-support, jedoch optional       |
-| Observation.meta       | Must-support, jedoch optional         |
-| Observation.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:PersonCapabilityStatement}}. In allen anderen Fällen optional.         |
-| Observation.category       | Fixed value, weitere Codings erlaubt.         |
-| Observation.code       | Fixed LOINC Code, weitere Codings erlaubt.        |
-| Observation.subject       | Patientenbezug muss stets gegeben sein.         |
-| Observation.effectiveDateTime       | effectiveDateTime erlaubt genaue Kodierung des letzten Lebendzeitpunktes, partielle Datumsangaben sind jedoch auch erlaubt. Enthält **nicht** den Todeszeitpunkt (siehe Patient.deceased[x])! |
+| Observation.id      | Must-support, jedoch OPTIONAL       |
+| Observation.meta       | Must-support, jedoch OPTIONAL         |
+| Observation.meta.profile       | VERPFLICHTEND für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:PersonCapabilityStatement}}. In allen anderen Fällen OPTIONAL.         |
+| Observation.category       | Fixed value `survey` MUSS vorhanden sein, weitere Codings OPTIONAL.         |
+| Observation.code       | Fixed LOINC Code MUSS vorhanden sein, weitere Codings OPTIONAL.        |
+| Observation.subject       | Patientenbezug MUSS stets gegeben sein.         |
+| Observation.effectiveDateTime       | effectiveDateTime VERPFLICHTEND genaue Angabe des letzten Lebendzeitpunktes, KANN partielle Datumsangaben enthalten. Enthält **nicht** den Todeszeitpunkt (siehe Patient.deceased[x])! |
 
 ---
 

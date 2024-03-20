@@ -63,12 +63,12 @@ select
 
 | FHIR-Element | Erklärung |
 |--------------|-----------|
-| Condition.id      | Must-support, jedoch optional       |
-| Condition.meta       | Must-support, jedoch optional         |
-| Condition.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:PersonCapabilityStatement}}. In allen anderen Fällen optional.         |
-| Condition.category       | Fixed LOINC und SNOMED-Code, weitere Codings erlaubt.         |
-| Condition.code       | Kodierung per ICD-10-WHO erforderlich, weitere Codings erlaubt. Weitere Infos siehe [BFARM](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-10-WHO/Todesursachenstatistik/_node.html).|
-| Condition.subject       | Patientenbezug muss stets gegeben sein.         |
+| Condition.id      | Must-support, jedoch OPTIONAL       |
+| Condition.meta       | Must-support, jedoch OPTIONAL         |
+| Condition.meta.profile       | VERPFLICHTEND für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:PersonCapabilityStatement}}. In allen anderen Fällen OPTIONAL.         |
+| Condition.category       | Fixed LOINC und SNOMED-Code MÜSSEN vorhanden sein, weitere Codings OPTIONAL.         |
+| Condition.code       | Kodierung per ICD-10-WHO VERPFLICHTEND, weitere Codings OPTIONAL. Weitere Infos siehe [BFARM](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-10-WHO/Todesursachenstatistik/_node.html).|
+| Condition.subject       | Patientenbezug MUSS stets gegeben sein.         |
 
 ---
 
