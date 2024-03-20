@@ -69,14 +69,14 @@ select
 |--------------|-----------|
 | Patient.id      | Must-support, jedoch optional        |
 | Patient.meta       | Must-support, jedoch optional         |
-| Patient.meta.profile       | Verpflichtend für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe **CapabilityStatement**. In allen anderen Fällen optional.         |
-| Patient.identifier:PseudonymisierterIdentifier        | Falls der Identifier ein abgeleitetes Pseudonym ist, muss der Identifier entsprechend typisiert werden.|
-| Patient.identifier:AnonymisierterIdentifier        | Ein anonymisierter Identifier ist nur als solcher anzugegben, falls keinerlei Rückschlüsse auf den originalen Datemsatz möglich sind.|
+| Patient.meta.profile       | VERPFLICHTEND für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe **CapabilityStatement**. In allen anderen Fällen optional.         |
+| Patient.identifier:PseudonymisierterIdentifier        | Falls der Identifier ein abgeleitetes Pseudonym ist, MUSS der Identifier entsprechend typisiert werden.|
+| Patient.identifier:AnonymisierterIdentifier        | Ein anonymisierter Identifier SOLLTE nur als solcher angegeben werden, falls keinerlei Rückschlüsse auf den originalen Datemsatz möglich sind.|
 | Patient.gender        | Ohne Einschränkung verwendbar.|
-| Patient.birthDate        | Muss auf das nächste Quartal auf-/abgerundet werden. |
-| Patient.deceased[x]        |  Muss auf das nächste Quartal auf-/abgerundet werden. |
-| Patient.address        | Nur die ersten beiden Stellen der PLZ inkl. Angabe des Landes ist anzugeben.|
-| Patient.link        | Es muss darauf geachtet werden, dass keine Verlinkung zu einer nicht-pseudonymisierten Version des Patienten existiert.|
+| Patient.birthDate        |  |
+| Patient.deceased[x]        |   |
+| Patient.address        |  |
+| Patient.link        | Eine Verlinkung zu einer nicht-pseudonymisierten Version des Patienten DARF NICHT existieren.|
 
 ---
 
