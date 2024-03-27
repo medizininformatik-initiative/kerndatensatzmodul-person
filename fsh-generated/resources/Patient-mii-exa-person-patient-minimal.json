@@ -3,7 +3,7 @@
   "id": "mii-exa-person-patient-minimal",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
     ]
   },
   "name": [
