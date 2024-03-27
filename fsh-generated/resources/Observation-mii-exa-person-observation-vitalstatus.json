@@ -3,7 +3,7 @@
   "id": "mii-exa-person-observation-vitalstatus",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2024.0.0"
     ]
   },
   "status": "final",
