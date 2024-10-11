@@ -42,4 +42,14 @@ jobs:
           JAVA_VALIDATION_OPTIONS: -allow-example-urls true -tx n/a
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
-          JAVA_VALIDATOR_VERSION: 6.3.2
+          JAVA_VALIDATOR_VERSION: 6.3.29
+          SUSHI_ENABLED: true 
+          SUSHI_VERSION: 3.11.1
+
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v9
+        with:
+          committer_name: GitHub Actions Bot
+          committer_email: ActionBot@github.com
+          add: 'fsh-generated/resources/'
+          message: auto-generated FHIR files by GitHub Actions (CI FSH to FHIR Validation)
