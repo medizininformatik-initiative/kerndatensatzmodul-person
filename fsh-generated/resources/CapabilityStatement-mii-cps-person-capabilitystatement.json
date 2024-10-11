@@ -2,12 +2,12 @@
   "resourceType": "CapabilityStatement",
   "id": "mii-cps-person-capabilitystatement",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata",
-  "version": "2024.0.0",
+  "version": "2025.0.0",
   "name": "MII_CPS_Person_CapabilityStatement",
   "title": "MII CPS Person CapabilityStatement",
   "status": "active",
   "experimental": false,
-  "date": "2024-02-08",
+  "date": "2024-10-11",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -50,7 +50,7 @@
           ],
           "type": "Patient",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2025.0.0"
           ],
           "interaction": [
             {
@@ -359,7 +359,7 @@
           ],
           "type": "ResearchSubject",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2024.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2025.0.0"
           ],
           "interaction": [
             {
@@ -481,7 +481,7 @@
           ],
           "type": "Observation",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2024.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2025.0.0"
           ],
           "interaction": [
             {
@@ -614,7 +614,7 @@
           ],
           "type": "Condition",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2024.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2025.0.0"
           ],
           "interaction": [
             {
