@@ -13,5 +13,5 @@ publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-initiative.de/
 dependencies:
-  de.basisprofil.r4: 1.4.0
-  de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
+  de.basisprofil.r4: 1.5.0
+  de.medizininformatikinitiative.kerndatensatz.meta: 2025.0.0-alpha1
