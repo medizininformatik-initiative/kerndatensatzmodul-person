@@ -1,0 +1,12 @@
+- name: Index
+  filename: Index.page.md
+- name: Patient:in (Patient)
+  filename: PatientInPatient.page.md
+- name: Patient:in - Pseudonymisiert (Patient)
+  filename: PseudonymisiertePatientinPatient.page.md
+- name: Proband:in (ResearchSubject)
+  filename: ProbandInResearchSubject.page.md
+- name: Vitalstatus (Observation)
+  filename: VitalstatusObservation.page.md
+- name: Todesursache (Condition)
+  filename: TodesursacheCondition.page.md

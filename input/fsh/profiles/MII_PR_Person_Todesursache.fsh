@@ -4,6 +4,10 @@ Id: mii-pr-person-todesursache
 Title: "MII PR Person Todesursache"
 Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Element des Kerndatensatzes Medizininformatik-Initiative"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache"
+* insert Translation(^title, de-DE, Todesursache)
+* insert Translation(^title, en-US, Cause of Death)
+* insert Translation(^description, de-DE, Todesursache der verstorbenen Patientin oder des verstorbenen Patienten.)
+* insert Translation(^description, en-US, Cause of death of the deceased patient.)
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^status = #active
@@ -13,8 +17,20 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 //* meta.source MS
 * meta.profile MS
 * clinicalStatus MS
+* insert Translation(clinicalStatus ^short, de-DE, Klinischer Status)
+* insert Translation(clinicalStatus ^short, en-US, Clinical status)
+* insert Translation(clinicalStatus ^definition, de-DE, aktiv | Rezidiv | Rückfall | inaktiv | Remission | abgeklungen)
+* insert Translation(clinicalStatus ^definition, en-US, active | recurrence | relapse | inactive | remission | resolved)
 * verificationStatus MS
+* insert Translation(verificationStatus ^short, de-DE, Verifizierungsstatus)
+* insert Translation(verificationStatus ^short, en-US, Verification status)
+* insert Translation(verificationStatus ^definition, de-DE, unbestätigt | vorläufig | differential | bestätigt | widerlegt | fehlerhafte Eingabe)
+* insert Translation(verificationStatus ^definition, en-US, unconfirmed | provisional | differential | confirmed | refuted | entered-in-error)
 * category MS
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* insert Translation(category ^definition, de-DE, Eine Kategorie\, die der Diagnose zugeordnet ist.)
+* insert Translation(category ^definition, en-US, A category assigned to the condition.)
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -31,12 +47,16 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * category[todesDiagnose].coding[snomed] = $sct-no-ver#16100001
 * category[todesDiagnose].coding[loinc] = $loinc#79378-6
 * code 1.. MS
+* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
+* insert Translation(code ^definition, de-DE, Ein ICD-10-WHO Code\, der die Todesursache identifiziert.)
+* insert Translation(code ^definition, en-US, An ICD-10-WHO code identifying the cause of death.)
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains icd10-who 1..1 MS
-//* code.coding from mii-vs-person-icd10who (required)
+* code.coding[icd10-who] from mii-vs-person-icd10who (required)
 * code.coding[icd10-who] ^patternCoding.system = "http://hl7.org/fhir/sid/icd-10"
 * code.coding[icd10-who].system 1.. MS
 * code.coding[icd10-who].version 1.. MS
@@ -44,5 +64,17 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * code.text MS
 * subject MS
 * encounter MS
+* insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
+* insert Translation(encounter ^short, en-US, Encounter)
+* insert Translation(encounter ^definition, de-DE, Fall oder Kontakt\, bei dem die Todesursache festgestellt wurde.)
+* insert Translation(encounter ^definition, en-US, Encounter during which the cause of death was determined.)
 * recordedDate MS
+* insert Translation(recordedDate ^short, de-DE, Aufzeichnungsdatum)
+* insert Translation(recordedDate ^short, en-US, Recorded date)
+* insert Translation(recordedDate ^definition, de-DE, Datum\, an dem die Todesursache erstmals dokumentiert wurde.)
+* insert Translation(recordedDate ^definition, en-US, Date when the cause of death was first recorded.)
 * note MS
+* insert Translation(note ^short, de-DE, Hinweis)
+* insert Translation(note ^short, en-US, Note)
+* insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Todesursache als Freitext.)
+* insert Translation(note ^definition, en-US, Additional information about the cause of death as free text.)

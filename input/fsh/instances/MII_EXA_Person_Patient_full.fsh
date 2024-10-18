@@ -1,7 +1,7 @@
 Instance: mii-exa-person-patient-full
 InstanceOf: MII_PR_Person_Patient
 Usage: #example
-* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2024.0.0"
+* meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2025.0.0"
 * identifier[0].use = #usual
 * identifier[=].type = $v2-0203#MR
 * identifier[=].system = "https://www.charite.de/fhir/sid/patienten"
@@ -10,16 +10,16 @@ Usage: #example
 * identifier[=].assigner.identifier.system = "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
 * identifier[=].assigner.identifier.value = "Charité"
 * identifier[+].use = #official
-* identifier[=].type = $identifier-type-de-basis#GKV
+* identifier[=].type = $identifier-type-de-basis#KVZ10
 * identifier[=].system = "http://fhir.de/sid/gkv/kvid-10"
 * identifier[=].value = "Z234567890"
 * identifier[=].assigner.identifier.use = #official
 * identifier[=].assigner.identifier.value = "109519005"
 * identifier[=].assigner.identifier.system = "http://fhir.de/sid/arge-ik/iknr"
-* identifier[+].use = #secondary
-* identifier[=].type = $identifier-type-de-basis#PKV
-* identifier[=].value = "123456"
-* identifier[=].assigner.display = "Signal Iduna"
+//* identifier[+].use = #secondary
+//* identifier[=].type = $identifier-type-de-basis#PKV
+//* identifier[=].value = "123456"
+//* identifier[=].assigner.display = "Signal Iduna"
 * name[name].use = #official
 * name[name].family = "Van-der-Dussen"
 * name[name].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
