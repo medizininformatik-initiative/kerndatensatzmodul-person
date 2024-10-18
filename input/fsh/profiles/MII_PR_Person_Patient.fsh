@@ -25,25 +25,42 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
 * identifier contains
-    versichertenId_GKV 0..1 MS and
-    pid 0..* MS and
-    versichertennummer_pkv 0..1 MS
-* identifier[versichertenId_GKV] only IdentifierKvid10
-
-* identifier[versichertenId_GKV] ^patternIdentifier.type = $identifier-type-de-basis#GKV
-* identifier[versichertenId_GKV].type 1.. MS
-* identifier[versichertenId_GKV].system MS
-* identifier[versichertenId_GKV].value MS
-* identifier[versichertenId_GKV].assigner 1.. MS
-* identifier[versichertenId_GKV].assigner.identifier 1.. MS
-* identifier[versichertenId_GKV].assigner.identifier only IdentifierIknr
-* identifier[versichertenId_GKV].assigner.identifier.type MS
-* identifier[versichertenId_GKV].assigner.identifier.system MS
-* identifier[versichertenId_GKV].assigner.identifier.value MS
-* insert Translation(identifier[versichertenId_GKV] ^short, de-DE, Gesetzliche Krankenversichertennummer)
-* insert Translation(identifier[versichertenId_GKV] ^short, en-US, Statutory health insurance number)
-* insert Translation(identifier[versichertenId_GKV] ^definition, de-DE, 10-stellige KVID)
-* insert Translation(identifier[versichertenId_GKV] ^definition, en-US, 10-digit health insurance number)
+    //versichertenId_GKV 0..1 MS and
+    versichertenId 0..1 MS and
+    pid 0..* MS //and
+    //versichertennummer_pkv 0..1 MS
+* identifier[versichertenId] only IdentifierKvid10
+* identifier[versichertenId] ^patternIdentifier.type = $identifier-type-de-basis#KVZ10
+* identifier[versichertenId].type 1.. MS
+* identifier[versichertenId].system MS
+* identifier[versichertenId].value MS
+* identifier[versichertenId].assigner 1.. MS
+* identifier[versichertenId].assigner.identifier 1.. MS
+* identifier[versichertenId].assigner.identifier only IdentifierIknr
+* identifier[versichertenId].assigner.identifier.type MS
+* identifier[versichertenId].assigner.identifier.system MS
+* identifier[versichertenId].assigner.identifier.value MS
+* identifier[versichertenId] ^short = "Krankenversichertennummer"
+* identifier[versichertenId] ^definition = "Krankenversichertennummer, unabhängig, ob GKV, PKV oder Sonderkostenträger"
+* insert Translation(identifier[versichertenId] ^short, de-DE, Krankenversichertennummer)
+* insert Translation(identifier[versichertenId] ^short, en-US, Health insurance number)
+* insert Translation(identifier[versichertenId] ^definition, de-DE, 10-stellige KVID)
+* insert Translation(identifier[versichertenId] ^definition, en-US, 10-digit health insurance number)
+//* identifier[versichertenId_GKV] only IdentifierKvid10
+//* identifier[versichertenId_GKV] ^patternIdentifier.type = $identifier-type-de-basis#GKV
+//* identifier[versichertenId_GKV].type 1.. MS
+//* identifier[versichertenId_GKV].system MS
+//* identifier[versichertenId_GKV].value MS
+//* identifier[versichertenId_GKV].assigner 1.. MS
+//* identifier[versichertenId_GKV].assigner.identifier 1.. MS
+//* identifier[versichertenId_GKV].assigner.identifier only IdentifierIknr
+//* identifier[versichertenId_GKV].assigner.identifier.type MS
+//* identifier[versichertenId_GKV].assigner.identifier.system MS
+//* identifier[versichertenId_GKV].assigner.identifier.value MS
+//* insert Translation(identifier[versichertenId_GKV] ^short, de-DE, Gesetzliche Krankenversichertennummer)
+//* insert Translation(identifier[versichertenId_GKV] ^short, en-US, Statutory health insurance number)
+//* insert Translation(identifier[versichertenId_GKV] ^definition, de-DE, 10-stellige KVID)
+//* insert Translation(identifier[versichertenId_GKV] ^definition, en-US, 10-digit health insurance number)
 * identifier[pid] only IdentifierPid
 * identifier[pid] ^patternIdentifier.type = $v2-0203#MR
 * identifier[pid].type 1.. MS
@@ -58,20 +75,20 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * insert Translation(identifier[pid] ^short, en-US, Organization-internal patient identifier)
 * insert Translation(identifier[pid] ^definition, de-DE, Führende ID der Patient*in in der Organisation)
 * insert Translation(identifier[pid] ^definition, en-US, Medical record number of the patient in the organization)
-* identifier[versichertennummer_pkv] only IdentifierPkv
-* identifier[versichertennummer_pkv] ^patternIdentifier.type = $identifier-type-de-basis#PKV
-* identifier[versichertennummer_pkv].use MS
-* identifier[versichertennummer_pkv].type 1.. MS
-* identifier[versichertennummer_pkv].value MS
-* identifier[versichertennummer_pkv].assigner MS
-* identifier[versichertennummer_pkv].assigner.identifier.type MS
-* identifier[versichertennummer_pkv].assigner.identifier.system MS
-* identifier[versichertennummer_pkv].assigner.identifier.value MS
-* identifier[versichertennummer_pkv].assigner.display MS
-* insert Translation(identifier[versichertennummer_pkv] ^short, de-DE, Private Krankenversichertennummer)
-* insert Translation(identifier[versichertennummer_pkv] ^short, en-US, Private health insurance number)
-* insert Translation(identifier[versichertennummer_pkv] ^definition, de-DE, Versichertennummer im Kontext eines PKV Versicherungsverhältnisses)
-* insert Translation(identifier[versichertennummer_pkv] ^definition, en-US, Health insurance number in the context of a private health insurance)
+//* identifier[versichertennummer_pkv] only IdentifierPkv
+//* identifier[versichertennummer_pkv] ^patternIdentifier.type = $identifier-type-de-basis#PKV
+//* identifier[versichertennummer_pkv].use MS
+//* identifier[versichertennummer_pkv].type 1.. MS
+//* identifier[versichertennummer_pkv].value MS
+//* identifier[versichertennummer_pkv].assigner MS
+//* identifier[versichertennummer_pkv].assigner.identifier.type MS
+//* identifier[versichertennummer_pkv].assigner.identifier.system MS
+//* identifier[versichertennummer_pkv].assigner.identifier.value MS
+//* identifier[versichertennummer_pkv].assigner.display MS
+//* insert Translation(identifier[versichertennummer_pkv] ^short, de-DE, Private Krankenversichertennummer)
+//* insert Translation(identifier[versichertennummer_pkv] ^short, en-US, Private health insurance number)
+//* insert Translation(identifier[versichertennummer_pkv] ^definition, de-DE, Versichertennummer im Kontext eines PKV Versicherungsverhältnisses)
+//* insert Translation(identifier[versichertennummer_pkv] ^definition, en-US, Health insurance number in the context of a private health insurance)
 * name 0..* MS
 * insert Translation(name ^short, de-DE, Name)
 * insert Translation(name ^short, en-US, Name)

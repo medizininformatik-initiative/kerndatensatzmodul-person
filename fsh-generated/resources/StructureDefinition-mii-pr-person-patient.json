@@ -190,30 +190,10 @@
         }
       },
       {
-        "id": "Patient.identifier:versichertenId_GKV",
+        "id": "Patient.identifier:versichertenId",
         "path": "Patient.identifier",
-        "sliceName": "versichertenId_GKV",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-kvid-10"
-            ]
-          }
-        ],
-        "patternIdentifier": {
-          "type": {
-            "coding": [
-              {
-                "code": "GKV",
-                "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-              }
-            ]
-          }
-        },
-        "mustSupport": true,
+        "sliceName": "versichertenId",
+        "short": "Krankenversichertennummer",
         "_short": {
           "extension": [
             {
@@ -225,7 +205,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Gesetzliche Krankenversichertennummer"
+                  "valueString": "Krankenversichertennummer"
                 }
               ]
             },
@@ -238,12 +218,13 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Statutory health insurance number"
+                  "valueString": "Health insurance number"
                 }
               ]
             }
           ]
         },
+        "definition": "Krankenversichertennummer, unabhängig, ob GKV, PKV oder Sonderkostenträger",
         "_definition": {
           "extension": [
             {
@@ -273,32 +254,53 @@
               ]
             }
           ]
-        }
+        },
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-kvid-10"
+            ]
+          }
+        ],
+        "patternIdentifier": {
+          "type": {
+            "coding": [
+              {
+                "code": "KVZ10",
+                "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+              }
+            ]
+          }
+        },
+        "mustSupport": true
       },
       {
-        "id": "Patient.identifier:versichertenId_GKV.type",
+        "id": "Patient.identifier:versichertenId.type",
         "path": "Patient.identifier.type",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:versichertenId_GKV.system",
+        "id": "Patient.identifier:versichertenId.system",
         "path": "Patient.identifier.system",
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:versichertenId_GKV.value",
+        "id": "Patient.identifier:versichertenId.value",
         "path": "Patient.identifier.value",
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:versichertenId_GKV.assigner",
+        "id": "Patient.identifier:versichertenId.assigner",
         "path": "Patient.identifier.assigner",
         "min": 1,
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:versichertenId_GKV.assigner.identifier",
+        "id": "Patient.identifier:versichertenId.assigner.identifier",
         "path": "Patient.identifier.assigner.identifier",
         "min": 1,
         "type": [
@@ -312,17 +314,17 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:versichertenId_GKV.assigner.identifier.type",
+        "id": "Patient.identifier:versichertenId.assigner.identifier.type",
         "path": "Patient.identifier.assigner.identifier.type",
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:versichertenId_GKV.assigner.identifier.system",
+        "id": "Patient.identifier:versichertenId.assigner.identifier.system",
         "path": "Patient.identifier.assigner.identifier.system",
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:versichertenId_GKV.assigner.identifier.value",
+        "id": "Patient.identifier:versichertenId.assigner.identifier.value",
         "path": "Patient.identifier.assigner.identifier.value",
         "mustSupport": true
       },
@@ -457,133 +459,6 @@
             "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
           }
         ]
-      },
-      {
-        "id": "Patient.identifier:versichertennummer_pkv",
-        "path": "Patient.identifier",
-        "sliceName": "versichertennummer_pkv",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Identifier",
-            "profile": [
-              "http://fhir.de/StructureDefinition/identifier-pkv"
-            ]
-          }
-        ],
-        "patternIdentifier": {
-          "type": {
-            "coding": [
-              {
-                "code": "PKV",
-                "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
-              }
-            ]
-          }
-        },
-        "mustSupport": true,
-        "_short": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Private Krankenversichertennummer"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Private health insurance number"
-                }
-              ]
-            }
-          ]
-        },
-        "_definition": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Versichertennummer im Kontext eines PKV Versicherungsverhältnisses"
-                }
-              ]
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Health insurance number in the context of a private health insurance"
-                }
-              ]
-            }
-          ]
-        }
-      },
-      {
-        "id": "Patient.identifier:versichertennummer_pkv.use",
-        "path": "Patient.identifier.use",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:versichertennummer_pkv.type",
-        "path": "Patient.identifier.type",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:versichertennummer_pkv.value",
-        "path": "Patient.identifier.value",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:versichertennummer_pkv.assigner",
-        "path": "Patient.identifier.assigner",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:versichertennummer_pkv.assigner.identifier.type",
-        "path": "Patient.identifier.assigner.identifier.type",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:versichertennummer_pkv.assigner.identifier.system",
-        "path": "Patient.identifier.assigner.identifier.system",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:versichertennummer_pkv.assigner.identifier.value",
-        "path": "Patient.identifier.assigner.identifier.value",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.identifier:versichertennummer_pkv.assigner.display",
-        "path": "Patient.identifier.assigner.display",
-        "mustSupport": true
       },
       {
         "id": "Patient.name",
