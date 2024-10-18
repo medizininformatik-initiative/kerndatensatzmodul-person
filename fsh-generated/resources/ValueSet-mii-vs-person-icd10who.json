@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Person_ICD10WHO",
+  "id": "mii-vs-person-icd10who",
+  "title": "MII VS Person ICD-10-WHO",
+  "description": "MII VS Person ICD-10-WHO",
+  "url": "http://hl7.org/fhir/sid/icd-10/vs",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "vocab"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": true,
+  "date": "2024-10-18",
+  "version": "2025.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "copyright": "BfArM - Bundesinstitut für Arzneimittel und Medizinprodukte",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "version": "*"
+      }
+    ]
+  }
+}

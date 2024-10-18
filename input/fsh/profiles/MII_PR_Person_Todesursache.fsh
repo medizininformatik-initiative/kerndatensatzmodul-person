@@ -56,7 +56,7 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains icd10-who 1..1 MS
-//* code.coding from mii-vs-person-icd10who (required)
+* code.coding[icd10-who] from mii-vs-person-icd10who (required)
 * code.coding[icd10-who] ^patternCoding.system = "http://hl7.org/fhir/sid/icd-10"
 * code.coding[icd10-who].system 1.. MS
 * code.coding[icd10-who].version 1.. MS
