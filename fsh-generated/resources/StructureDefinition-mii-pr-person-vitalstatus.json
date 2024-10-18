@@ -404,7 +404,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Fall oder Kontakt"
+                  "valueString": "Zeitpunkt"
                 }
               ]
             },
@@ -417,7 +417,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Encounter"
+                  "valueString": "Point in time"
                 }
               ]
             }

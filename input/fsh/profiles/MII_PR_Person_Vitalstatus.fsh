@@ -50,8 +50,8 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * insert Translation(encounter ^definition, en-US, Encounter during which the vital status was determined.)
 * effective[x] 1.. MS
 * effective[x] only dateTime
-* insert Translation(effectiveDateTime ^short, de-DE, Fall oder Kontakt)
-* insert Translation(effectiveDateTime ^short, en-US, Encounter)
+* insert Translation(effectiveDateTime ^short, de-DE, Zeitpunkt)
+* insert Translation(effectiveDateTime ^short, en-US, Point in time)
 * insert Translation(effectiveDateTime ^definition, de-DE, Der Zeitpunkt\, zu dem der beobachtete Vitalstatus als wahr festgestellt wird.)
 * insert Translation(effectiveDateTime ^definition, en-US, The time the observed vital status is asserted as being true.)
 * value[x] 1.. MS
