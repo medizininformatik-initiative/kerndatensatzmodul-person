@@ -8,4 +8,5 @@ Description: "Enthält alle Werte, die den Vitalstatus einer Person beschreiben.
 * insert Publisher
 * ^status = #active
 * ^date = "2024-11-06"
+* ^experimental = false
 * include codes from system MII_CS_Person_Vitalstatus
