@@ -10,14 +10,22 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * insert Translation(^description, en-US, Vital status of a patient.)
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^date = "2024-02-08"
+* ^date = "2024-11-05"
 * id MS
 * meta MS
 //* meta.source MS
 * meta.profile MS
 * status = #final (exactly)
 * status MS
+* status ^short = "Status"
+* status ^definition = "abgeschlossen"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* insert Translation(status ^definition, de-DE, abgeschlossen)
+* insert Translation(status ^definition, en-US, completed)
 * category MS
+* category ^short = "Kategorie"
+* category ^definition = "Klassifikation des Typs der Beobachtung für den Vitalstatus."
 * insert Translation(category ^short, de-DE, Kategorie)
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, Klassifikation des Typs der Beobachtung für den Vitalstatus.)
@@ -28,6 +36,8 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * category contains survey 1..1 MS
 * category[survey] = $observation-category#survey
 * code MS
+* code ^short = "Code"
+* code ^definition = "Ein LOINC Code, der die Vitalstatus Beobachtung identifiziert."
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, Ein LOINC Code\, der die Vitalstatus Beobachtung identifiziert.)
@@ -40,26 +50,38 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * code.coding[loinc] = $loinc#67162-8
 * code.coding[loinc].system 1.. MS
 * code.coding[loinc].code 1.. MS
+* code.coding[loinc] ^short = "LOINC Code"
+* code.coding[loinc] ^definition = "LOINC Code für Vitalstatus"
 * subject 1.. MS
 * subject only Reference(Patient or Group)
 //* subject only $MII-Reference
 * encounter MS
+* encounter ^short = "Fall oder Kontakt"
+* encounter ^definition = "Fall oder Kontakt, bei dem der Vitalstatus festgestellt wurde."
 * insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
 * insert Translation(encounter ^short, en-US, Encounter)
 * insert Translation(encounter ^definition, de-DE, Fall oder Kontakt\, bei dem der Vitalstatus festgestellt wurde.)
 * insert Translation(encounter ^definition, en-US, Encounter during which the vital status was determined.)
 * effective[x] 1.. MS
+* effective[x] ^short = "Zeitpunkt"
+* effective[x] ^definition = "Der Zeitpunkt, zu dem der beobachtete Vitalstatus als wahr festgestellt wird."
 * effective[x] only dateTime
+* effectiveDateTime ^short = "Zeitpunkt"
+* effectiveDateTime ^definition = "Der Zeitpunkt, zu dem der beobachtete Vitalstatus als wahr festgestellt wird."
 * insert Translation(effectiveDateTime ^short, de-DE, Zeitpunkt)
 * insert Translation(effectiveDateTime ^short, en-US, Point in time)
 * insert Translation(effectiveDateTime ^definition, de-DE, Der Zeitpunkt\, zu dem der beobachtete Vitalstatus als wahr festgestellt wird.)
 * insert Translation(effectiveDateTime ^definition, en-US, The time the observed vital status is asserted as being true.)
 * value[x] 1.. MS
 * value[x] only CodeableConcept
+* value[x] ^short = "Wert"
+* value[x] ^definition = "lebendig | verstorben | unbekannt"
 * insert Translation(value[x] ^short, de-DE, Wert)
 * insert Translation(value[x] ^short, en-US, Value)
 * insert Translation(value[x] ^definition, de-DE, lebendig | verstorben | unbekannt)
 * insert Translation(value[x] ^definition, en-US, alive | deceased | unknown)
+* valueCodeableConcept ^short = "Codierter Wert"
+* valueCodeableConcept ^definition = "Der codierte Wert für den Vitalstatus."
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
@@ -68,7 +90,11 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * valueCodeableConcept.coding[Vitalstatus] from MII_VS_Person_Vitalstatus (required)
 * valueCodeableConcept.coding[Vitalstatus].system 1.. MS
 * valueCodeableConcept.coding[Vitalstatus].code 1.. MS
+* valueCodeableConcept.coding[Vitalstatus] ^short = "Vitalstatus"
+* valueCodeableConcept.coding[Vitalstatus] ^definition = "Der Vitalstatus der Person."
 * note MS
+* note ^short = "Hinweis"
+* note ^definition = "Zusätzliche Informationen zum Vitalstatus als Freitext."
 * insert Translation(note ^short, de-DE, Hinweis)
 * insert Translation(note ^short, en-US, Note)
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zum Vitalstatus als Freitext.)

@@ -11,22 +11,28 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * insert PR_CS_VS_Version
 * insert Publisher
 * ^status = #active
-* ^date = "2024-02-08"
+* ^date = "2024-11-05"
 * id MS
 * meta MS
 //* meta.source MS
 * meta.profile MS
 * clinicalStatus MS
+* clinicalStatus ^short = "Klinischer Status"
+* clinicalStatus ^definition = "aktiv | Rezidiv | Rückfall | inaktiv | Remission | abgeklungen"
 * insert Translation(clinicalStatus ^short, de-DE, Klinischer Status)
 * insert Translation(clinicalStatus ^short, en-US, Clinical status)
 * insert Translation(clinicalStatus ^definition, de-DE, aktiv | Rezidiv | Rückfall | inaktiv | Remission | abgeklungen)
 * insert Translation(clinicalStatus ^definition, en-US, active | recurrence | relapse | inactive | remission | resolved)
 * verificationStatus MS
+* verificationStatus ^short = "Verifizierungsstatus"
+* verificationStatus ^definition = "unbestätigt | vorläufig | differential | bestätigt | widerlegt | fehlerhafte Eingabe"
 * insert Translation(verificationStatus ^short, de-DE, Verifizierungsstatus)
 * insert Translation(verificationStatus ^short, en-US, Verification status)
 * insert Translation(verificationStatus ^definition, de-DE, unbestätigt | vorläufig | differential | bestätigt | widerlegt | fehlerhafte Eingabe)
 * insert Translation(verificationStatus ^definition, en-US, unconfirmed | provisional | differential | confirmed | refuted | entered-in-error)
 * category MS
+* category ^short = "Kategorie"
+* category ^definition = "Eine Kategorie, die der Diagnose zugeordnet ist."
 * insert Translation(category ^short, de-DE, Kategorie)
 * insert Translation(category ^short, en-US, Category)
 * insert Translation(category ^definition, de-DE, Eine Kategorie\, die der Diagnose zugeordnet ist.)
@@ -47,6 +53,8 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * category[todesDiagnose].coding[snomed] = $sct-no-ver#16100001
 * category[todesDiagnose].coding[loinc] = $loinc#79378-6
 * code 1.. MS
+* code ^short = "Code"
+* code ^definition = "Ein ICD-10-WHO Code, der die Todesursache identifiziert."
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * insert Translation(code ^definition, de-DE, Ein ICD-10-WHO Code\, der die Todesursache identifiziert.)
@@ -61,19 +69,27 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * code.coding[icd10-who].system 1.. MS
 * code.coding[icd10-who].version 1.. MS
 * code.coding[icd10-who].code 1.. MS
+* code.coding[icd10-who] ^short = "ICD-10-WHO"
+* code.coding[icd10-who] ^definition = "Ein ICD-10-WHO Code, der die Todesursache identifiziert."
 * code.text MS
 * subject MS
 * encounter MS
+* encounter ^short = "Fall oder Kontakt"
+* encounter ^definition = "Fall oder Kontakt, bei dem die Todesursache festgestellt wurde."
 * insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
 * insert Translation(encounter ^short, en-US, Encounter)
 * insert Translation(encounter ^definition, de-DE, Fall oder Kontakt\, bei dem die Todesursache festgestellt wurde.)
 * insert Translation(encounter ^definition, en-US, Encounter during which the cause of death was determined.)
 * recordedDate MS
+* recordedDate ^short = "Aufzeichnungsdatum"
+* recordedDate ^definition = "Datum, an dem die Todesursache erstmals dokumentiert wurde."
 * insert Translation(recordedDate ^short, de-DE, Aufzeichnungsdatum)
 * insert Translation(recordedDate ^short, en-US, Recorded date)
 * insert Translation(recordedDate ^definition, de-DE, Datum\, an dem die Todesursache erstmals dokumentiert wurde.)
 * insert Translation(recordedDate ^definition, en-US, Date when the cause of death was first recorded.)
 * note MS
+* note ^short = "Hinweis"
+* note ^definition = "Zusätzliche Informationen zur Todesursache als Freitext."
 * insert Translation(note ^short, de-DE, Hinweis)
 * insert Translation(note ^short, en-US, Note)
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Todesursache als Freitext.)
