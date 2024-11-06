@@ -1,29 +1,21 @@
+
 - action: parse
   name: parse-fhir-resources 
   status: "Checking if all FHIR Resource files can be parsed"
   files:
-    - /**/*.xml
-    - /**/*.json
-    - "!package.json"
-    - "!fsh-index.json"
-    - "!menu.xml"
-    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
-    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
-    - "!/**/MII_IG_Person_DE_v2024.json"
-    - "!/**/MII_IG_Person_EN_v2024.json"
+  - /**/*.xml
+  - /**/*.json
+  - "!package.json"
+  - "!fsh-index.json"
+  - "!menu.xml"
 
 - name: resource-validation
   status: "Validating resources against the FHIR standard and their profiles"  
   action: validate
   category: Resource
   suppress: 
-    - 6005
-    - eld-16
-  files:
-    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
-    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
-    - "!/**/MII_IG_Person_DE_v2024.json"
-    - "!/**/MII_IG_Person_EN_v2024.json"
+  - 6005
+  - eld-16
 
 - action: unique
   name: unique-canonicals
@@ -31,10 +23,24 @@
   category: StructureDefinition
   unique: url 
 
+- include: manifest
+  file: package.json
+
+- name: no-snapshot
+  status: "Checking that structure definitions do not have a pre-generated snapshot"
+  category: StructureDefinition
+  predicate: snapshot.element.count() = 0
+  error-message: You should not generate a snapshot in your source. Allow consuming tools to generate the snapshot.
+
 - name: valid-ids
   status: Check for valid ids
   predicate: id.matches('^[A-Za-z0-9\\-\\.]{1,64}$')
   error-message: The resource must have a valid id
+
+- name: valid-names
+  category: StructureDefinition
+  predicate: name.contains(' ').not()
+  error-message: The name of a StructureDefinition should not contain spaces
 
 - name: unique-names
   category: Conformance
