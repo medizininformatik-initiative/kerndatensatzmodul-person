@@ -20,9 +20,6 @@
   - 6005
   - eld-16
   files:
-  - "!package.json"
-  - "!fsh-index.json"
-  - "!menu.xml"
   - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
   - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
   - "!/**/MII_IG_Person_DE_v2024.json"
@@ -44,11 +41,6 @@
   status: Check for valid ids
   predicate: id.matches('^[A-Za-z0-9\\-\\.]{1,64}$')
   error-message: The resource must have a valid id
-
-- name: valid-names
-  category: StructureDefinition
-  predicate: name.contains(' ').not()
-  error-message: The name of a StructureDefinition should not contain spaces
 
 - name: unique-names
   category: Conformance
