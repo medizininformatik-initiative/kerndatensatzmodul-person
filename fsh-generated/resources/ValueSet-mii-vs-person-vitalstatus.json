@@ -4,7 +4,13 @@
   "name": "MII_VS_Person_Vitalstatus",
   "id": "mii-vs-person-vitalstatus",
   "title": "MII VS Person Vitalstatus",
+  "description": "Enthält alle Werte, die den Vitalstatus einer Person beschreiben.",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
   "version": "2025.0.0",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -17,7 +23,7 @@
       ]
     }
   ],
-  "date": "2024-02-08",
+  "date": "2024-11-06",
   "compose": {
     "include": [
       {
