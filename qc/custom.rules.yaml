@@ -7,10 +7,10 @@
   - "!package.json"
   - "!fsh-index.json"
   - "!menu.xml"
-  - "!medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
-  - "!medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
-  - "!MII_IG_Person_DE_v2024.json"
-  - "!MII_IG_Person_EN_v2024.json"
+  - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+  - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+  - "!/**/MII_IG_Person_DE_v2024.json"
+  - "!/**/MII_IG_Person_EN_v2024.json"
 
 - name: resource-validation
   status: "Validating resources against the FHIR standard and their profiles"  
@@ -23,10 +23,10 @@
   - "!package.json"
   - "!fsh-index.json"
   - "!menu.xml"
-  - "!medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
-  - "!medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
-  - "!MII_IG_Person_DE_v2024.json"
-  - "!MII_IG_Person_EN_v2024.json"
+  - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+  - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+  - "!/**/MII_IG_Person_DE_v2024.json"
+  - "!/**/MII_IG_Person_EN_v2024.json"
 
 - action: unique
   name: unique-canonicals
@@ -64,10 +64,10 @@
     - /**/*.json
     - "!package.json"
     - "!/**/icd10who*.json"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
-    - "!MII_IG_Person_DE_v2024.json"
-    - "!MII_IG_Person_EN_v2024.json"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+    - "!/**/MII_IG_Person_DE_v2024.json"
+    - "!/**/MII_IG_Person_EN_v2024.json"
 
 - action: Check for valid ids
   # See https://github.com/FirelyTeam/firely-net-sdk/issues/1773
@@ -83,10 +83,10 @@
     - /**/*.json
     - "!package.json"
     - "!/**/icd10who*.json"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
-    - "!MII_IG_Person_DE_v2024.json"
-    - "!MII_IG_Person_EN_v2024.json"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+    - "!/**/MII_IG_Person_DE_v2024.json"
+    - "!/**/MII_IG_Person_EN_v2024.json"
 
 - name: naming-convention-name
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
@@ -98,10 +98,10 @@
     - /**/*.json
     - "!package.json"
     - "!/**/icd10who*.json"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
-    - "!MII_IG_Person_DE_v2024.json"
-    - "!MII_IG_Person_EN_v2024.json"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+    - "!/**/MII_IG_Person_DE_v2024.json"
+    - "!/**/MII_IG_Person_EN_v2024.json"
 
 - name: naming-convention-title
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
@@ -113,10 +113,10 @@
     - /**/*.json
     - "!package.json"
     - "!/**/icd10who*.json"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
-    - "!MII_IG_Person_DE_v2024.json"
-    - "!MII_IG_Person_EN_v2024.json"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+    - "!/**/MII_IG_Person_DE_v2024.json"
+    - "!/**/MII_IG_Person_EN_v2024.json"
 
 - name: naming-convention-url
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
@@ -128,8 +128,7 @@
     - /**/*.json
     - "!package.json"
     - "!/**/icd10who*.json"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
-    - "!medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
-    - "!MII_IG_Person_DE_v2024.json"
-    - "!MII_IG_Person_EN_v2024.json"
-    - "!ValueSet-mii-vs-person-icd10who.json"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+    - "!/**/MII_IG_Person_DE_v2024.json"
+    - "!/**/MII_IG_Person_EN_v2024.json"
