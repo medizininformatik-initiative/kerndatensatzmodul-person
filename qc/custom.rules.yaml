@@ -76,4 +76,4 @@
     - /**/*.xml
     - /**/*.json
     - "!package.json"
-    - "!/**/icd10who*.json"
+    - "!/**/*icd10who*.json"
