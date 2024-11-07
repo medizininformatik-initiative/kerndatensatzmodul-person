@@ -1,5 +1,18 @@
-- include: recommended
-  name: include-recommended
+ # This is the minimal rule series
+
+- action: parse
+  name: parse-fhir-resources 
+  status: "Checking if all FHIR Resource files can be parsed"
+  files:
+  - /**/*.xml
+  - /**/*.json
+  - "!package.json"
+  - "!fsh-index.json"
+  - "!menu.xml"
+  - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+  - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+  - "!/**/MII_IG_Person_DE_v2024.json"
+  - "!/**/MII_IG_Person_EN_v2024.json"
 
 - name: version-filled
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()  # Excluding NamingSystem as they have no version
