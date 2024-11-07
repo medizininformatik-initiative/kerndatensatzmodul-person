@@ -1,16 +1,34 @@
-- include: recommended
-  name: include-recommended
+ # This is the minimal rule series
+
+- action: parse
+  name: parse-fhir-resources 
+  status: "Checking if all FHIR Resource files can be parsed"
+  files:
+  - /**/*.xml
+  - /**/*.json
+  - "!package.json"
+  - "!/**/fsh-index.json"
+  - "!/**/fhirpkg.lock.json"
+  - "!/**/menu.xml"
+  - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+  - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+  - "!/**/MII_IG_Person_DE_v2024.json"
+  - "!/**/MII_IG_Person_EN_v2024.json"
 
 - name: version-filled
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()  # Excluding NamingSystem as they have no version
   status: "Checking if all resources have version filled"
-  predicate: version.exists() and (version in ('2025.0.0') or version in ('2024.0.0') or version in ('2024.0.0-ballot') or version in ('1.0.16'))
+  predicate: version.exists() and (version in ('2025.0.0'))
   error-message: "version not filled (correctly)"
   files:
     - /**/*.xml
     - /**/*.json
     - "!package.json"
     - "!/**/icd10who*.json"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+    - "!/**/MII_IG_Person_DE_v2024.json"
+    - "!/**/MII_IG_Person_EN_v2024.json"
 
 - action: Check for valid ids
   # See https://github.com/FirelyTeam/firely-net-sdk/issues/1773
@@ -58,4 +76,4 @@
     - /**/*.xml
     - /**/*.json
     - "!package.json"
-    - "!/**/icd10who*.json"
+    - "!/**/*icd10who*.json"

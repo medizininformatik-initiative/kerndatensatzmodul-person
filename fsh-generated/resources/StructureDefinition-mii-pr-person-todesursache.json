@@ -36,7 +36,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-02-08",
+  "date": "2024-11-05",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -105,7 +105,7 @@
       {
         "id": "Condition.clinicalStatus",
         "path": "Condition.clinicalStatus",
-        "mustSupport": true,
+        "short": "Klinischer Status",
         "_short": {
           "extension": [
             {
@@ -136,6 +136,7 @@
             }
           ]
         },
+        "definition": "aktiv | Rezidiv | Rückfall | inaktiv | Remission | abgeklungen",
         "_definition": {
           "extension": [
             {
@@ -165,12 +166,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Condition.verificationStatus",
         "path": "Condition.verificationStatus",
-        "mustSupport": true,
+        "short": "Verifizierungsstatus",
         "_short": {
           "extension": [
             {
@@ -201,6 +203,7 @@
             }
           ]
         },
+        "definition": "unbestätigt | vorläufig | differential | bestätigt | widerlegt | fehlerhafte Eingabe",
         "_definition": {
           "extension": [
             {
@@ -230,7 +233,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Condition.category",
@@ -244,8 +248,7 @@
           ],
           "rules": "open"
         },
-        "min": 1,
-        "mustSupport": true,
+        "short": "Kategorie",
         "_short": {
           "extension": [
             {
@@ -276,6 +279,7 @@
             }
           ]
         },
+        "definition": "Eine Kategorie, die der Diagnose zugeordnet ist.",
         "_definition": {
           "extension": [
             {
@@ -305,7 +309,9 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Condition.category:todesDiagnose",
@@ -369,8 +375,7 @@
       {
         "id": "Condition.code",
         "path": "Condition.code",
-        "min": 1,
-        "mustSupport": true,
+        "short": "Code",
         "_short": {
           "extension": [
             {
@@ -401,6 +406,7 @@
             }
           ]
         },
+        "definition": "Ein ICD-10-WHO Code, der die Todesursache identifiziert.",
         "_definition": {
           "extension": [
             {
@@ -430,7 +436,9 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Condition.code.coding",
@@ -451,6 +459,8 @@
         "id": "Condition.code.coding:icd10-who",
         "path": "Condition.code.coding",
         "sliceName": "icd10-who",
+        "short": "ICD-10-WHO",
+        "definition": "Ein ICD-10-WHO Code, der die Todesursache identifiziert.",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -493,7 +503,7 @@
       {
         "id": "Condition.encounter",
         "path": "Condition.encounter",
-        "mustSupport": true,
+        "short": "Fall oder Kontakt",
         "_short": {
           "extension": [
             {
@@ -524,6 +534,7 @@
             }
           ]
         },
+        "definition": "Fall oder Kontakt, bei dem die Todesursache festgestellt wurde.",
         "_definition": {
           "extension": [
             {
@@ -553,12 +564,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Condition.recordedDate",
         "path": "Condition.recordedDate",
-        "mustSupport": true,
+        "short": "Aufzeichnungsdatum",
         "_short": {
           "extension": [
             {
@@ -589,6 +601,7 @@
             }
           ]
         },
+        "definition": "Datum, an dem die Todesursache erstmals dokumentiert wurde.",
         "_definition": {
           "extension": [
             {
@@ -618,12 +631,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Condition.note",
         "path": "Condition.note",
-        "mustSupport": true,
+        "short": "Hinweis",
         "_short": {
           "extension": [
             {
@@ -654,6 +668,7 @@
             }
           ]
         },
+        "definition": "Zusätzliche Informationen zur Todesursache als Freitext.",
         "_definition": {
           "extension": [
             {
@@ -683,7 +698,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       }
     ]
   }

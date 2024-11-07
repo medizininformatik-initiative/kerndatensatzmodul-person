@@ -36,7 +36,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-02-08",
+  "date": "2024-11-05",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -105,6 +105,68 @@
       {
         "id": "Observation.status",
         "path": "Observation.status",
+        "short": "Status",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "abgeschlossen",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "abgeschlossen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "completed"
+                }
+              ]
+            }
+          ]
+        },
         "fixedCode": "final",
         "mustSupport": true
       },
@@ -120,8 +182,7 @@
           ],
           "rules": "open"
         },
-        "min": 1,
-        "mustSupport": true,
+        "short": "Kategorie",
         "_short": {
           "extension": [
             {
@@ -152,6 +213,7 @@
             }
           ]
         },
+        "definition": "Klassifikation des Typs der Beobachtung für den Vitalstatus.",
         "_definition": {
           "extension": [
             {
@@ -181,7 +243,9 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "Observation.category:survey",
@@ -202,7 +266,7 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "mustSupport": true,
+        "short": "Code",
         "_short": {
           "extension": [
             {
@@ -233,6 +297,7 @@
             }
           ]
         },
+        "definition": "Ein LOINC Code, der die Vitalstatus Beobachtung identifiziert.",
         "_definition": {
           "extension": [
             {
@@ -262,7 +327,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.code.coding",
@@ -283,6 +349,8 @@
         "id": "Observation.code.coding:loinc",
         "path": "Observation.code.coding",
         "sliceName": "loinc",
+        "short": "LOINC Code",
+        "definition": "LOINC Code für Vitalstatus",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -321,7 +389,7 @@
       {
         "id": "Observation.encounter",
         "path": "Observation.encounter",
-        "mustSupport": true,
+        "short": "Fall oder Kontakt",
         "_short": {
           "extension": [
             {
@@ -352,6 +420,7 @@
             }
           ]
         },
+        "definition": "Fall oder Kontakt, bei dem der Vitalstatus festgestellt wurde.",
         "_definition": {
           "extension": [
             {
@@ -381,18 +450,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true,
+        "short": "Zeitpunkt",
         "_short": {
           "extension": [
             {
@@ -423,6 +487,7 @@
             }
           ]
         },
+        "definition": "Der Zeitpunkt, zu dem der beobachtete Vitalstatus als wahr festgestellt wird.",
         "_definition": {
           "extension": [
             {
@@ -452,18 +517,19 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "min": 1,
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mustSupport": true,
+        "short": "Codierter Wert",
         "_short": {
           "extension": [
             {
@@ -494,6 +560,7 @@
             }
           ]
         },
+        "definition": "Der codierte Wert für den Vitalstatus.",
         "_definition": {
           "extension": [
             {
@@ -523,7 +590,14 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x].coding",
@@ -544,6 +618,8 @@
         "id": "Observation.value[x].coding:Vitalstatus",
         "path": "Observation.value[x].coding",
         "sliceName": "Vitalstatus",
+        "short": "Vitalstatus",
+        "definition": "Der Vitalstatus der Person.",
         "min": 1,
         "max": "1",
         "mustSupport": true,
@@ -567,7 +643,7 @@
       {
         "id": "Observation.note",
         "path": "Observation.note",
-        "mustSupport": true,
+        "short": "Hinweis",
         "_short": {
           "extension": [
             {
@@ -598,6 +674,7 @@
             }
           ]
         },
+        "definition": "Zusätzliche Informationen zum Vitalstatus als Freitext.",
         "_definition": {
           "extension": [
             {
@@ -627,7 +704,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.bodySite",
