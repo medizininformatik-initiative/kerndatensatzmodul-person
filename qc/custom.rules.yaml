@@ -7,8 +7,9 @@
   - /**/*.xml
   - /**/*.json
   - "!package.json"
-  - "!fsh-index.json"
-  - "!menu.xml"
+  - "!/**/fsh-index.json"
+  - "!/**/fhirpkg.lock.json"
+  - "!/**/menu.xml"
   - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
   - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
   - "!/**/MII_IG_Person_DE_v2024.json"
@@ -24,6 +25,10 @@
     - /**/*.json
     - "!package.json"
     - "!/**/icd10who*.json"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-DE.xml"
+    - "!/**/medizininformatikinitiative-modulperson-implementationguide-1.x-en.xml"
+    - "!/**/MII_IG_Person_DE_v2024.json"
+    - "!/**/MII_IG_Person_EN_v2024.json"
 
 - action: Check for valid ids
   # See https://github.com/FirelyTeam/firely-net-sdk/issues/1773
