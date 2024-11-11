@@ -30,6 +30,6 @@
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
     "de.basisprofil.r4": "1.5.0",
-    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.0-alpha3"
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.0-alpha4"
   }
 }
