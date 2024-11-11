@@ -11,6 +11,10 @@ expand: 1
 
 ## {{link}}
 
+| Hinweis |  |
+|---------|---------------------|
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | Dieses Profil hat den status [retired](http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired). Beginnend mit Version 2025.0.0 wird dieses Profil im Modul Studie veröffentlicht und weiterentwickelt. |
+
 **Beschreibung**
 
 Dieses Profil beschreibt eine ProbandIn in der Medizininformatik-Initiative.

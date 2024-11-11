@@ -6,8 +6,8 @@ Description: "Dieses Profil beschreibt eine Proband*in in der Medizininformatik-
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^status = #active
-* ^date = "2024-02-08"
+* ^status = #retired
+* ^date = "2024-11-11"
 * id MS
 * meta MS
 //* meta.source MS
