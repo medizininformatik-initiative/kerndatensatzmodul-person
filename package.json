@@ -25,10 +25,11 @@
       "url" : "https://www.medizininformatik-initiative.de/"
     }
   ],
-  "canonicals": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person-de-v2024",
+  "canonicals": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ImplementationGuide/mii-ig-person",
   "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
   "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
     "de.basisprofil.r4": "1.5.0",
-    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.0-alpha1"
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.0-alpha3"
   }
 }
