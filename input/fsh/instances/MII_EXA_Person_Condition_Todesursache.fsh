@@ -1,6 +1,7 @@
 Instance: mii-exa-person-condition-todesursache
 InstanceOf: MII_PR_Person_Todesursache
 Usage: #example
+* insert TestDataLabel
 * meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2025.0.0"
 //* category[todesDiagnose].coding[snomed].display = "Death diagnosis (contextual qualifier) (qualifier value)"
 //* category[todesDiagnose].coding[loinc].display = "Cause of death"
