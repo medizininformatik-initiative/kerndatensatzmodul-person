@@ -3,11 +3,12 @@ InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CapabilityStatement/metadata"
 * insert Version
+* insert LicenseCodeableCCBY40Instance
 * name = "MII_CPS_Person_CapabilityStatement"
 * title = "MII CPS Person CapabilityStatement"
 * status = #active
 * experimental = false
-* date = "2024-10-18"
+* date = "2024-12-04"
 * publisher = "Medizininformatik Initiative"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.medizininformatik-initiative.de"

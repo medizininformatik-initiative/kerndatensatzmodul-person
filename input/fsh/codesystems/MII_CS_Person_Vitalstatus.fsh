@@ -6,7 +6,8 @@ Description: "Vitalstatus des Patienten"
 * insert PR_CS_VS_Version
 * ^status = #active
 * insert Publisher
-* ^date = "2024-02-08"
+* insert LicenseCodeableCCBY40
+* ^date = "2024-12-04"
 * ^caseSensitive = true
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus"
 * ^content = #complete

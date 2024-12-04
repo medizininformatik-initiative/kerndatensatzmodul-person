@@ -10,8 +10,9 @@ Description: "Dieses Profil beschreibt den Todesursache der Patient*in als Eleme
 * insert Translation(^description, en-US, Cause of death of the deceased patient.)
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * ^status = #active
-* ^date = "2024-11-05"
+* ^date = "2024-12-04"
 * id MS
 * meta MS
 //* meta.source MS

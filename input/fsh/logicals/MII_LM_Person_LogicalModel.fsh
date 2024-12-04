@@ -6,7 +6,8 @@ Description: "Logische Repräsentation des Basismoduls Person"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/LogicalModel/Person"
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^date = "2024-02-08"
+* insert LicenseCodeableCCBY40
+* ^date = "2024-12-04"
 * . ^short = "-- Überschrift --"
 * . insert Translation(^short, en, -- Heading --)
 * Name 0..* BackboneElement "Vollständiger Name einer Person." "Vollständiger Name einer Person."

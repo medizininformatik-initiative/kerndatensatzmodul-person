@@ -1,12 +1,26 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-lm-person",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/LogicalModel/Person",
   "version": "2025.0.0",
   "name": "MII_LM_Person",
   "title": "MII LM Person",
   "status": "active",
-  "date": "2024-02-08",
+  "date": "2024-12-04",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

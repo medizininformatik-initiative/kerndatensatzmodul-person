@@ -25,7 +25,7 @@ from
 where 
     url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert' 
 select 
-    Name: name, Status: status, Version: version, Canonical: url, Basis: baseDefinition
+    Name: name, Status: status, Version: version, Lizenz: extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable').value.coding.code, Canonical: url, Basis: baseDefinition
 ```
 
 ### Inhalt
