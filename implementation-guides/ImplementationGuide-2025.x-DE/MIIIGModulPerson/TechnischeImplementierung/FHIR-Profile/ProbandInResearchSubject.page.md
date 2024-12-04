@@ -171,11 +171,3 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
     Anwendungshinweise: Weitere Informationen zur Suche nach "ResearchStudy.consent" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
 
 ---
-
-**Beispiele**
-
-Beispiel (vollständig):
-
-{{json:fsh-generated/resources/Patient-mii-exa-person-patient-pseudonymisiert.json}}
-
----

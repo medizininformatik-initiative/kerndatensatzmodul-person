@@ -8,8 +8,9 @@ Description: "MII VS Person ICD-10-WHO"
 * ^url = "http://hl7.org/fhir/sid/icd-10/vs"
 * ^status = #active
 * ^experimental = true
-* ^date = "2024-10-18"
+* ^date = "2024-12-04"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * ^copyright = "BfArM - Bundesinstitut für Arzneimittel und Medizinprodukte"
 * include codes from system http://hl7.org/fhir/sid/icd-10|*

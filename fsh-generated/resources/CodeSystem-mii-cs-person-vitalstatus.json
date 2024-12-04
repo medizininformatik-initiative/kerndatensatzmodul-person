@@ -49,7 +49,21 @@
       ]
     }
   ],
-  "date": "2024-02-08",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "date": "2024-12-04",
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus",
   "count": 7

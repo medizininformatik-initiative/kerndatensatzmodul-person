@@ -1,6 +1,7 @@
 Instance: mii-exa-person-patient-minimal
 InstanceOf: MII_PR_Person_Patient
 Usage: #example
+* insert TestDataLabel
 * meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2025.0.0"
 * identifier[0].use = #usual
 * identifier[=].type = $v2-0203#MR

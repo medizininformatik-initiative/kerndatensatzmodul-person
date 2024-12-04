@@ -10,7 +10,8 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 * insert Translation(^description, en-US, Demographics and other administrative information about a patient.)
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^date = "2024-11-20"
+* insert LicenseCodeableCCBY40
+* ^date = "2024-12-04"
 * obeys mii-pat-1
 * id MS
 * meta MS

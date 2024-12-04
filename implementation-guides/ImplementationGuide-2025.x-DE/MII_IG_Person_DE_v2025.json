@@ -30,7 +30,7 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
-      "version": "2025.0.0-alpha1",
+      "version": "2025.0.0",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
       "id": "de_medizininformatikinitiative_kerndatensatz_meta"
     }

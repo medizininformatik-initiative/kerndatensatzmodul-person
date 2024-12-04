@@ -1,6 +1,7 @@
 Instance: mii-exa-person-patient-pseudonymisiert
 InstanceOf: MII_PR_Person_PatientPseudonymisiert
 Usage: #example
+* insert TestDataLabel
 * meta.profile[0] = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert|2025.0.0"
 * identifier.use = #usual
 * identifier.type = $v3-ObservationValue#PSEUDED

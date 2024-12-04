@@ -6,7 +6,8 @@ Description: "Enthält alle Werte, die den Vitalstatus einer Person beschreiben.
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * ^status = #active
-* ^date = "2024-11-06"
+* ^date = "2024-12-04"
 * ^experimental = false
 * include codes from system MII_CS_Person_Vitalstatus

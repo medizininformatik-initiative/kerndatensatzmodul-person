@@ -10,7 +10,8 @@ Description: "Dieses Profil beschreibt den Vitalstatus der Patient*in in der Med
 * insert Translation(^description, en-US, Vital status of a patient.)
 * insert PR_CS_VS_Version
 * insert Publisher
-* ^date = "2024-11-05"
+* insert LicenseCodeableCCBY40
+* ^date = "2024-12-04"
 * id MS
 * meta MS
 //* meta.source MS
