@@ -157,56 +157,56 @@ Usage: #definition
 * rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHALL
 * rest.resource[=].type = #ResearchSubject
-* rest.resource[=].supportedProfile = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2025.0.0"
-* rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].interaction[=].extension.valueCode = #SHALL
-* rest.resource[=].interaction[=].code = #read
-* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].interaction[=].extension.valueCode = #SHALL
-* rest.resource[=].interaction[=].code = #search-type
-* rest.resource[=].searchParam[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
-* rest.resource[=].searchParam[=].name = "_id"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
-* rest.resource[=].searchParam[=].name = "_profile"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-profile"
-* rest.resource[=].searchParam[=].type = #uri
-* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
-* rest.resource[=].searchParam[=].name = "identifier"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-identifier"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
-* rest.resource[=].searchParam[=].name = "status"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-status"
-* rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
-* rest.resource[=].searchParam[=].name = "date"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-date"
-* rest.resource[=].searchParam[=].type = #date
-* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
-* rest.resource[=].searchParam[=].name = "study"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-study"
-* rest.resource[=].searchParam[=].type = #reference
-* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
-* rest.resource[=].searchParam[=].name = "individual"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-individual"
-* rest.resource[=].searchParam[=].type = #reference
-* rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].searchParam[=].extension.valueCode = #SHALL
-* rest.resource[=].searchParam[=].name = "consent"
-* rest.resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent"
-* rest.resource[=].searchParam[=].type = #reference
-* rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].type = #Observation
+// * rest.resource[=].supportedProfile = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2025.0.0"
+// * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].interaction[=].extension.valueCode = #SHALL
+// * rest.resource[=].interaction[=].code = #read
+// * rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].interaction[=].extension.valueCode = #SHALL
+// * rest.resource[=].interaction[=].code = #search-type
+// * rest.resource[=].searchParam[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+// * rest.resource[=].searchParam[=].name = "_id"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+// * rest.resource[=].searchParam[=].name = "_profile"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Resource-profile"
+// * rest.resource[=].searchParam[=].type = #uri
+// * rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+// * rest.resource[=].searchParam[=].name = "identifier"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-identifier"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+// * rest.resource[=].searchParam[=].name = "status"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-status"
+// * rest.resource[=].searchParam[=].type = #token
+// * rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+// * rest.resource[=].searchParam[=].name = "date"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-date"
+// * rest.resource[=].searchParam[=].type = #date
+// * rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+// * rest.resource[=].searchParam[=].name = "study"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-study"
+// * rest.resource[=].searchParam[=].type = #reference
+// * rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+// * rest.resource[=].searchParam[=].name = "individual"
+// * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/ResearchSubject-individual"
+// * rest.resource[=].searchParam[=].type = #reference
+// * rest.resource[=].searchParam[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
+// * rest.resource[=].searchParam[=].name = "consent"
+// * rest.resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent"
+// * rest.resource[=].searchParam[=].type = #reference
+// * rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].extension.valueCode = #SHALL
+// * rest.resource[=].type = #Observation
 * rest.resource[=].supportedProfile = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2025.0.0"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
