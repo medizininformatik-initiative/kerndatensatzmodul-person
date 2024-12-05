@@ -8,7 +8,7 @@ Usage: #definition
 * title = "MII CPS Person CapabilityStatement"
 * status = #active
 * experimental = false
-* date = "2024-12-04"
+* date = "2024-12-05"
 * publisher = "Medizininformatik Initiative"
 * contact.telecom.system = #url
 * contact.telecom.value = "https://www.medizininformatik-initiative.de"
@@ -154,9 +154,9 @@ Usage: #definition
 * rest.resource[=].searchParam[=].name = "link"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Patient-link"
 * rest.resource[=].searchParam[=].type = #reference
-* rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].extension.valueCode = #SHALL
-* rest.resource[=].type = #ResearchSubject
+// * rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+// * rest.resource[=].extension.valueCode = #SHALL
+// * rest.resource[=].type = #ResearchSubject
 // * rest.resource[=].supportedProfile = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2025.0.0"
 // * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 // * rest.resource[=].interaction[=].extension.valueCode = #SHALL
@@ -204,9 +204,9 @@ Usage: #definition
 // * rest.resource[=].searchParam[=].name = "consent"
 // * rest.resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent"
 // * rest.resource[=].searchParam[=].type = #reference
-// * rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-// * rest.resource[=].extension.valueCode = #SHALL
-// * rest.resource[=].type = #Observation
+* rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].extension.valueCode = #SHALL
+* rest.resource[=].type = #Observation
 * rest.resource[=].supportedProfile = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2025.0.0"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
