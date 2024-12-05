@@ -15,6 +15,8 @@ expand: 1
 
 Dieses Profil beschreibt den Todesursache der PatientIn als Element des Kerndatensatzes Medizininformatik-Initiative.
 
+Die Todesursache MUSS mittels ICD-10-WHO codiert werden. Das Condition-Profil für die Todesursache unterscheidet sich an dieser Stelle (`Condition.code`) bewusst vom Condition-Profil im Modul Diagnose, welches die ICD-10-GM verwendet. Grund dafür ist, dass in Deutschland die ICD-10-WHO als Grundlage für die Todesursachenstatistik vom Gesetzgeber vorgeschrieben ist, siehe (Todesursachenstatistik beim Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM))[https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-10-WHO/Todesursachenstatistik/_node.html].
+
 @```
 from 
     StructureDefinition 
@@ -67,7 +69,7 @@ select
 | Condition.meta       | Must-support, jedoch OPTIONAL         |
 | Condition.meta.profile       | VERPFLICHTEND für die Abfrage im DIZ-Repsoitory inkl Versionsnummer des Profils. Siehe {{pagelink:PersonCapabilityStatement}}. In allen anderen Fällen OPTIONAL.         |
 | Condition.category       | Fixed LOINC und SNOMED-Code MÜSSEN vorhanden sein, weitere Codings OPTIONAL.         |
-| Condition.code       | Kodierung per ICD-10-WHO VERPFLICHTEND, weitere Codings OPTIONAL. Weitere Infos siehe [BFARM](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-10-WHO/Todesursachenstatistik/_node.html).|
+| Condition.code       | Kodierung per ICD-10-WHO VERPFLICHTEND, weitere Codings OPTIONAL. Weitere Infos siehe [BfArM](https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ICD/ICD-10-WHO/Todesursachenstatistik/_node.html).|
 | Condition.subject       | Patientenbezug MUSS stets gegeben sein.         |
 
 ---
