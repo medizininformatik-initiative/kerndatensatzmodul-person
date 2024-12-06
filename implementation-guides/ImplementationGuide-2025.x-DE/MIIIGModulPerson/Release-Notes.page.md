@@ -1,8 +1,9 @@
 ## {{page-title}}
 
 **Version: 2025.0.0**
+
 - Dependency auf de.basisprofil.r4 aktualisiert auf Version 1.5.0
-- Dadurch Änderung im Profil Patient:in in `Patient.identifier`:  GKV und PKV Krankenversichertennummer jetzt einheitliches Identifier-Profil. `Patient.identifier.type` MUSS auf `KVZ10` geändert werden für Krankenversichertennummern.
+-   Dadurch Änderung im Profil {{pagelink: PersonPatientIn, text: Patient:in (Patient), hint: MII_PR_Person_Patient}} im Element `Patient.identifier`:  GKV- und PKV-Krankenversichertennummern verwenden jetzt ein einheitliches Identifier-Profil [IdentifierKvid10](https://simplifier.net/packages/de.basisprofil.r4/1.5.0/files/2461154). `Patient.identifier.type` MUSS auf `KVZ10` geändert werden für Krankenversichertennummern.
 - Das Profil {{pagelink: PersonProbandIn, text: Proband:in (ResearchSubject), hint: MII_PR_Person_Proband}} wurde [retired](http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired) und wird nun durch das Modul Studie veröffentlicht.
 - CodeSystem ICD-10-WHO v2019 und v2016 wurden entfernt. Diese können nun über die Service Unit Terminologische Dienste (SU-TermServ) bezogen werden.
 - Suchparameter aus diesem Modul wurden entfernt. SearchParameter-Ressourcen werden nun zentral im Modul Meta verwaltet.

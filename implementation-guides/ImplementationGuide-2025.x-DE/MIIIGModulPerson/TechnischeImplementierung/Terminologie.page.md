@@ -18,6 +18,6 @@ parent:
 
 **VitalStatus**
 
-Das VitalStatus-CodeSystem wurde auf eigenständig durch die Medizininformatik-Initative entwickelt, da keine entsprechenden LOINC Answer Sets gefunden wurden. Es basiert teilweise auf der Basisdokumentation für Tumorkranke herausgegeben durch die Arbeitsgemeinschaft Deutscher Tumorzentren.
+Das VitalStatus-CodeSystem wurde auf eigenständig durch die Medizininformatik-Initative entwickelt, da keine entsprechenden LOINC Answer Sets gefunden wurden. Es basiert teilweise auf der Basisdokumentation für Tumorkranke, herausgegeben durch die Arbeitsgemeinschaft Deutscher Tumorzentren.
 
 {{render:https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus}}
