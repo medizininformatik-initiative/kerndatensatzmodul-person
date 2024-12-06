@@ -15,7 +15,7 @@ expand: 1
 
 Vitalstatus der PatientIn. Für jede Beobachtung/Angabe des Vitalstatus einer PatientIn MUSS eine neue Observation-Instanz erzeugt werden. Alle Observation-Instanzen sind als `status='final'` einzustufen.
 
-Mindestens bei jeder Aufnahme / Entlassung der PatientIn SOLLTE ein Vitalstatus ("Letzter bekannter Lebenszeitpunkt") anlassbezogen als Observation erstellt werden. Die Häufigkeit der Erhebung ist ansonsten nicht weiter geregelt und kann variieren, da die Quelldaten oft nur schwer zu erschließen sind - beispielsweise nur durch manuelle Recherche, wie Kontaktaufnahme oder öffentliche Informationen (Todesanzeigen). Es ist zu beachten, dass die administrative Entlassung der PatientIn auch aufgrund des Todes dokumentiert wurde (siehe Modul Fall - Entlassungsgrund). 
+Mindestens bei jeder Aufnahme / Entlassung der PatientIn SOLL ein Vitalstatus ("Letzter bekannter Lebenszeitpunkt") anlassbezogen als Observation erstellt werden. Die Häufigkeit der Erhebung ist ansonsten nicht weiter geregelt und kann variieren, da die Quelldaten oft nur schwer zu erschließen sind - beispielsweise nur durch manuelle Recherche, wie Kontaktaufnahme oder öffentliche Informationen (Todesanzeigen). Die administrative Entlassung der PatientIn aufgrund des Todes SOLL dokumentiert werden (siehe Modul Fall - Entlassungsgrund) und KANN als Datenquelle für den Vitalstatus nützlich sein.
 
 @```
 from 
