@@ -9,7 +9,7 @@ Im Folgenden werden die Use-Case des Moduls sowie die dazuhegörigen FHIR-Profil
 | Veröffentlichung   |   |
 |---------|---|
 | Datum   | 06.12.2024   |
-| Version | 2025.0.0 |
+| Version | 2025.0.1 |
 | Status  | Active       |
 | Realm   | DE           | 
 
