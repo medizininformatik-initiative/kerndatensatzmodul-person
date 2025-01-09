@@ -6,9 +6,9 @@ Description: "MII VS Person ICD-10-WHO"
 * ^extension[0].valueCode = #vocab
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^url = "http://hl7.org/fhir/sid/icd-10/vs"
-* ^status = #active
+* ^status = #retired
 * ^experimental = true
-* ^date = "2024-12-04"
+* ^date = "2025-01-09"
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
