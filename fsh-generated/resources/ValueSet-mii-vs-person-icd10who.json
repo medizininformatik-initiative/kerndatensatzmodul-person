@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "retired",
   "name": "MII_VS_Person_ICD10WHO",
   "id": "mii-vs-person-icd10who",
   "title": "MII VS Person ICD-10-WHO",
@@ -30,8 +30,8 @@
     ]
   },
   "experimental": true,
-  "date": "2024-12-04",
-  "version": "2025.0.0",
+  "date": "2025-01-09",
+  "version": "2025.0.1",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

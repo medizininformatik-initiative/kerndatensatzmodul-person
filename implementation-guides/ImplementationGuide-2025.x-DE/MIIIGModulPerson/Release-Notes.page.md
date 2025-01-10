@@ -2,6 +2,15 @@
 
 **Version: 2025.0.0**
 
+Datum 09.01.2025
+
+- ValueSet MII_VS_Person_ICD10WHO wurde [retired](http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired), da redundant. ICD-10-WHO CodeSystem verweist mittels `CodeSystem.valueSet` auf implizietes ICD-10-WHO ValueSet. Siehe: https://github.com/medizininformatik-initiative/kerndatensatzmodul-person/issues/86
+- Dependency aktualisiert auf [de.basisprofil.r4 1.5.1](https://simplifier.net/packages/de.basisprofil.r4/1.5.1). Dieses Release der FHIR-Basisprofile enthält einen Fix für die kvid-2-Invariante, die im Profil Patient:in (MII_PR_Person_Patient) auf `Patient.identifier` angewendet wird.
+
+**Version: 2025.0.0**
+
+Datum 06.12.2024
+
 - Dependency auf de.basisprofil.r4 aktualisiert auf Version 1.5.0
     - Dadurch Änderung im Profil {{pagelink: PersonPatientIn, text: Patient:in (Patient), hint: MII_PR_Person_Patient}} im Element `Patient.identifier`:  GKV- und PKV-Krankenversichertennummern verwenden jetzt ein einheitliches Identifier-Profil [IdentifierKvid10](https://simplifier.net/packages/de.basisprofil.r4/1.5.0/files/2461154). `Patient.identifier.type` MUSS auf `KVZ10` geändert werden für Krankenversichertennummern. Die zuvor verwendeten Codes `GKV` und `PKV` für `Patient.identifier.type` haben den Status `retired` (siehe [CodeSystem IdentifierTypeDeBasis](https://simplifier.net/packages/de.basisprofil.r4/1.5.0/files/2461165)). Patient-Ressourcen der Version 2024 sind weiterhin valide, SOLLTEN aber auf den neuen Identifier wechseln.
 - Das Profil {{pagelink: PersonProbandIn, text: Proband:in (ResearchSubject), hint: MII_PR_Person_Proband}} wurde [retired](http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired). Beginnend mit Version 2025.0.0 wird dieses Profil im Modul Studie veröffentlicht und weiterentwickelt. Implementierungen SOLLTEN auf die Modellierung aus dem Modul Studie wechseln. 
@@ -10,6 +19,8 @@
 - Profile enthalten zusätzliche Beschreibungen und Übersetzungen  für Implementierer und das Forschungsdatenportal für Gesundheit (FDPG).
 
 **Version: 2024.0.0**
+
+Datum 16.04.2024
 
 - Die veröffentlichten FHIR-Packages verwenden nun [Calender Versioning (CalVer)](https://calver.org/) nach dem Schema YYYY.MINOR.PATCH. Damit wird ein Releasezyklus im Jahresrhythmus etabliert. Die Jahresversion (YYYY) zeigt das Jahr an, in dem das Kerndatensatzmodul angewendet wird. MINOR-Versionen werden bei Einführung neuer Funktionen, Erweiterungen oder substantieller Änderungen veröffentlicht. PATCH-Versionen umfassen Bugfixes oder textuelle Korrekturen.
 - Die Benennung der Conformance-Ressourcen und Beispielinstanzen folgt nun einheitlichen [MII-Namenskonventionen](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Namenskonventionen-f%C3%BCr-FHIR%E2%80%90Ressourcen-in-der-MII).

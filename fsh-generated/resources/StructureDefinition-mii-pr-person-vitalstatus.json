@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus",
-  "version": "2025.0.0",
+  "version": "2025.0.1",
   "name": "MII_PR_Person_Vitalstatus",
   "title": "MII PR Person Vitalstatus",
   "_title": {
