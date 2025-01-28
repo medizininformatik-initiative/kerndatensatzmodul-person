@@ -12,4 +12,6 @@ jobs:
     uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_fhir_validation.yml@master
     with:
       ref: ${{ github.event.pull_request.head.ref }}
-    secrets: inherit
+    secrets: 
+      SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
+      SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
