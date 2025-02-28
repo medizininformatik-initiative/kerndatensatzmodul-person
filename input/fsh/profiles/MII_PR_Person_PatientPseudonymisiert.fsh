@@ -2,7 +2,7 @@ Profile: MII_PR_Person_PatientPseudonymisiert
 Parent: Patient
 Id: mii-pr-person-patient-pseudonymisiert
 Title: "MII PR Person Patient (Pseudonymisiert)"
-Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der Medizininformatik-Initiative."
+Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in der Medizininformatik-Initiative."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
 * insert Translation(^title, de-DE, Patient / Patientin pseudonymisiert)
 * insert Translation(^title, en-US, Patient pseudonymized)
@@ -11,7 +11,7 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
-* ^date = "2024-12-04"
+* ^date = "2025-02-27"
 * obeys mii-pat-1
 * id MS
 * meta MS
@@ -30,8 +30,18 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 * identifier contains
     PseudonymisierterIdentifier 0..* MS and
     AnonymisierterIdentifier 0..* MS
+* identifier[PseudonymisierterIdentifier] ^short = "Pseudonymisierter Identifikator"
+* identifier[PseudonymisierterIdentifier] ^definition = """
+    Ein Pseudonym ersetzt einen Originalwert. 
+    Die Verarbeitung ist umkehrbar. Zusätzliche Informationen sind erforderlich, um den Originalwert zu rekonstruieren, bspw. eine Trusted Third Party.
+    """
 * identifier[PseudonymisierterIdentifier] ^patternIdentifier.type = $v3-ObservationValue#PSEUDED
 * identifier[AnonymisierterIdentifier] ^patternIdentifier.type = $v3-ObservationValue#ANONYED
+* identifier[AnonymisierterIdentifier] ^short = "Anonymisierter Identifikator"
+* identifier[AnonymisierterIdentifier] ^definition = """
+    Ein Anonymisierter Identifikator ersetzt einen Originalwert. 
+    Die Verarbeitung ist unumkehrbar. Der Originalwert kann nicht oder nur mit unverhältnismäßigem Aufwand rekonstruiert werden.
+    """
 * active MS
 * active ^short = "Aktiv"
 * insert Translation(active ^short, de-DE, Aktiv)
@@ -56,6 +66,7 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 * insert Translation(gender.extension[other-amtlich] ^definition, de-DE, Extension zur genaueren Differenzierung des administrativen Geschlechts)
 * insert Translation(gender.extension[other-amtlich] ^definition, en-US, Extension for detailed differentiation of administrative gender)
 * birthDate MS
+* birthDate obeys pat-pseuded-1
 * birthDate ^short = "Geburtsdatum"
 * birthDate ^definition = "Das Geburtsdatum der Patientin oder des Patienten"
 * insert Translation(birthDate ^short, de-DE, Geburtsdatum)
@@ -96,7 +107,7 @@ Description: "Dieses Profil beschreibt eine pseudonymisierte Patient*in in der M
 //* address[Strassenanschrift].city ..0 MS
 * address[Strassenanschrift].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Strassenanschrift].postalCode 1.. MS
-//* address[Strassenanschrift].postalCode obeys PostleitzahlEinschraenkung
+* address[Strassenanschrift].postalCode obeys pat-pseuded-2
 * address[Strassenanschrift].country 1.. MS
 * address[Strassenanschrift] obeys pat-cnt-2or3-char
 * address[Strassenanschrift] ^short = "Straßenanschrift"

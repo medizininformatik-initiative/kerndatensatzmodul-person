@@ -15,7 +15,6 @@
   },
   "identifier": [
     {
-      "use": "usual",
       "type": {
         "coding": [
           {
@@ -28,7 +27,6 @@
       "value": "1234567890"
     }
   ],
-  "deceasedBoolean": false,
   "address": [
     {
       "type": "both",
@@ -36,21 +34,6 @@
       "country": "DE"
     }
   ],
-  "gender": "other",
-  "_gender": {
-    "extension": [
-      {
-        "url": "http://fhir.de/StructureDefinition/gender-amtlich-de",
-        "valueCoding": {
-          "code": "D",
-          "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
-          "display": "divers"
-        }
-      }
-    ]
-  },
-  "birthDate": "2022-04",
-  "managingOrganization": {
-    "reference": "Organization/Charite-Universitaetsmedizin-Berlin"
-  }
+  "gender": "male",
+  "birthDate": "2000-04-01"
 }
