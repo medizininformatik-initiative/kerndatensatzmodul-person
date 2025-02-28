@@ -21,7 +21,7 @@
   "title": "MII CPS Person CapabilityStatement",
   "status": "active",
   "experimental": false,
-  "date": "2024-12-05",
+  "date": "2025-02-28",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -64,7 +64,8 @@
           ],
           "type": "Patient",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2025.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2025.0.1",
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert|2025.0.1"
           ],
           "interaction": [
             {
@@ -87,6 +88,26 @@
             }
           ],
           "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "_count",
+              "type": "special"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "_summary",
+              "type": "special"
+            },
             {
               "extension": [
                 {
@@ -373,7 +394,7 @@
           ],
           "type": "Observation",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2025.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2025.0.1"
           ],
           "interaction": [
             {
@@ -396,6 +417,26 @@
             }
           ],
           "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "_count",
+              "type": "special"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "_summary",
+              "type": "special"
+            },
             {
               "extension": [
                 {
@@ -506,7 +547,7 @@
           ],
           "type": "Condition",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2025.0.0"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache|2025.0.1"
           ],
           "interaction": [
             {
@@ -529,6 +570,26 @@
             }
           ],
           "searchParam": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "_count",
+              "type": "special"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ],
+              "name": "_summary",
+              "type": "special"
+            },
             {
               "extension": [
                 {
