@@ -15,9 +15,9 @@
   - "!/**/MII_IG_Person_DE_v2024.json"
   - "!/**/MII_IG_Person_EN_v2024.json"
 
-- name: version-filled
+- name: conformance-version-filled
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()  # Excluding NamingSystem as they have no version
-  status: "Checking if all resources have version filled"
+  status: "Checking if all conformance resources have correct version filled"
   predicate: version.exists() and (version in ('2025.0.1'))
   error-message: "version not filled (correctly)"
   files:
@@ -30,6 +30,12 @@
     - "!/**/MII_IG_Person_DE_v2024.json"
     - "!/**/MII_IG_Person_EN_v2024.json"
     - "!/**/ValueSet-mii-vs-person-icd10who.json"
+
+- name: instance-version-filled
+  category: example 
+  status: "Checking if all instances have correct version filled"
+  predicate: select(meta.profile).where($this.startsWith('https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/') and $this.endsWith('2025.0.1')).exists()
+  error-message: "version not filled (correctly)"
 
 - action: Check for valid ids
   # See https://github.com/FirelyTeam/firely-net-sdk/issues/1773
