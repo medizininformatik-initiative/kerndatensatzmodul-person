@@ -32,7 +32,7 @@
       {
         "system": "http://hl7.org/fhir/sid/icd-10",
         "code": "R96.1",
-        "version": "2021"
+        "version": "2019"
       }
     ]
   },

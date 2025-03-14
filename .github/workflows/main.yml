@@ -12,6 +12,7 @@ jobs:
     uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_dotnet_validation.yml@master
     with:
       ref: ${{ github.event.pull_request.head.ref }}
+      SUSHI_VERSION: ${{ vars.SUSHI_VERSION }}
     secrets: inherit
 
   JAVA_FHIR_VALIDATION:
@@ -22,5 +23,5 @@ jobs:
       PATH_TO_EXAMPLES: fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
       JAVA_VALIDATION_OPTIONS: -advisor-file advisor.json -resolution-context file:fsh-generated/resources/ -show-message-ids
-      JAVA_VALIDATOR_VERSION: 6.5.15
+      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
     secrets: inherit
