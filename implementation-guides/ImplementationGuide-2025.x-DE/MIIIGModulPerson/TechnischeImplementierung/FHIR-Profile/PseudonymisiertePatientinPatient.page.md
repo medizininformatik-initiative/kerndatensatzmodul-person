@@ -17,66 +17,20 @@ Dieses Profil beschreibt eine pseudonymisierte Version des Profils für die ```P
 
 | Note |  |
 |---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}}  | Die genauen Regeln zur Pseudonymisierung innerhalb der Medizininformatik-Initiative werden derzeit erarbeitet. Es sind daher noch zu Änderungen an diesem Profil zu erwarten. |
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}}  | Dieses Profil enthält keine Regeln zur Prüfung der korrekten Pseudonymisierung. Ein erfolgreiches Validieren gegen dieses Profil bedeutet daher nicht, dass eine fachlich oder datenschutzrechtlich korrekte Pseudonymisierung erfolgt ist.
 
-Das [Datenschutzkonzept der Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/de/datenschutzkonzept) enthält in der Version 1.0 folgende Formulierung: *"Aus dem Modul Person werden allerdings das Geburtsdatum auf das Quartal und Jahr vergröbert, das Geschlecht und die Postleitzahl (PLZ) auf die ersten beiden Ziffern vergröbert im Sinne von Klassifikatoren sowohl den IDAT als auch den MDAT zugeordnet."*
+Anforderungen an die Pseudonymisierung können je nach Projektkontext variieren und lassen sich nicht vollständig und allgemeingültig in einem Profil abbilden. Für weiterführende Informationen ist der *Implementation Guide Pseudonymization Interface for the MII* unter
+https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/ heranzuziehen. |
 
-Diese Anforderungen werden im Profil Patient - Pseudonymisiert wie folgt umgesetzt:
+---
 
-</br>
+**Hinweis zur Verwendung der IK-Nummer im Kontext pseudonymisierter Patientendaten**
 
-**Geburtsdatum**
+Für den Use Case "NUM-CON-MON" wird eine Auswertung nach Krankenkasse benötigt. Dazu ist es erforderlich, im pseudonymisierten Patientenprofil die IK-Nummer der Krankenkasse mitzuführen, ohne die Versicherten-ID offenzulegen.
 
-Folgende Invarinate MUSS beachtet werden:
+Dies kann realisiert werden, indem ein Identifier mit dem Typ `KVZ10` (10-stellige Krankenversicherten-ID) angegeben wird, bei dem das Element `Identifier.value` durch die Extension [Data Absent Reason](http://hl7.org/fhir/R4/extension-data-absent-reason.html) mit dem Code `masked` ersetzt wird. Die IK-Nummer der Krankenkasse wird dabei im `assigner.identifier` angegeben.
 
-@```
-from StructureDefinition 
-where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert' 
-select
-join
-for differential.element where constraint.exists(key='pat-pseuded-1')
-select {Element: id, constraint.key, constraint.severity,constraint.human,constraint.expression}
-```
-
-Bei der Vergröberung des Geburtsdatums SOLL die Angabe des Jahres unverändert beibehalten werden. Die Angabe des Monats ist OPTIONAL. Der Monat wird auf den ersten Monat des Quartals abgerundet, wenn vorhanden:
-
-- Quartal 1: 01
-- Quartal 2: 04
-- Quartal 3: 07
-- Quartal 4: 10
-
-Die Angabe des Tags ist OPTIONAL. Der Tag MUSS auf den ersten des Monats abgerundet werden, wenn vorhanden. Es sind entweder vierstellige, siebenstellige oder zehnstellige Datumsangaben erlaubt. Die Anforderungen werden mittels regulärem Ausdruck `^\d{4}(-(01|04|07|10)(-01)?)?$` geprüft. Beispiele:
-
-- ✅ `1967`
-- ✅ `1967-04`
-- ✅ `1967-04-01`
-- ❌ `1967-05-25`
-
-</br>
-
-**Geschlecht**
-
-`Patient.gender` KANN ohne weitere Einschränkungen befüllt werden.
-
-</br>
-
-**Postleitzahl (PLZ)**
-
-Folgende Invariante MUSS beachtet werden:
-
-@```
-from StructureDefinition 
-where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert' 
-select
-join
-for differential.element where constraint.exists(key='pat-pseuded-2')
-select {Element: id, constraint.key, constraint.severity,constraint.human,constraint.expression}
-```
-
-Die Postleitzahl MUSS auf die ersten beiden Ziffern vergröbert werden. Die Anforderung wird mittels FHIRPath `length() = 2` geprüft.
-
-- ✅ `10`
-- ❌ `10117`
+Ein Beispiel für diese Modellierung findet sich in der Beispielressource [Patient/mii-exa-person-patient-pseudonymisiert](#beispiele).
 
 ---
 
@@ -238,6 +192,6 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 ---
 
-**Beispiele**
+## Beispiele
 
 {{json:fsh-generated/resources/Patient-mii-exa-person-patient-pseudonymisiert.json}}

@@ -11,7 +11,7 @@ Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in d
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
-* ^date = "2025-02-28"
+* ^date = "2025-07-22"
 * obeys mii-pat-1
 * id MS
 * meta MS
@@ -29,7 +29,8 @@ Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in d
 * identifier ^slicing.rules = #open
 * identifier contains
     PseudonymisierterIdentifier 0..* MS and
-    AnonymisierterIdentifier 0..* MS
+    AnonymisierterIdentifier 0..* MS and
+    versichertenId 0..1
 * identifier[PseudonymisierterIdentifier] ^short = "Pseudonymisierter Identifikator"
 * identifier[PseudonymisierterIdentifier] ^definition = """
     Ein Pseudonym ersetzt einen Originalwert. 
@@ -42,6 +43,19 @@ Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in d
     Ein Anonymisierter Identifikator ersetzt einen Originalwert. 
     Die Verarbeitung ist unumkehrbar. Der Originalwert kann nicht oder nur mit unverhältnismäßigem Aufwand rekonstruiert werden.
     """
+* identifier[versichertenId] only IdentifierKvid10
+* identifier[versichertenId] ^patternIdentifier.type = $identifier-type-de-basis#KVZ10
+* identifier[versichertenId].type 1.. 
+* identifier[versichertenId].value.extension contains $data-absent-reason named data-absent-reason 0..1
+* identifier[versichertenId].assigner 1.. 
+* identifier[versichertenId].assigner.identifier 1.. 
+* identifier[versichertenId].assigner.identifier only IdentifierIknr
+* identifier[versichertenId] ^short = "Krankenversichertennummer"
+* identifier[versichertenId] ^definition = "Krankenversichertennummer, unabhängig, ob GKV, PKV oder Sonderkostenträger"
+* insert Translation(identifier[versichertenId] ^short, de-DE, Krankenversichertennummer)
+* insert Translation(identifier[versichertenId] ^short, en-US, Health insurance number)
+* insert Translation(identifier[versichertenId] ^definition, de-DE, 10-stellige KVID)
+* insert Translation(identifier[versichertenId] ^definition, en-US, 10-digit health insurance number)
 * active MS
 * active ^short = "Aktiv"
 * insert Translation(active ^short, de-DE, Aktiv)
@@ -66,7 +80,7 @@ Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in d
 * insert Translation(gender.extension[other-amtlich] ^definition, de-DE, Extension zur genaueren Differenzierung des administrativen Geschlechts)
 * insert Translation(gender.extension[other-amtlich] ^definition, en-US, Extension for detailed differentiation of administrative gender)
 * birthDate MS
-* birthDate obeys pat-pseuded-1
+//* birthDate obeys pat-pseuded-1
 * birthDate ^short = "Geburtsdatum"
 * birthDate ^definition = "Das Geburtsdatum der Patientin oder des Patienten"
 * insert Translation(birthDate ^short, de-DE, Geburtsdatum)
@@ -107,7 +121,7 @@ Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in d
 //* address[Strassenanschrift].city ..0 MS
 * address[Strassenanschrift].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Strassenanschrift].postalCode 1.. MS
-* address[Strassenanschrift].postalCode obeys pat-pseuded-2
+//* address[Strassenanschrift].postalCode obeys pat-pseuded-2
 * address[Strassenanschrift].country 1.. MS
 * address[Strassenanschrift] obeys pat-cnt-2or3-char
 * address[Strassenanschrift] ^short = "Straßenanschrift"

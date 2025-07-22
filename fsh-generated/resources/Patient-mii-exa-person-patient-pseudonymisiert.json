@@ -25,6 +25,33 @@
       },
       "system": "https://www.medizininformatik-initiative.de/fhir/sid/pseudonym",
       "value": "1234567890"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "KVZ10",
+            "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+          }
+        ]
+      },
+      "system": "http://fhir.de/sid/gkv/kvid-10",
+      "assigner": {
+        "identifier": {
+          "system": "http://fhir.de/sid/arge-ik/iknr",
+          "use": "official",
+          "value": "260326822"
+        }
+      },
+      "use": "official",
+      "_value": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
     }
   ],
   "address": [
