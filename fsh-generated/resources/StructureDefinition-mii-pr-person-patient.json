@@ -877,20 +877,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.gender.extension",
-        "path": "Patient.gender.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Patient.gender.extension:other-amtlich",
         "path": "Patient.gender.extension",
         "sliceName": "other-amtlich",
@@ -1034,20 +1020,6 @@
           ]
         },
         "mustSupport": true
-      },
-      {
-        "id": "Patient.birthDate.extension",
-        "path": "Patient.birthDate.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Patient.birthDate.extension:data-absent-reason",
@@ -1348,20 +1320,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.address:Strassenanschrift.city.extension",
-        "path": "Patient.address.city.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Patient.address:Strassenanschrift.city.extension:gemeindeschluessel",
         "path": "Patient.address.city.extension",
         "sliceName": "gemeindeschluessel",
@@ -1526,20 +1484,6 @@
         "path": "Patient.address.city",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Postfach.city.extension",
-        "path": "Patient.address.city.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Patient.address:Postfach.city.extension:gemeindeschluessel",
