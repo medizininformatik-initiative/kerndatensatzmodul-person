@@ -24,6 +24,16 @@ https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymiza
 
 ---
 
+**Hinweis zur Verwendung der IK-Nummer im Kontext pseudonymisierter Patientendaten**
+
+Für den Use Case "NUM-CON-MON" wird eine Auswertung nach Krankenkasse benötigt. Dazu ist es erforderlich, im pseudonymisierten Patientenprofil die IK-Nummer der Krankenkasse mitzuführen, ohne die Versicherten-ID offenzulegen.
+
+Dies kann realisiert werden, indem ein Identifier mit dem Typ `KVZ10` (10-stellige Krankenversicherten-ID) angegeben wird, bei dem das Element `Identifier.value` durch die Extension [Data Absent Reason](http://hl7.org/fhir/R4/extension-data-absent-reason.html) mit dem Code `masked` ersetzt wird. Die IK-Nummer der Krankenkasse wird dabei im `assigner.identifier` angegeben.
+
+Ein Beispiel für diese Modellierung findet sich in der Beispielressource [Patient/mii-exa-person-patient-pseudonymisiert](#beispiele).
+
+---
+
 @```
 from 
     StructureDefinition 
@@ -182,6 +192,6 @@ Folgende Suchparameter sind für das Modul Person relevant, auch in Kombination:
 
 ---
 
-**Beispiele**
+## Beispiele
 
 {{json:fsh-generated/resources/Patient-mii-exa-person-patient-pseudonymisiert.json}}

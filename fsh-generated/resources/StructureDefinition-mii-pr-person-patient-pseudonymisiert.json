@@ -247,6 +247,145 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.identifier:versichertenId",
+        "path": "Patient.identifier",
+        "sliceName": "versichertenId",
+        "short": "Krankenversichertennummer",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Krankenversichertennummer"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Health insurance number"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Krankenversichertennummer, unabhängig, ob GKV, PKV oder Sonderkostenträger",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "10-stellige KVID"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "10-digit health insurance number"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-kvid-10"
+            ]
+          }
+        ],
+        "patternIdentifier": {
+          "type": {
+            "coding": [
+              {
+                "code": "KVZ10",
+                "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "Patient.identifier:versichertenId.type",
+        "path": "Patient.identifier.type",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:versichertenId.value.extension",
+        "path": "Patient.identifier.value.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.identifier:versichertenId.value.extension:data-absent-reason",
+        "path": "Patient.identifier.value.extension",
+        "sliceName": "data-absent-reason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:versichertenId.assigner",
+        "path": "Patient.identifier.assigner",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:versichertenId.assigner.identifier",
+        "path": "Patient.identifier.assigner.identifier",
+        "min": 1,
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://fhir.de/StructureDefinition/identifier-iknr"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.active",
         "path": "Patient.active",
         "short": "Aktiv",
