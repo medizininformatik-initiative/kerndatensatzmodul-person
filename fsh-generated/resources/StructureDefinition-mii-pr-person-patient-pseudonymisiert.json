@@ -50,7 +50,7 @@
     ]
   },
   "status": "active",
-  "date": "2025-02-28",
+  "date": "2025-07-22",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -381,6 +381,20 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.gender.extension",
+        "path": "Patient.gender.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Patient.gender.extension:other-amtlich",
         "path": "Patient.gender.extension",
         "sliceName": "other-amtlich",
@@ -523,15 +537,6 @@
             }
           ]
         },
-        "constraint": [
-          {
-            "key": "pat-pseuded-1",
-            "severity": "error",
-            "human": "Das Geburtsdatum MUSS auf Quartal und Jahr vergröbert werden. \nDas Jahr SOLLTE NICHT verändert werden. Wenn vorhanden, MUSS der Monat auf den ersten Monat des Quartals abgerundet werden.\nDie Angabe des Tags ist OPTIONAL. Wenn vorhanden, MUSS der Tag auf den ersten des Monats abgerundet werden.\nDie Datumsangabe MUSS entweder vierstellig, siebenstellig oder zehnstellig sein.",
-            "expression": "toString().matches('^\\\\d{4}(-(01|04|07|10)(-01)?)?$')",
-            "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -707,6 +712,20 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.address:Strassenanschrift.city.extension",
+        "path": "Patient.address.city.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Patient.address:Strassenanschrift.city.extension:gemeindeschluessel",
         "path": "Patient.address.city.extension",
         "sliceName": "gemeindeschluessel",
@@ -726,15 +745,6 @@
         "id": "Patient.address:Strassenanschrift.postalCode",
         "path": "Patient.address.postalCode",
         "min": 1,
-        "constraint": [
-          {
-            "key": "pat-pseuded-2",
-            "severity": "error",
-            "human": "Die Postleitzahl MUSS auf die ersten beiden Ziffern vergröbert werden.",
-            "expression": "length() = 2",
-            "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert"
-          }
-        ],
         "mustSupport": true
       },
       {
