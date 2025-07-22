@@ -17,9 +17,7 @@ Dieses Profil beschreibt eine pseudonymisierte Version des Profils für die ```P
 
 | Note |  |
 |---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}}  | Dieses Profil enthält keine Regeln zur Prüfung der korrekten Pseudonymisierung. Ein erfolgreiches Validieren gegen dieses Profil bedeutet daher nicht, dass eine fachlich oder datenschutzrechtlich korrekte Pseudonymisierung erfolgt ist.
-
-Anforderungen an die Pseudonymisierung können je nach Projektkontext variieren und lassen sich nicht vollständig und allgemeingültig in einem Profil abbilden. Für weiterführende Informationen ist der *Implementation Guide Pseudonymization Interface for the MII* unter
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}}  | Dieses Profil enthält keine Regeln zur Prüfung der korrekten Pseudonymisierung. Ein erfolgreiches Validieren gegen dieses Profil bedeutet daher nicht, dass eine fachlich oder datenschutzrechtlich korrekte Pseudonymisierung erfolgt ist.<br><br>Anforderungen an die Pseudonymisierung können je nach Projektkontext variieren und lassen sich nicht vollständig und allgemeingültig in einem Profil abbilden. Für weiterführende Informationen ist der *Implementation Guide Pseudonymization Interface for the MII* unter
 https://medizininformatik-initiative.github.io/mii-interface-module-pseudonymization/ heranzuziehen. |
 
 ---
