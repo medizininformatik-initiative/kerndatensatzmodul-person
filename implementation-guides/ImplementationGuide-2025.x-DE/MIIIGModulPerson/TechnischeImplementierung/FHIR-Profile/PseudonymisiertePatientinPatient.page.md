@@ -11,7 +11,7 @@ expand: 1
 
 ## {{link}}
 
-**Beschreibung**
+### **Beschreibung**
 
 Dieses Profil beschreibt eine pseudonymisierte Version des Profils für die ```Patient```-Ressource in der Medizininformatik-Initiative.
 
@@ -21,7 +21,7 @@ Dieses Profil beschreibt eine pseudonymisierte Version des Profils für die ```P
 
 ---
 
-**Hinweis zur Verwendung der IK-Nummer im Kontext pseudonymisierter Patientendaten**
+### **Hinweis zur Verwendung der IK-Nummer im Kontext pseudonymisierter Patientendaten**
 
 Für den Use Case "NUM-CON-MON" wird eine Auswertung nach Krankenkasse benötigt. Dazu ist es erforderlich, im pseudonymisierten Patientenprofil die IK-Nummer der Krankenkasse mitzuführen, ohne die Versicherten-ID offenzulegen.
 
@@ -84,6 +84,7 @@ select
 | Patient.meta.profile       | VERPFLICHTEND für die Abfrage im DIZ-Repository inkl Versionsnummer des Profils. Siehe **CapabilityStatement**. In allen anderen Fällen OPTIONAL.         |
 | Patient.identifier:PseudonymisierterIdentifier        | Falls der Identifier ein abgeleitetes Pseudonym ist, MUSS der Identifier entsprechend typisiert werden.|
 | Patient.identifier:AnonymisierterIdentifier        | Ein anonymisierter Identifier SOLLTE nur als solcher angegeben werden, falls keinerlei Rückschlüsse auf den originalen Datensatz möglich sind.|
+| Patient.identifier:MaskierterVersichertenIdentifer | Identifier der Krankenversichertennummer, bei dem der Wert maskiert wurde. Siehe auch [Hinweis](#hinweis-zur-verwendung-der-ik-nummer-im-kontext-pseudonymisierter-patientendaten) |
 | Patient.gender        | KANN ohne Einschränkung verwendet werden.|
 | Patient.birthDate        | MUSS auf das Quartal und Jahr vergröbert werden. |
 | Patient.address        | Postleitzahl MUSS auf die ersten zwei Stellen vergröbert werden |
