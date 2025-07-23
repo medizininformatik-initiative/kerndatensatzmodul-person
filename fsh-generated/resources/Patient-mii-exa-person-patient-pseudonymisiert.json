@@ -47,8 +47,8 @@
       "_value": {
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-            "valueCode": "masked"
+            "valueCode": "masked",
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
           }
         ]
       }

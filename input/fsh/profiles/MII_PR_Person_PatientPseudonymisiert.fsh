@@ -30,7 +30,7 @@ Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in d
 * identifier contains
     PseudonymisierterIdentifier 0..* MS and
     AnonymisierterIdentifier 0..* MS and
-    versichertenId 0..1
+    MaskierterVersichertenIdentifer 0..1 MS
 * identifier[PseudonymisierterIdentifier] ^short = "Pseudonymisierter Identifikator"
 * identifier[PseudonymisierterIdentifier] ^definition = """
     Ein Pseudonym ersetzt einen Originalwert. 
@@ -43,19 +43,26 @@ Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in d
     Ein Anonymisierter Identifikator ersetzt einen Originalwert. 
     Die Verarbeitung ist unumkehrbar. Der Originalwert kann nicht oder nur mit unverhältnismäßigem Aufwand rekonstruiert werden.
     """
-* identifier[versichertenId] only IdentifierKvid10
-* identifier[versichertenId] ^patternIdentifier.type = $identifier-type-de-basis#KVZ10
-* identifier[versichertenId].type 1.. 
-* identifier[versichertenId].value.extension contains $data-absent-reason named data-absent-reason 0..1
-* identifier[versichertenId].assigner 1.. 
-* identifier[versichertenId].assigner.identifier 1.. 
-* identifier[versichertenId].assigner.identifier only IdentifierIknr
-* identifier[versichertenId] ^short = "Krankenversichertennummer"
-* identifier[versichertenId] ^definition = "Krankenversichertennummer, unabhängig, ob GKV, PKV oder Sonderkostenträger"
-* insert Translation(identifier[versichertenId] ^short, de-DE, Krankenversichertennummer)
-* insert Translation(identifier[versichertenId] ^short, en-US, Health insurance number)
-* insert Translation(identifier[versichertenId] ^definition, de-DE, 10-stellige KVID)
-* insert Translation(identifier[versichertenId] ^definition, en-US, 10-digit health insurance number)
+* identifier[MaskierterVersichertenIdentifer] only IdentifierKvid10
+* identifier[MaskierterVersichertenIdentifer] obeys ide-masked-1
+* identifier[MaskierterVersichertenIdentifer] ^patternIdentifier.type = $identifier-type-de-basis#KVZ10
+* identifier[MaskierterVersichertenIdentifer].type 1.. MS
+* identifier[MaskierterVersichertenIdentifer].system MS
+* identifier[MaskierterVersichertenIdentifer].value MS
+* identifier[MaskierterVersichertenIdentifer].value.extension contains $data-absent-reason named data-absent-reason 0..1 MS
+* identifier[MaskierterVersichertenIdentifer].value.extension[data-absent-reason].valueCode = #masked
+* identifier[MaskierterVersichertenIdentifer].assigner 1.. MS
+* identifier[MaskierterVersichertenIdentifer].assigner.identifier 1.. MS
+* identifier[MaskierterVersichertenIdentifer].assigner.identifier only IdentifierIknr
+* identifier[MaskierterVersichertenIdentifer].assigner.identifier.type MS
+* identifier[MaskierterVersichertenIdentifer].assigner.identifier.system MS
+* identifier[MaskierterVersichertenIdentifer].assigner.identifier.value MS
+* identifier[MaskierterVersichertenIdentifer] ^short = "Maskierter Identifier der Krankenversicherten-ID"
+* identifier[MaskierterVersichertenIdentifer] ^definition = "Identifier der Krankenversichertennummer, bei dem der Wert maskiert wurde."
+* insert Translation(identifier[MaskierterVersichertenIdentifer] ^short, de-DE, Maskierter Identifier der Krankenversicherten-ID)
+* insert Translation(identifier[MaskierterVersichertenIdentifer] ^short, en-US, Masked identifier of the health insurance ID)
+* insert Translation(identifier[MaskierterVersichertenIdentifer] ^definition, de-DE, Identifier der Krankenversichertennummer\, bei dem der Wert maskiert wurde.)
+* insert Translation(identifier[MaskierterVersichertenIdentifer] ^definition, en-US, Health insurance number identifier with masked value.)
 * active MS
 * active ^short = "Aktiv"
 * insert Translation(active ^short, de-DE, Aktiv)
