@@ -11,7 +11,7 @@ Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in d
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
-* ^date = "2025-07-22"
+* ^date = "2025-08-05"
 * obeys mii-pat-1
 * id MS
 * meta MS
@@ -130,6 +130,8 @@ Description: "Dieses Profil beschreibt eine*n pseudonymisierte*n Patient*in in d
 * address[Strassenanschrift].postalCode 1.. MS
 //* address[Strassenanschrift].postalCode obeys pat-pseuded-2
 * address[Strassenanschrift].country 1.. MS
+* address[Strassenanschrift].country.extension contains $iso21090-SC-coding named countryCode 0..1
+* address[Strassenanschrift].country.extension[countryCode].valueCoding from $iso3166-1-2 (preferred)
 * address[Strassenanschrift] obeys pat-cnt-2or3-char
 * address[Strassenanschrift] ^short = "Straßenanschrift"
 * address[Strassenanschrift] ^definition = "Eine Straßenanschrift der Patientin oder des Patienten"

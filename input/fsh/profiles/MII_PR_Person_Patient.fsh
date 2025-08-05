@@ -11,7 +11,7 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert LicenseCodeableCCBY40
-* ^date = "2024-12-04"
+* ^date = "2025-08-05"
 * obeys mii-pat-1
 * id MS
 * meta MS
@@ -194,6 +194,8 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * address[Strassenanschrift].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Strassenanschrift].postalCode 1.. MS
 * address[Strassenanschrift].country 1.. MS
+* address[Strassenanschrift].country.extension contains $iso21090-SC-coding named countryCode 0..1
+* address[Strassenanschrift].country.extension[countryCode].valueCoding from $iso3166-1-2 (preferred)
 * address[Strassenanschrift] obeys pat-cnt-2or3-char
 * address[Strassenanschrift] ^short = "Straßenanschrift"
 * address[Strassenanschrift] ^definition = "Eine Straßenanschrift der Patientin oder des Patienten"
@@ -214,6 +216,8 @@ Description: "Dieses Profil beschreibt eine Patient*in in der Medizininformatik-
 * address[Postfach].city.extension contains ExtensionDestatisAgs named gemeindeschluessel 0..1 MS
 * address[Postfach].postalCode 1.. MS
 * address[Postfach].country 1.. MS
+* address[Postfach].country.extension contains $iso21090-SC-coding named countryCode 0..1
+* address[Postfach].country.extension[countryCode].valueCoding from $iso3166-1-2 (preferred)
 * address[Postfach] obeys pat-cnt-2or3-char
 * address[Postfach] ^short = "Postfach"
 * address[Postfach] ^definition = "Eine Postfachanschrift der Patientin oder des Patienten"
