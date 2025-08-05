@@ -48,6 +48,41 @@
       "family": "Haffer"
     }
   ],
+  "address": [
+    {
+      "type": "both",
+      "line": [
+        "Anna-Louisa-Karsch Str. 2"
+      ],
+      "city": "Berlin",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/destatis/ags",
+            "valueCoding": {
+              "code": "11000000",
+              "system": "http://fhir.de/sid/destatis/ags"
+            }
+          }
+        ]
+      },
+      "state": "DE-BE",
+      "postalCode": "10178",
+      "country": "DE",
+      "_country": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+            "valueCoding": {
+              "code": "DE",
+              "system": "urn:iso:std:iso:3166",
+              "display": "Germany"
+            }
+          }
+        ]
+      }
+    }
+  ],
   "identifier": [
     {
       "use": "usual",
@@ -105,29 +140,6 @@
   },
   "birthDate": "1998-09-19",
   "deceasedBoolean": false,
-  "address": [
-    {
-      "type": "both",
-      "line": [
-        "Anna-Louisa-Karsch Str. 2"
-      ],
-      "city": "Berlin",
-      "_city": {
-        "extension": [
-          {
-            "url": "http://fhir.de/StructureDefinition/destatis/ags",
-            "valueCoding": {
-              "code": "11000000",
-              "system": "http://fhir.de/sid/destatis/ags"
-            }
-          }
-        ]
-      },
-      "state": "DE-BE",
-      "postalCode": "10178",
-      "country": "DE"
-    }
-  ],
   "managingOrganization": {
     "reference": "Organization/Charite-Universitaetsmedizin-Berlin"
   }

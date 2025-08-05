@@ -50,7 +50,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-12-04",
+  "date": "2025-08-05",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -1348,6 +1348,29 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.address:Strassenanschrift.country.extension:countryCode",
+        "path": "Patient.address.country.extension",
+        "sliceName": "countryCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.country.extension:countryCode.value[x]",
+        "path": "Patient.address.country.extension.value[x]",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
+        }
+      },
+      {
         "id": "Patient.address:Postfach",
         "path": "Patient.address",
         "sliceName": "Postfach",
@@ -1512,6 +1535,29 @@
         "path": "Patient.address.country",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Patient.address:Postfach.country.extension:countryCode",
+        "path": "Patient.address.country.extension",
+        "sliceName": "countryCode",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address:Postfach.country.extension:countryCode.value[x]",
+        "path": "Patient.address.country.extension.value[x]",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
+        }
       },
       {
         "id": "Patient.link",
