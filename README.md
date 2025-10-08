@@ -43,3 +43,8 @@ Technische Umsetzung:
 * Alexander Zautke (Technische Umsetzung FHIR Profile und ImplemenationGuides)
 * Julian Saß (Technische Umsetzung FHIR Profile und ImplemenationGuides)
 * Miriam Hübner (Technische Umsetzung Logical Models)
+
+Mit Beiträgen von:
+* [@chgl](https://github.com/chgl)
+* [@makampf](https://github.com/makampf)
+* [@SchmitzDan](https://github.com/SchmitzDan)
