@@ -360,20 +360,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.identifier:MaskierterVersichertenIdentifer.value.extension",
-        "path": "Patient.identifier.value.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Patient.identifier:MaskierterVersichertenIdentifer.value.extension:data-absent-reason",
         "path": "Patient.identifier.value.extension",
         "sliceName": "data-absent-reason",
@@ -562,20 +548,6 @@
           ]
         },
         "mustSupport": true
-      },
-      {
-        "id": "Patient.gender.extension",
-        "path": "Patient.gender.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Patient.gender.extension:other-amtlich",
@@ -893,20 +865,6 @@
         "path": "Patient.address.type",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Strassenanschrift.city.extension",
-        "path": "Patient.address.city.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Patient.address:Strassenanschrift.city.extension:gemeindeschluessel",
