@@ -1,6 +1,6 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.person",
-  "version": "2025.0.1-rc.1",
+  "version": "2025.0.1",
   "description": "Medizininformatik Initiative - Modul Person",
   "author": "juliansass",
   "fhirVersions": [
