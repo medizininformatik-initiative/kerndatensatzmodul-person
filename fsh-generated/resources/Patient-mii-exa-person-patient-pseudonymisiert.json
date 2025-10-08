@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert|2025.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert|2025.0.1-rc.1"
     ]
   },
   "identifier": [

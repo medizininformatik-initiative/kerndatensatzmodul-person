@@ -2,10 +2,11 @@
 
 **Version: 2025.0.1**
 
-Datum 10.01.2025
+Datum 08.10.2025
 
-- ValueSet MII_VS_Person_ICD10WHO wurde [retired](http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired), da redundant. Das ICD-10-WHO CodeSystem verweist mittels `CodeSystem.valueSet` schon auf implizietes ICD-10-WHO ValueSet. Siehe: https://github.com/medizininformatik-initiative/kerndatensatzmodul-person/issues/86
-- Dependency aktualisiert auf [de.basisprofil.r4 1.5.1](https://simplifier.net/packages/de.basisprofil.r4/1.5.1). Dieses Release der FHIR-Basisprofile enthält einen Fix für die kvid-2-Invariante, die im Profil Patient:in (MII_PR_Person_Patient) auf `Patient.identifier:versichertenId.type` angewendet wird.
+- `Added`: Profil {{pagelink: PersonPatientPseudonymisiert, text: Patient:in Pseudonymisiert (Patient), hint: MII_PR_Person_PatientPseudonymisiert}} enthält unter `Patient.identifier` optionalen Identifier für maskierte Krankenversicherten-ID. 
+- `Changed`: ValueSet MII_VS_Person_ICD10WHO wurde [retired](http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired), da redundant. Das ICD-10-WHO CodeSystem verweist mittels `CodeSystem.valueSet` schon auf implizietes ICD-10-WHO ValueSet. Siehe: https://github.com/medizininformatik-initiative/kerndatensatzmodul-person/issues/86
+- `Changed`: Dependency aktualisiert auf [de.basisprofil.r4 1.5.4](https://simplifier.net/packages/de.basisprofil.r4/1.5.4). Dieses Release der FHIR-Basisprofile enthält einen Fix für die kvid-2-Invariante, die im Profil Patient:in (MII_PR_Person_Patient) auf `Patient.identifier:versichertenId.type` angewendet wird.
 
 **Version: 2025.0.0**
 

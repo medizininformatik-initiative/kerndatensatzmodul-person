@@ -18,7 +18,7 @@
 - name: conformance-version-filled
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()  # Excluding NamingSystem as they have no version
   status: "Checking if all conformance resources have correct version filled"
-  predicate: version.exists() and (version in ('2025.0.1'))
+  predicate: version.exists() and (version in ('2025.0.1-rc.1'))
   error-message: "version not filled (correctly)"
   files:
     - /**/*.xml
