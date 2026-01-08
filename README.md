@@ -1,3 +1,12 @@
+# ⚠️ Repository Archived
+
+**This repository has been merged into a new, consolidated repository and is now archived.**
+
+Active development continues here:  
+**https://github.com/medizininformatik-initiative/kerndatensatz-basis**
+
+---
+
 ## Medizininformatik-Initiative - Kerndatensatz - Modul Person
 
 ### Übersicht
